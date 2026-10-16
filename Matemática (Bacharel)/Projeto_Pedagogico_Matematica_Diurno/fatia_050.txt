@@ -1,0 +1,64 @@
+| Matemática (Bacharel) | Projeto_Pedagogico_Matematica_Diurno.pdf | Normas e Diretrizes Gerais | Seção 50 | Diretriz Normativa 50 |
+
+57
+MATA01 – Geometria Analítica 
+MAT199 
+MATA02 – Cálculo A 
+MAT198 
+MATA03 – Cálculo B 
+MATA01; MATA02 
+MATA04 – Cálculo C 
+MATA03 
+MATA05 – Cálculo D 
+MATA03 
+MATA07 – Álgebra Linear A 
+MATA01 
+MAT198 – Fundamentos de Matemática Elementar I-A 
+----------- 
+MAT199 – Fundamentos de Matemática Elementar II-A 
+----------- 
+MAT200 – Álgebra I - Inteiros e Grupos 
+MAT198 
+MAT201 – Álgebra II - Anéis e Polinômios 
+MAT200 
+MAT018 – Álgebra Linear II 
+MATA07 
+MAT028 – Estatística III-C 
+MATA04 
+MAT105 – Funções Analíticas I 
+MATA03 
+MAT204 – Análise Real I 
+MATA04; MAT018 
+EDC A79 - Didática e Práxis Pedagógica 
+------ 
+EDC A80 - Metodologia do Ensino da Matemática 
+EDCA79 - Didática e Práxis 
+Pedagógica 
+EDCA81 - Estágio Supervisionado I  
+------ 
+EDCA82 - Estágio Supervisionado II 
+------ 
+ 
+EDCA83 - Estágio Supervisionado III  
+EDCA80 - Metodologia do 
+Ensino da Matemática e  
+MAT47 - Laboratório de Ensino 
+de Matemática I. 
+ 
+EDCA84 - Estágio Supervisionado IV  
+EDCA80 - Metodologia do 
+Ensino da Matemática e  
+MATB47 -Laboratório de 
+Ensino de Matemática I. 
+MATB39 -  Matemática Para a Educação Básica I   
+MAT200 
+MATB42 - Matemática Para a Educação Básica II 
+MATA02 
+MATB45 - Matemática Para a Educação Básica III   
+MATA07 
+MATB47 - Laboratório de Ensino de Matemática I. 
+MATA03 
+MATB48 - Laboratório de Ensino de Matemática II. 
+MATA03 
+MATB49 - Seminários Temáticos 
+MATA03

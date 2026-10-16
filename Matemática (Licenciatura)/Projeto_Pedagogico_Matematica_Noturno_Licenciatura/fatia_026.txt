@@ -1,0 +1,100 @@
+| Matemática (Licenciatura) | Projeto_Pedagogico_Matematica_Noturno_Licenciatura.pdf | Normas e Diretrizes Gerais | Seção 26 | Diretriz Normativa 26 |
+
+Modalidade:
+Disciplina
+Função:
+complementar
+Natureza:
+Optativa
+Pré-requisito:
+Funções holomorfas
+Módulo de alunos:
+45
+Conteúdo:
+Complementos da teoria das funções de uma variável complexa. Resíduos, pólos, pontos singulares e zero. 
+Transformações conformes e aplicações. Prolongamento analítico de funções.
+Tópicos: Funções plurívocas; a projeção estereográfica; o prolongamento analítico de funções definidas 
+mediante séries de potências. 
+Nome e código do componente curricular:
+Matemática Aplicada à Economia. MAT192
+Departamento:
+Matemática
+Carga horária: 68
+T: 34 P:34 E:00
+Modalidade:
+Disciplina
+Função:
+complementar
+Natureza:
+Optativa
+Pré-requisito:
+Cálculo diferencial e 
+integral
+Módulo de alunos:
+45
+Conteúdo:
+Conceituação a aplicação dos seguintes tópicos:  Matrizes, Determinantes e Sistemas Lineares.  Derivada e Diferencial 
+de Funções de uma ou mais variável.  Otimização com ou sem restrição.  Integral e Equações Diferenciais simples.
+Nome e código do componente curricular:
+Tópicos em Álgebra.  MAT213
+Departamento:
+Matemática
+Carga horária: 68
+T: 34 P:34 E:00
+Modalidade:
+Disciplina
+Função:
+complementar
+Natureza:
+Optativa
+Pré-requisito:
+Estruturas algébricas
+Módulo de alunos:
+45
+Conteúdo:
+Abordagem de tópicos na área de Álgebra.  A programação desta disciplina variará de acordo com a disponibilidade de 
+especialistas na área e do interesse do aluno.
+Tópicos que já foram abordados na disciplina: Revisão de anéis; extensões de corpos; teoria dos ideais em anéis de 
+polinômios;  algoritmos para o cálculo explícito do radical e da interseção de ideais polinomiais; elementos da teoria 
+dos módulos. 
+Nome e código do componente curricular:
+Tópicos em Análise.  MAT214
+Departamento:
+Matemática
+Carga horária: 68
+T: 34 P:34 E:00
+Modalidade:
+Disciplina
+Função:
+complementar
+Natureza:
+Optativa
+Pré-requisito:
+Análise I
+Módulo de alunos:
+45
+Conteúdo:
+Abordagem de tópicos na área de Análise. A programação desta disciplina variará de acordo com a disponibilidade de 
+especialistas na área e o interesse do e do interesse do aluno.
+Nome e código do componente curricular:
+  Tópicos de Geometria.  MAT215
+Departamento:
+Matemática
+Carga horária: 68
+T: 34 P:34 E:00
+Modalidade:
+Disciplina
+Função:
+complementar
+Natureza:
+Optativa
+Pré-requisito:
+Cálculo diferencial e 
+integral
+Módulo de alunos:
+45
+Conteúdo:
+Abordagem de tópicos na área de Geometria.  A programação desta disciplina variará de acordo com a disponibilidade 
+de especialistas na área e o interesse do corpo discente.
+Tópicos que já foram abordados na disciplina: superfície regular; curvas de curvaturas constantes do Rn. 
+32

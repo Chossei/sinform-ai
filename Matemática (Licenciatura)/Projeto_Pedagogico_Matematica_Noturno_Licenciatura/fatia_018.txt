@@ -1,0 +1,60 @@
+| Matemática (Licenciatura) | Projeto_Pedagogico_Matematica_Noturno_Licenciatura.pdf | Normas e Diretrizes Gerais | Seção 18 | Diretriz Normativa 18 |
+
+24
+Nome e código do componente curricular:
+Matemática para o ensino fundamental II. MAT ---
+Departamento:
+Matemática
+Carga horária:
+68 horas/aula
+Modalidade:
+Disciplina
+Função:
+Profissional
+Natureza:
+Obrigatória
+Pré-requisito:
+Estruturas 
+algébricas
+Módulo de alunos:
+25
+Ementa:
+        Números racionais e irracionais: Fração , Aritmética , Ordem , Razão,  proporção e interpretação geométrica , 
+Regra da falsa posição. Conceitos Geométricos:  Pitágoras, Simetria , Perímetro , área e volume , Semelhança e 
+congruência, Função  − Função exponencial e logarítmica; Funções trigonométricas;  função modular, funções dadas por 
+sentenças, Progressões; Combinatória e probabilidade , gráficos,  Demonstrações sem palavras.
+Metodologia:  Desenvolvimento de práticas pedagógicas voltadas para o ensino fundamental II, evidenciando aspectos 
+históricos, e com inserção de atividades lúdicas e computacionais  para elaboração de material didático que poderá ser 
+aplicado em cursos do ensino médio,  desenvolvido e apresentado pelos alunos sob a orientação do professor.
+ Conteúdo programático:
+1)
+Números racionais e irracionais: 
+2)
+Fração 
+3)
+ Aritmética :
+4)
+ Ordem 
+5)
+ Razão 
+6)
+ proporção e interpretação geométrica ,
+7)
+Regra da falsa posição. 
+8)
+Conceitos Geométricos:  
+9)
+Pitágoras,
+10) Simetria , 
+11) Perímetro , área e volume 
+12) Semelhança e congruência
+13) Função: 
+a.
+Função afim e quadrática
+b.
+Função modular
+c.
+Funções dadas por sentenças
+14) Função direta e inversamente proporcional
+15) Regra de três como problema de contorno.
+16)  Demonstrações sem palavras.

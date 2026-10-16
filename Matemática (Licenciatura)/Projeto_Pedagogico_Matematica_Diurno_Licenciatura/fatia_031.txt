@@ -1,0 +1,84 @@
+| Matemática (Licenciatura) | Projeto_Pedagogico_Matematica_Diurno_Licenciatura.pdf | Normas e Diretrizes Gerais | Seção 31 | Diretriz Normativa 31 |
+
+7.10. Ementas dos Componentes Curriculares Novos 
+ 
+ 
+ 
+COMPONENTES CURRICULARES DO DEPARTAMENTO DE MATEMÁTICA  
+ 
+ 
+Nome e código do componente curricular: 
+Introdução à Análise Combinatória.  MATB31 
+Departamento: 
+Matemática 
+Carga horária: 
+T:34 P: 34 E:00 
+Modalidade: 
+Disciplina 
+Função: 
+Básica 
+Natureza: 
+Obrigatória para a 
+Licenciatura e para o 
+Bacharelado. 
+Pré-requisito: 
+Não tem 
+Módulo de alunos: 
+30 
+Ementa: 
+          Métodos de contagem: O princípio fundamental da contagem, arranjos, permutações e co mbinações. Números 
+binomiais. Introdução à probabilidade. 
+ 
+ 
+ 
+ 
+Nome e código do componente curricular: 
+Geometria Analítica e Álgebra Vetorial.  
+MATB34 
+Departamento: 
+Matemática 
+Carga horária: 
+T: 68 P:34 E:00 
+Modalidade: 
+Disciplina 
+Função: 
+Básica 
+Natureza: 
+Obrigatória para a 
+Licenciatura e para o 
+Bacharelado. 
+Pré-requisito: 
+Não tem. 
+Módulo de alunos: 
+40 
+Ementa: 
+             Álgebra v etorial. Geom etria analí tica co m tratamento v etorial: estu do d a reta e d
+o pl ano n o esp aço 
+tridimensional. C oordenadas po lares: M udança d e c oordenadas e estudo d e c urvas. Estudo d as c ônicas. E studo de 
+superfícies. Utilização de recursos computacionais. 
+ 
+ 
+ 
+ 
+Nome e código do componente curricular: 
+Limites e Derivadas. MATB33 
+Departamento: 
+Matemática 
+Carga horária: 
+T: 68 P:34 E:00 
+Modalidade: 
+Disciplina 
+Função: 
+Básica 
+Natureza: 
+Obrigatória para a 
+Licenciatura e para o 
+Bacharelado. 
+Pré-requisito: 
+Não tem. 
+Módulo de alunos: 
+40 
+Ementa: 
+               Limites e continuidade de funções.  Derivadas.  Derivadas de ordem superior. Fórmula de Taylor de funções 
+reais de uma variável real. Teoremas do valor médio e intermediário.  Aplicações de derivadas. Construção de gráficos.  
+Taxas relacionadas. Utilização de recursos computacionais.

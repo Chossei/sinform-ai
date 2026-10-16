@@ -1,0 +1,97 @@
+| Matemática (Licenciatura) | Projeto_Pedagogico_Matematica_Noturno_Licenciatura.pdf | Normas e Diretrizes Gerais | Seção 27 | Diretriz Normativa 27 |
+
+Nome e código do componente curricular:
+  Tópicos da História da Matemática.  MAT216
+Departamento:
+Matemática
+Carga horária: 68
+T: 34 P:34 E:00
+Modalidade:
+Disciplina
+Função:
+complementar
+Natureza:
+Optativa
+Pré-requisito:
+Não tem
+Módulo de alunos:
+45
+Conteúdo: Essa disciplina tem como objetivo dar ao estudante uma visão geral do desenvolvimento da matemática 
+através do tempo. Estudar tópicos importantes da matemática compreendendo como, quando e sob que condições 
+sociais foram criados e desenvolvidos. A programação variará de acordo com a disponibilidade de especialistas na área 
+e o interesse do corpo discente.
+Lista de tópicos pertinentes à disciplina:  
+O leque dos problemas estudados na Babilônia, Grécia, etc.
+Crises: números irracionais, paradoxos de Zeno.
+O teorema de  Pitágoras e os ternos pitagóricos.
+A axiomatização de geometria em diversas épocas.
+Mensuração (pirâmides, esferas, etc.). O método de Arquimedes.
+O conceito de zero e números negativos.
+Maneiras de resolver equações algébricas tais como as cúbicas.
+A introdução de coordenadas em geometria.
+A invenção de Cálculo integral e diferencial.
+A possibilidade de geometria não-euclidiana.
+Números complexos, quatérnios, e vetores.
+Cantor e as controvérsias sobre conjuntos infinitos.
+Pode-se provar que a matemática é consistente? (Hilbert, Goedel).
+Nome e código do componente curricular:
+Introdução à Teoria dos Conjuntos.  MATB56
+Departamento:
+Matemática
+Carga horária:
+T: 68 P:00 E:00
+Modalidade:
+Disciplina
+Função:
+complementar
+Natureza:
+Optativa
+Pré-requisito:
+Não tem
+Módulo de alunos:
+45
+Conteúdo:
+Conjuntos e operadores lógicos;  relações e funções. Conjuntos finitos e infinitos. Cardinalidade. Bijeção entre naturais e 
+racionais. Não bijeção entre naturais e reais. Números transfinitos. Cardinalidade do conjunto das partes de um conjunto 
+dado. 
+Nome e código do componente curricular:
+Construção de Conjuntos Numéricos. MATB57
+Departamento:
+Matemática
+Carga horária:
+T: 68 P:00 E:00
+Modalidade:
+Disciplina
+Função:
+complementar
+Natureza:
+Optativa
+Pré-requisito:
+Séries, seqüências e 
+EDO;
+Estruturas algébricas
+Módulo de alunos:
+45
+Conteúdo:
+ Construção do conjunto dos números naturais usando axiomas de Peano;  construção dos números inteiros como 
+classes de equivalências de pares ordenados de naturais;  construção dos racionais como classes de equivalência de 
+pares de inteiros;  construção dos reais como classes de equivalências de seqüências de Cauchy de racionais. 
+Propriedades da reta Construção dos complexos. 
+Nome e código do componente curricular:
+Laboratório de Ensino de Matemática I. MATB47
+Departamento:
+Matemática
+Carga horária: 68 
+T: 00 P:68 E:00
+Modalidade:
+Disciplina
+Função:
+complementar
+Natureza:
+Optativa
+Pré-requisito:
+Cálculo diferencial e 
+integral
+Módulo de alunos:
+25
+33

@@ -1,0 +1,30 @@
+| Estatística (Bacharel) | Resolucoes_01_e_02_2020_Estagio_Nao_Obrigatorio_IME.pdf | Capítulo Iv | Seção Geral | Artigo 5º e Artigo 6º |
+
+Art. 5º. A apresentação do Plano de Estágio é condição prévia para assinatura do Termo de
+Compromisso e deve conter, pelo menos, as informações presentes no modelo de Plano de
+Estágio constante no Anexo A.
+DOS REQUISITOS PARA REALIZAÇÃO DO ESTÁGIO
+Art. 6º. São requisitos complementares para a realização de estágio:
+I.
+Não ter sido reprovado por faltas em qualquer das disciplinas que tenha se matriculado
+no semestre anterior ao semestre de início ou renovação de estágio.
+II.
+A soma de todas as reprovações por conceito no período compreendido entre o semestre
+anterior ao início do estágio e nos demais semestres enquanto o estágio estiver vigente deverá
+ser menor ou igual a 1.
+III.
+Não haver pendência na entrega de relatórios de estágios realizados anteriormente.
+IV.
+A carga horária de disciplinas do estudante ao longo da realização do estágio deve estar
+abaixo do limite máximo estabelecido nos regimentos da UFBA.
+V.
+Em atenção aos estudantes do curso de Bacharelado em Estatística também exige-se
+aprovação na disciplina MATD38 – Estatística Básica B ou equivalente.
+VI.
+Em atenção aos estudantes do curso de Bacharelado em Ciência da Computação
+também exige-se aprovação na disciplina MATA40 – Estrutura de Dados e Algoritmos I  ou
+equivalente.
+VII.
+Em atenção aos estudantes dos cursos de Matemática exige-se a aprovação nas
+disciplinas MATB33 - Limites e Derivadas e MATB34 - Geometria Analítica e Álgebra
+Vetorial ou equivalentes.

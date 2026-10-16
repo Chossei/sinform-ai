@@ -1,0 +1,73 @@
+| Matemática (Licenciatura) | Projeto_Pedagogico_Matematica_Noturno_Licenciatura.pdf | Normas e Diretrizes Gerais | Seção 19 | Diretriz Normativa 19 |
+
+25
+Nome e código do componente curricular:
+Matemática para ensino médio. MAT ---
+Departamento:
+Matemática
+Carga horária:
+68 horas/aula
+Modalidade:
+Disciplina
+Função:
+Profissional
+Natureza:
+Obrigatória
+Pré-requisito:
+Álgebra Linear 
+Módulo de alunos:
+25
+Ementa:
+        Estudo de tópicos do ensino médio.Geometria analítica plana e Geometria euclidiana espacial.; Sistemas de 
+equações lineares; Matrizes e determinantes; Números complexos; Equações algébricas, 
+Metodologia: Desenvolvimento de práticas pedagógicas voltadas para o ensino médio, evidenciando aspectos 
+históricos, e com inserção de atividades lúdicas e computacionais  para elaboração de material didático que poderá ser 
+aplicado em cursos do ensino médio,  desenvolvido e apresentado pelos alunos sob a orientação do professor.
+Conteúdo programático:
+1.
+Demonstrações sem palavras 
+2.
+Funções
+2.1. Funções Exponenciais e Logarítmicas
+2.2. Potências de expoente racional.
+2.3. A função exponencial.
+2.4. Caracterização da função exponencial.
+2.5. Funções exponenciais e progressões.
+2.6. Função inversa.
+2.7. Função dada por sentenças
+2.8. Funções logarítmicas.
+2.9. Caracterização das funções logarítmicas.
+3.
+Logaritmos naturais.
+4.
+A função exponencial de base e.
+5.
+Como verificar que f(x+h)/f(h) depende apenas de h.
+6.
+Progressões
+6.1. Progressões Aritméticas.
+6.2. Progressões Geométricas.
+7.
+Funções Trigonométricas
+7.1. A função de Euler e a medida de ângulos.
+7.2. As funções trigonométricas
+7.3. As fórmulas de adição
+7.4. A lei dos cossenos e a lei dos senos
+8.
+Combinatória
+8.1. Princípios básicos.
+8.2. Permutações e Combinações.
+8.3. O Triângulo Aritmético.
+8.4. O Binômio de Newton.
+9.
+Probabilidade
+9.1. Conceitos básicos.
+10. Probabilidade Condicional 
+11. Geometria analítica 
+11.1.Sistemas de coordenadas: cartesianas e polares.
+12. Sistemas de equações lineares; 
+13. Matrizes e determinantes; 
+14. Números complexos; 
+15. Equações algébricas
+16. Poliedros, prismas
+17. Superfícies cilíndricas  e volumes.

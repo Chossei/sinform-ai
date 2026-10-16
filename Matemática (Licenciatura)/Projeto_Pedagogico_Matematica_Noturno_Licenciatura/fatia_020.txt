@@ -1,0 +1,84 @@
+| Matemática (Licenciatura) | Projeto_Pedagogico_Matematica_Noturno_Licenciatura.pdf | Normas e Diretrizes Gerais | Seção 20 | Diretriz Normativa 20 |
+
+Componentes curriculares já existentes:
+Nome e código do componente curricular:
+Desenho Geométrico I.  ARQ005
+Departamento:
+Geometrias de Representação
+Carga horária:
+68 horas/aula
+Modalidade:
+Disciplina
+Função:
+Complementar
+Natureza:
+Obrigatória
+Pré-requisito:
+Não tem.
+Módulo de alunos:
+45
+Ementa:
+Conhecimento para desenvolvimento da capacidade de expressão gráfica, adestramento manual, senso de ordem e de 
+proporção através do contato com entidades geométricas fundamentais do plano e da resolução dos problemas básicas a 
+ele relativos.
+Nome e código do componente curricular:
+Introdução a Análise Combinatória.  MAT B31
+Departamento:
+Matemática
+Carga horária:
+68 horas/aula
+Modalidade:
+Disciplina
+Função:
+Básica
+Natureza:
+Obrigatória
+Pré-requisito:
+Não tem
+Módulo de alunos:
+45
+Ementa:
+          Métodos de contagem: O princípio fundamental da contagem, arranjos, permutações e combinações. Números 
+binomiais. Introdução à probabilidade.
+Nome e código do componente curricular:
+Fundamentos Psicológicos da Educação. EDCA01
+Departamento:
+Departamento de 
+Educação I
+Carga horária:
+68 horas/aula
+Modalidade:
+Disciplina
+Função:
+Básica
+Natureza:
+Obrigatória
+Pré-requisito:
+Não tem.
+Módulo de alunos:
+45
+Ementa:
+              A psicologia como ciência e sua aplicação à educação. Fundamentos teórico-epistemológicos da relação 
+psicologia-educação. Principais correntes da psicologia e suas aplicações educacionais. Discussões contemporâneas na 
+psicologia da educação e na análise psico-educativa do trabalho escolar. A psicologia na formação dos professores.
+Nome e código do componente curricular:
+Geometria Analítica e Álgebra Vetorial.  MAT B34
+Departamento:
+Matemática
+Carga horária:
+102 horas/aula
+Modalidade:
+Disciplina
+Função:
+Básica
+Natureza:
+Obrigatória
+Pré-requisito:
+Não tem.
+Módulo de alunos:
+45
+Ementa:
+             Álgebra vetorial. Geometria analítica com tratamento vetorial: estudo da reta e do plano no espaço 
+tridimensional. Coordenadas polares: Mudança de coordenadas e estudo de curvas. Estudo das cônicas. Estudo de 
+superfícies. Utilização de recursos computacionais.
+26

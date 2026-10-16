@@ -1,0 +1,128 @@
+| Matemática (Bacharel) | Projeto_Pedagogico_Matematica_Diurno.pdf | Normas e Diretrizes Gerais | Seção 27 | Diretriz Normativa 27 |
+
+Código / Nome 
+C.H.  
+Hora/aula 
+Módulo 
+Função 
+Pré-requisito 
+Departamento de  
+ 
+ 
+EDC ---- Estágio Supervisionado III 
+ 
+ 
+102 
+ 
+ 
+Disciplina 
+ 
+ 
+Profissional 
+− Metodologia do 
+Ensino 
+da Matemática. 
+− Laboratório de 
+Ensino de 
+Matemática I. 
+ 
+ 
+Educação II 
+MAT--- Seminários Temáticos  
+68 
+Módulo 
+interdisciplinar 
+Profissional 
+− Integrais e Funções 
+de Várias Variáveis. 
+ 
+Matemática 
+ 
+EDC ---- Estágio Supervisionado IV 
+ 
+102 
+ 
+Disciplina 
+ 
+Profissional 
+− Metodologia do 
+Ensino 
+da Matemática. 
+− Laboratório de 
+Ensino de 
+Matemática I. 
+ 
+Educação II 
+ 
+ 
+Componentes Curriculares Optativos para a Licenciatura a partir de 2007.1 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Código / Nome 
+C.H.  
+Hora/aula 
+Módulo 
+Função 
+Pré-requisito 
+Departamento de  
+ARQ006 −  Desenho Geométrico II 
+68  
+Disciplina 
+Complementar 
+− ARQ005 
+Geometrias de Representação 
+EDC251- Dimensão Estética da Educação. 
+102  Disciplina 
+Complementar 
+------ 
+Educação I 
+EDC266 - Introdução à Informática na Educação. 
+102  
+Disciplina 
+Complementar ------ 
+Educação I 
+EDC283 – Currículo. 
+68  
+Disciplina Com
+plementar 
+------ 
+Educação I 
+EDCA03 - Filosofia e Educação. 
+68  
+Disciplina Com
+plementar 
+------ 
+Educação I 
+EDCA04 - Sociedade e Educação. 
+68  
+Disciplina Com
+plementar 
+------ 
+Educação I 
+EDC05 - História da Educação Brasileira. 
+68  
+Disciplina 
+Complementar 
+------ 
+Educação I 
+EDCA06 - Organização e Gestão do Trab. 
+Pedagógico.  
+68  
+Disciplina 
+Complementar ------ 
+Educação I

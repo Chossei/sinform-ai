@@ -1,0 +1,104 @@
+| Matemática (Bacharel) | Projeto_Pedagogico_Matematica_Diurno.pdf | Normas e Diretrizes Gerais | Seção 38 | Diretriz Normativa 38 |
+
+Nome e código do componente curricular: 
+Teoria das Equações Diferenciais Ordinárias. 
+MATB51 
+Departamento: 
+Matemática 
+Carga horária: 
+T: 68 P:00 E:00 
+Modalidade: 
+Disciplina  
+Função: 
+Básico 
+Natureza: 
+Obrigatória para o 
+Bacharelado e 
+optativa para  a 
+Licenciatura 
+Pré-requisitos: 
+− Seqüências, Séries e EDO. 
+− Álgebra Linear I-B 
+Módulo de 
+alunos: 
+40 
+Ementa: 
+Estudo das equações diferenciais ordinárias. Existência e unicidade de soluções. Equações diferenciais lineares 
+e estudo qualitativo local (estabilidade estrutural). 
+           
+ 
+ 
+ 
+Nome e código do componente curricular: 
+Equações  Diferenciais Parciais.   MATB58 
+Departamento: 
+Matemática 
+Carga horária: 
+T: 68 P:00 E:00 
+Modalidade: 
+Disciplina 
+Função: 
+Complementar  
+Natureza: 
+Optativa para a 
+Licenciatura e para 
+o Bacharelado 
+Pré-requisito: 
+− Análise I 
+Módulo de alunos: 
+40 
+Ementa: 
+          Conceito de equação diferencial parcial. Condições de contorno e iniciais. Equação diferencial parcial linear de 
+primeira e d e segunda ordem. Método de separação de variáveis. Série de Fourier e transformada de Fourier. Tipos e 
+critérios de convergência da série de Fourier.  
+           
+ 
+ 
+ 
+Nome e código do componente curricular: 
+Estágio Supervisionado.  MATB54 
+Departamento: 
+Matemática 
+Carga horária: 
+T:08 P:00 E:26 
+Modalidade: 
+ Disciplina 
+Função: 
+Profissional 
+Natureza: 
+Obrigatória para o 
+Bacharelado e optativa 
+para a Licenciatura 
+Pré-requisito: 
+− Análise II 
+Módulo de alunos: 
+30 
+Ementa: 
+           Exercício efetivo da prática de ensino em turmas do 3º grau, sob a orientação de um professor. 
+ 
+ 
+ 
+ 
+ 
+ 
+Nome e código do componente curricular: 
+Monografia.  MATB55 
+Departamento: 
+Matemática 
+Carga horária: 
+T:34 P:34 E:00 
+Modalidade: 
+Módulo interdisciplinar 
+Função: 
+Profissional 
+Natureza: 
+Obrigatória para o 
+Bacharelado e 
+optativa para a 
+Licenciatura 
+Pré-requisitos: 
+− MAT 205. 
+− MAT208 
+− Análise III. 
+Módulo de alunos: 
+30

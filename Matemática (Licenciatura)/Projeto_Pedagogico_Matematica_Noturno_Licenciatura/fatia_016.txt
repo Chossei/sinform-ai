@@ -1,0 +1,127 @@
+| Matemática (Licenciatura) | Projeto_Pedagogico_Matematica_Noturno_Licenciatura.pdf | Normas e Diretrizes Gerais | Seção 16 | Diretriz Normativa 16 |
+
+21
+Nome e código do componente curricular:
+Geometria Euclidiana Plana. MAT ---
+Departamento:
+Matemática
+Carga horária:
+102 horas/aula
+Modalidade:
+Disciplina
+Função:
+Básica
+Natureza:
+Obrigatória
+Pré-requisito:
+Não tem.
+Módulo de alunos:
+45
+Ementa:
+             Estudo da geometria plana com abordagem euclidiana. Utilização de recursos computacionais.  
+Conteúdo programático:
+1.
+Software de geometria dinâmica: Geogebra e o Cabri
+2.
+Noções primitivas e axiomas da Geometria Euclidiana Plana.
+3.
+Segmento de reta.  Ângulo e triângulo.
+4.
+Congruência de segmentos, ângulos e triângulos.
+5.
+Teorema do ângulo externo e suas conseqüências.
+6.
+Axioma das paralelas. Teorema de Tales. Polígonos convexos. Polígonos regulares.  Quadriláteros notáveis.
+7.
+Semelhança de triângulos.
+8.
+Círculo. Ângulos no círculo. Inscrição e circunscrição de polígonos em círculos. Potência de ponto.
+9.
+Funções trigonométricas. Relações métricas em um triângulo retângulo e em um triângulo qualquer. 
+10. Áreas de figuras planas.
+11. Lugares geométricos.
+22
+Nome e código do componente curricular:
+Laboratório de Ensino de Matemática III. MAT---
+Departamento:
+Matemática
+Carga horária:
+T: 00 P:68 E:00
+Modalidade:
+Módulo interdisciplinar
+Função:
+Profissional
+Natureza:
+Obrigatória 
+Pré-requisito:
+ Geometria analítica e 
+cálculo vetorial
+Módulo de alunos:
+25
+Ementa:
+         Introdução ao Latex.  Coordenadas polares, Cônicas. Curvas parametrizadas. Áreas e aplicações. Superfícies. 
+Volumes. Inversões.  Simulações, animações  e traçado de curvas usando  pstricks.
+          
+Metodologia:   Seminários e aulas práticas para construção de práticas pedagógicas utilizando recursos computacionais 
+para elaboração de material didático  com suporte computacional   desenvolvido e apresentado pelos alunos sob a 
+orientação do professor.
+Conteúdo programático:
+1)
+Software e editoração matemática : Miktex, Latex,
+2)
+ pacotes geométricos do Latex: pstricks, PST-euclid,
+3)
+ Fórmulas, 
+4)
+Coordenadas polares 
+5)
+Traçados de curvas, 
+6)
+Desenho de superfícies, 
+7)
+ loops e animações no Latex
+8)
+Cônicas e Curvas parametrizadas. 
+9)
+ Áreas e aplicações.
+10)  Software de geometria dinâmica. (Geogebra e Cabri)
+Nome e código do componente curricular:
+Laboratório de Ensino de Matemática IV. MAT---
+Departamento:
+Matemática
+Carga horária:
+T: 00 P:68 E:00
+Modalidade:
+Módulo interdisciplinar
+Função:
+Profissional
+Natureza:
+Obrigatória 
+Pré-requisito:
+Cálculo diferencial e 
+integral 
+Módulo de alunos:
+25
+Ementa:
+          Métricas não euclidianas e construção de cônicas. Homeomorfismos entre espaços métricos. Invariantes 
+topológicos (Característica de Euler, Teorema das quatro cores).  Construção de modelos virtuais de 
+superfícies( computação gráfica). Noções de curvatura e geodésica de superfícies. Triângulos geodésicos e soma de 
+ângulos internos. Representação gráfica  e animações usando o Pstricks.
+Metodologia:  Seminários e aulas práticas para construção de práticas pedagógicas utilizando recursos computacionais 
+para elaboração de material didático  com suporte computacional   desenvolvido e apresentado pelos alunos sob a 
+orientação do professor.
+Conteúdo programático:
+1)
+Métricas não euclidianas e construção de cônicas. 
+2)
+Homeomorfismos entre espaços métricos. 
+3)
+Invariantes topológicos (Característica de Euler, Teorema das quatro cores). 
+4)
+Construção de modelos virtuais de superfícies ( computação gráfica).
+5)
+ Noções de curvatura e geodésica de superfícies. 
+6)
+Triângulos geodésicos e soma de ângulos internos.
+7)
+ Representação gráfica  e animações usando o Pstricks.

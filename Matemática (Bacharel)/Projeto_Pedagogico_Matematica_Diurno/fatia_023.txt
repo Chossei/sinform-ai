@@ -1,0 +1,122 @@
+| Matemática (Bacharel) | Projeto_Pedagogico_Matematica_Diurno.pdf | Normas e Diretrizes Gerais | Seção 23 | Diretriz Normativa 23 |
+
+Código / Nome 
+C.H. 
+Hora/aula 
+Módulo Funç
+ão 
+Pré-requisito Departamento 
+ 
+FIS123 - Física Geral e Experimental III-E 
+102 
+Disciplina 
+Complementar 
+− FIS122 
+ 
+Física do Estado Sólido 
+ 
+MAT174-Cálculo Numérico 
+ 
+68 
+ 
+Disciplina 
+ 
+Complementar 
+− MAT045 
+− Álgebra Linear I-B 
+− Séries, Seqüências e 
+EDO 
+ 
+Ciência da Computação 
+MAT 205 - Introdução  à Teoria de Galois 
+68 
+Disciplina 
+Básica 
+− Grupos e Anéis I 
+Matemática 
+ 
+MAT--- Teoria das Equações Diferenciais Ordinárias 
+ 
+68 
+ 
+Disciplina 
+ 
+Básica 
+− Seqüências, Séries e 
+EDO. 
+− Álgebra Linear I-B. 
+ 
+Matemática 
+MAT --- Análise II  
+102 
+Disciplina 
+Básica 
+− Análise I 
+Matemática 
+MAT --- Topologia e Espaços Métricos 6
+8 
+Disciplina 
+Básica 
+− Limites e Derivadas 
+Matemática 
+ 
+MAT 208 - Geometria Diferencial 
+ 
+102 
+ 
+Disciplina 
+ 
+Básica 
+− Cálculo Diferencial 
+Vetorial 
+− Álgebra Linear II-B 
+ 
+Matemática 
+MAT --- Funções Holomorfas 
+68 
+Disciplina 
+Básica  
+− Integrais e Funções 
+de 
+Várias Variáveis. 
+Matemática 
+MAT --- Análise III  
+102 
+Disciplina 
+Básica 
+− Análise II 
+Matemática 
+MAT ---- Estágio Supervisionado 
+34 
+Disciplina 
+Profissional 
+− Análise II 
+Matemática 
+MAT028 − Estatística III - C 
+68 Discip
+lina 
+Complementar 
+− Seqüências, Séries e 
+EDO. 
+Estatística 
+ 
+MAT--- Monografia 
+ 
+68 
+Módulo 
+Interdisciplinar 
+ 
+Profissional 
+− MAT205. 
+− MAT208 
+− Análise III. 
+ 
+Matemática 
+MAT--- Seminários Temáticos 
+68 
+Módulo 
+interdisciplinar 
+Profissional 
+− Integrais e Funções 
+de Várias Variáveis. 
+Matemática

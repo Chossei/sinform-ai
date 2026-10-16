@@ -1,0 +1,74 @@
+| Matemática (Licenciatura) | Projeto_Pedagogico_Matematica_Noturno_Licenciatura.pdf | Normas e Diretrizes Gerais | Seção 28 | Diretriz Normativa 28 |
+
+Conteúdo:
+  
+Princípio de contagem. Cônicas. Curvas parametrizadas. Áreas e aplicações. Superfícies. 
+Volumes. Método de indução.
+As atividades ocorrerão segundo a metodologia:
+- Serão desenvolvidos estudos de tópicos da ementa, serão apresentadas palestras pelo professor 
+responsável ou por professores convidados. Todos os tópicos serão vistos com utilização de 
+modelos concretos. 
+- Durante o semestre, sob a orientação e supervisão do professor, cada aluno escolherá um tópico da ementa sobre o 
+qual construirá modelos concretos e apresentará dois seminários abertos à comunidade.
+As aulas práticas ocorrerão no Laboratório LEMA-UFBa onde o aluno deverá  construir os modelos concretos
+Nome e código do componente curricular:
+Laboratório de Ensino de Matemática II. MATB48
+Departamento:
+Matemática
+Carga horária: 68
+T: 00 P:68 E:00
+Modalidade:
+Disciplina
+Função:
+complementar
+Natureza:
+Optativa
+Pré-requisito:
+Cálculo diferencial e 
+integral
+Módulo de alunos:
+25
+Conteúdo:
+  
+Métricas não euclidianas e construção de cônicas. Homeomorfsmos entre espaços métricos. 
+Invariantes topológicos (Característica de Euler, Teorema das quatro cores). Técnica de construção 
+de modelos concretos de superfícies. Noções de curvatura e geodésica de superfícies. Triângulos 
+geodésicos e soma de ângulos internos. 
+As atividades ocorrerão segundo a metodologia:
+- Serão desenvolvidos estudos de tópicos da ementa, serão apresentadas palestras pelo professor 
+responsável ou por professores convidados. Todos os tópicos serão vistos com utilização de 
+modelos concretos. 
+- Durante o semestre, sob a orientação e supervisão do professor, cada aluno escolherá um tópico da ementa sobre o qual 
+construirá modelos concretos e apresentará dois seminários abertos à comunidade.
+As aulas práticas ocorrerão no Laboratório LEMA-UFBa onde o aluno deverá  construir os modelos 
+concretos
+          
+Nome e código do componente curricular:
+Descritiva I. ARQ013  
+Departamento:
+Geometria das 
+Representações 
+Carga horária: 68
+T:34  P:34  E:00
+Modalidade:
+Disciplina
+Função:
+Complementar
+Modalidade:
+Disciplina
+Função:
+complementar
+Natureza:
+Optativa
+Pré-requisito:
+Não tem
+Módulo de alunos:
+45
+Conteúdo:
+Dar ao aluno os conhecimentos básico relativo aos diversos sistemas de representação da forma dando ênfase particular 
+ao sistema diédrico pela geometria  descritiva. 
+Aprimoramento da formação do raciocínio lógico especial na solução de exercícios graduais  e sistemática que utilizam 
+que a descritiva como meio e não fim.
+O aluno deverá teorizar e  representar tridimensional (entes geométricos, figuras planas, sólidos geométricos e situação 
+especial) no bidimensional empregado, de preferência, o sistema diédrico.
+34

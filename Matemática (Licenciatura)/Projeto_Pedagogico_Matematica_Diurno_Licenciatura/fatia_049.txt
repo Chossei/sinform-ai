@@ -1,0 +1,46 @@
+| Matemática (Licenciatura) | Projeto_Pedagogico_Matematica_Diurno_Licenciatura.pdf | Normas e Diretrizes Gerais | Seção 49 | Diretriz Normativa 49 |
+
+56
+6. Se dois componentes curriculares, A e B, são equivalentes, e uma deles, digamos B, é pré-requisito (ou é parte do pré-requisito) de um 
+terceiro, C, então A poderá substituir B como pré-requisito (ou parte do pré-requisito) de C. O mesmo ocorre se no lugar de A houver um 
+conjunto de componentes curriculares. 
+ 
+7. Os componentes curriculares que atualmente constam como optativos para esse aluno, continuarão como optativos, conservando seus pré-
+requisitos. A essa lista de componentes curriculares optativos serão acrescentados: 
+  − Os componentes curriculares ARQ013 - Descritiva I; MAT045 – Processamento de Dados; MAT174 – Cálculo Numérico e FIS123 – Física 
+Geral e Experimental III - E, que constam como obrigatórios no currículo atual, para esses alunos, passam a optativos mantendo-se os pré-
+requisitos atuais. 
+− Os componentes da tabela, seguindo os  pré-requisitos. 
+Componentes curriculares 
+Pré-requisito 
+MATB36 - Grupos e Anéis II 
+MAT201 
+MATB31 - Introdução a Análise Combinatória 
+------ 
+MATB56 -.Introdução à Teoria dos Conjuntos 
+------ 
+MATB57 - Construção de Conjuntos Numéricos. 
+--------- 
+   
+8. Cargas  horárias excedentes serão contabilizadas como atividades complementares. 
+ 
+ 
+Para melhor esclarecimento sobre a  adaptação curricular para o aluno de Licenciatura de currículo 2006.1, apresentaremos nas páginas seguintes 
+a listagem de todos os componentes com seus pré-requisitos e o fluxograma.  
+ 
+ 
+ 
+COMPONENTES CURRICULARES DO NOVO CURRÍCULO PARA ALUNOS DE LICENCIATURA.- 2006.1  
+ 
+COMPONENTES  CURRICULARES OBRIGATÓRIOS   
+PRÉ-REQUISITOS 
+ARQ005 – Desenho Geométrico I 
+----------- 
+EDCA01 – Fundamentos Psicológicos da Educação 
+----------- 
+EDCA02 – Organização da Educação Brasileira 2 
+----------- 
+FIS121 – Física Geral e Experimental I-E 
+----------- 
+FIS122 – Física Geral e Experimental II-E 
+MATA01;  MATA02; FIS121

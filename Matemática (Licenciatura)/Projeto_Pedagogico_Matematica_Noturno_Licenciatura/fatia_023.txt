@@ -1,0 +1,89 @@
+| Matemática (Licenciatura) | Projeto_Pedagogico_Matematica_Noturno_Licenciatura.pdf | Normas e Diretrizes Gerais | Seção 23 | Diretriz Normativa 23 |
+
+Modalidade:
+Disciplina
+Função:
+Básica
+Natureza:
+Obrigatória
+Pré-requisito:
+Integral e Funções de 
+Várias Variáveis.
+Módulo de alunos:
+45
+Ementa:
+          Fórmula de Taylor. Máximos e mínimos. Integrais múltiplas. Campos vetoriais. Integrais de linha. Superfícies 
+parametrizadas.  Integrais de superfície. Teoremas de Green, Stokes e Gauss.
+Nome e código do componente curricular:
+Análise I. MATB44
+Departamento:
+Matemática
+Carga horária:
+102 horas/aula
+Modalidade:
+Disciplina
+Função:
+Básica
+Natureza:
+Obrigatória
+Pré-requisito:
+Seqüências, Séries e 
+EDO
+Módulo de alunos:
+45
+Ementa:
+         Números Reais. Seqüências e séries de números reais. Topologia da reta real. Limite e continuidade de funções 
+reais. Derivada de função a uma variável real. 
+Nome e código do componente curricular:
+Estágio Curricular Supervisionado I.  EDCA81 
+Departamento:
+Departamento de 
+Educação II
+Carga horária:
+102 horas/aula
+Modalidade:
+Disciplina
+Função:
+Profissional
+Natureza:
+Obrigatória
+Pré-requisito:
+Didática e Práxis Pedagógica.
+Módulo de alunos:
+25
+Ementa:
+  Estudo, planejamento e prática de ensino em espaços formais de educação (níveis fundamental e/ou médio em escolas 
+oficiais), em espaços alternativos e/ou em outras modalidades educacionais, realizados de forma cumulativa, através da 
+aplicação dos fundamentos teórico-práticos estudados em Didática e Práxis Pedagógica e Metodologia do Ensino da 
+Matemática, de modo contextualizado e contemporâneo, tomando-se por base os conteúdos de cada campo de saber, 
+objeto da formação.
+Nome e código do componente curricular:
+Funções Holomorfas. MAT B46
+Departamento:
+Matemática 
+Carga horária:
+68  h
+Modalidade:
+Disciplina
+Função:
+Básica
+Natureza:
+Obrigatória
+Pré-requisito:
+Cálculo diferencial e 
+integral
+Módulo de alunos:
+45
+Ementa: 
+O corpo dos números complexos. Limite, continuidade e funções complexas. Derivada complexa e as funções 
+holomorfas. Séries de potência e funções analíticas. Teoria de Cauchy. Singularidades e séries de Laurent.  Resíduo e 
+pólos: aplicação ao cálculo de integrais reais. Transformações conformes e aplicações.
+         
+Nome e código do componente curricular:
+Estágio Curricular Supervisionado II. EDC A82
+Departamento:
+Departamento de 
+Educação II
+Carga horária:
+102 horas/aula
+29

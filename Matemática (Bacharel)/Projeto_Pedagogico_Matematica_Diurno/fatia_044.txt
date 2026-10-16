@@ -1,0 +1,37 @@
+| Matemática (Bacharel) | Projeto_Pedagogico_Matematica_Diurno.pdf | Normas e Diretrizes Gerais | Seção 44 | Diretriz Normativa 44 |
+
+48
+8.2. Adaptação para aluno de Licenciatura que ingressou em 2005.1 ou antes e o aluno do Bacharelado que ingressou em 2006.1 ou antes. 
+ 
+ 
+Para o aluno de Licenciatura cujo currículo é de 2005.1 ou anterior, e para o aluno do Bacharelado cujo currículo é de 2006.1 ou é anterior valem 
+as seguintes regras: 
+ 
+1. Será mantida a sua matriz curricular original.   
+Para alunos de licenciatura, é oportuno ressaltar que esta norma está fundamentada na Resolução CNE/CP nº 1/2005 (Veja em ANEXO 2). 
+ 
+2. Os componentes curriculares que atualmente constam como optativos para esse aluno continuarão como optativos. 
+ 
+3. Para todo componente curricular do currículo do aluno será mantido o seu pré-requisito. 
+ 
+4. Ficam mantidas as equivalências entre componentes curriculares definidas em adaptações curriculares anteriores. 
+   
+5. Quando cessar o oferecimento de algum dos componentes curriculares da matriz curricular do aluno, se ele não tiver cursado nem aquele e 
+nem outro componente curricular ou conjunto de componentes curriculares equivalente a aquele, então ele deverá cursar o componente curricular 
+equivalente ou o conjunto de componentes curriculares equivalente da 2ª coluna das TABELAS I ou II.  
+ 
+6. Para o aluno cursar um componente curricular da 2ª coluna da TABELA I, o pré-requisito exigido será o pré-requisito do componente 
+equivalente da 1ª coluna da TABELA I. 
+ 
+7. Para o aluno cursar um componente curricular da 2ª coluna da TABELA II, o pré requisito exigido será definido pela tabela abaixo 
+ 
+Componentes curriculares 
+Pré-requisito 
+MATB42 - Matemática Para a Educação Básica II 
+MATA02 
+MATB45 -  Matemática Para a Educação Básica III   
+MATA07 
+EDCA80 -Metodologia do Ensino da Matemática  
+EDC140 
+EDCA83 - Estágio Supervisionado III  
+EDC140 e  MAT203; EDCA02

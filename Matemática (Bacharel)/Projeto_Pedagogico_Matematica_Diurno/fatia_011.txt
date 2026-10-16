@@ -1,0 +1,108 @@
+| Matemática (Bacharel) | Projeto_Pedagogico_Matematica_Diurno.pdf | Normas e Diretrizes Gerais | Seção 11 | Diretriz Normativa 11 |
+
+12
+DISCIPLINAS DA LICENCIATURA PARA O CURRÍCULO 2005.1 
+ 
+DISCIPLINAS DO CURRÍCULO MÍNIMO  
+DISCIPLINA PRÉ 
+-REQUISITOS 
+ARQ005 – Desenho Geométrico I 
+----------- 
+ARQ013 – Descritiva I-A 
+ARQ005  
+EDC140 – Didática Geral 
+EDCA01 
+EDCA01 – Fundamentos Psicológicos da Educação 
+----------- 
+EDCA02 – Organização da Educação Brasileira 2 
+----------- 
+EDC317 – Metodologia e Prática do Ensino da Matemática I 
+MAT203; EDC140; EDCA02 
+EDC318 – Metodologia e Prática do Ensino da Matemática II
+EDC317 
+FIS121 – Física Geral e Experimental I-E 
+----------- 
+FIS122 – Física Geral e Experimental II-E 
+MATA01;  MATA02; FIS121  
+FIS123 – Física Geral e Experimental III-E 
+MATA03; FIS122 
+MATA01 – Geometria Analítica 
+MAT199 
+MATA02 – Cálculo A 
+MAT198 
+MATA03 – Cálculo B 
+MATA01; MATA02 
+MATA04 – Cálculo C 
+MATA03 
+MATA05 – Cálculo D 
+MATA03 
+MATA07 – Álgebra Linear A 
+MATA01 
+MAT045 – Processamento de Dados 
+MATA03 
+MAT174 – Cálculo Numérico I 
+MAT045; MATA04; MATA07 
+MAT198 – Fundamentos de Matemática Elementar I-A 
+----------- 
+MAT199 – Fundamentos de Matemática Elementar II-A 
+----------- 
+MAT200 – Álgebra I - Inteiros e Grupos 
+MAT198 
+MAT201 – Álgebra II - Anéis e Polinômios 
+MAT200 
+ 
+DISCIPLINAS COMPLEMENTARES OBRIGATÓRIAS 
+DISCIPLINA PRÉ 
+-REQUISITOS 
+MAT018 – Álgebra Linear II 
+MATA07 
+MAT028 – Estatística III-C 
+MATA04 
+MAT105 – Funções Analíticas I 
+MATA03 
+MAT202 – Fundamentos de Matemática Elementar III 
+MAT200; MATA02 
+MAT203 – Fundamentos de Matemática Elementar IV 
+MATA03 
+MAT204 – Análise Real I 
+MATA04; MAT018 
+ 
+DISCIPLINAS OPTATIVAS 
+ 
+CÓDIGO/NOME Carga 
+horária 
+PRÉ-REQUISITOS 
+ARQ006 – Desenho Geométrico II 
+68 h 
+ARQ005 
+EDC251 – Dimensão Estética da Educação 
+102 h 
+------ 
+EDC266 – Introdução à Informática na Educação 
+102 h 
+------ 
+EDC283 – Currículo 
+68 h 
+------ 
+EDCA03 – Filosofia e Educação 
+68 h 
+------ 
+EDCA04 – Sociedade e Educação 
+68 h 
+------ 
+EDC05 – História da Educação Brasileira 
+68 h 
+------ 
+EDCA06 – Organização e Gestão do Trab. 
+Pedagógico  
+68 h 
+------ 
+FIS124 – Física Geral e Experimental IV-E 
+102 h 
+FIS123 
+MAT135 – Funções Analíticas II 
+68 h 
+MAT105 
+MAT137 – Métodos Matemáticos da Física 
+68 h 
+MATA04 ;  MAT105

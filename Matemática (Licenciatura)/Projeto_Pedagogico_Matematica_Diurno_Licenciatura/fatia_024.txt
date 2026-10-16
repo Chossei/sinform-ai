@@ -1,0 +1,95 @@
+| Matemática (Licenciatura) | Projeto_Pedagogico_Matematica_Diurno_Licenciatura.pdf | Normas e Diretrizes Gerais | Seção 24 | Diretriz Normativa 24 |
+
+Componentes Curriculares Optativos para o Bacharelado a partir de 2007.1 
+ 
+ 
+Código / Nome 
+C.H.  
+Hora/aula 
+Módulo 
+Função 
+Pré-requisito 
+Departamento de  
+ARQ013 − Descritiva I   
+68 Discip
+lina 
+Complementar 
+− ARQ005 
+Geometrias de Representação
+MAT135 – Funções Analíticas II 
+68  
+Disciplina 
+Complementar 
+− Funções Holomorfas 
+Matemática 
+MATA53 – Teoria dos Grafos 
+68  
+Disciplina 
+Complementar 
+− MATA07  
+−  Grupos e Anéis I 
+Ciência da Computação 
+MATA51 – Teoria da Computação 
+68  
+Disciplina 
+Complementar 
+−  Grupos e Anéis I 
+Ciência da Computação 
+MAT192 – Matemática Aplicada à Economia 
+102  Discip
+lina 
+Complementar 
+------ 
+Matemática 
+MAT213 – Tópicos em Álgebra 
+68  
+Disciplina 
+Complementar 
+− MAT205 
+Matemática 
+MAT214 – Tópicos em Análise 
+68  
+Disciplina 
+Complementar 
+− Análise III 
+Matemática 
+MAT215 – Tópicos de Geometria 
+68  
+Disciplina 
+Complementar 
+− MAT208 
+Matemática 
+MAT216 – Tópicos da História da Matemática 
+68  
+Disciplina 
+Complementar 
+−  Grupos e Anéis I 
+  − Análise I 
+Matemática 
+FIS124 - Física Geral e Experimental IV-E 1
+02  
+Disciplina 
+Complementar 
+− FIS123 
+Física do Estado Sólido 
+MAT--- Teoria dos Conjuntos  
+68 
+Disciplina 
+Complementar 
+------ 
+Matemática 
+MAT--- Construção de Conjuntos Numéricos 
+68  
+Disciplina 
+Complementar 
+------ 
+Matemática 
+MAT--- Equações Diferenciais Parciais  
+68  
+Disciplina 
+Complementar 
+−  Análise I 
+Matemática 
+ 
+O aluno do Bacharelado participante de programas institucionais envolvendo a pesquisa ou a ex tensão ou monitorias po derá ter seus trabalhos convertidos em 
+carga horária curricular optativa até o limite máximo de 136 horas.

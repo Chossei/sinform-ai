@@ -1,0 +1,143 @@
+| Matemática (Licenciatura) | Projeto_Pedagogico_Matematica_Noturno_Licenciatura.pdf | Normas e Diretrizes Gerais | Seção 7 | Diretriz Normativa 7 |
+
+PRÁTICA:
+408 h
+OPTATIVAS:   272 h
+ATIVIDADES COMPLEMENTARES:  200 h
+8
+X.
+Elenco de Componentes curriculares 
+Componentes Curriculares Obrigatórios
+Código 
+Nome
+C.H.
+Hora/aula
+Periodicidade
+Módulo
+Função
+Pré-requisito
+Departamento de
+ARQ005 -
+Desenho Geométrico I
+68
+Disciplina
+Complementar
+---------
+G e o m e t r i a s d e 
+Representação
+MATC21
+Geometria Euclidiana 
+plana 
+102
+Disciplina
+Básica
+---------
+Matemática
+Matemática
+MAT191 
+Matemática Financeira
+68
+Disciplina
+Complementar
+------
+Matemática
+MATC20
+Cálculo Diferencial e 
+integral
+204
+anual
+Disciplina
+Básica
+---------
+Matemática
+MAT B34
+Geometria Analítica e 
+Álgebra Vetorial
+102
+Disciplina
+Básica
+---------
+Matemática
+MAT B59
+Estatística Básica A
+68
+Disciplina
+Complementar
+---------
+Estatística
+EDCA01
+Fundamentos 
+P s i c o l ó g i c o s d a 
+Educação
+68
+Disciplina
+Básica
+---------
+Educação I
+MATC22
+Estruturas Algébricas
+204
+anual
+Disciplina
+Básica
+-----
+Matemática
+MATC23
+Álgebra Linear 
+136
+ anual
+Disciplina
+Básica
+− Geometria Analítica
+e Álgebra Vetorial.
+Matemática
+EDCA02 -
+O r g a n i z a ç ã o d a 
+Educação Brasileira 2
+68
+Disciplina
+Básica
+---------
+Educação I
+EDC A79
+Didática e Práxis 
+Pedagógica
+102
+Disciplina
+Básica
+---------
+Educação II
+FIS121 -
+F í s i c a G e r a l e 
+Experimental I-E
+102
+Disciplina
+Complementar
+Cálculo diferencial e integral .
+− Geometria Analítica
+e Álgebra Vetorial.
+Geofísica Nuclear.
+MATB40
+Seqüências, Séries e 
+EDO
+102
+Disciplina
+Básica
+Cálculo diferencial e integral .
+Matemática
+MAT B31
+Introdução à Análise 
+Combinatória.
+68
+Disciplina
+Básica
+---------
+Matemática
+EDC A80
+Metodologia do Ensino 
+68
+Disciplina
+Profissional
+------
+Educação II
+9

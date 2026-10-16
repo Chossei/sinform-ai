@@ -1,0 +1,17 @@
+| Estatística (Bacharel) | Projeto_Pedagogico_Estatistica_Bacharelado.pdf | Capítulo Ii | Seção I | Artigo 1º, Artigo 2º e Artigo 3º |
+
+UNIVERSIDADE FEDERAL DA BAHIA - UFBA
+PROJETO PEDAGÓGICO E DIRETRIZES DO CURSO DE BACHARELADO EM ESTATÍSTICA
+Art. 1º O Curso de Bacharelado em Estatística da Universidade Federal da Bahia (UFBA), criado em 21 de junho de 1983,
+é ministrado no Instituto de Matemática e Estatística (IME), no campus de Ondina.
+§ 1º O curso oferece anualmente 60 (sessenta) vagas com ingresso no primeiro semestre letivo via Sistema de Seleção
+Unificada (SiSU/ENEM).
+§ 2º As componentes curriculares são ministradas preferencialmente no turno matutino, com duração média de 8 (oito)
+semestres e prazo máximo de integralização de 16 (dezesseis) semestres.
+Art. 2º O currículo do Bacharelado em Estatística está estruturado em:
+§ 1º Núcleo Comum: abrange a formação básica sólida em Matemática (Cálculo Diferencial e Integral, Álgebra Linear),
+Computação Científica (R, Python, SAS), Teoria da Probabilidade e Inferência Estatística.
+§ 2º Núcleo Específico: contempla componentes optativos permitindo ênfase nas seguintes trilhas de especialização:
+Estatística Matemática, Bioestatística, Tecnológico/Ciência de Dados e Econômico-Social.
+Art. 3º O estudante tem liberdade de compor sua formação optativa combinando núcleos distintos de acordo com suas
+metas acadêmicas e profissionais.

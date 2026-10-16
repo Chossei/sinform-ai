@@ -1,0 +1,52 @@
+| Matemática (Licenciatura) | Projeto_Pedagogico_Matematica_Noturno_Licenciatura.pdf | Normas e Diretrizes Gerais | Seção 17 | Diretriz Normativa 17 |
+
+23
+Nome e código do componente curricular:
+Matemática para a ensino fundamental  I. MAT ---
+Departamento:
+Matemática
+Carga horária:
+68 horas/aula
+Modalidade:
+Disciplina
+Função:
+Profissional
+Natureza:
+Obrigatória
+Pré-requisito:
+Estruturas algébricas 
+Módulo de alunos:
+25
+Ementa: 
+Números naturais:   cardinalidade ,ordem  ,Propriedades aritméticas ; Números inteiros: Simetrização dos naturais 
+( utilizando sistema posicional -- noção métrica) ,Ordem , Divisão euclidiana , Propriedades aritméticas, Divisibilidade 
+e congruência,  números primos; Números racionais: Fração , Aritmética , Ordem , Razão,  proporção e interpretação 
+geométrica , Regra da falsa posição. Conceitos Geométricos: Simetria , Perímetro , área e volume ,Semelhança e 
+congruência, Combinatória e contagem: Conjuntos e operações com conjuntos ; Principio multiplicativo da 
+combinatória , Principio da casa dos pombos. 
+Metodologia:  Desenvolvimento de práticas pedagógicas voltadas para o ensino fundamental I, evidenciando aspectos 
+históricos, e com inserção de atividades lúdicas e computacionais  para elaboração de material didático que poderá ser 
+aplicado em cursos do ensino médio,  desenvolvido e apresentado pelos alunos sob a orientação do professor.
+Conteúdo programático:
+1)
+Números naturais:   cardinalidade ,ordem, princípio da indução ,Propriedades aritméticas ; 
+2)
+Números inteiros: 
+3)
+Simetrização dos naturais ( utilizando sistema posicional -- noção métrica) ,
+4)
+Ordem ,
+5)
+ Divisão euclidiana
+6)
+ Propriedades aritméticas,
+7)
+ Divisibilidade e congruência
+8)
+ Números primos; 
+9)
+Números racionais: Fração , Aritmética , Ordem , Razão,  proporção e interpretação geométrica , Regra da falsa 
+posição. 
+10) Conceitos Geométricos: Simetria , Perímetro , área e volume ,Semelhança e congruência
+11) Combinatória e contagem: Conjuntos e operações com conjuntos ; Principio multiplicativo da combinatória , 
+Principio da casa dos pombos.

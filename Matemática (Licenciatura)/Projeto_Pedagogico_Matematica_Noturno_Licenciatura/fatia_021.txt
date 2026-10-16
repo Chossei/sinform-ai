@@ -1,0 +1,91 @@
+| Matemática (Licenciatura) | Projeto_Pedagogico_Matematica_Noturno_Licenciatura.pdf | Normas e Diretrizes Gerais | Seção 21 | Diretriz Normativa 21 |
+
+Recomenda-se ter cursado o seguinte componente curricular:
+−
+Geometria Euclidiana.
+Nome e código do componente curricular:
+Estatística Básica A. MAT B59
+Departamento:
+Estatística
+Carga horária:
+68 horas/aula
+Modalidade:
+Disciplina
+Função:
+Complementar
+Natureza:
+Obrigatória
+Pré-requisito:
+Não tem.
+Módulo de alunos:
+45
+Ementa:
+  
+Estatística: objetivos e divisão. Apresentação de dados. Introdução à estatística descritiva e à exploratória de 
+dados. Noções de probabilidade.
+Observação:
+       Disciplina já aprovada pelo Departamento de Estatística, como componente curricular obrigatório, integrante do 
+currículo do Curso de Bacharelado de Estatística.
+Nome e código do componente curricular:
+Organização da Educação Brasileira 2.  EDCA02 
+Departamento:
+Departamento de 
+Educação I
+Carga horária:
+68 horas/aula
+Modalidade:
+Disciplina
+Função:
+Básica
+Natureza:
+Obrigatória
+Pré-requisito:
+Não tem.
+Módulo de alunos:
+45
+Ementa:
+              Estudo e análise do sistema educacional brasileiro, considerando os aspectos legais, sócio-políticos, 
+administrativos e financeiros, enfatizando a organização dos sistemas de ensino nos diversos níveis e modalidades. 
+Análise das políticas públicas de educação no Brasil.
+Nome e código do componente curricular:
+Didática e Práxis Pedagógica. EDC A79
+Departamento:
+Departamento de 
+Educação II
+Carga horária:
+102 horas/aula
+Modalidade:
+Disciplina
+Função:
+Básica
+Natureza:
+Obrigatória
+Pré-requisito:
+Não tem
+Módulo de alunos:
+45
+Ementa:
+  
+Estudo da práxis pedagógica como prática social e dos fundamentos epistemológicos da Didática, seu objeto de 
+estudo e trajetória histórica. Construção da identidade docente. Princípios, elementos e relações fundamentais no 
+processo de trabalho docente. Estudo crítico do planejamento de ensino: suas etapas, modalidades e componentes. 
+Iniciação na práxis pedagógica, mediante construção de projetos didáticos, de planos de ensino e realização de micro-
+aulas.
+Nome e código do componente curricular:
+Física Geral e Experimental I-E.  FIS121 
+Departamento:
+Departamento de Geofísica Nuclear 
+Carga horária:
+102  h
+Modalidade:
+Disciplina
+Função:
+Básica
+Natureza:
+Obrigatória
+Pré-requisito:
+Cálculo diferencial e 
+integral.
+Módulo de alunos:
+45
+27

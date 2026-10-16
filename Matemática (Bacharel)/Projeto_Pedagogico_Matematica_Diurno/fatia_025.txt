@@ -1,0 +1,142 @@
+| Matemática (Bacharel) | Projeto_Pedagogico_Matematica_Diurno.pdf | Normas e Diretrizes Gerais | Seção 25 | Diretriz Normativa 25 |
+
+LICENCIATURA  
+Componentes Curriculares Obrigatórios para a Licenciatura a partir de 2007.1 
+ 
+   
+Código / Nome 
+C.H.  
+Hora/aula 
+Módulo 
+Função 
+Pré-requisito 
+Departamento de  
+ARQ005 - Desenho Geométrico I  
+68 
+Disciplina 
+Complementar --------- 
+Geometrias de Representação 
+MAT198 – Fundamentos de Matemática I 
+102 
+Disciplina 
+Básica 
+--------- 
+Matemática 
+MAT199 –- Fundamentos de Matemática II 
+102 
+Disciplina 
+Básica 
+--------- 
+Matemática 
+ MAT191 – Matemática Financeira 
+68  
+Disciplina 
+Complementar 
+------ 
+Matemática 
+MAT --- Introdução à Teoria dos Números  
+68 
+Disciplina 
+Básica 
+--------- 
+Matemática 
+MAT --- Limites e Derivadas 
+102 
+Disciplina  
+Básica 
+--------- 
+Matemática 
+MAT --- Geometria Analítica e Álgebra Vetorial 
+102 
+Disciplina  Básica 
+--------- 
+Matemática 
+MAT --- Estatística Básica A  
+68 
+Disciplina 
+Complementar 
+--------- 
+Estatística 
+EDCA01-Fundamentos Psicológicos da Educação 68 
+Disciplina 
+Básica 
+--------- 
+Educação I 
+MAT--- Grupos e Anéis I 
+102 
+Disciplina  
+Básica 
+− Introdução à Teoria 
+dos Números. 
+Matemática 
+ 
+ 
+MAT--- Integrais e Funções de Várias Variáveis  
+ 
+ 
+102 
+ 
+ 
+Disciplina  
+ 
+ 
+Básica 
+− Limites e 
+Derivadas. 
+− Geometria 
+Analítica 
+ e Álgebra Vetorial. 
+ 
+ 
+Matemática 
+ 
+MAT --- Álgebra Linear I-B  
+ 
+68 
+ 
+Disciplina 
+ 
+Básica 
+− Geometria 
+Analítica  
+e Álgebra Vetorial. 
+ 
+Matemática 
+EDCA02 - Organização da Educação Brasileira 2 68 
+Disciplina 
+Básica 
+--------- 
+Educação I 
+EDC ----Didática e Práxis Pedagógica  
+102 
+Disciplina  
+Básica 
+--------- Educação 
+II 
+ 
+ 
+FIS121 - Física Geral e Experimental I-E  
+ 
+ 
+102 
+ 
+ 
+Disciplina 
+ 
+ 
+Complementar 
+− Limites e 
+Derivadas. 
+− Geometria 
+Analítica 
+e Álgebra Vetorial. 
+ 
+ 
+Geofísica Nuclear. 
+MAT--- Seqüências, Séries e EDO 
+102 
+Disciplina  
+Básica 
+− Integrais e Funções 
+ de Várias Variáveis. 
+Matemática

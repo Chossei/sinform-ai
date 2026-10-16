@@ -1,0 +1,79 @@
+| Matemática (Licenciatura) | Projeto_Pedagogico_Matematica_Noturno_Licenciatura.pdf | Normas e Diretrizes Gerais | Seção 25 | Diretriz Normativa 25 |
+
+Nome e código do componente curricular:
+Estágio Supervisionado IV.  EDCA84
+Departamento:
+Departamento de 
+Educação II
+Carga horária: 102 h/a 
+Teórica:  17 h.
+Dimensão prática: 34 h. 
+Estágio Docente Supervisionado: 51 h
+Modalidade
+ Disciplina
+Função:
+Profissional
+Natureza:
+Obrigatória
+Pré-requisito:
+− Metodologia do 
+Ensino da  Matemática.
+− Laboratório de 
+Ensino de Matemática III
+Módulo de alunos:
+25
+Ementa:
+Exercício efetivo da prática de ensino, pela aplicação dos fundamentos teórico-práticos desenvolvidos nas disciplinas, 
+Didática e Práxis Pedagógica e Metodologia do Ensino da Matemática, dos conteúdos específicos de sua formação, de 
+forma contextualizada e com a incorporação das inovações contemporâneas que inserem a educação no processo de 
+desenvolvimento sócio-histórico e humano.
+Componentes Optativos:
+Nome e código do componente curricular:
+Grupos e Anéis II .  MATB36
+Departamento:
+Matemática
+Carga horária: 68
+T: 68 P:00 E:00
+Modalidade:
+Disciplina
+Função:
+complementar
+Natureza:
+Optativa
+Pré-requisito:
+Estruturas algébricas
+Módulo de alunos:
+45
+Conteúdo:
+               Ações de grupo; Produto Direto e Semidireto; Grupos Abelianos; Teoremas de Sylow; Grupos Simples, 
+Nilpotentes e Solúveis. Noções sobre a Teoria das Representações. Operações com ideais; Anéis Noetherianos; 
+Decomposição Primária; Anéis de polinômios em várias variáveis; Polinômios Simétricos; Base de Groebner; 
+Algoritmo de Buchberger; Aplicações de bases de Groebner.
+Nome e código do componente curricular:
+Álgebra III – Introdução a Teoria de Galois. MAT205
+Departamento:
+Matemática
+Carga horária: 68
+T: 34P:34 E:00
+Modalidade:
+Disciplina
+Função:
+complementar
+Natureza:
+Optativa
+Pré-requisito:
+Estruturas algébricas
+Módulo de alunos:
+45
+Conteúdo:
+Estudo das ferramentas da Teoria de Galois sobre o conjunto dos racionais, visando a compreensão do problema da 
+solubilidade de equações: Equação do 3º e 4º grau;  extensões solúveis por radicais;  extensões algébricas e 
+transcendentes;  grau de uma extensão;   construção com régua e compasso;  apresentação do teorema de Galois e 
+aplicação à do 5º grau.
+Nome e código do componente curricular:
+Funções Analíticas II.  MAT135
+Departamento:
+Matemática
+Carga horária: 68
+T:34 P:34 E:00
+31

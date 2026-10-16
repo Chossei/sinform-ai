@@ -1,0 +1,97 @@
+| Matemática (Licenciatura) | Projeto_Pedagogico_Matematica_Noturno_Licenciatura.pdf | Normas e Diretrizes Gerais | Seção 30 | Diretriz Normativa 30 |
+
+Conteúdo:
+Esta disciplina visa o estudo das ondas eletromagnéticas na discussão dos fenômenos ópticos do ponto de vista 
+eletromagnético, além de introduzir o aluno na Física Moderna e complementar o estudo da Física Geral e 
+Experimental que se iniciou com as disciplinas anteriores. Esta disciplina é fundamental para o estudo detalhado das 
+equações de Maxwell e suas aplicações.
+Tópicos abordados na parte teórica: As equações de Maxwell; ondas eletromagnéticas; a luz; reflexão e refração; 
+difração e interferência; polarização; princípios da teoria da relatividade; introdução à física quântica; física quântica; 
+física atômica; elementos de física do estado sólido e de física nuclear. 
+Tópicos abordados na parte experimental: medida do índice de refração de um prisma com um espectrômetro; 
+medida do comprimento de onda da luz por meio de uma rede de difração; difração da luz por fenda; espectros 
+sulcados por interferência; medida de concentração de uma solução de açúcar por meio do polarímetro; auto-
+indutância e constante de tempo de circuitos RC e RL; osciloscópio de raios catódicos; ressonância elétrica; 
+interferência de microondas; difração de Bragg usando microondas; polarização e atividade óptica de microondas.
+Nome e código do componente curricular:
+Dimensão Estética da Educação.  EDC251
+Departamento:
+Departamento de 
+Educação I
+Carga horária: 102
+T:34  P:68  E:00
+Modalidade:
+Disciplina
+Função:
+complementar
+Natureza:
+Optativa
+Pré-requisito:
+Não tem
+Módulo de alunos:
+45
+Conteúdo:
+Significado do lúdico e do estético no processo de transmissão do saber  e do conhecimento em contexto pluriculturais. 
+A criança, o brincar e a criatividade. Dimensão  estética da cultura negra da Bahia.  O conceito nagô  de Odara, bom e 
+bonito; conjunto do técnico e do estético. Arte sacra negra e arte sócio-ludica. Formas de comunicação nas culturas da 
+participação.
+Nome e código do componente curricular:
+Introdução à Informática na Educação.  EDC266 
+Departamento:
+Departamento de 
+Educação I
+Carga horária: 68
+T:34  P:68  E:00
+Modalidade:
+Disciplina
+Função:
+complementar
+Natureza:
+Optativa
+Pré-requisito:
+Não tem
+Módulo de alunos:
+45
+Conteúdo:
+Evolução e formas de aplicação do microcomputador na Educação. O microcomputador como recurso tecnológico no 
+processo ensino-aprendizagem. Aspectos psicológicos, sociais e políticos da utilização do microcomputador na 
+Educação
+Nome e código do componente curricular:
+Currículo.  EDC283 
+Departamento:
+Departamento de 
+Educação I
+Carga horária: 68
+T:34  P:34  E:00
+Modalidade:
+Disciplina
+Função:
+complementar
+Natureza:
+Optativa
+Pré-requisito:
+Não tem
+Módulo de alunos:
+45
+Conteúdo:
+Estudo do currículo na educação formal e informal, seus pressupostos sócio-flosófcos  como 
+determinante de uma prática pedagógica consciente e crítica. Analisa o currículo como 
+instrumento norteador de propostas inovadoras, na educação, principalmente na educação básica.
+Nome e código do componente curricular:
+Filosofa e Educação.  EDCA03 
+Departamento:
+Departamento de 
+Educação I
+Carga horária: 68
+T:34  P:34  E:00
+Modalidade:
+Disciplina
+Função:
+complementar
+Natureza:
+Optativa
+Pré-requisito:
+Não tem
+Módulo de alunos:
+45
+36

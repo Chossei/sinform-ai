@@ -1,0 +1,126 @@
+| Matemática (Bacharel) | Projeto_Pedagogico_Matematica_Diurno.pdf | Normas e Diretrizes Gerais | Seção 26 | Diretriz Normativa 26 |
+
+Código / Nome 
+C.H.  
+Hora/aula 
+Módulo 
+Função 
+Pré-requisito 
+Departamento de  
+MAT--- Álgebra Linear II-B  
+68 
+Disciplina 
+Básica 
+− Álgebra Linear I-B. 
+Matemática 
+MAT --- Introdução à Análise Combinatória.   
+68 
+Disciplina 
+Básica 
+--------- 
+Matemática 
+EDC --- Metodologia do Ensino da Matemática  
+68 
+Disciplina 
+Profissional 
+− Didática e Práxis 
+Pedagógica. 
+Educação II 
+FIS122 - Física Geral e Experimental II-E 
+102 
+Disciplina 
+Complementar 
+ − FIS121. 
+Física Geral 
+ 
+MAT --- Cálculo Diferencial Vetorial  
+ 
+68 
+ 
+Disciplina 
+ 
+Básica  
+− Integrais e Funções 
+de 
+Várias Variáveis. 
+ 
+Matemática  
+MAT --- Matemática para a Educação Básica I  
+68 
+Disciplina  
+Profissional 
+− Introdução à Teoria 
+ dos Números. 
+Matemática 
+MAT --- Matemática para a Educação Básica II  
+68 
+Disciplina 
+Profissional 
+− Limites e 
+Derivadas. 
+Matemática 
+EDC--- Estágio Supervisionado I 
+102 
+Disciplina 
+Profissional 
+− Didática e Práxis 
+Pedagógica. 
+Educação II 
+MAT --- Análise I  
+102 
+Disciplina  
+Básica 
+− Seqüências, Séries 
+e EDO. 
+Matemática 
+MAT --- Matemática para a Educação Básica III  
+68 
+Disciplina 
+Profissional  
+− Álgebra Linear I-B. 
+Matemática 
+ 
+MAT--- Laboratório de Ensino de Matemática I.  
+68 M
+ódulo 
+interdisciplinar 
+ 
+Profissional 
+− Integrais e Funções 
+de 
+Várias Variáveis. 
+ 
+Matemática 
+EDC --- Estágio Supervisionado II  
+102 
+Disciplina 
+Profissional 
+− Didática e Práxis 
+Pedagógica. 
+Educação II 
+ 
+MAT --- Funções Holomorfas  
+ 
+68 
+ 
+Disciplina 
+ 
+Básica  
+− Integrais e Funções 
+de 
+Várias Variáveis. 
+ 
+Matemática 
+ 
+MAT--- Laboratório de Ensino de Matemática II  
+ 
+68 
+Módulo 
+interdisciplinar 
+ 
+Profissional 
+− Integrais e Funções 
+de 
+Várias Variáveis. 
+ 
+Matemática

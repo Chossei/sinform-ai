@@ -1,0 +1,203 @@
+| Matemática (Licenciatura) | Projeto_Pedagogico_Matematica_Noturno_Licenciatura.pdf | Normas e Diretrizes Gerais | Seção 13 | Diretriz Normativa 13 (Parte 1) |
+
+XII.
+Ementário de componentes curriculares
+ Componentes curriculares Novos:
+1.
+ Álgebra Linear
+2.
+Cálculo diferencial e integral
+3.
+Estruturas algébricas 
+4.
+Geometria Euclidiana Plana
+5.
+Laboratório de ensino da Matemática III 
+6.
+Laboratório de ensino da Matemática IV 
+7.
+Matemática para o ensino Fundamental I
+8.
+Matemática para o ensino Fundamental II
+9.
+Matemática para o ensino Médio
+16
+17
+Nome e código do componente curricular:
+Álgebra Linear  ---
+Departamento:
+Matemática
+Carga horária:
+136 horas
+Modalidade:
+Disciplina
+Função:
+Básico
+Natureza:
+Obrigatória
+Pré-requisito:
+Não tem
+Módulo de alunos:
+45
+Ementa:
+              Corpos. Sistemas de equações lineares. Inversão de matrizes. Espaço vetorial. Transformações lineares. Operadores 
+lineares. Determinantes. Espaços vetoriais de dimensão infinita. Operador linear. Subespaços invariantes. Autovalor e autovetor. 
+Polinômio mínimo e característico. Decomposição primária. Diagonalização. Forma de Jordan. Normas. Espaços com produto 
+interno. Ortogonalidade. Teorema de Riesz. Operador adjunto. Operadores normais e subclasses. O Teorema Espectral. Aplicações 
+bilineares. Formas quadráticas e aplicação do Teorema Espectral. Utilização de recursos computacionais.
+Conteúdo programático:
+1.
+Noções sobre corpos: Definição e exemplos.
+a.
+Corpos finitos
+b.
+Corpo do números racionais, Reais e Complexos: propriedades básicas e representações.
+c.
+Extensões algébricas dos racionais (noções básicas e exemplos)
+2.
+Álgebra matricial
+a.
+Definição de matrizes
+b.
+Operações com matrizes: Soma, produto, transposta, produto por escalar.
+c.
+Matrizes elementares
+d.
+Matrizes simétricas, anti-simétricas
+e.
+Escalonamento:  por linha e  por coluna
+f.
+Posto de uma matriz.
+3.
+Sistemas de equações lineares.
+a.
+Conjunto solução
+b.
+Sistemas equivalentes 
+c.
+Sistemas homogêneos
+d.
+Forma matricial
+e.
+Método de Gauss-Jordan para resolução de sistemas de equações lineares
+f.
+Existência e unicidade de Inversa lateral para uma matriz.
+4.
+Espaço vetorial
+a.
+Definição e exemplos
+b.
+Subespaços vetoriais
+c.
+Soma e interseção de subespaços vetoriais
+d.
+Espaço vetorial quociente
+e.
+Subespaço gerado e espaços vetoriais finitamente gerados
+f.
+Combinações lineares
+g.
+Dependência e independência linear
+h.
+Base, dimensão e sistemas de coordenadas.
+i.
+Mudança de base em espaços de dimensão finita.
+j.
+Exemplos de espaços vetoriais de dimensão infinita: funções contínuas,Polinômios e pseudo-polinômios: polinômios 
+trigonométricos e polinômios exponenciais.
+5.
+Transformações lineares
+a.
+Núcleo e imagem
+b.
+Soma, produto por escalar, e composição de transformações lineares
+c.
+Transformações lineares entre espaços de dimensão finita
+d.
+Representação matricial 
+e.
+Mudança de base e representação matricial.
+f.
+Transformações lineares do plano e do espaço tridimensional real ( cisão, reflexão e rotação).
+6.
+Determinantes:
+a.
+ Aplicação multilinear alternada e a definição de determinante de uma matriz
+b.
+Matriz de cofatores e sua relação com determinante e existência da inversa de uma matriz.
+7.
+Operador Linear.
+a.
+Definição e exemplos
+b.
+Polinômio mínimo
+c.
+Existência, unicidade e Cálculo do polinômio mínimo.
+d.
+Autovalor e autovetor.
+e.
+Polinômio característico
+f.
+Subespaços invariantes 
+g.
+Teorema da decomposição primária
+h.
+Operadores diagonalizáveis
+i.
+Forma canônica de Jordan
+j.
+ Decomposição em blocos de Jordan para operadores de espaços vetoriais sobre os reais. 
+8.
+Espaços vetoriais com produto interno.
+a.
+Norma: Propriedades e  desigualdades fundamentais. 
+b.
+Produto interno
+c.
+Propriedades básicas e exemplos.
+d.
+Identidade do paralelogramo
+e.
+Ortogonalidade.
+f.
+Processo de ortogonalização.
+g.
+Complemento ortogonal.
+h.
+Projeções ortogonais.
+i.
+O método da aproximação por mínimos quadrados.
+j.
+Funcionais lineares e  o Teorema de  representação de Riesz
+9.
+Teorema Espectral:
+a.
+Operador Adjunto,
+b.
+ Classes especiais de operadores lineares : 
+i.
+Operador Normal,
+ii.
+Operador autoadjunto, 
+iii.
+ operador anti-adjunto 
+iv.
+ operador unitário.
+c.
+Propriedades básicas dos autovalores e autovetores dos operadores especiais.
+d.
+Complexificação e suas propriedades básicas.
+e.
+Teorema espectral para operadores normais em espaços vetoriais sobre os complexos.
+f.
+Teorema espectral para operadores autoadjuntos em espaços vetoriais sobre os reais.
+g.
+Forma canônica dos operadores normais em espaços vetoriais reais de dimensão finita.
+10.
+Aplicações  bilineares:
+a.
+Definição, classificação e exemplos.
+b.
+Formas quadráticas
+c.
+Redução de uma forma quadrática à sua forma padrão por meio da utilização do teorema espectral
