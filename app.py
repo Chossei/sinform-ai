@@ -16,7 +16,7 @@ sys.path.append(str(BASE_DIR))
 
 load_dotenv()
 
-from rag_engine import SinformRAG, MODEL_MAP
+from rag_engine import SinformRAG, PRIMARY_MODEL, FALLBACK_MODEL, MODEL_LABELS
 
 # Configuração da página
 st.set_page_config(
@@ -135,14 +135,21 @@ with st.sidebar:
     st.markdown("**Consultor Inteligente de Normas Acadêmicas - UFBA**")
     st.markdown("---")
 
-    # Seleção de Modelo LLM conforme o plano
-    st.subheader("⚙️ Modelo de Inteligência Artificial")
-    model_choice = st.selectbox(
-        "Selecione o modelo do Gemini:",
-        options=["Gemini 3.5 Flash Lite", "Gemini 3.1 Flash Lite"],
-        index=0,
-        help="Modelos homologados no plano de desenvolvimento do Sinform AI."
-    )
+    # Arquitetura de Modelos LLM com Fallback Automático (sem seleção manual)
+    st.subheader("⚙️ Motor de Inteligência Artificial")
+    st.markdown("""
+    <div style="background: rgba(30, 41, 59, 0.7); border: 1px solid rgba(100, 255, 218, 0.25); border-radius: 8px; padding: 12px; margin-bottom: 12px;">
+        <div style="color: #64FFDA; font-weight: 600; font-size: 0.95rem; display: flex; align-items: center; gap: 6px;">
+            <span>🟢</span> Gemini 3.5 Flash Lite
+        </div>
+        <div style="color: #8892B0; font-size: 0.8rem; margin-top: 4px;">
+            Modelo Principal Ativo
+        </div>
+        <div style="color: #CBD5E1; font-size: 0.82rem; margin-top: 8px; border-top: 1px dashed rgba(255,255,255,0.1); padding-top: 6px;">
+            ↳ <strong>Fallback automático:</strong> Gemini 3.1 Flash Lite
+        </div>
+    </div>
+    """, unsafe_allow_html=True)
 
     st.markdown("---")
     
@@ -243,7 +250,7 @@ else:
     active_course = st.session_state.selected_course
 
     # Barra informativa do curso ativo
-    st.info(f"**Atendimento Selecionado:** Aluno de **{active_course}** | Modelo: **{model_choice}** | Filtro vetorial ativo nos metadados.")
+    st.info(f"**Atendimento Selecionado:** Aluno de **{active_course}** | Motor: **Gemini 3.5 Flash Lite** (com fallback automático para **Gemini 3.1 Flash Lite**) | Filtro vetorial ativo nos metadados.")
 
     # Perguntas sugeridas conforme o curso selecionado
     st.markdown("##### 💡 Sugestões de perguntas frequentes:")
@@ -281,6 +288,8 @@ else:
     for msg in st.session_state.messages:
         with st.chat_message(msg["role"]):
             st.markdown(msg["content"])
+            if msg.get("model_used") and msg["role"] == "assistant":
+                st.caption(f"🤖 Motor: {msg['model_used']}")
             if msg.get("citations"):
                 with st.expander("📚 Citações e Fragmentos Regulamentares de Origem"):
                     for c in msg["citations"]:
@@ -307,17 +316,17 @@ else:
         with st.chat_message("user"):
             st.markdown(user_input)
 
-        # Processar via RAG
+        # Processar via RAG com Fallback Automático (Gemini 3.5 Flash Lite -> Gemini 3.1 Flash Lite)
         with st.chat_message("assistant"):
             with st.spinner("Consultando acervo de normas e regulamentos da UFBA via ChromaDB e Gemini..."):
-                answer, citations = rag.ask(
+                answer, citations, model_used = rag.ask(
                     query=user_input,
                     curso=active_course,
-                    model_name=model_choice,
                     history=st.session_state.messages
                 )
 
                 st.markdown(answer)
+                st.caption(f"🤖 Motor: **{model_used}**")
 
                 if citations:
                     with st.expander("📚 Citações e Fragmentos Regulamentares de Origem"):
@@ -332,5 +341,6 @@ else:
             st.session_state.messages.append({
                 "role": "assistant",
                 "content": answer,
-                "citations": citations
+                "citations": citations,
+                "model_used": model_used
             })

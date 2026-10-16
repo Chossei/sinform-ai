@@ -17,9 +17,9 @@ A plataforma atende:
 - **Defesa Contra Prompt Injection:** Salvaguarda ativa no pipeline que detecta e neutraliza tentativas de jailbreak, desvio de persona ou comandos maliciosos, respondendo estritamente com `"Desculpe, não posso te ajudar com isso."`.
 - **Filtro Fora de Escopo:** Perguntas não acadêmicas ou estranhas às resoluções dos cursos são imediatamente recusadas com a mensagem padrão de escopo.
 - **Expansores de Fontes Originais:** Abaixo de cada resposta, o usuário pode inspecionar os fragmentos normativos originais utilizados como embasamento.
-- **Multi-Modelo Gemini:** Suporte transparente aos modelos de última geração:
-  - `gemini-3.5-flash-lite` (Padrão)
-  - `gemini-3.1-flash-lite`
+- **Arquitetura de Fallback Automático de Modelos:** 
+  - O sistema opera prioritariamente com o modelo de alta performance e rapidez **Gemini 3.5 Flash Lite** (`gemini-3.5-flash-lite`).
+  - Caso haja indisponibilidade temporária ou limite de requisições, o mecanismo ativa de forma transparente e imediata o **Gemini 3.1 Flash Lite** (`gemini-3.1-flash-lite`) como fallback automático, garantindo resiliência sem demandar intervenção do discente.
 
 ---
 

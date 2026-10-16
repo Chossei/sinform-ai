@@ -25,12 +25,16 @@ BASE_DIR = Path(__file__).resolve().parent
 PERSIST_DIR = BASE_DIR / "dados vetoriais"
 EMBEDDING_MODEL = "models/gemini-embedding-2"
 
-# Mapeamento oficial dos modelos LLM solicitados no plano
-MODEL_MAP = {
-    "Gemini 3.5 Flash Lite": "models/gemini-3.5-flash-lite",
-    "Gemini 3.1 Flash Lite": "models/gemini-3.1-flash-lite",
-    # Fallback seguro
-    "Gemini 2.5 Flash Lite": "models/gemini-2.5-flash-lite"
+# Hierarquia estrita de modelos conforme especificação:
+# Padrão: Gemini 3.5 Flash Lite -> Fallback: Gemini 3.1 Flash Lite
+PRIMARY_MODEL = "models/gemini-3.5-flash-lite"
+FALLBACK_MODEL = "models/gemini-3.1-flash-lite"
+SAFETY_FALLBACK_MODEL = "models/gemini-2.5-flash"
+
+MODEL_LABELS = {
+    PRIMARY_MODEL: "Gemini 3.5 Flash Lite",
+    FALLBACK_MODEL: "Gemini 3.1 Flash Lite (Fallback)",
+    SAFETY_FALLBACK_MODEL: "Gemini 2.5 Flash (Fallback)"
 }
 
 # Padrões conhecidos de prompt injection
@@ -124,25 +128,26 @@ class SinformRAG:
         self,
         query: str,
         curso: str,
-        model_name: str = "Gemini 3.5 Flash Lite",
         history: Optional[List[Dict[str, str]]] = None
-    ) -> Tuple[str, List[Dict[str, Any]]]:
+    ) -> Tuple[str, List[Dict[str, Any]], str]:
         """
-        Fluxo principal de atendimento RAG do Sinform AI com engenharia de prompt rigorosa.
+        Fluxo principal de atendimento RAG do Sinform AI com fallback automático entre modelos Gemini:
+        1º Tenta Gemini 3.5 Flash Lite
+        2º Caso falhe, aciona Gemini 3.1 Flash Lite
         """
         # 1. Defesa ativa contra prompt injection
         if self.detect_prompt_injection(query):
-            return "Desculpe, não posso te ajudar com isso.", []
+            return "Desculpe, não posso te ajudar com isso.", [], "Defesa Ativa"
 
         # 2. Defesa contra requisições fora do domínio de normas da UFBA
         if self.detect_out_of_domain(query):
-            return "Desculpe, não posso te ajudar com isso.", []
+            return "Desculpe, não posso te ajudar com isso.", [], "Defesa Ativa"
 
         # 3. Recuperação vetorial no ChromaDB com filtro por curso
         chunks = self.retrieve(query, curso=curso, n_results=4)
 
         if not chunks:
-            return "A informação solicitada não consta no material normativo ao qual tenho acesso no momento.", []
+            return "A informação solicitada não consta no material normativo ao qual tenho acesso no momento.", [], "ChromaDB"
 
         # 4. Montagem do contexto documental
         context_blocks = []
@@ -184,23 +189,18 @@ PERGUNTA DO ALUNO ({curso}):
 
 RESPOSTA FUNDAMENTADA DO CONSULTOR SINFORM AI:"""
 
-        # Resolução do modelo com fallback inteligente
-        target_model_tag = MODEL_MAP.get(model_name, "models/gemini-3.5-flash-lite")
-        models_to_try = [
-            target_model_tag,
-            "models/gemini-3.5-flash-lite",
-            "models/gemini-3.1-flash-lite",
-            "models/gemini-2.5-flash-lite",
-            "models/gemini-2.0-flash",
-            "models/gemini-1.5-flash"
+        # Cadeia de fallback estrita: 
+        # 1) Gemini 3.5 Flash Lite -> 2) Gemini 3.1 Flash Lite -> 3) Segurança (Gemini 2.5 Flash)
+        fallback_chain = [
+            PRIMARY_MODEL,
+            FALLBACK_MODEL,
+            SAFETY_FALLBACK_MODEL
         ]
 
-        # Deduplicar mantendo ordem
-        seen = set()
-        dedup_models = [m for m in models_to_try if not (m in seen or seen.add(m))]
-
         answer = None
-        for m_tag in dedup_models:
+        model_used = MODEL_LABELS[PRIMARY_MODEL]
+
+        for m_tag in fallback_chain:
             try:
                 model = genai.GenerativeModel(
                     model_name=m_tag,
@@ -215,12 +215,22 @@ RESPOSTA FUNDAMENTADA DO CONSULTOR SINFORM AI:"""
                 )
                 if response and response.text:
                     answer = response.text.strip()
+                    model_used = MODEL_LABELS.get(m_tag, m_tag)
                     break
             except Exception as e:
-                # Se modelo não suportado ou erro temporário, tenta o próximo
+                # Log do erro e acionamento automático do próximo modelo de fallback
+                print(f"[FALLBACK] Modelo {m_tag} falhou: {e}. Acionando próximo modelo...")
                 continue
 
         if not answer:
             answer = "Desculpe, não foi possível consultar o modelo de linguagem no momento. Por favor, tente novamente em instantes."
+            model_used = "Indisponível"
 
-        return answer, chunks
+        return answer, chunks, model_used
+
+if __name__ == "__main__":
+    rag = SinformRAG()
+    q = "Quantas horas são exigidas em atividades complementares para Estatística?"
+    ans, cits, model = rag.ask(q, curso="Estatística (Bacharel)")
+    print(f"Modelo Utilizado: {model}")
+    print(f"Resposta:\n{ans}")
