@@ -1,13 +1,38 @@
-| Matemática (Licenciatura) | Projeto_Pedagogico_Matematica_Noturno_Licenciatura.pdf | Normas e Diretrizes Gerais | Seção 32 | Diretriz Normativa 32 |
-
+| Matemática (Licenciatura) | Documento (Projeto Pedagogico Matematica Noturno Licenciatura) |
 Nome e código do componente curricular:
-Processamento de Dados – MAT045
-.
+Estágio Supervisionado IV.  EDCA84
 Departamento:
-Ciências da 
-Computação 
+Departamento de 
+Educação II
+Carga horária: 102 h/a 
+Teórica:  17 h.
+Dimensão prática: 34 h. 
+Estágio Docente Supervisionado: 51 h
+Modalidade
+ Disciplina
+Função:
+Profissional
+Natureza:
+Obrigatória
+Pré-requisito:
+− Metodologia do 
+Ensino da  Matemática.
+− Laboratório de 
+Ensino de Matemática III
+Módulo de alunos:
+25
+Ementa:
+Exercício efetivo da prática de ensino, pela aplicação dos fundamentos teórico-práticos desenvolvidos nas disciplinas, 
+Didática e Práxis Pedagógica e Metodologia do Ensino da Matemática, dos conteúdos específicos de sua formação, de 
+forma contextualizada e com a incorporação das inovações contemporâneas que inserem a educação no processo de 
+desenvolvimento sócio-histórico e humano.
+Componentes Optativos:
+Nome e código do componente curricular:
+Grupos e Anéis II .  MATB36
+Departamento:
+Matemática
 Carga horária: 68
-T:34  P:34  E:00
+T: 68 P:00 E:00
 Modalidade:
 Disciplina
 Função:
@@ -15,20 +40,59 @@ complementar
 Natureza:
 Optativa
 Pré-requisito:
-Não tem
+Estruturas algébricas
 Módulo de alunos:
 45
 Conteúdo:
-Modelagem de problemas para solução em computadores. Conceito informal de algoritmos. Introdução à lógica de 
-programação. Programação estruturada. FORTRAN: elementos da linguagem e aplicações.
+               Ações de grupo; Produto Direto e Semidireto; Grupos Abelianos; Teoremas de Sylow; Grupos Simples, 
+Nilpotentes e Solúveis. Noções sobre a Teoria das Representações. Operações com ideais; Anéis Noetherianos; 
+Decomposição Primária; Anéis de polinômios em várias variáveis; Polinômios Simétricos; Base de Groebner; 
+Algoritmo de Buchberger; Aplicações de bases de Groebner.
 Nome e código do componente curricular:
-Cálculo Numérico I.  MAT174
-.
+Álgebra III – Introdução a Teoria de Galois. MAT205
 Departamento:
-Ciências da 
-Computação 
+Matemática
 Carga horária: 68
-T:51  P:17  E:00
+T: 34P:34 E:00
+Modalidade:
+Disciplina
+Função:
+complementar
+Natureza:
+Optativa
+Pré-requisito:
+Estruturas algébricas
+Módulo de alunos:
+45
+Conteúdo:
+Estudo das ferramentas da Teoria de Galois sobre o conjunto dos racionais, visando a compreensão do problema da 
+solubilidade de equações: Equação do 3º e 4º grau;  extensões solúveis por radicais;  extensões algébricas e 
+transcendentes;  grau de uma extensão;   construção com régua e compasso;  apresentação do teorema de Galois e 
+aplicação à do 5º grau.
+Nome e código do componente curricular:
+Funções Analíticas II.  MAT135
+Departamento:
+Matemática
+Carga horária: 68
+T:34 P:34 E:00
+31
+Conteúdo:
+  
+Princípio de contagem. Cônicas. Curvas parametrizadas. Áreas e aplicações. Superfícies. 
+Volumes. Método de indução.
+As atividades ocorrerão segundo a metodologia:
+- Serão desenvolvidos estudos de tópicos da ementa, serão apresentadas palestras pelo professor 
+responsável ou por professores convidados. Todos os tópicos serão vistos com utilização de 
+modelos concretos. 
+- Durante o semestre, sob a orientação e supervisão do professor, cada aluno escolherá um tópico da ementa sobre o 
+qual construirá modelos concretos e apresentará dois seminários abertos à comunidade.
+As aulas práticas ocorrerão no Laboratório LEMA-UFBa onde o aluno deverá  construir os modelos concretos
+Nome e código do componente curricular:
+Laboratório de Ensino de Matemática II. MATB48
+Departamento:
+Matemática
+Carga horária: 68
+T: 00 P:68 E:00
 Modalidade:
 Disciplina
 Função:
@@ -38,21 +102,34 @@ Optativa
 Pré-requisito:
 Cálculo diferencial e 
 integral
-Estruturas algébricas
 Módulo de alunos:
-45
+25
 Conteúdo:
-Erros nas aproximações numéricas. Série de Taylor. Resolução numérica de sistemas de equações lineares. Resolução 
-de equações algébricas e transcendentes. Interpolação e diferenças finitas. Diferenciação e integração numéricas. 
-Resolução numérica de equações diferenciais.
+  
+Métricas não euclidianas e construção de cônicas. Homeomorfsmos entre espaços métricos. 
+Invariantes topológicos (Característica de Euler, Teorema das quatro cores). Técnica de construção 
+de modelos concretos de superfícies. Noções de curvatura e geodésica de superfícies. Triângulos 
+geodésicos e soma de ângulos internos. 
+As atividades ocorrerão segundo a metodologia:
+- Serão desenvolvidos estudos de tópicos da ementa, serão apresentadas palestras pelo professor 
+responsável ou por professores convidados. Todos os tópicos serão vistos com utilização de 
+modelos concretos. 
+- Durante o semestre, sob a orientação e supervisão do professor, cada aluno escolherá um tópico da ementa sobre o qual 
+construirá modelos concretos e apresentará dois seminários abertos à comunidade.
+As aulas práticas ocorrerão no Laboratório LEMA-UFBa onde o aluno deverá  construir os modelos 
+concretos
+          
 Nome e código do componente curricular:
-Teoria da Computação. MATA51
-.
+Descritiva I. ARQ013  
 Departamento:
-Ciências da 
-Computação 
+Geometria das 
+Representações 
 Carga horária: 68
 T:34  P:34  E:00
+Modalidade:
+Disciplina
+Função:
+Complementar
 Modalidade:
 Disciplina
 Função:
@@ -64,38 +141,10 @@ Não tem
 Módulo de alunos:
 45
 Conteúdo:
-Modelos de Computação: máquinas de Turing, funções recursivas, λ-Calculus. Tese de Church. Linguagens 
-enumeráveis, recursivamente enumeráveis e recursivas. Decidibilidade. Redução. Problemas indecidíveis. 
-Incompletude da aritmética.
-Nome e código do componente curricular:
-Teoria dos Grafos. MATA53
-.
-Departamento:
-Ciências da 
-Computação 
-Carga horária: 68
-T:34  P:34  E:00
-Modalidade:
-Disciplina
-Função:
-complementar
-Natureza:
-Optativa
-Pré-requisito:
-Estruturas algébricas
-Módulo de alunos:
-45
-Conteúdo:
-Grafos, grafos simples, subgrafos. Isomorfismo de grafos. Representação computacional. Algoritmos de buscas. 
-Grafos orientados. Trilhas, caminhos e ciclos. Distância. Caminho mínimo. Conectividade de vértices e arestas. 
-Grafos hamiltonianos. Problema do caixeiro viajante. Grafos eulerianos. Problema do carteiro chinês. Árvores, 
-árvore geradora mínima. Teoria do NP completo. Classes P, NP, NP-completo, NP-Díficil. Reduções polinomiais. 
-Prova de NP completude. Noções de planaridade. Noções de coloração de vértices. Número cromático.
-Noções de casamentos. Casamentos perfeitos. Noções de fluxos em redes.
-Nome e código do componente curricular:
-Estatística III – C –  MAT028
-Departamento:
-Estatística
-Carga horária: 68
-T:34  P:34  E:00
-38
+Dar ao aluno os conhecimentos básico relativo aos diversos sistemas de representação da forma dando ênfase particular 
+ao sistema diédrico pela geometria  descritiva. 
+Aprimoramento da formação do raciocínio lógico especial na solução de exercícios graduais  e sistemática que utilizam 
+que a descritiva como meio e não fim.
+O aluno deverá teorizar e  representar tridimensional (entes geométricos, figuras planas, sólidos geométricos e situação 
+especial) no bidimensional empregado, de preferência, o sistema diédrico.
+34

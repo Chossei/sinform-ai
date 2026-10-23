@@ -1,0 +1,15 @@
+{
+  "curso": "Estatística (Bacharel)",
+  "documento": "Instrucao_Normativa_006_2025_Trancamento_TCC.pdf",
+  "documento_nome": "Instrucao Normativa 006 2025 Trancamento TCC",
+  "caminho_pdf": "C:\\Users\\choss\\OneDrive\\Documentos\\Aplicação - Sinform AI\\Estatística (Bacharel)\\Instrucao_Normativa_006_2025_Trancamento_TCC.pdf",
+  "header": "| Estatística (Bacharel) | Documento (Instrucao Normativa 006 2025 Trancamento TCC) |",
+  "max_tokens_per_chunk": 500,
+  "max_tokens_overlap": 100,
+  "densidade_visual": "Média com seções normativas estruturadas em artigos e parágrafos",
+  "justificativa_chunking": "O documento possui uma estrutura curta e direta baseada em artigos, parágrafos e incisos normativos, exigindo uma faixa de 500 tokens para garantir que cada regra de trancamento de TCC e seus prazos fiquem contidos no mesmo bloco, com 100 tokens de sobreposição para manter a continuidade semântica com o REGPG.",
+  "model_used": "gemini-3.5-flash-lite",
+  "input_tokens": 1304,
+  "output_tokens": 186,
+  "cost_usd": 0.0001536
+}

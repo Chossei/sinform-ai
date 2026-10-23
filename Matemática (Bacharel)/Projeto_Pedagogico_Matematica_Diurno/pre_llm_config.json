@@ -1,0 +1,15 @@
+{
+  "curso": "Matemática (Bacharel)",
+  "documento": "Projeto_Pedagogico_Matematica_Diurno.pdf",
+  "documento_nome": "Projeto Pedagogico Matematica Diurno",
+  "caminho_pdf": "C:\\Users\\choss\\OneDrive\\Documentos\\Aplicação - Sinform AI\\Matemática (Bacharel)\\Projeto_Pedagogico_Matematica_Diurno.pdf",
+  "header": "| Matemática (Bacharel) | Documento (Projeto Pedagogico Matematica Diurno) |",
+  "max_tokens_per_chunk": 600,
+  "max_tokens_overlap": 100,
+  "densidade_visual": "Média com seções narrativas e densas tabelas curriculares",
+  "justificativa_chunking": "A calibração de 600 tokens com 100 tokens de sobreposição garante a integridade estrutural e semântica de seções normativas, matrizes curriculares e ementas de disciplinas, preservando o contexto de pré-requisitos e equivalências.",
+  "model_used": "gemini-3.5-flash-lite",
+  "input_tokens": 31627,
+  "output_tokens": 152,
+  "cost_usd": 0.002417625
+}

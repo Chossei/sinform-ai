@@ -1,37 +1,66 @@
-| Matemática (Licenciatura) | Projeto_Pedagogico_Matematica_Diurno_Licenciatura.pdf | Normas e Diretrizes Gerais | Seção 34 | Diretriz Normativa 34 |
-
+| Matemática (Licenciatura) | Documento (Projeto Pedagogico Matematica Diurno Licenciatura) |
+Nome e código do componente curricular: 
+Integrais e Funções de Várias Variáveis. 
+MATB37 
+Departamento: 
+Matemática 
+Carga horária: 
+T: 68 P:34 E:00 
 Modalidade: 
 Disciplina 
 Função: 
-Básico 
+Básica 
 Natureza: 
 Obrigatória para a 
 Licenciatura e para o 
 Bacharelado. 
-Pré-requisito: 
+Pré-requisitos: 
+− Limites e Derivadas 
+(MATB33) 
 − Geometria Analítica 
-e Álgebra Vetorial. 
-(MATB34) 
+e Álgebra Vetorial 
+(MAT34) 
+ 
 Módulo de alunos: 
 40 
 Ementa: 
-              Sistemas de equações lineares. Inversão de matrizes. Espaço vetorial. Transformações lineares. Operadores 
-lineares. Determinantes. Utilização de recursos computacionais. 
- 
- 
- 
- 
- 
- 
- 
- 
- 
+           Primitivas e integral indefinida de uma função real de uma variável. Integral de Riemann. Integral imprópria. 
+Funções vetoriais de uma variável real – Curvas parametrizadas no plano e no espaço. Limite, continuidade e derivadas 
+de funções reais de várias variáveis. 
  
  
  
  
 Nome e código do componente curricular: 
-Álgebra Linear II-B.  MATB41 
+Seqüências, Séries e EDO.  MATB40 
+Departamento: 
+Matemática 
+Carga horária: 
+T: 68 P:34 E:00 
+Modalidade: 
+Disciplina 
+Função: 
+Básica 
+Natureza: 
+Obrigatória para a 
+Licenciatura e para 
+o Bacharelado. 
+Pré-requisito: 
+− Integrais e Funções 
+de Várias Variáveis 
+(MATB37) 
+Módulo de alunos: 
+40 
+Ementa:          
+            Seqüências e séries numéricas. Séries de potências. Séries de Fourier. Equações diferenciais ordinárias: 
+Condições de existência e unicidade de soluções; técnicas de resoluções inclusive usando série de Taylor. Noções de 
+teoria qualitativa de equações diferenciais ordinárias. 
+ 
+ 
+ 
+ 
+Nome e código do componente curricular: 
+Cálculo Diferencial Vetorial. MATB43 
 Departamento: 
 Matemática 
 Carga horária: 
@@ -39,53 +68,17 @@ T: 44 P:24 E:00
 Modalidade: 
 Disciplina 
 Função: 
-Básico 
+Básica 
 Natureza: 
 Obrigatória para a 
-Licenciatura e para 
-o Bacharelado. 
+Licenciatura e para o 
+Bacharelado 
 Pré-requisito: 
-− Álgebra Linear I-B. 
-(MATB38) 
+− Integrais e Funções 
+de Várias Variáveis. 
+(MATB37) 
 Módulo de alunos: 
 40 
 Ementa: 
-              Espaços vetoriais de dimensão infinita. Operador linear. Subespaços invariantes. Autovalor e autovetor. 
-Polinômio mínimo e característico. Decomposição primária. Diagonalização. Forma de Jordan. Normas. Espaços com 
-produto interno. Ortogonalidade. Teorema de Riesz. Operador adjunto. Operadores normais e subclasses. O Teorema 
-Espectral. Aplicações bilineares. Fo rmas quadráticas e ap licação do Teo rema Espectral. Utilização d e r ecursos 
-computacionais. 
- 
- 
- 
- 
-Nome e código do componente curricular: 
-Matemática para a Educação Básica I. MATB39 
-Departamento: 
-Matemática 
-Carga horária: 
-T: 34 P:34 E:00 
-Modalidade: 
-Disciplina 
-Função: 
-Profissional 
-Natureza: 
-Obrigatória para 
-Licenciatura. 
-Pré-requisito: 
-− Introdução à Teoria 
-dos Números  
-Módulo de alunos: 
-30 
-Ementa: 
-              Estudo dos conjuntos numéricos − Naturais, Inteiros, Racionais, Reais − voltado para aplicações do ensino 
-fundamental, evidenciando aspectos históricos e com inserção de atividades referentes à prática pedagógica.  
- 
- 
- 
- 
-Nome e código do componente curricular: 
-Departamento: 
-Matemática 
-Carga horária: 
-T:34 P:34 E:00
+          Fórmula de Taylor. Máximos e mínimos. Integrais múltiplas. Campos vetoriais. Integrais de linha. Superfícies 
+parametrizadas.  Integrais de superfície. Teoremas de Green, Stokes e Gauss.

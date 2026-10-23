@@ -1,5 +1,8 @@
-| Estatística (Bacharel) | Projeto_Pedagogico_Estatistica_Bacharelado.pdf | Capítulo Iv | Seção I | Artigo 4º e Artigo 5º |
-
+| Estatística (Bacharel) | Documento (Projeto Pedagogico Estatistica Bacharelado) |
+§ 2º Núcleo Específico: contempla componentes optativos permitindo ênfase nas seguintes trilhas de especialização:
+Estatística Matemática, Bioestatística, Tecnológico/Ciência de Dados e Econômico-Social.
+Art. 3º O estudante tem liberdade de compor sua formação optativa combinando núcleos distintos de acordo com suas
+metas acadêmicas e profissionais.
 Art. 4º O Trabalho de Conclusão de Curso (TCC) em Estatística consiste em monografia individual supervisionada por
 docente do Departamento de Estatística ou área correlata.
 § 1º O aluno deve submeter o projeto de TCC ao Colegiado após ter integralizado no mínimo 75% da carga horária

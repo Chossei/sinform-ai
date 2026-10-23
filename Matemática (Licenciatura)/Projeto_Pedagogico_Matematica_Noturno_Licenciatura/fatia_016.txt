@@ -1,127 +1,180 @@
-| Matemática (Licenciatura) | Projeto_Pedagogico_Matematica_Noturno_Licenciatura.pdf | Normas e Diretrizes Gerais | Seção 16 | Diretriz Normativa 16 |
-
-21
+| Matemática (Licenciatura) | Documento (Projeto Pedagogico Matematica Noturno Licenciatura) |
+17
 Nome e código do componente curricular:
-Geometria Euclidiana Plana. MAT ---
+Álgebra Linear  ---
 Departamento:
 Matemática
 Carga horária:
-102 horas/aula
+136 horas
 Modalidade:
 Disciplina
 Função:
-Básica
+Básico
 Natureza:
 Obrigatória
 Pré-requisito:
-Não tem.
+Não tem
 Módulo de alunos:
 45
 Ementa:
-             Estudo da geometria plana com abordagem euclidiana. Utilização de recursos computacionais.  
+              Corpos. Sistemas de equações lineares. Inversão de matrizes. Espaço vetorial. Transformações lineares. Operadores 
+lineares. Determinantes. Espaços vetoriais de dimensão infinita. Operador linear. Subespaços invariantes. Autovalor e autovetor. 
+Polinômio mínimo e característico. Decomposição primária. Diagonalização. Forma de Jordan. Normas. Espaços com produto 
+interno. Ortogonalidade. Teorema de Riesz. Operador adjunto. Operadores normais e subclasses. O Teorema Espectral. Aplicações 
+bilineares. Formas quadráticas e aplicação do Teorema Espectral. Utilização de recursos computacionais.
 Conteúdo programático:
 1.
-Software de geometria dinâmica: Geogebra e o Cabri
+Noções sobre corpos: Definição e exemplos.
+a.
+Corpos finitos
+b.
+Corpo do números racionais, Reais e Complexos: propriedades básicas e representações.
+c.
+Extensões algébricas dos racionais (noções básicas e exemplos)
 2.
-Noções primitivas e axiomas da Geometria Euclidiana Plana.
+Álgebra matricial
+a.
+Definição de matrizes
+b.
+Operações com matrizes: Soma, produto, transposta, produto por escalar.
+c.
+Matrizes elementares
+d.
+Matrizes simétricas, anti-simétricas
+e.
+Escalonamento:  por linha e  por coluna
+f.
+Posto de uma matriz.
 3.
-Segmento de reta.  Ângulo e triângulo.
+Sistemas de equações lineares.
+a.
+Conjunto solução
+b.
+Sistemas equivalentes 
+c.
+Sistemas homogêneos
+d.
+Forma matricial
+e.
+Método de Gauss-Jordan para resolução de sistemas de equações lineares
+f.
+Existência e unicidade de Inversa lateral para uma matriz.
 4.
-Congruência de segmentos, ângulos e triângulos.
+Espaço vetorial
+a.
+Definição e exemplos
+b.
+Subespaços vetoriais
+c.
+Soma e interseção de subespaços vetoriais
+d.
+Espaço vetorial quociente
+e.
+Subespaço gerado e espaços vetoriais finitamente gerados
+f.
+Combinações lineares
+g.
+Dependência e independência linear
+h.
+Base, dimensão e sistemas de coordenadas.
+i.
+Mudança de base em espaços de dimensão finita.
+j.
+Exemplos de espaços vetoriais de dimensão infinita: funções contínuas,Polinômios e pseudo-polinômios: polinômios 
+trigonométricos e polinômios exponenciais.
 5.
-Teorema do ângulo externo e suas conseqüências.
+Transformações lineares
+a.
+Núcleo e imagem
+b.
+Soma, produto por escalar, e composição de transformações lineares
+c.
+Transformações lineares entre espaços de dimensão finita
+d.
+Representação matricial 
+e.
+Mudança de base e representação matricial.
+f.
+Transformações lineares do plano e do espaço tridimensional real ( cisão, reflexão e rotação).
 6.
-Axioma das paralelas. Teorema de Tales. Polígonos convexos. Polígonos regulares.  Quadriláteros notáveis.
+Determinantes:
+a.
+ Aplicação multilinear alternada e a definição de determinante de uma matriz
+b.
+Matriz de cofatores e sua relação com determinante e existência da inversa de uma matriz.
 7.
-Semelhança de triângulos.
+Operador Linear.
+a.
+Definição e exemplos
+b.
+Polinômio mínimo
+c.
+Existência, unicidade e Cálculo do polinômio mínimo.
+d.
+Autovalor e autovetor.
+e.
+Polinômio característico
+f.
+Subespaços invariantes 
+g.
+Teorema da decomposição primária
+h.
+Operadores diagonalizáveis
+i.
+Forma canônica de Jordan
+j.
+ Decomposição em blocos de Jordan para operadores de espaços vetoriais sobre os reais. 
 8.
-Círculo. Ângulos no círculo. Inscrição e circunscrição de polígonos em círculos. Potência de ponto.
+Espaços vetoriais com produto interno.
+a.
+Norma: Propriedades e  desigualdades fundamentais. 
+b.
+Produto interno
+c.
+Propriedades básicas e exemplos.
+d.
+Identidade do paralelogramo
+e.
+Ortogonalidade.
+f.
+Processo de ortogonalização.
+g.
+Complemento ortogonal.
+h.
+Projeções ortogonais.
+i.
+O método da aproximação por mínimos quadrados.
+j.
+Funcionais lineares e  o Teorema de  representação de Riesz
 9.
-Funções trigonométricas. Relações métricas em um triângulo retângulo e em um triângulo qualquer. 
-10. Áreas de figuras planas.
-11. Lugares geométricos.
-22
-Nome e código do componente curricular:
-Laboratório de Ensino de Matemática III. MAT---
-Departamento:
-Matemática
-Carga horária:
-T: 00 P:68 E:00
-Modalidade:
-Módulo interdisciplinar
-Função:
-Profissional
-Natureza:
-Obrigatória 
-Pré-requisito:
- Geometria analítica e 
-cálculo vetorial
-Módulo de alunos:
-25
-Ementa:
-         Introdução ao Latex.  Coordenadas polares, Cônicas. Curvas parametrizadas. Áreas e aplicações. Superfícies. 
-Volumes. Inversões.  Simulações, animações  e traçado de curvas usando  pstricks.
-          
-Metodologia:   Seminários e aulas práticas para construção de práticas pedagógicas utilizando recursos computacionais 
-para elaboração de material didático  com suporte computacional   desenvolvido e apresentado pelos alunos sob a 
-orientação do professor.
-Conteúdo programático:
-1)
-Software e editoração matemática : Miktex, Latex,
-2)
- pacotes geométricos do Latex: pstricks, PST-euclid,
-3)
- Fórmulas, 
-4)
-Coordenadas polares 
-5)
-Traçados de curvas, 
-6)
-Desenho de superfícies, 
-7)
- loops e animações no Latex
-8)
-Cônicas e Curvas parametrizadas. 
-9)
- Áreas e aplicações.
-10)  Software de geometria dinâmica. (Geogebra e Cabri)
-Nome e código do componente curricular:
-Laboratório de Ensino de Matemática IV. MAT---
-Departamento:
-Matemática
-Carga horária:
-T: 00 P:68 E:00
-Modalidade:
-Módulo interdisciplinar
-Função:
-Profissional
-Natureza:
-Obrigatória 
-Pré-requisito:
-Cálculo diferencial e 
-integral 
-Módulo de alunos:
-25
-Ementa:
-          Métricas não euclidianas e construção de cônicas. Homeomorfismos entre espaços métricos. Invariantes 
-topológicos (Característica de Euler, Teorema das quatro cores).  Construção de modelos virtuais de 
-superfícies( computação gráfica). Noções de curvatura e geodésica de superfícies. Triângulos geodésicos e soma de 
-ângulos internos. Representação gráfica  e animações usando o Pstricks.
-Metodologia:  Seminários e aulas práticas para construção de práticas pedagógicas utilizando recursos computacionais 
-para elaboração de material didático  com suporte computacional   desenvolvido e apresentado pelos alunos sob a 
-orientação do professor.
-Conteúdo programático:
-1)
-Métricas não euclidianas e construção de cônicas. 
-2)
-Homeomorfismos entre espaços métricos. 
-3)
-Invariantes topológicos (Característica de Euler, Teorema das quatro cores). 
-4)
-Construção de modelos virtuais de superfícies ( computação gráfica).
-5)
- Noções de curvatura e geodésica de superfícies. 
-6)
-Triângulos geodésicos e soma de ângulos internos.
-7)
- Representação gráfica  e animações usando o Pstricks.
+Teorema Espectral:
+a.
+Operador Adjunto,
+b.
+ Classes especiais de operadores lineares : 
+i.
+Operador Normal,
+ii.
+Operador autoadjunto, 
+iii.
+ operador anti-adjunto 
+iv.
+ operador unitário.
+c.
+Propriedades básicas dos autovalores e autovetores dos operadores especiais.
+d.
+Complexificação e suas propriedades básicas.
+e.
+Teorema espectral para operadores normais em espaços vetoriais sobre os complexos.
+f.
+Teorema espectral para operadores autoadjuntos em espaços vetoriais sobre os reais.
+g.
+Forma canônica dos operadores normais em espaços vetoriais reais de dimensão finita.
+10.
+Aplicações  bilineares:
+a.
+Definição, classificação e exemplos.
+b.
+Formas quadráticas
+c.
+Redução de uma forma quadrática à sua forma padrão por meio da utilização do teorema espectral

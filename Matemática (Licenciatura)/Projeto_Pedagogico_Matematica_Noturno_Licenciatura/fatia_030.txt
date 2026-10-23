@@ -1,47 +1,44 @@
-| Matemática (Licenciatura) | Projeto_Pedagogico_Matematica_Noturno_Licenciatura.pdf | Normas e Diretrizes Gerais | Seção 30 | Diretriz Normativa 30 |
-
-Conteúdo:
-Esta disciplina visa o estudo das ondas eletromagnéticas na discussão dos fenômenos ópticos do ponto de vista 
-eletromagnético, além de introduzir o aluno na Física Moderna e complementar o estudo da Física Geral e 
-Experimental que se iniciou com as disciplinas anteriores. Esta disciplina é fundamental para o estudo detalhado das 
-equações de Maxwell e suas aplicações.
-Tópicos abordados na parte teórica: As equações de Maxwell; ondas eletromagnéticas; a luz; reflexão e refração; 
-difração e interferência; polarização; princípios da teoria da relatividade; introdução à física quântica; física quântica; 
-física atômica; elementos de física do estado sólido e de física nuclear. 
-Tópicos abordados na parte experimental: medida do índice de refração de um prisma com um espectrômetro; 
-medida do comprimento de onda da luz por meio de uma rede de difração; difração da luz por fenda; espectros 
-sulcados por interferência; medida de concentração de uma solução de açúcar por meio do polarímetro; auto-
-indutância e constante de tempo de circuitos RC e RL; osciloscópio de raios catódicos; ressonância elétrica; 
-interferência de microondas; difração de Bragg usando microondas; polarização e atividade óptica de microondas.
+| Matemática (Licenciatura) | Documento (Projeto Pedagogico Matematica Noturno Licenciatura) |
 Nome e código do componente curricular:
-Dimensão Estética da Educação.  EDC251
+  Tópicos da História da Matemática.  MAT216
 Departamento:
-Departamento de 
-Educação I
-Carga horária: 102
-T:34  P:68  E:00
-Modalidade:
-Disciplina
-Função:
-complementar
-Natureza:
-Optativa
-Pré-requisito:
-Não tem
-Módulo de alunos:
-45
-Conteúdo:
-Significado do lúdico e do estético no processo de transmissão do saber  e do conhecimento em contexto pluriculturais. 
-A criança, o brincar e a criatividade. Dimensão  estética da cultura negra da Bahia.  O conceito nagô  de Odara, bom e 
-bonito; conjunto do técnico e do estético. Arte sacra negra e arte sócio-ludica. Formas de comunicação nas culturas da 
-participação.
-Nome e código do componente curricular:
-Introdução à Informática na Educação.  EDC266 
-Departamento:
-Departamento de 
-Educação I
+Matemática
 Carga horária: 68
-T:34  P:68  E:00
+T: 34 P:34 E:00
+Modalidade:
+Disciplina
+Função:
+complementar
+Natureza:
+Optativa
+Pré-requisito:
+Não tem
+Módulo de alunos:
+45
+Conteúdo: Essa disciplina tem como objetivo dar ao estudante uma visão geral do desenvolvimento da matemática 
+através do tempo. Estudar tópicos importantes da matemática compreendendo como, quando e sob que condições 
+sociais foram criados e desenvolvidos. A programação variará de acordo com a disponibilidade de especialistas na área 
+e o interesse do corpo discente.
+Lista de tópicos pertinentes à disciplina:  
+O leque dos problemas estudados na Babilônia, Grécia, etc.
+Crises: números irracionais, paradoxos de Zeno.
+O teorema de  Pitágoras e os ternos pitagóricos.
+A axiomatização de geometria em diversas épocas.
+Mensuração (pirâmides, esferas, etc.). O método de Arquimedes.
+O conceito de zero e números negativos.
+Maneiras de resolver equações algébricas tais como as cúbicas.
+A introdução de coordenadas em geometria.
+A invenção de Cálculo integral e diferencial.
+A possibilidade de geometria não-euclidiana.
+Números complexos, quatérnios, e vetores.
+Cantor e as controvérsias sobre conjuntos infinitos.
+Pode-se provar que a matemática é consistente? (Hilbert, Goedel).
+Nome e código do componente curricular:
+Introdução à Teoria dos Conjuntos.  MATB56
+Departamento:
+Matemática
+Carga horária:
+T: 68 P:00 E:00
 Modalidade:
 Disciplina
 Função:
@@ -53,16 +50,15 @@ Não tem
 Módulo de alunos:
 45
 Conteúdo:
-Evolução e formas de aplicação do microcomputador na Educação. O microcomputador como recurso tecnológico no 
-processo ensino-aprendizagem. Aspectos psicológicos, sociais e políticos da utilização do microcomputador na 
-Educação
+Conjuntos e operadores lógicos;  relações e funções. Conjuntos finitos e infinitos. Cardinalidade. Bijeção entre naturais e 
+racionais. Não bijeção entre naturais e reais. Números transfinitos. Cardinalidade do conjunto das partes de um conjunto 
+dado. 
 Nome e código do componente curricular:
-Currículo.  EDC283 
+Construção de Conjuntos Numéricos. MATB57
 Departamento:
-Departamento de 
-Educação I
-Carga horária: 68
-T:34  P:34  E:00
+Matemática
+Carga horária:
+T: 68 P:00 E:00
 Modalidade:
 Disciplina
 Função:
@@ -70,20 +66,22 @@ complementar
 Natureza:
 Optativa
 Pré-requisito:
-Não tem
+Séries, seqüências e 
+EDO;
+Estruturas algébricas
 Módulo de alunos:
 45
 Conteúdo:
-Estudo do currículo na educação formal e informal, seus pressupostos sócio-flosófcos  como 
-determinante de uma prática pedagógica consciente e crítica. Analisa o currículo como 
-instrumento norteador de propostas inovadoras, na educação, principalmente na educação básica.
+ Construção do conjunto dos números naturais usando axiomas de Peano;  construção dos números inteiros como 
+classes de equivalências de pares ordenados de naturais;  construção dos racionais como classes de equivalência de 
+pares de inteiros;  construção dos reais como classes de equivalências de seqüências de Cauchy de racionais. 
+Propriedades da reta Construção dos complexos. 
 Nome e código do componente curricular:
-Filosofa e Educação.  EDCA03 
+Laboratório de Ensino de Matemática I. MATB47
 Departamento:
-Departamento de 
-Educação I
-Carga horária: 68
-T:34  P:34  E:00
+Matemática
+Carga horária: 68 
+T: 00 P:68 E:00
 Modalidade:
 Disciplina
 Função:
@@ -91,7 +89,8 @@ complementar
 Natureza:
 Optativa
 Pré-requisito:
-Não tem
+Cálculo diferencial e 
+integral
 Módulo de alunos:
-45
-36
+25
+33

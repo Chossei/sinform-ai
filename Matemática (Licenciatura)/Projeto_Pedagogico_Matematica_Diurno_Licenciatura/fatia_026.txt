@@ -1,126 +1,151 @@
-| Matemática (Licenciatura) | Projeto_Pedagogico_Matematica_Diurno_Licenciatura.pdf | Normas e Diretrizes Gerais | Seção 26 | Diretriz Normativa 26 |
-
+| Matemática (Licenciatura) | Documento (Projeto Pedagogico Matematica Diurno Licenciatura) |
+conhecimentos teóricos e conhecimentos práticos que o futuro professor irá vivenciar nas suas 
+experiências de sala de aula. 
+       Uma di scussão perm anente sobre o que ensinar, para que
+m ensinar e com o ensinar, 
+deverá nessas atividades, propiciar com
+petências técnicas e m etodológicas ao licenciando 
+para que na sua prática possa integrar o 
+conhecimento sobre ensino e aprendizagem, que é 
+uma das tarefas essenciais do professor.      
+ 
+ 
+BACHARELADO 
+ 
+A proposta curricular para o Bacharelado está de acordo com a resolução do Conselho 
+Nacional de Educação/Câm ara de Educação Superior , CNE/CES n o 1.302/2001 de 06 de 
+novembro de 2001, que estabelece diretrizes cu
+rriculares nacionais para os Cursos de
+ 
+Matemática, Bacharelado e L
+icenciatura no que se refe
+re ao perfil dos form
+andos; 
+competência e habilidades; estrutu
+ra do curs
+o e conteúdos curricu
+lares. Tam bém foi 
+observado o parecer do Conselho Nacional de Educação/ Câm ara de Educação S uperior, 
+CNE/CES nº 184/2006, aprovado em 7 de julho de 2006, que estabelece que a carga horária 
+mínima para os Cursos de Bacharelado em Matemática no modo presencial é de 2400 h. 
+Na próxima página veremos a matriz curricular.
 Código / Nome 
-C.H.  
+C.H. 
 Hora/aula 
-Módulo 
-Função 
-Pré-requisito 
-Departamento de  
-MAT--- Álgebra Linear II-B  
-68 
-Disciplina 
-Básica 
-− Álgebra Linear I-B. 
-Matemática 
-MAT --- Introdução à Análise Combinatória.   
-68 
-Disciplina 
-Básica 
---------- 
-Matemática 
-EDC --- Metodologia do Ensino da Matemática  
-68 
-Disciplina 
-Profissional 
-− Didática e Práxis 
-Pedagógica. 
-Educação II 
-FIS122 - Física Geral e Experimental II-E 
+Módulo Funç
+ão 
+Pré-requisito Departamento 
+ 
+FIS123 - Física Geral e Experimental III-E 
 102 
 Disciplina 
 Complementar 
- − FIS121. 
-Física Geral 
+− FIS122 
  
-MAT --- Cálculo Diferencial Vetorial  
+Física do Estado Sólido 
+ 
+MAT174-Cálculo Numérico 
  
 68 
  
 Disciplina 
  
-Básica  
-− Integrais e Funções 
-de 
-Várias Variáveis. 
+Complementar 
+− MAT045 
+− Álgebra Linear I-B 
+− Séries, Seqüências e 
+EDO 
  
-Matemática  
-MAT --- Matemática para a Educação Básica I  
-68 
-Disciplina  
-Profissional 
-− Introdução à Teoria 
- dos Números. 
-Matemática 
-MAT --- Matemática para a Educação Básica II  
+Ciência da Computação 
+MAT 205 - Introdução  à Teoria de Galois 
 68 
 Disciplina 
-Profissional 
-− Limites e 
-Derivadas. 
-Matemática 
-EDC--- Estágio Supervisionado I 
-102 
-Disciplina 
-Profissional 
-− Didática e Práxis 
-Pedagógica. 
-Educação II 
-MAT --- Análise I  
-102 
-Disciplina  
 Básica 
-− Seqüências, Séries 
-e EDO. 
+− Grupos e Anéis I 
 Matemática 
-MAT --- Matemática para a Educação Básica III  
+ 
+MAT--- Teoria das Equações Diferenciais Ordinárias 
+ 
 68 
+ 
 Disciplina 
-Profissional  
+ 
+Básica 
+− Seqüências, Séries e 
+EDO. 
 − Álgebra Linear I-B. 
-Matemática 
- 
-MAT--- Laboratório de Ensino de Matemática I.  
-68 M
-ódulo 
-interdisciplinar 
- 
-Profissional 
-− Integrais e Funções 
-de 
-Várias Variáveis. 
  
 Matemática 
-EDC --- Estágio Supervisionado II  
+MAT --- Análise II  
 102 
 Disciplina 
-Profissional 
-− Didática e Práxis 
-Pedagógica. 
-Educação II 
+Básica 
+− Análise I 
+Matemática 
+MAT --- Topologia e Espaços Métricos 6
+8 
+Disciplina 
+Básica 
+− Limites e Derivadas 
+Matemática 
  
-MAT --- Funções Holomorfas  
+MAT 208 - Geometria Diferencial 
  
-68 
+102 
  
 Disciplina 
  
+Básica 
+− Cálculo Diferencial 
+Vetorial 
+− Álgebra Linear II-B 
+ 
+Matemática 
+MAT --- Funções Holomorfas 
+68 
+Disciplina 
 Básica  
 − Integrais e Funções 
 de 
 Várias Variáveis. 
- 
 Matemática 
+MAT --- Análise III  
+102 
+Disciplina 
+Básica 
+− Análise II 
+Matemática 
+MAT ---- Estágio Supervisionado 
+34 
+Disciplina 
+Profissional 
+− Análise II 
+Matemática 
+MAT028 − Estatística III - C 
+68 Discip
+lina 
+Complementar 
+− Seqüências, Séries e 
+EDO. 
+Estatística 
  
-MAT--- Laboratório de Ensino de Matemática II  
+MAT--- Monografia 
  
 68 
 Módulo 
-interdisciplinar 
+Interdisciplinar 
  
 Profissional 
-− Integrais e Funções 
-de 
-Várias Variáveis. 
+− MAT205. 
+− MAT208 
+− Análise III. 
  
+Matemática 
+MAT--- Seminários Temáticos 
+68 
+Módulo 
+interdisciplinar 
+Profissional 
+− Integrais e Funções 
+de Várias Variáveis. 
 Matemática

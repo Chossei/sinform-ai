@@ -1,5 +1,7 @@
-| Estatística (Bacharel) | Resolucoes_01_e_02_2020_Estagio_Nao_Obrigatorio_IME.pdf | Capítulo V | Seção Geral | Artigo 7º, Artigo 8º, Artigo 9º, Artigo 10º e Artigo 11º |
-
+| Estatística (Bacharel) | Documento (Resolucoes 01 e 02 2020 Estagio Nao Obrigatorio IME) |
+Em atenção aos estudantes dos cursos de Matemática exige-se a aprovação nas
+disciplinas MATB33 - Limites e Derivadas e MATB34 - Geometria Analítica e Álgebra
+Vetorial ou equivalentes.
 Art. 7º. No caso de renovação de estágio, será necessária a apresentação tanto de Termo Aditivo
 quanto de novo Plano de Estágio.
 DAS ATIVIDADES DE ESTÁGIO E SUA VIGÊNCIA

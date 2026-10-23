@@ -1,5 +1,8 @@
-| Estatística (Bacharel) | Resolucao_Estagio_Supervisionado_Estatistica.pdf | Capítulo Iii | Seção I | Artigo 4º, Artigo 5º e Artigo 6º |
-
+| Estatística (Bacharel) | Documento (Resolucao Estagio Supervisionado Estatistica) |
+Art. 3º Para iniciar estágio supervisionado não obrigatório, o discente de Estatística deve ter concluído com aproveitamento
+o mínimo de 40% (quarenta por cento) da carga horária total do curso, correspondendo à conclusão do ciclo básico.
+§ 1º O aluno deve estar com matrícula ativa e regular no semestre letivo em curso.
+§ 2º Alunos em situação de trancamento total de matrícula não podem realizar estágio sob nenhuma circunstância.
 Art. 4º A carga horária máxima permitida de estágio é de 30 (trinta) horas semanais e 6 (seis) horas diárias, assegurando a
 compatibilidade com os horários das aulas no turno matutino.
 § 1º O Termo de Compromisso de Estágio (TCE) e o Plano de Atividades devem ser encaminhados com antecedência
@@ -11,8 +14,3 @@ Art. 5º Cada estagiário será acompanhado por um Professor Orientador indicado
 Supervisor Técnico no local de estágio com formação de nível superior.
 § 1º O professor orientador da UFBA deve avaliar periodicamente o desenvolvimento do plano de estágio.
 § 2º Em caso de descumprimento do plano ou de desvio de função, o estágio será rescindido pelo Colegiado.
-Art. 6º Ao término do período de estágio, o discente deverá submeter ao Colegiado o Relatório de Atividades acompanhado
-da Ficha de Avaliação preenchida pelo supervisor da parte concedente.
-§ 1º O prazo para entrega do relatório é de até 30 (trinta) dias após o encerramento do contrato de estágio.
-§ 2º A validação dos créditos ou horas complementares fica condicionada à aprovação formal do relatório pelo Colegiado
-de Estatística.

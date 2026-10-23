@@ -1,97 +1,166 @@
-| Matemática (Licenciatura) | Projeto_Pedagogico_Matematica_Noturno_Licenciatura.pdf | Normas e Diretrizes Gerais | Seção 27 | Diretriz Normativa 27 |
-
+| Matemática (Licenciatura) | Documento (Projeto Pedagogico Matematica Noturno Licenciatura) |
+Ementa:
+A Mecânica newtoniana é apresentada num nível básico. Usando-se o Cálculo Diferencial e Integral, enfoca-se 
+cinemática e a dinâmica das partículas e dos corpos rígidos e as leis de conservação e a interação gravitacional. 
+Paralelamente, os alunos realizam experimentos em laboratório onde fenômenos físicos são repetidos e estudados 
+quantitativamente, visando um melhor entendimento e compreensão desses fenômenos
+  
 Nome e código do componente curricular:
-  Tópicos da História da Matemática.  MAT216
-Departamento:
-Matemática
-Carga horária: 68
-T: 34 P:34 E:00
-Modalidade:
-Disciplina
-Função:
-complementar
-Natureza:
-Optativa
-Pré-requisito:
-Não tem
-Módulo de alunos:
-45
-Conteúdo: Essa disciplina tem como objetivo dar ao estudante uma visão geral do desenvolvimento da matemática 
-através do tempo. Estudar tópicos importantes da matemática compreendendo como, quando e sob que condições 
-sociais foram criados e desenvolvidos. A programação variará de acordo com a disponibilidade de especialistas na área 
-e o interesse do corpo discente.
-Lista de tópicos pertinentes à disciplina:  
-O leque dos problemas estudados na Babilônia, Grécia, etc.
-Crises: números irracionais, paradoxos de Zeno.
-O teorema de  Pitágoras e os ternos pitagóricos.
-A axiomatização de geometria em diversas épocas.
-Mensuração (pirâmides, esferas, etc.). O método de Arquimedes.
-O conceito de zero e números negativos.
-Maneiras de resolver equações algébricas tais como as cúbicas.
-A introdução de coordenadas em geometria.
-A invenção de Cálculo integral e diferencial.
-A possibilidade de geometria não-euclidiana.
-Números complexos, quatérnios, e vetores.
-Cantor e as controvérsias sobre conjuntos infinitos.
-Pode-se provar que a matemática é consistente? (Hilbert, Goedel).
-Nome e código do componente curricular:
-Introdução à Teoria dos Conjuntos.  MATB56
+Seqüências, Séries e EDO.  MATB40 
 Departamento:
 Matemática
 Carga horária:
-T: 68 P:00 E:00
+102 horas/aula
 Modalidade:
 Disciplina
 Função:
-complementar
+Básica
 Natureza:
-Optativa
-Pré-requisito:
-Não tem
-Módulo de alunos:
-45
-Conteúdo:
-Conjuntos e operadores lógicos;  relações e funções. Conjuntos finitos e infinitos. Cardinalidade. Bijeção entre naturais e 
-racionais. Não bijeção entre naturais e reais. Números transfinitos. Cardinalidade do conjunto das partes de um conjunto 
-dado. 
-Nome e código do componente curricular:
-Construção de Conjuntos Numéricos. MATB57
-Departamento:
-Matemática
-Carga horária:
-T: 68 P:00 E:00
-Modalidade:
-Disciplina
-Função:
-complementar
-Natureza:
-Optativa
-Pré-requisito:
-Séries, seqüências e 
-EDO;
-Estruturas algébricas
-Módulo de alunos:
-45
-Conteúdo:
- Construção do conjunto dos números naturais usando axiomas de Peano;  construção dos números inteiros como 
-classes de equivalências de pares ordenados de naturais;  construção dos racionais como classes de equivalência de 
-pares de inteiros;  construção dos reais como classes de equivalências de seqüências de Cauchy de racionais. 
-Propriedades da reta Construção dos complexos. 
-Nome e código do componente curricular:
-Laboratório de Ensino de Matemática I. MATB47
-Departamento:
-Matemática
-Carga horária: 68 
-T: 00 P:68 E:00
-Modalidade:
-Disciplina
-Função:
-complementar
-Natureza:
-Optativa
+Obrigatória
 Pré-requisito:
 Cálculo diferencial e 
 integral
 Módulo de alunos:
+45
+Ementa:
+            
+Seqüências e séries numéricas. Séries de potências. Séries de Fourier. Equações diferenciais ordinárias: Condições de 
+existência e unicidade de soluções; técnicas de resoluções inclusive usando série de Taylor. Noções de teoria qualitativa 
+de equações diferenciais ordinárias.
+Nome e código do componente curricular:
+Metodologia do Ensino da Matemática. 
+EDC A80
+Departamento:
+Departamento de 
+Educação II
+Carga horária: 68 h/a 
+Teórica:  34 h.
+Dimensão prática: 34 h. 
+Modalidade
+ Disciplina
+Função:
+Profissional
+Natureza:
+Obrigatória
+Pré-requisito:
+Não tem
+Módulo de alunos:
 25
-33
+Ementa:
+Estudo teórico metodológico do atual ensino de Matemática nas escolas brasileiras. Relação da sociedade 
+contemporânea e o sistema escolar. Análise e construção de práticas pedagógicas para possíveis espaços de 
+aprendizagem. 
+Nome e código do componente curricular:
+Física Geral e Experimental II-E – FIS122 
+Departamento:
+Física Geral
+Carga horária:
+102  h
+Modalidade:
+Disciplina
+Função:
+Complementar
+Natureza:
+Obrigatória
+Pré-requisito:
+ FIS121
+Módulo de alunos:
+45
+Ementa:
+Estudam-se em nível básico os fenômenos relacionados com oscilações mecânicas, ondas de propagação do som, a 
+mecânica dos fluidos, calor e gases, discutem-se ainda as propriedades elásticas dos materiais. 
+  
+Nome e código do componente curricular:
+Cálculo Diferencial Vetorial. MAT B43
+Departamento:
+Matemática
+Carga horária:
+68 horas/aula
+28
+Modalidade:
+Disciplina
+Função:
+Básica
+Natureza:
+Obrigatória
+Pré-requisito:
+Integral e Funções de 
+Várias Variáveis.
+Módulo de alunos:
+45
+Ementa:
+          Fórmula de Taylor. Máximos e mínimos. Integrais múltiplas. Campos vetoriais. Integrais de linha. Superfícies 
+parametrizadas.  Integrais de superfície. Teoremas de Green, Stokes e Gauss.
+Nome e código do componente curricular:
+Análise I. MATB44
+Departamento:
+Matemática
+Carga horária:
+102 horas/aula
+Modalidade:
+Disciplina
+Função:
+Básica
+Natureza:
+Obrigatória
+Pré-requisito:
+Seqüências, Séries e 
+EDO
+Módulo de alunos:
+45
+Ementa:
+         Números Reais. Seqüências e séries de números reais. Topologia da reta real. Limite e continuidade de funções 
+reais. Derivada de função a uma variável real. 
+Nome e código do componente curricular:
+Estágio Curricular Supervisionado I.  EDCA81 
+Departamento:
+Departamento de 
+Educação II
+Carga horária:
+102 horas/aula
+Modalidade:
+Disciplina
+Função:
+Profissional
+Natureza:
+Obrigatória
+Pré-requisito:
+Didática e Práxis Pedagógica.
+Módulo de alunos:
+25
+Ementa:
+  Estudo, planejamento e prática de ensino em espaços formais de educação (níveis fundamental e/ou médio em escolas 
+oficiais), em espaços alternativos e/ou em outras modalidades educacionais, realizados de forma cumulativa, através da 
+aplicação dos fundamentos teórico-práticos estudados em Didática e Práxis Pedagógica e Metodologia do Ensino da 
+Matemática, de modo contextualizado e contemporâneo, tomando-se por base os conteúdos de cada campo de saber, 
+objeto da formação.
+Nome e código do componente curricular:
+Funções Holomorfas. MAT B46
+Departamento:
+Matemática 
+Carga horária:
+68  h
+Modalidade:
+Disciplina
+Função:
+Básica
+Natureza:
+Obrigatória
+Pré-requisito:
+Cálculo diferencial e 
+integral
+Módulo de alunos:
+45
+Ementa: 
+O corpo dos números complexos. Limite, continuidade e funções complexas. Derivada complexa e as funções 
+holomorfas. Séries de potência e funções analíticas. Teoria de Cauchy. Singularidades e séries de Laurent.  Resíduo e 
+pólos: aplicação ao cálculo de integrais reais. Transformações conformes e aplicações.
+         
+Nome e código do componente curricular:
+Estágio Curricular Supervisionado II. EDC A82
+Departamento:
+Departamento de 
+Educação II
+Carga horária:
+102 horas/aula
+29

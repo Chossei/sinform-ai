@@ -1,5 +1,7 @@
-| Matemática (Licenciatura) | Regulamento_Academico_Graduacao_UFBA.pdf | Capítulo Iv | Seção I | Artigo 7º, Artigo 8º, Artigo 9º e Artigo 10 |
-
+| Matemática (Licenciatura) | Documento (Regulamento Academico Graduacao UFBA) |
+§ 1º O aluno com frequência inferior a 75% será reprovado por falta (RF), independentemente da média de notas obtida.
+§ 2º O aluno que deixar de comparecer a uma avaliação por motivo justificado (doença, luto de primeiro grau ou convocação judicial)
+poderá requerer 2ª chamada no prazo de até 72 (setenta e duas) horas após a realização da prova, junto ao CEAG/Colegiado.
 Art. 7º O estudante tem direito de vista de prova e de solicitar recorreção de prova ou revisão de nota no prazo de até 5 (cinco) dias
 úteis após a divulgação oficial do resultado pelo docente.
 Art. 8º O estudante deverá concluir seu curso no prazo fixado pelo PPC. Caso se aproxime do prazo máximo sem concluir a matriz

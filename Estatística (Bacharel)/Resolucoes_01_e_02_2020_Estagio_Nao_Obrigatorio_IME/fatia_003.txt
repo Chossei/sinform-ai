@@ -1,5 +1,8 @@
-| Estatística (Bacharel) | Resolucoes_01_e_02_2020_Estagio_Nao_Obrigatorio_IME.pdf | Capítulo Iv | Seção Geral | Artigo 5º e Artigo 6º |
-
+| Estatística (Bacharel) | Documento (Resolucoes 01 e 02 2020 Estagio Nao Obrigatorio IME) |
+e assinados pelos demais envolvidos antes de serem entregues ao CEAG.
+Parágrafo Único. O Termo de Compromisso e o Plano de Estágio não podem ser
+emitidos com datas retroativas e devem ser apresentados ao Colegiado com pelo menos 5
+(cinco) dias úteis de antecedência do início das atividades de estágio, para análise e assinatura.
 Art. 5º. A apresentação do Plano de Estágio é condição prévia para assinatura do Termo de
 Compromisso e deve conter, pelo menos, as informações presentes no modelo de Plano de
 Estágio constante no Anexo A.
@@ -28,3 +31,6 @@ VII.
 Em atenção aos estudantes dos cursos de Matemática exige-se a aprovação nas
 disciplinas MATB33 - Limites e Derivadas e MATB34 - Geometria Analítica e Álgebra
 Vetorial ou equivalentes.
+Art. 7º. No caso de renovação de estágio, será necessária a apresentação tanto de Termo Aditivo
+quanto de novo Plano de Estágio.
+DAS ATIVIDADES DE ESTÁGIO E SUA VIGÊNCIA

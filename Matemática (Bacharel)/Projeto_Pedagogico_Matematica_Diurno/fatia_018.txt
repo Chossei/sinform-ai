@@ -1,64 +1,289 @@
-| Matemática (Bacharel) | Projeto_Pedagogico_Matematica_Diurno.pdf | Normas e Diretrizes Gerais | Seção 18 | Diretriz Normativa 18 |
-
-A matriz curricular para a Licenciatura proposto neste projeto tem uma carga horária total 
-de 3.158 h, distribuídas em 08 (oito) semestres letivos de acordo com a seguinte organização: 
-− 
-Conteúdos Específicos: 1.632 h. 
-− 
-Conteúdos Pedagógicos: 306 h  
-− 
-Dimensão Prática: 408 h. 
-− 
-Estágio Docente: 408 h. 
-− 
-Disciplinas Optativas: 204 h. 
-− 
-Atividades Complementares: 200 h. 
+| Matemática (Bacharel) | Documento (Projeto Pedagogico Matematica Diurno) |
+MATRIZ CURRICULAR DA LICENCIATURA PARA ALUNOS INGRESSOS  A PARTIR DE 2007.1 
+1º semestre 
+ 
+2º semestre 
+ 
+3º semestre 
+4º semestre 
+5º semestre 
+ 
+6º semestre 
+7º semestre 
+8º semestre 
+ARQ005 –
+Desenho 
+Geométrico I 
+(68 h) 
+ 
+MAT--- 
+Introd. à Teo.  
+dos  Números 
+(68 h) 
+ 
+MAT--- 
+Grupos e Anéis I 
+(102 h) 
+FIS121 – Física 
+Geral e 
+Experimental I-E 
+(102 h) 
+FIS122 – Física 
+Geral e 
+Experimental II-E 
+(102 h  
  
  
-O curso deve ser concluído no mínimo em 03 anos e no máximo em 07 anos.    
- 
- Para 
-integralização curricular, a carga horária m ínima de 204 h em disciplinas optativas 
-deve ser cumprida, m as não há obrigatoriedade quanto ao núm ero de disciplinas optativas a 
-cursar.  
- 
-       Em função das Diretrizes Curriculares, a carga horária do curs o de 3.158 h  apresenta a 
-seguinte distribuição dos componentes curriculares: 
-− Conteúdos de natureza Científico-Cultura
-l – disciplinas específicas e quatro 
-disciplinas pedagógicas: 1938 h (o mínimo previsto na legislação é de 1.800 h). 
-− Prática de Ensino vivenciada em atividades em Se minários Temáticos, Matemática 
-para a Educação Básica ( I, II e III) e em Laboratório de Ensino de Matemática (I e II) 
-a  partir do terceiro semestre: 408 h (o mínimo exigido na legislação é de 400 h). 
-− Estágio Supervisionado: 408 h (o mínimo exigido na legislação é de 400 h). 
-− Atividades Complementares: 200 h (que é o mínimo exigido pela legislação). 
  
  
-Os componentes curriculares estão alocados na matriz curricular conforme a Resolução 
-nº 05/2003, da Câmara de Ensino de Graduação do Conselho de Ensino, Pesquisa e Extensão 
-da UFBA, classificados segundo a função, em básico, profissional ou complementar; e quanto 
-à natureza, em obrigatória ou optativa. 
  
-        Quatro eixos delineiam o currículo: 
-1) Eixo Estruturante – formado pelos conteúdos específicos da área; 
-2) Eixo Pedagógico – contem
-pla os funda
-mentos pedagógicos e os estágios 
-supervisionados; 
-3) Eixo Integrador – for mado pelas atividades desenvolvidas em Se minários Temáticos, 
-Matemática para a Ed ucação Bás ica ( I, II 
-e III) e em Laborató rio de Ensino de 
-Matemática (I e II); 
-4) Eixo Acadêmico-Cultural – constituído por es tudos e exp eriências de aprendizagem , 
-realizados de forma autônoma e não definidas na matriz. 
+Optativa 1 
+(68 h) 
  
-     Os componentes curriculares Seminários Temáticos, Matemática para a Educação Básica ( 
-I, II e III) e Laboratório de Ensino de Matem ática (I e II)  são com ponentes curriculares da 
-dimensão prática, de função profissional 
-e fazem parte do eixo in
-tegrador, facilitando a 
-articulação curricular que é um princípio a ser considerado no currículo. 
-       As atividades dessa dimensão devem desempenhar ainda um papel relevante, na m edida 
-em que professores e alunos possam
- refletir de m odo sistem ático sobre a articulação dos
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+MAT198 – 
+Fund. de Mat. 
+Elem. I 
+102h 
+ 
+MAT--- 
+Limites e 
+Derivadas 
+(102 h) 
+ 
+MAT--- 
+Integral e Funções 
+de Var. Variáveis 
+(102 h) 
+MAT--- 
+Seqüências, Séries 
+e EDO 
+(102 h) 
+MAT--- 
+Cálculo Dif. 
+Vetorial 
+(68 h) 
+ 
+MAT--- 
+Análise I 
+(102 h) 
+ 
+MAT --- 
+Funções 
+Holomorfas 
+(68 h) 
+ 
+Optativa 3 
+(68 h) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+MAT199 – 
+Fund. de Mat. 
+Elem. II 
+102h 
+ 
+MAT--- 
+Geom. Analítica 
+e Álg.  Vetorial 
+(102 h) 
+ 
+MAT--- 
+Álgebra Linear I B 
+(68 h) 
+ 
+MAT--- 
+Álgebra Linear II 
+B 
+(68 h) 
+MAT--- 
+Matemática para a 
+Educação Básica I 
+(68 h) 
+ 
+MAT--- 
+Matemática para a 
+Educ. Básica III 
+(68 h) 
+ 
+Optativa 2 
+(68 h) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+MAT191–  
+Mat. Financeira 
+(68 h) 
+ 
+MAT--- 
+Estatística 
+Básica A 
+(68 h) 
+ 
+EDCA02 
+Org. da Educação 
+Brasileira 2 
+(68 h)  
+MAT--- 
+Introdução a 
+Análise Comb. 
+(68 h)  
+MAT--- 
+Matemática para 
+Educ. Básica II 
+(68 h) 
+ 
+MAT--- 
+Lab. de Ensino de 
+Matemática I 
+(68 h) 
+MAT--- 
+Lab. de Ensino 
+de Matemática II
+(68 h) 
+MAT--- 
+Seminários 
+Temáticos 
+(68 h) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+EDCA01 
+Fund.  Psico. da 
+Educação 
+(68 h) 
+ 
+EDC --- 
+Didática e Práxis 
+Pedagógica  
+(102 h) 
+EDC--- 
+Met. do Ensino da 
+Matemática 
+(68 h) 
+EDC--- 
+Estágio 
+Supervisionado I 
+(102 h) 
+ 
+EDC--- 
+Estágio 
+Supervisionado II 
+(102 h) 
+EDC--- 
+Estágio Super.  
+III 
+(102 h) 
+EDC--- 
+Estágio Supe.  IV
+(102 h) 
+ 
+ATIVIDADES COMPLEMENTARES  (200 h) 
+Carga  horária  
+ 
+Carga  horária  
+ 
+Carga  horária  
+ 
+Carga  horária  
+ 
+Carga  horária  
+ 
+Carga  horária  
+ 
+Carga  horária  
+ 
+Carga  horária  
+Total: 340 h  
+Total: 408 h  
+Total: 442 h 
+Total: 408 h 
+Total: 408 h 
+ 
+Total: 340 h
+Total: 374 h
+ 
+Total: 238 h 
+ 
+CONTEÚDOS ESPECÍFICOS:
+1632 h 
+ 
+CONTEÚDOS PEDAGÓGICOS: 
+306 h 
+ 
+ESTÁGIO SUPERVISIONADO:   408 h  
+ 
+PRÁTICA:
+408 h 
+ 
+OPTATIVAS:   204 h 
+ 
+ATIVIDADES COMPLEMENTARES:  200 h 
+ 
+TOTAL:
+3158 h 
+      Duração do Curso em anos 
+   Mínima       Média     Máxima  
+03
+|
+04
+|
+07
+        O aluno deve cumprir a 
+carga horária mínima de 204 
+horas em componentes 
+curriculares optativos, mas não

@@ -1,45 +1,61 @@
-| Matemática (Bacharel) | Projeto_Pedagogico_Matematica_Diurno.pdf | Normas e Diretrizes Gerais | Seção 43 | Diretriz Normativa 43 |
-
-47
-ATUAIS 
-NOVOS 
-MAT207. Topologia Geral 
-MATB50 - Topologia e Espaços Métricos 
-MAT105. Funções Analíticas I 
-MATB46 - Funções Holomorfas 
-MAT209. Teoria das Equações Diferenciais 
-MATB51 - Teoria das Equações Diferenciais Ordinárias     
-MAT210. Equações Diferenciais Parciais 
-MATB58 - Equações Diferenciais Parciais 
-MAT212. Seminários em Matemática 
-MATB55 -  Monografia 
-MAT202. Fundamentos de Matemática Elementar III 
-MATB39 -  Matemática Para a Educação Básica I 
-EDC140. Didática Geral  
-EDCA79 - Didática e Práxis Pedagógica 
-EDC318. Metodologia e Prática do Ensino da Matemática II 
-EDCA84  -  Estágio Supervisionado IV 
-MAT212. Estatística Básica 
-MATB59 - Estatística Básica A 
+| Matemática (Bacharel) | Documento (Projeto Pedagogico Matematica Diurno) |
+Ementa: 
+  Estudo, planejamento e prática de ensino em espaços formais de educação (níveis fundamental e/ou médio em escolas 
+oficiais), em espaços alternativos e/ou em outras modalidades educacionais, realizados de forma cumulativa, através da 
+aplicação dos fundamentos teórico-práticos estudados em Didática e Práxis Pedagógica e Meto dologia do En sino da 
+Matemática, de modo contextualizado e contemporâneo, tomando-se por base os conteúdos de cada campo de saber, 
+objeto da formação. 
  
  
  
-TABELA II  
-(EQUIVALÊNCIA ENTRE CONJUNTOS DE COMPONENTES CURRICULARES)  
  
-ATUAIS 
-NOVOS 
-MAT203. Fundamentos de Matemática Elementar IV   
-MATB42 -  Matemática Para a Educação Básica II  e 
-MATB45 -  Matemática Para a Educação Básica III   
-EDC317. Metodologia e Prática do Ensino da Matemática I 
-EDCA80 - Metodologia do Ensino da Matemática e EDCA83 Estágio 
-Supervisionado III 
+Nome e código do componente curricular: 
+Estágio Supervisionado II. EDCA82 
+Departamento: 
+Departamento de 
+Educação II 
+Carga horária: 
+T:17  P:51 E: 34 
+Modalidade: 
+Disciplina 
+Função: 
+Profissional 
+Natureza: 
+Obrigatória 
+Pré-requisito: 
+Didática e praxis pedagógicas  
  
- Ou seja, na TABELA II estabelecemos que: 
-   
-1. A disciplina MAT203 - Fundamentos de Matemática Elementar IV equivale às duas disciplinas Matemática Para a Educação Básica II  e 
-Matemática Para a Educação Básica III conjuntamente. 
+Módulo de alunos: 
+15 
+Ementa: 
+  Estudo, planejamento e prática de ensino em espaços formais de educação (níveis fundamental e/ou médio em escolas 
+oficiais), em espaços alternativos e/ou em outras modalidades educacionais, realizados de forma cumulativa, através da 
+aplicação dos fundamentos teórico-práticos estudados em Didática e Práxis Pedagógica e Meto dologia do En sino da 
+Matemática, de modo contextualizado e con temporâneo, tomando-se por base os conteúdos de cada campo do saber, 
+objeto da formação. 
  
- 2. A disciplina EDC 317 - Metodologia e Prática do Ensino da Matemática I equivale às duas disciplinas Metodologia do Ensino da 
-Matemática e Estágio Supervisionado III conjuntamente.
+ 
+ 
+ 
+Nome e código do componente curricular: 
+Estágio Supervisionado III. EDCA83 
+Departamento: 
+Departamento de Educação II 
+Carga horária: 
+T: 17 P:34 E:51 
+Modalidade 
+ Disciplina 
+Função: 
+Profissional 
+Natureza: 
+Obrigatória 
+Pré-requisito: 
+− Metodologia do Ensino da  Matemática. 
+− Laboratório de Ensino de Matemática I 
+Módulo de alunos: 
+15 
+Ementa: 
+Exercício efetivo da prática de ensino, pela aplicação d os fundamentos teórico-práticos desenvolvidos nas disciplinas 
+Didática e Práxis Pedagógica e Metodologia do Ensino da Matemática, dos conteúdos específicos de sua formação, de 
+forma co ntextualizada e com a in corporação das i novações contem porâneas que i nserem a educ ação no processo de 
+desenvolvimento sócio-histórico e humano.

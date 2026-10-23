@@ -1,66 +1,37 @@
-| Matemática (Bacharel) | Regimento_Interno_Colegiado_Matematica.pdf | Capítulo Iv | Seção Geral | Artigo 6º e Artigo 7º |
-
-Art. 6º. Os mandatos de representação no COLMAT são de 02 (dois) anos para os(as) docentes
-e servidores(as) técnico-administrativos(as), e de 01 (um) ano para os(as) representantes do
-corpo discente, tendo todos(as) direito a uma recondução.
-§ 1º Os membros docentes do COLMAT, citados nos incisos I e II do caput deste artigo, serão
-indicados pela plenária dos seus respectivos Departamentos ou instâncias equivalentes de
-alocação.
-§ 2º Os representantes citados nos incisos III e IV do caput deste artigo serão indicados por seus
-pares.
-§ 3º Cada representante tem 01 (um) suplente eleito(a) pelo mesmo processo e,
-preferencialmente, na mesma ocasião de escolha dos(as) titulares, que substituem,
-automaticamente, os membros titulares nas suas faltas ou impedimentos para desempenhar
-atribuições junto ao colegiado.
-§ 4º No caso de vacância/afastamento do cargo de titular, assumirá seu(sua) suplente pelo prazo
-máximo de 60 (sessenta) dias, dentro do qual será realizada nova eleição ou indicação, conforme
-descrito nos parágrafos 1º e 2º deste artigo.
-Art. 7º. Nos termos do Art. 34º do Estatuto e Regimento Geral da UFBA, compete ao Colegiado:
+| Matemática (Bacharel) | Documento (Regimento Interno Colegiado Matematica) |
+simples dos votos válidos (os votos em branco e nulo não são tidos como válidos) serão
+considerados(as) os(as) próximos(as) Coordenador(a) e Vice-Coordenador(a). Tal resultado deve
+ser encaminhado à Direção do IME para os devidos procedimentos.
+§ 4º O mandato terá duração de 02 (dois) anos para o(a) Coordenador(a) e para o(a) Vice-
+Coordenador(a), sendo permitida uma recondução.
+Art. 4º.  Na ausência do(a) Coordenador(a) do COLMAT assumirá o(a) Vice-Coordenador(a), e na
+ausência de ambos(as), o cargo do(a) Coordenador(a) será assumido pelo(a) decano(a) dentre
+os(as) docentes membros do COLMAT.
+Art. 5º. A composição do COLMAT atende ao disposto no Regimento Interno da Unidade
+Universitária que o sedia, no caso o IME, e respeita os princípios do REGPG. Desta forma, o
+Colegiado dos Cursos de Graduação em Matemática é composto por:
 I.
-eleger, dentre seus membros docentes, o(a) Coordenador(a) e o(a) Vice-
-Coordenador(a);
+08 (oito) professores(as) do quadro permanente do DMAT da UFBA, dos(as) quais 01
+(um) é o(a) Coordenador(a) e 01 (um) é o(a) Vice-Coordenador(a);
 II.
-fixar diretrizes e orientações acadêmicas para os cursos de Matemática da UFBA;
+01 (um) representante do corpo técnico-administrativo do IME;
 III.
-coordenar e fiscalizar as atividades do curso, incluindo acompanhamento, atualização e
-avaliação dos componentes curriculares dos cursos de Matemática;
+03 (três) representações discentes dos Cursos de Matemática da UFBA;
 IV.
-propor e aprovar, em primeira instância, alterações no projeto pedagógico e no
-currículo dos cursos, bem como criação, atualização e extinção de componentes
-curriculares;
-V.
-estabelecer normas quanto à inscrição em componentes curriculares e à integralização
-curricular;
-VI.
-encaminhar à instância competente solicitação de providências que viabilizem o seu
-pleno funcionamento;
-VII.
-organizar a orientação acadêmica de acordo com o capítulo IX do REGPG, distribuindo
-os discentes aos docentes responsáveis (denominados de orientadores acadêmicos);
-VIII.
-planejar, semestralmente, a oferta de componentes curriculares, bem como seus
-respectivos horários, de forma a assegurar o cumprimento da grade curricular
-estabelecida para os cursos;
-IX.
-decidir sobre procedimentos referentes aos pedidos de matrícula, trancamento ou
-aproveitamento de estudos;
-X.
-deliberar sobre solicitações, recursos ou representações de estudantes referentes à vida
-acadêmica, na forma definida no REGPG;
-XI.
-participar diretamente dos programas de avaliação da Instituição, com vistas à
-manutenção da boa qualidade de seus cursos;
-XII.
-elaborar seu Regulamento Interno e submetê-lo à apreciação da Congregação do IME,
-assim como eventuais propostas de modificação;
-XIII.
-deliberar sobre propostas do Núcleo Docente Estruturante (NDE);
-XIV.
-deliberar, em grau de recurso, sobre decisões do(a) Coordenador(a) do COLMAT;
-XV.
-apreciar o Relatório Anual de Atividades do curso elaborado pelo(a) Coordenador(a);
-XVI.
-cumprir e fazer cumprir as decisões da Congregação do IME e dos órgãos superiores de
-deliberação sobre assuntos relativos aos cursos de Matemática;
-XVII.
-exercer as demais atribuições conferidas por lei e descritas no REGPG.
+01 (um) professor(a) de cada Departamento ou instância equivalente da UFBA que
+ofereça 02 (dois) ou mais componentes curriculares (obrigatórios ou optativos) no
+fluxograma em vigor dos Cursos de Matemática. Mais especificamente:
+i.
+01 (um) docente do Departamento de Educação I (FACED);
+ii.
+01 (um) docente do Departamento de Educação II (FACED);
+iii.
+01 (um) docente do Departamento de Estatística (DEST);
+iv.
+01 (um) docente do Faculdade de Arquitetura (FAUFBA);
+v.
+01 (um) docente do Instituto de Computação (IC) da UFBA;
+vi.
+01 (um) docente do Departamento de Física Geral (IF);
+vii.
+01 (um) docente do Departamento de Física do Estado Sólido (IF).

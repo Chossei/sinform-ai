@@ -1,74 +1,177 @@
-| Matemática (Licenciatura) | Projeto_Pedagogico_Matematica_Noturno_Licenciatura.pdf | Normas e Diretrizes Gerais | Seção 28 | Diretriz Normativa 28 |
-
-Conteúdo:
-  
-Princípio de contagem. Cônicas. Curvas parametrizadas. Áreas e aplicações. Superfícies. 
-Volumes. Método de indução.
-As atividades ocorrerão segundo a metodologia:
-- Serão desenvolvidos estudos de tópicos da ementa, serão apresentadas palestras pelo professor 
-responsável ou por professores convidados. Todos os tópicos serão vistos com utilização de 
-modelos concretos. 
-- Durante o semestre, sob a orientação e supervisão do professor, cada aluno escolherá um tópico da ementa sobre o 
-qual construirá modelos concretos e apresentará dois seminários abertos à comunidade.
-As aulas práticas ocorrerão no Laboratório LEMA-UFBa onde o aluno deverá  construir os modelos concretos
-Nome e código do componente curricular:
-Laboratório de Ensino de Matemática II. MATB48
-Departamento:
-Matemática
-Carga horária: 68
-T: 00 P:68 E:00
+| Matemática (Licenciatura) | Documento (Projeto Pedagogico Matematica Noturno Licenciatura) |
 Modalidade:
 Disciplina
 Função:
-complementar
+Básica
 Natureza:
-Optativa
+Obrigatória
+Pré-requisito:
+Integral e Funções de 
+Várias Variáveis.
+Módulo de alunos:
+45
+Ementa:
+          Fórmula de Taylor. Máximos e mínimos. Integrais múltiplas. Campos vetoriais. Integrais de linha. Superfícies 
+parametrizadas.  Integrais de superfície. Teoremas de Green, Stokes e Gauss.
+Nome e código do componente curricular:
+Análise I. MATB44
+Departamento:
+Matemática
+Carga horária:
+102 horas/aula
+Modalidade:
+Disciplina
+Função:
+Básica
+Natureza:
+Obrigatória
+Pré-requisito:
+Seqüências, Séries e 
+EDO
+Módulo de alunos:
+45
+Ementa:
+         Números Reais. Seqüências e séries de números reais. Topologia da reta real. Limite e continuidade de funções 
+reais. Derivada de função a uma variável real. 
+Nome e código do componente curricular:
+Estágio Curricular Supervisionado I.  EDCA81 
+Departamento:
+Departamento de 
+Educação II
+Carga horária:
+102 horas/aula
+Modalidade:
+Disciplina
+Função:
+Profissional
+Natureza:
+Obrigatória
+Pré-requisito:
+Didática e Práxis Pedagógica.
+Módulo de alunos:
+25
+Ementa:
+  Estudo, planejamento e prática de ensino em espaços formais de educação (níveis fundamental e/ou médio em escolas 
+oficiais), em espaços alternativos e/ou em outras modalidades educacionais, realizados de forma cumulativa, através da 
+aplicação dos fundamentos teórico-práticos estudados em Didática e Práxis Pedagógica e Metodologia do Ensino da 
+Matemática, de modo contextualizado e contemporâneo, tomando-se por base os conteúdos de cada campo de saber, 
+objeto da formação.
+Nome e código do componente curricular:
+Funções Holomorfas. MAT B46
+Departamento:
+Matemática 
+Carga horária:
+68  h
+Modalidade:
+Disciplina
+Função:
+Básica
+Natureza:
+Obrigatória
+Pré-requisito:
+Cálculo diferencial e 
+integral
+Módulo de alunos:
+45
+Ementa: 
+O corpo dos números complexos. Limite, continuidade e funções complexas. Derivada complexa e as funções 
+holomorfas. Séries de potência e funções analíticas. Teoria de Cauchy. Singularidades e séries de Laurent.  Resíduo e 
+pólos: aplicação ao cálculo de integrais reais. Transformações conformes e aplicações.
+         
+Nome e código do componente curricular:
+Estágio Curricular Supervisionado II. EDC A82
+Departamento:
+Departamento de 
+Educação II
+Carga horária:
+102 horas/aula
+29
+Modalidade:
+Disciplina
+Função:
+Profissional
+Natureza:
+Obrigatória
+Pré-requisito:
+Didática e praxis pedagógicas 
+Módulo de alunos:
+25
+Ementa:
+  Estudo, planejamento e prática de ensino em espaços formais de educação (níveis fundamental e/ou médio em escolas 
+oficiais), em espaços alternativos e/ou em outras modalidades educacionais, realizados de forma cumulativa, através da 
+aplicação dos fundamentos teórico-práticos estudados em Didática e Práxis Pedagógica e Metodologia do Ensino da 
+Matemática, de modo contextualizado e contemporâneo, tomando-se por base os conteúdos de cada campo do saber, 
+objeto da formação.
+Nome e código do componente curricular:
+Matemática Financeira - MAT191 
+Departamento:
+Matemática
+Carga horária:
+68 horas/aula
+Modalidade:
+Disciplina
+Função:
+Complementar
+Natureza:
+Obrigatória
+Pré-requisito:
+Não tem.
+Módulo de alunos:
+45
+Ementa:
+              Conceitos Fundamentais. Capitalização. Descontos. Equivalência de Capitais. Séries de Capitais. Custo 
+Efetivo de um Empréstimo. Sistemas de Amortização. Inflação. Depreciação.
+Nome e código do componente curricular:
+Estágio Supervisionado III. EDCA83
+Departamento:
+Departamento de 
+Educação II
+Carga horária: 102 h/a 
+Teórica:  17 h.
+Dimensão prática: 34 h. 
+Estágio Docente Supervisionado: 51 h
+Modalidade
+ Disciplina
+Função:
+Profissional
+Natureza:
+Obrigatória
+Pré-requisito:
+− Metodologia do 
+Ensino da  Matemática.
+Didática e Práxis 
+pedagógica
+Módulo de alunos:
+25
+Ementa:
+Exercício efetivo da prática de ensino, pela aplicação dos fundamentos teórico-práticos desenvolvidos nas disciplinas 
+Didática e Práxis Pedagógica e Metodologia do Ensino da Matemática, dos conteúdos específicos de sua formação, 
+de forma contextualizada e com a incorporação das inovações contemporâneas que inserem a educação no processo de 
+desenvolvimento sócio-histórico e humano.
+Nome e código do componente curricular:
+Seminários Temáticos.  MATB49
+Departamento:
+Matemática
+Carga horária:
+68 horas/aula
+Modalidade:
+Módulo interdisciplinar
+Função:
+Profissional
+Natureza:
+Obrigatória
 Pré-requisito:
 Cálculo diferencial e 
 integral
 Módulo de alunos:
 25
-Conteúdo:
-  
-Métricas não euclidianas e construção de cônicas. Homeomorfsmos entre espaços métricos. 
-Invariantes topológicos (Característica de Euler, Teorema das quatro cores). Técnica de construção 
-de modelos concretos de superfícies. Noções de curvatura e geodésica de superfícies. Triângulos 
-geodésicos e soma de ângulos internos. 
-As atividades ocorrerão segundo a metodologia:
-- Serão desenvolvidos estudos de tópicos da ementa, serão apresentadas palestras pelo professor 
-responsável ou por professores convidados. Todos os tópicos serão vistos com utilização de 
-modelos concretos. 
-- Durante o semestre, sob a orientação e supervisão do professor, cada aluno escolherá um tópico da ementa sobre o qual 
-construirá modelos concretos e apresentará dois seminários abertos à comunidade.
-As aulas práticas ocorrerão no Laboratório LEMA-UFBa onde o aluno deverá  construir os modelos 
-concretos
+Ementa:
+Temas relacionados com problemas de fundamentos da matemática e resolução de problemas, relativos a conteúdos 
+estudados no Ensino Fundamental e no Ensino Médio. 
+Objetivo geral: 
+Acrescentar maior flexibilidade ao curso, possibilitando que os alunos escolham temas para serem estudados e ao 
+mesmo tempo dando - lhes a oportunidade de organizar e participar de atividades variadas como palestras, debates etc. 
+sobre esses temas.
           
-Nome e código do componente curricular:
-Descritiva I. ARQ013  
-Departamento:
-Geometria das 
-Representações 
-Carga horária: 68
-T:34  P:34  E:00
-Modalidade:
-Disciplina
-Função:
-Complementar
-Modalidade:
-Disciplina
-Função:
-complementar
-Natureza:
-Optativa
-Pré-requisito:
-Não tem
-Módulo de alunos:
-45
-Conteúdo:
-Dar ao aluno os conhecimentos básico relativo aos diversos sistemas de representação da forma dando ênfase particular 
-ao sistema diédrico pela geometria  descritiva. 
-Aprimoramento da formação do raciocínio lógico especial na solução de exercícios graduais  e sistemática que utilizam 
-que a descritiva como meio e não fim.
-O aluno deverá teorizar e  representar tridimensional (entes geométricos, figuras planas, sólidos geométricos e situação 
-especial) no bidimensional empregado, de preferência, o sistema diédrico.
-34
+ 
+30

@@ -1,5 +1,12 @@
-| Estatística (Bacharel) | Resolucao_05_2024_TCC_Estatistica.pdf | Capítulo Vi | Seção Geral | Artigo 12 (Parte 3) |
-
+| Estatística (Bacharel) | Documento (Resolucao 05 2024 TCC Estatistica) |
+a) ________________________________________ (Orientador(a)/Coorientador(a))
+b) ________________________________________ (identificação da lotação, titular)
+c) ________________________________________ (identificação da lotação, titular)
+d) ________________________________________ (identificação da lotação, suplente)
+e) ________________________________________ (identificação da lotação, suplente)
+Data prevista da apresentação: ___/__/20___
+Horário previsto da apresentação: das __:__ às __:__ horas
+Local previsto para a apresentação: dados da sala física ou virtual
 Salvador, ___ de _________________ de _________.
 ______________________________________
 Nome do(a) Professor(a) Orientador(a)
@@ -43,17 +50,3 @@ orientação do(a) professor(a) _______________ e coorientação do(a) professor
 ________________. A banca foi composta pelos(as) seguintes examinadores(as):
 ___________________ (Presidente), _________________ e ____________________.
 Após a explanação de ____________ minutos, o(a) aluno(a) foi arguido pelos membros da
-banca, respondendo as perguntas que lhe foram feitas. Portanto, o ______ (projeto/trabalho)
-foi aprovado/reprovado, com média final de ________ pontos. Ao final da sessão, a presente
-ata foi lavrada e assinada pelo candidato e pelos membros da banca examinadora.
-_________________________________
-Candidato(a)
-_________________________________
-Presidente
-__________________________________
-Examinador(a)
-_________________________________
-Examinador(a)
-UNIVERSIDADE FEDERAL DA BAHIA
-INSTITUTO DE MATEMÁTICA E ESTATÌSTICA
-COLEGIADO DO CURSO DE ESTATÍSTICA

@@ -1,72 +1,107 @@
-| Matemática (Licenciatura) | Projeto_Pedagogico_Matematica_Diurno_Licenciatura.pdf | Normas e Diretrizes Gerais | Seção 45 | Diretriz Normativa 45 |
-
-49
-8. Se dois componentes curriculares, A e B, são equivalentes, e uma deles, digamos B, é pré-requisito (ou é parte do pré-requisito) de um 
-terceiro, C, então A poderá substituir B como pré-requisito (ou parte do pré-requisito) de C. O mesmo ocorre se no lugar de A houver um 
-conjunto de componentes curriculares. 
- 
-9. Se ao completar a sua grade curricular, houver déficit na totalização da carga horária relativa a componentes curriculares do Currículo Mínimo 
-ou componentes curriculares Complementares Obrigatórios o aluno pode completar esse déficit da seguinte forma:   
- 
-− Em se tratando de um aluno da Licenciatura, cursando componentes curriculares listados na próxima tabela, obedecendo aos pré-requisitos:  
+| Matemática (Licenciatura) | Documento (Projeto Pedagogico Matematica Diurno Licenciatura) |
+Ementa: 
+             Integrais de Riemann. Integral imprópria. Seqüências e séries de funções de uma variável real.  
  
  
  
-TABELA III 
-Componentes curriculares 
-Pré-requisito 
-EDCA81 - Estágio Supervisionado I 
-------- 
-EDCA82 - Estágio Supervisionado II 
-------- 
-MATB47 - Laboratório de Ensino de Matemática I. 
-MATA03 
-MATB48 - Laboratório de Ensino de Matemática I.I 
-MATA03 
-MATB36 -  Grupos e Anéis II 
-MAT201 
-MATB31 - Introdução a Análise Combinatória 
------- 
-MATB49 - Seminários Temáticos 
-MATA03 
-MATB56 -.Introdução à Teoria dos Conjuntos 
------- 
-MATB57 - Construção de Conjuntos Numéricos.  
----------
-50
-− Em se tratando de um aluno do Bacharelado, cursando componentes curriculares da tabela seguinte, obedecendo aos pré-requisitos:  
  
-  
-TABELA IV 
-Componentes curriculares 
-Pré-requisito 
-MATB47 - Laboratório de Ensino de Matemática I. 
-MATA03 
-MATB48 -Laboratório de Ensino de Matemática I.I 
-MATA03 
-MAB36 - Grupos e Anéis II 
-MAT201 
-MATB31 - Introdução a Análise Combinatória 
------- 
-MATB49 - Seminários Temáticos 
-MATA03 
-MAT56 -.Introdução à Teoria dos Conjuntos 
------- 
-MATB57 - Construção de Conjuntos Numéricos.  
---------- 
+Nome e código do componente curricular: 
+Análise III. MATB53 
+Departamento: 
+Matemática  
+Carga horária: 
+T:102  P:00 E:00 
+Modalidade:  
+ Disciplina 
+Função: 
+Básica  
+Natureza: 
+Obrigatória para o 
+Bacharelado e optativa 
+para  a Licenciatura 
+Pré-requisito: 
+− Análise II. 
+Módulo de alunos: 
+40 
+Ementa: 
+            Seqüências, continuidade e limites no espaço euclidiano. Caminhos no espaço euclidiano. Funções reais de n 
+variáveis. O teorema da função implícita e inversa. 
  
  
-10. Qualquer disciplina da TABELA III, com exceção de EDCA81-  Estágio Supervisionado I e  EDCA82 -  Estágio Supervisionado II, se não 
-for usada para completar a carga horária em disciplinas do Currículo Mínimo e nem em disciplinas Obrigatórias Complementares de um aluno de 
-Licenciatura, então será considerada disciplina optativa para aquele aluno.  A mesma regra se aplica para as disciplinas da TABELA IV, em 
-relação ao aluno do Bacharelado.          
  
  
-    
-8.3. Adaptação para o aluno de Licenciatura que ingressou em 2006.1 
+Nome e código do componente curricular: 
+Funções Holomorfas. MATB46 
+Departamento: 
+Matemática  
+Carga horária: 
+T: 68 P:00 E:00 
+Modalidade: 
+Disciplina 
+Função: 
+Básica 
+Natureza: 
+Obrigatória para a 
+Licenciatura e para o 
+Bacharelado 
+Pré-requisito: 
+− Integrais e Funções 
+de Várias Variáveis 
+Módulo de 
+alunos: 
+40 
+Ementa:  
+O corpo dos números complexos. Limite, continuidade e funções complexas. Derivada complexa e as funções 
+holomorfas. Séries de potência e funções analíticas. Teoria de Cauchy. Singularidades e séries de Laurent.  Resídu o e 
+pólos: aplicação ao cálculo de integrais reais. Transformações conformes e aplicações. 
+          
  
  
-Para o aluno de Licenciatura cujo currículo é de 2006.1 as modificações em seu currículo serão maiores. Isso ocorrerá porque o currículo 
-da Licenciatura deve atender à Resolução CNE/CP n.º 2, de 18 de fevereiro de 2002 que estabelece 400 h de estágio, 400 h de prática e 200 h de 
-atividades complementares. Vamos definir um novo  currículo para esses alunos de modo a atender a legislação, mas que cause o mínimo de 
-impacto na vida acadêmica do aluno que já está concluindo o primeiro ano do curso.
+ 
+ 
+ 
+ 
+Nome e código do componente curricular: 
+Topologia e Espaços Métricos. MATB50 
+Departamento: 
+Matemática 
+Carga horária: 
+T: 68 P:00 E:00 
+Modalidade: 
+Disciplina 
+Função: 
+Básica 
+Natureza: 
+Obrigatória para o 
+Bacharelado e 
+optativa para  a 
+Licenciatura 
+Pré-requisito: 
+− Limites e Derivadas 
+Módulo de alunos: 
+40 
+Ementa: 
+         Estudo dos espaços topológicos e métricos e suas propriedades.
+Nome e código do componente 
+curricular: 
+Estágio Supervisionado IV.  EDCA84 
+Departamento: 
+Departamento de Educação II 
+Carga horária: 
+T: 17 P:34 E:51 
+Modalidade: 
+ Disciplina 
+Função: 
+Profissional 
+Natureza: 
+Obrigatória 
+Pré-requisito: 
+− Metodologia do Ensino da  Matemática. 
+− Laboratório de Ensino de Matemática I 
+Módulo de alunos: 
+15 
+Ementa: 
+Exercício efetivo da prática de ensino, pela aplicação dos fundamentos teórico-práticos desenvolvidos nas disciplinas, 
+Didática e Práxis Pedagógica e Metodologia do Ensino da Matemática, dos conteúdos específicos de sua formação, de 
+forma contextualizada e com a incorporação das inovações contemporâneas que inserem a educação no processo de 
+desenvolvimento sócio-histórico e humano.

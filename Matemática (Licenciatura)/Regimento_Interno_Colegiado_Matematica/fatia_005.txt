@@ -1,42 +1,34 @@
-| Matemática (Licenciatura) | Regimento_Interno_Colegiado_Matematica.pdf | Capítulo Iv | Seção Geral | Artigo 8º |
-
-Art. 8º. Compete ao(à) Coordenador(a) do COLMAT:
+| Matemática (Licenciatura) | Documento (Regimento Interno Colegiado Matematica) |
+§ 4º O mandato terá duração de 02 (dois) anos para o(a) Coordenador(a) e para o(a) Vice-
+Coordenador(a), sendo permitida uma recondução.
+Art. 4º.  Na ausência do(a) Coordenador(a) do COLMAT assumirá o(a) Vice-Coordenador(a), e na
+ausência de ambos(as), o cargo do(a) Coordenador(a) será assumido pelo(a) decano(a) dentre
+os(as) docentes membros do COLMAT.
+Art. 5º. A composição do COLMAT atende ao disposto no Regimento Interno da Unidade
+Universitária que o sedia, no caso o IME, e respeita os princípios do REGPG. Desta forma, o
+Colegiado dos Cursos de Graduação em Matemática é composto por:
 I.
-convocar e presidir as reuniões do Colegiado;
+08 (oito) professores(as) do quadro permanente do DMAT da UFBA, dos(as) quais 01
+(um) é o(a) Coordenador(a) e 01 (um) é o(a) Vice-Coordenador(a);
 II.
-executar as deliberações do Colegiado e gerir as atividades dos cursos de Matemática;
+01 (um) representante do corpo técnico-administrativo do IME;
 III.
-designar relator(a) ou comissão para estudo de matéria a ser decidida pelo COLMAT;
+03 (três) representações discentes dos Cursos de Matemática da UFBA;
 IV.
-representar o Colegiado junto à Congregação, aos demais órgãos da Universidade e à
-outras instituições;
-V.
-solicitar, semestralmente, a oferta de componentes curriculares aos Departamentos ou
-instâncias equivalentes envolvidos, conforme Agenda Acadêmica definida pela UFBA;
-VI.
-orientar os(as) discentes quanto à matrícula e integralização curricular;
-VII.
-divulgar o Regulamento do COLMAT aos discentes e docentes dos cursos de
-Matemática;
-VIII.
-instalar comissão para a execução de tarefas específicas;
-IX.
-analisar e movimentar os processos abertos pelos(as) discentes;
-X.
-disponibilizar horário de atendimento à comunidade acadêmica no período diurno;
-XI.
-assessorar as instâncias competentes quanto ao planejamento semestral das atividades
-de ensino de graduação da Unidade Universitária;
-XII.
-elaborar o Relatório Anual de Atividades e submetê-lo à plenária do colegiado, com
-encaminhamento à Congregação do IME;
-XIII.
-deliberar, em caso de comprovada urgência, solicitações ad referendum do COLMAT;
-XIV.
-em necessidade de afastamento, entrar em acordo com o(a) Vice-Coordenador(a) para
-que o colegiado não fique sem coordenação;
-XV.
-elaborar as atas das reuniões do COLMAT;
-XVI.
-organizar, em consonância com a Direção do IME, procedimentos e ritos referentes às
-colações de grau.
+01 (um) professor(a) de cada Departamento ou instância equivalente da UFBA que
+ofereça 02 (dois) ou mais componentes curriculares (obrigatórios ou optativos) no
+fluxograma em vigor dos Cursos de Matemática. Mais especificamente:
+i.
+01 (um) docente do Departamento de Educação I (FACED);
+ii.
+01 (um) docente do Departamento de Educação II (FACED);
+iii.
+01 (um) docente do Departamento de Estatística (DEST);
+iv.
+01 (um) docente do Faculdade de Arquitetura (FAUFBA);
+v.
+01 (um) docente do Instituto de Computação (IC) da UFBA;
+vi.
+01 (um) docente do Departamento de Física Geral (IF);
+vii.
+01 (um) docente do Departamento de Física do Estado Sólido (IF).

@@ -1,5 +1,4 @@
-| Estatística (Bacharel) | Resolucao_02_2018_Exame_Conhecimento_Previo.pdf | Capítulo Geral | Seção Geral | Artigo 1º e Artigo 2º |
-
+| Estatística (Bacharel) | Documento (Resolucao 02 2018 Exame Conhecimento Previo) |
 UNIVERSIDADE FEDERAL DA BAHIA
 INSTITUTO DE MATEMÁTICA E ESTATÍSTICA
 COLEGIADO DE ESTATÍSTICA
@@ -22,3 +21,7 @@ Art. 2º Não poderá ser objeto de avaliação de conhecimento prévio o compon
 curricular no qual o aluno tenha se submetido a exame anteriormente na mesma
 modalidade, e tenha sido reprovado ou tenha seu pedido cancelado conforme o Artigo
 5º desta Resolução.
+Art. 3º Está vetada a segunda chamada do exame de avaliação de conhecimento prévio,
+sob qualquer hipótese.
+Art. 4º Os pedidos porventura recebidos, somente serão apreciados na segunda reunião
+plenária ordinária do CCE de cada semestre letivo.

@@ -1,37 +1,178 @@
-| Matemática (Licenciatura) | Projeto_Pedagogico_Matematica_Diurno_Licenciatura.pdf | Normas e Diretrizes Gerais | Seção 44 | Diretriz Normativa 44 |
-
-48
-8.2. Adaptação para aluno de Licenciatura que ingressou em 2005.1 ou antes e o aluno do Bacharelado que ingressou em 2006.1 ou antes. 
- 
- 
-Para o aluno de Licenciatura cujo currículo é de 2005.1 ou anterior, e para o aluno do Bacharelado cujo currículo é de 2006.1 ou é anterior valem 
-as seguintes regras: 
- 
-1. Será mantida a sua matriz curricular original.   
-Para alunos de licenciatura, é oportuno ressaltar que esta norma está fundamentada na Resolução CNE/CP nº 1/2005 (Veja em ANEXO 2). 
- 
-2. Os componentes curriculares que atualmente constam como optativos para esse aluno continuarão como optativos. 
- 
-3. Para todo componente curricular do currículo do aluno será mantido o seu pré-requisito. 
- 
-4. Ficam mantidas as equivalências entre componentes curriculares definidas em adaptações curriculares anteriores. 
-   
-5. Quando cessar o oferecimento de algum dos componentes curriculares da matriz curricular do aluno, se ele não tiver cursado nem aquele e 
-nem outro componente curricular ou conjunto de componentes curriculares equivalente a aquele, então ele deverá cursar o componente curricular 
-equivalente ou o conjunto de componentes curriculares equivalente da 2ª coluna das TABELAS I ou II.  
- 
-6. Para o aluno cursar um componente curricular da 2ª coluna da TABELA I, o pré-requisito exigido será o pré-requisito do componente 
-equivalente da 1ª coluna da TABELA I. 
- 
-7. Para o aluno cursar um componente curricular da 2ª coluna da TABELA II, o pré requisito exigido será definido pela tabela abaixo 
- 
-Componentes curriculares 
+| Matemática (Licenciatura) | Documento (Projeto Pedagogico Matematica Diurno Licenciatura) |
+Código / Nome 
+C.H. 
+Hora/aula 
+Módulo 
+Função 
 Pré-requisito 
-MATB42 - Matemática Para a Educação Básica II 
-MATA02 
-MATB45 -  Matemática Para a Educação Básica III   
-MATA07 
-EDCA80 -Metodologia do Ensino da Matemática  
-EDC140 
-EDCA83 - Estágio Supervisionado III  
-EDC140 e  MAT203; EDCA02
+Departamento de  
+ARQ013 − Descritiva I   
+68 Discip
+lina 
+Complementar 
+− ARQ005 
+Geometrias de 
+Representação 
+MAT135 – Funções Analíticas II 
+68  
+Disciplina 
+Complementar 
+− Funções Holomorfas 
+Matemática 
+MATA53 – Teoria dos Grafos 
+68  
+Disciplina 
+Complementar 
+− MATA07  
+−  Grupos e Anéis I 
+Ciência da Computação 
+MATA51 – Teoria da Computação 
+68  
+Disciplina 
+Complementar 
+−  Grupos e Anéis I 
+Ciência da Computação 
+MAT192 – Matemática Aplicada à Economia 
+102  Discip
+lina 
+Complementar 
+------ 
+Matemática 
+MAT213 – Tópicos em Álgebra 
+68  
+Disciplina 
+Complementar 
+− MAT205 
+Matemática 
+MAT214 – Tópicos em Análise 
+68  
+Disciplina 
+Complementar 
+− Análise III 
+Matemática 
+MAT215 – Tópicos em Geometria 
+68  
+Disciplina 
+Complementar 
+− MAT208 
+Matemática 
+MAT216 – Tópicos da História da Matemática 
+68  
+Disciplina 
+Complementar 
+−  Grupos e Anéis I 
+  − Análise I 
+Matemática 
+FIS124 - Física Geral e Experimental IV-E 1
+02  
+Disciplina 
+Complementar 
+− FIS123 
+Física do Estado Sólido 
+MAT--- Teoria dos Conjuntos  
+68 
+Disciplina 
+Complementar 
+------ 
+Matemática 
+MAT--- Construção de Conjuntos Numéricos 
+68  
+Disciplina 
+Complementar 
+------ 
+Matemática 
+MAT--- Equações Diferenciais Parciais  
+68  
+Disciplina 
+Complementar 
+−  Análise I 
+Matemática 
+ 
+CLIQUE PARA VER OS NOVOS OS NOVOS FLUXOGRAMAS: 
+ 
+BACHARELADO 
+ 
+LICENCIATURA.
+Ementa: 
+             Integrais de Riemann. Integral imprópria. Seqüências e séries de funções de uma variável real.  
+ 
+ 
+ 
+ 
+Nome e código do componente curricular: 
+Análise III. MATB53 
+Departamento: 
+Matemática  
+Carga horária: 
+T:102  P:00 E:00 
+Modalidade:  
+ Disciplina 
+Função: 
+Básica  
+Natureza: 
+Obrigatória para o 
+Bacharelado e optativa 
+para  a Licenciatura 
+Pré-requisito: 
+− Análise II. 
+Módulo de alunos: 
+40 
+Ementa: 
+            Seqüências, continuidade e limites no espaço euclidiano. Caminhos no espaço euclidiano. Funções reais de n 
+variáveis. O teorema da função implícita e inversa. 
+ 
+ 
+ 
+ 
+Nome e código do componente curricular: 
+Funções Holomorfas. MATB46 
+Departamento: 
+Matemática  
+Carga horária: 
+T: 68 P:00 E:00 
+Modalidade: 
+Disciplina 
+Função: 
+Básica 
+Natureza: 
+Obrigatória para a 
+Licenciatura e para o 
+Bacharelado 
+Pré-requisito: 
+− Integrais e Funções 
+de Várias Variáveis 
+Módulo de 
+alunos: 
+40 
+Ementa:  
+O corpo dos números complexos. Limite, continuidade e funções complexas. Derivada complexa e as funções 
+holomorfas. Séries de potência e funções analíticas. Teoria de Cauchy. Singularidades e séries de Laurent.  Resídu o e 
+pólos: aplicação ao cálculo de integrais reais. Transformações conformes e aplicações. 
+          
+ 
+ 
+ 
+ 
+ 
+ 
+Nome e código do componente curricular: 
+Topologia e Espaços Métricos. MATB50 
+Departamento: 
+Matemática 
+Carga horária: 
+T: 68 P:00 E:00 
+Modalidade: 
+Disciplina 
+Função: 
+Básica 
+Natureza: 
+Obrigatória para o 
+Bacharelado e 
+optativa para  a 
+Licenciatura 
+Pré-requisito: 
+− Limites e Derivadas 
+Módulo de alunos: 
+40 
+Ementa: 
+         Estudo dos espaços topológicos e métricos e suas propriedades.

@@ -1,5 +1,7 @@
-| Estatística (Bacharel) | Resolucao_05_2024_TCC_Estatistica.pdf | Capítulo Vi | Seção Geral | Artigo 12 (Parte 2) |
-
+| Estatística (Bacharel) | Documento (Resolucao 05 2024 TCC Estatistica) |
+orientação na disciplina MATD53 – Trabalho de Conclusão de Curso II terá início no
+semestre. Declaro ter conhecimento das normas do TCC, que regulamenta suas atividades
+no Curso de Estatística da UFBA.
 Salvador, ___ de _________________ de _________.
 Nome do(a) Professor(a) Orientador(a)
 UNIVERSIDADE FEDERAL DA BAHIA
@@ -45,8 +47,3 @@ Sugestões de nomes para compor a banca examinadora:
 a) ________________________________________ (Orientador(a)/Coorientador(a))
 b) ________________________________________ (identificação da lotação, titular)
 c) ________________________________________ (identificação da lotação, titular)
-d) ________________________________________ (identificação da lotação, suplente)
-e) ________________________________________ (identificação da lotação, suplente)
-Data prevista da apresentação: ___/__/20___
-Horário previsto da apresentação: das __:__ às __:__ horas
-Local previsto para a apresentação: dados da sala física ou virtual

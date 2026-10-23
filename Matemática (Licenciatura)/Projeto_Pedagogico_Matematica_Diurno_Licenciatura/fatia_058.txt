@@ -1,0 +1,168 @@
+| Matemática (Licenciatura) | Documento (Projeto Pedagogico Matematica Diurno Licenciatura) |
+57
+MATA01 – Geometria Analítica 
+MAT199 
+MATA02 – Cálculo A 
+MAT198 
+MATA03 – Cálculo B 
+MATA01; MATA02 
+MATA04 – Cálculo C 
+MATA03 
+MATA05 – Cálculo D 
+MATA03 
+MATA07 – Álgebra Linear A 
+MATA01 
+MAT198 – Fundamentos de Matemática Elementar I-A 
+----------- 
+MAT199 – Fundamentos de Matemática Elementar II-A 
+----------- 
+MAT200 – Álgebra I - Inteiros e Grupos 
+MAT198 
+MAT201 – Álgebra II - Anéis e Polinômios 
+MAT200 
+MAT018 – Álgebra Linear II 
+MATA07 
+MAT028 – Estatística III-C 
+MATA04 
+MAT105 – Funções Analíticas I 
+MATA03 
+MAT204 – Análise Real I 
+MATA04; MAT018 
+EDC A79 - Didática e Práxis Pedagógica 
+------ 
+EDC A80 - Metodologia do Ensino da Matemática 
+EDCA79 - Didática e Práxis 
+Pedagógica 
+EDCA81 - Estágio Supervisionado I  
+------ 
+EDCA82 - Estágio Supervisionado II 
+------ 
+ 
+EDCA83 - Estágio Supervisionado III  
+EDCA80 - Metodologia do 
+Ensino da Matemática e  
+MAT47 - Laboratório de Ensino 
+de Matemática I. 
+ 
+EDCA84 - Estágio Supervisionado IV  
+EDCA80 - Metodologia do 
+Ensino da Matemática e  
+MATB47 -Laboratório de 
+Ensino de Matemática I. 
+MATB39 -  Matemática Para a Educação Básica I   
+MAT200 
+MATB42 - Matemática Para a Educação Básica II 
+MATA02 
+MATB45 - Matemática Para a Educação Básica III   
+MATA07 
+MATB47 - Laboratório de Ensino de Matemática I. 
+MATA03 
+MATB48 - Laboratório de Ensino de Matemática II. 
+MATA03 
+MATB49 - Seminários Temáticos 
+MATA03
+58
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+COMPONENTES CURRICULARES OPTATIVOS 
+PRÉ-REQUISITOS 
+ARQ006 – Desenho Geométrico II 
+ARQ005 
+EDC251 – Dimensão Estética da Educação 
+------ 
+EDC266 – Introdução à Informática na Educação 
+------ 
+EDC283 – Currículo 
+------ 
+EDCA03 – Filosofia e Educação 
+------ 
+EDCA04 – Sociedade e Educação 
+------ 
+EDCA05 – História da Educação Brasileira 
+------ 
+EDCA06 – Organização e Gestão do Trab. Pedagógico  
+------ 
+FIS124 – Física Geral e Experimental IV-E 
+FIS123 
+MAT135 – Funções Analíticas II 
+MAT105 
+MAT137 – Métodos Matemáticos da Física 
+MATA04 ;  MAT105 
+MAT156 – Teoria dos Grafos 
+MATA07 / MAT201 
+MAT158 – Teoria da Computação 
+MAT201 
+MAT191 – Matemática Financeira 
+------ 
+MAT192 – Matemática Aplicada à Economia 
+------ 
+MAT205 – Álgebra III – Introdução à Teoria de Galois 
+MAT201 
+MAT206 – Análise Real II 
+MAT204 
+MAT207 – Topologia Geral 
+MAT200 / MAT204 
+MAT208 – Geometria Diferencial 
+MATA05 / MAT018 
+MAT209 – Teoria das Equações Diferenciais 
+MATA07 / MATA04 
+MAT210 – Equações Diferenciais Parciais 
+MAT204 
+MAT211 – Cálculo Avançado 
+MATA05 / MAT204 
+MAT213 – Tópicos em Álgebra 
+MAT205 
+MAT214 – Tópicos em Análise 
+MAT206 
+MAT215 – Tópicos de Geometria 
+MAT208 
+MAT216 – Tópicos da História da Matemática 
+MAT201 / MAT204 
+MAT221 – Estatística Básica 
+------ 
+ARQ013 – Descritiva I-A 
+ARQ005 
+FIS123 – Física Geral e Experimental III-E 
+MATA03; FIS122 
+MAT045 – Processamento de Dados 
+MATA03 
+MAT174 – Cálculo Numérico I 
+MAT045; MATA04; MATA07 
+MAT--- Grupos e Anéis II 
+MAT201 
+MAT--- Introdução a Análise Combinatória 
+------- 
+MAT---.Introdução à Teoria dos Conjuntos 
+-------- 
+MAT--- Construção de Conjuntos Numéricos 
+--------

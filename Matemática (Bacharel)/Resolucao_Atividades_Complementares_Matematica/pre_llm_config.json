@@ -1,0 +1,15 @@
+{
+  "curso": "Matemática (Bacharel)",
+  "documento": "Resolucao_Atividades_Complementares_Matematica.pdf",
+  "documento_nome": "Resolucao Atividades Complementares Matematica",
+  "caminho_pdf": "C:\\Users\\choss\\OneDrive\\Documentos\\Aplicação - Sinform AI\\Matemática (Bacharel)\\Resolucao_Atividades_Complementares_Matematica.pdf",
+  "header": "| Matemática (Bacharel) | Documento (Resolucao Atividades Complementares Matematica) |",
+  "max_tokens_per_chunk": 600,
+  "max_tokens_overlap": 100,
+  "densidade_visual": "Média com seções narrativas estruturadas em artigos, parágrafos e incisos detalhados por modalidades",
+  "justificativa_chunking": "O documento possui uma estrutura normativa clara dividida em artigos e modalidades com descrições, documentação e carga horária. Um limite de 600 tokens por chunk garante que cada artigo completo ou cada modalidade seja processada em sua totalidade sem fragmentar as regras de pontuação e aproveitamento, enquanto 100 tokens de sobreposição mantêm a continuidade semântica entre as quebras de página.",
+  "model_used": "gemini-3.5-flash-lite",
+  "input_tokens": 1839,
+  "output_tokens": 191,
+  "cost_usd": 0.000195225
+}

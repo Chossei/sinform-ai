@@ -1,42 +1,40 @@
-| Estatística (Bacharel) | Guia_Orientacoes_Registros_Academicos_2025.pdf | Normas e Diretrizes Gerais | Seção 6 | Diretriz Normativa 6 |
-
-do Curso, contendo o nome completo e número de matrícula do estudante; código e nome 
-da disciplina,  nota e conceito a ser registrado (aprovado, reprovado…) 
-DESISTÊNCIA DE CURSO  
+| Estatística (Bacharel) | Documento (Guia Orientacoes Registros Academicos 2025) |
+Importante: Não há  previsão no novo  REGPG para inscrição fora do prazo para TCC. 
+O ajuste de inscrição dos demais componentes deve respeitar o limite de 25% do semestre, 
+conforme estabelece a Resolução 07/2022 do CAE. 
+Lembramos que se o discente não está inscrito no componente, a carga horária cursada não 
+será reconhecida (Art. 166, REGPG) 
+PORTADOR DIPLOMA - CARÁTER ESPECIAL (exclusivo para os cursos previstos no 
+REGPG) 
  
-➔​ Objetivo - Registrar forma de saída no histórico do(a) discente que solicitou desistência 
-do curso 
+➔​ Objetivo - Permitir que o(a) portador(a) de diploma graduado pela UFBA ingresse em um 
+novo curso de Graduação sem a necessidade de prestar novo Vestibular/ENEM 
  
-➔​ Documentos de Referência - Glossário do REGPG 
+➔​ Documentos de Referência - Seção VI do REGPG 
  
-➔​ Procedimento - Estudante solicita ao NAE/SUPAC ou ao Colegiado  desistência do curso; 
-NAE envia ao NAREG para registro  
-➔​ Código CONARQ (SIPAC) - 125.251 Abandono/desistência de curso, Assunto detalhado: 
-Desistência definitiva de curso 
-➔​ Documentação - Requerimento preenchido pelo requerente, cópia da identidade, despacho 
-de encaminhamento do NAE, Declaração do registro de desistência (NAREG) 
-FALECIMENTO 
+➔​ Procedimento - No prazo definido no Calendário Acadêmico, o requerente solicita ao 
+NAE/SUPAC reingresso como Portador de  Diploma. NAE/SUPAC envia processo ao 
+Colegiado, que analisa, delibera e, no prazo estabelecido no Calendário, envia ao NAREG 
+para registro ou ao NARQ para arquivamento 
+➔​ Documentação - Além dos documentos incluídos pelo NAE, o Colegiado deve adicionar: 
+Despacho com a avaliação do Colegiado  (se deferido deve conter código e nome do novo 
+curso), Folha de  aproveitamento  (se deferido) com semestre de equivalência e Despacho 
+de encaminhamento  
+REINGRESSO IMEDIATO (exclusivo para os cursos previstos no REGPG) 
  
-➔​ Objetivo - Cancelar matrícula por falecimento do(a) estudante de Graduação 
+➔​ Objetivo - Permitir ao(a) estudante concluinte de curso de graduação, o retorno à UFBA 
+em um novo curso da mesma área básica de ingresso 
  
-➔​ Procedimento - Colegiado ou familiar informa falecimento do(a) estudante à SUPAC  
-➔​ Código CONARQ (SIPAC) - Não se aplica. Informado por email ao NAREG 
-nareg@ufba.br  ou presencialmente no NAE/SUPAC 
-➔​ Documentação - Ofício/email enviado pelo Colegiado acompanhado do atestado de óbito 
-OU Requerimento escolar preenchido por algum familiar acompanhado do atestado de 
-óbito e dos respectivos documentos de identificação​​
+➔​ Documentos de Referência - Seção VIII, REGPG 
  
-INSCRIÇÃO EM COMPONENTES  FORA DO PRAZO - EXCLUSIVO  ESTÁGIO e 
-INTERNATO 
- 
-➔​ Objetivo - Inscrever em componentes fora do prazo - Estágio e Internato 
- 
-➔​ Documentos de Referência - Capítulo III REGPG 
- 
-➔​ Procedimento - Colegiado envia ofício assinado pelo Coordenador do Curso, para o email 
-naga@ufba.br  contendo: nome completo do aluno(a) que requisitou a inscrição e número 
-de matrícula; código, nome e turma da disciplina e autorização para liberação de 
-pré-requisito, se for o caso. É responsabilidade do Colegiado contatar o(a)  professor(a) que 
-ministra a disciplina  
-➔​ Documentação - Ofício assinado pelo Coordenador do Curso contendo o nome completo 
-do aluno e número de matrícula; código, nome e turma da disciplina
+➔​ Procedimento - No prazo definido no Calendário Acadêmico, requerente solicita 
+reingresso ao  Colegiado do novo curso, o qual dentro do prazo, envia por email ao 
+NAREG, a lista dos reingressantes 
+➔​ Documentação - Planilha no formato Excel, contendo: Número de matrícula ou nome 
+completo do discente, Código do novo curso de ingresso (apenas os números), currículo e 
+semestre de equivalência. É possível anexar também as folhas de aproveitamento de estudo 
+Importante: Para os pedidos posteriores ao prazo estabelecido no Calendário Acadêmico, 
+segue-se o disposto na IN 005/2025 - SUPAC  
+Alunos concluintes de semestres anteriores ao vigente não podem solicitar reingresso. Podem 
+solicitar matrícula como Portador de Diploma - especial (seção VI do REGPG) ou participar do 
+processo seletivo de vagas residuais.

@@ -1,80 +1,109 @@
-| Matemática (Licenciatura) | Projeto_Pedagogico_Matematica_Noturno_Licenciatura.pdf | Normas e Diretrizes Gerais | Seção 22 | Diretriz Normativa 22 |
-
-Ementa:
-A Mecânica newtoniana é apresentada num nível básico. Usando-se o Cálculo Diferencial e Integral, enfoca-se 
-cinemática e a dinâmica das partículas e dos corpos rígidos e as leis de conservação e a interação gravitacional. 
-Paralelamente, os alunos realizam experimentos em laboratório onde fenômenos físicos são repetidos e estudados 
-quantitativamente, visando um melhor entendimento e compreensão desses fenômenos
-  
+| Matemática (Licenciatura) | Documento (Projeto Pedagogico Matematica Noturno Licenciatura) |
+23
 Nome e código do componente curricular:
-Seqüências, Séries e EDO.  MATB40 
+Matemática para a ensino fundamental  I. MAT ---
 Departamento:
 Matemática
 Carga horária:
-102 horas/aula
+68 horas/aula
 Modalidade:
 Disciplina
-Função:
-Básica
-Natureza:
-Obrigatória
-Pré-requisito:
-Cálculo diferencial e 
-integral
-Módulo de alunos:
-45
-Ementa:
-            
-Seqüências e séries numéricas. Séries de potências. Séries de Fourier. Equações diferenciais ordinárias: Condições de 
-existência e unicidade de soluções; técnicas de resoluções inclusive usando série de Taylor. Noções de teoria qualitativa 
-de equações diferenciais ordinárias.
-Nome e código do componente curricular:
-Metodologia do Ensino da Matemática. 
-EDC A80
-Departamento:
-Departamento de 
-Educação II
-Carga horária: 68 h/a 
-Teórica:  34 h.
-Dimensão prática: 34 h. 
-Modalidade
- Disciplina
 Função:
 Profissional
 Natureza:
 Obrigatória
 Pré-requisito:
-Não tem
+Estruturas algébricas 
 Módulo de alunos:
 25
-Ementa:
-Estudo teórico metodológico do atual ensino de Matemática nas escolas brasileiras. Relação da sociedade 
-contemporânea e o sistema escolar. Análise e construção de práticas pedagógicas para possíveis espaços de 
-aprendizagem. 
+Ementa: 
+Números naturais:   cardinalidade ,ordem  ,Propriedades aritméticas ; Números inteiros: Simetrização dos naturais 
+( utilizando sistema posicional -- noção métrica) ,Ordem , Divisão euclidiana , Propriedades aritméticas, Divisibilidade 
+e congruência,  números primos; Números racionais: Fração , Aritmética , Ordem , Razão,  proporção e interpretação 
+geométrica , Regra da falsa posição. Conceitos Geométricos: Simetria , Perímetro , área e volume ,Semelhança e 
+congruência, Combinatória e contagem: Conjuntos e operações com conjuntos ; Principio multiplicativo da 
+combinatória , Principio da casa dos pombos. 
+Metodologia:  Desenvolvimento de práticas pedagógicas voltadas para o ensino fundamental I, evidenciando aspectos 
+históricos, e com inserção de atividades lúdicas e computacionais  para elaboração de material didático que poderá ser 
+aplicado em cursos do ensino médio,  desenvolvido e apresentado pelos alunos sob a orientação do professor.
+Conteúdo programático:
+1)
+Números naturais:   cardinalidade ,ordem, princípio da indução ,Propriedades aritméticas ; 
+2)
+Números inteiros: 
+3)
+Simetrização dos naturais ( utilizando sistema posicional -- noção métrica) ,
+4)
+Ordem ,
+5)
+ Divisão euclidiana
+6)
+ Propriedades aritméticas,
+7)
+ Divisibilidade e congruência
+8)
+ Números primos; 
+9)
+Números racionais: Fração , Aritmética , Ordem , Razão,  proporção e interpretação geométrica , Regra da falsa 
+posição. 
+10) Conceitos Geométricos: Simetria , Perímetro , área e volume ,Semelhança e congruência
+11) Combinatória e contagem: Conjuntos e operações com conjuntos ; Principio multiplicativo da combinatória , 
+Principio da casa dos pombos.
+24
 Nome e código do componente curricular:
-Física Geral e Experimental II-E – FIS122 
-Departamento:
-Física Geral
-Carga horária:
-102  h
-Modalidade:
-Disciplina
-Função:
-Complementar
-Natureza:
-Obrigatória
-Pré-requisito:
- FIS121
-Módulo de alunos:
-45
-Ementa:
-Estudam-se em nível básico os fenômenos relacionados com oscilações mecânicas, ondas de propagação do som, a 
-mecânica dos fluidos, calor e gases, discutem-se ainda as propriedades elásticas dos materiais. 
-  
-Nome e código do componente curricular:
-Cálculo Diferencial Vetorial. MAT B43
+Matemática para o ensino fundamental II. MAT ---
 Departamento:
 Matemática
 Carga horária:
 68 horas/aula
-28
+Modalidade:
+Disciplina
+Função:
+Profissional
+Natureza:
+Obrigatória
+Pré-requisito:
+Estruturas 
+algébricas
+Módulo de alunos:
+25
+Ementa:
+        Números racionais e irracionais: Fração , Aritmética , Ordem , Razão,  proporção e interpretação geométrica , 
+Regra da falsa posição. Conceitos Geométricos:  Pitágoras, Simetria , Perímetro , área e volume , Semelhança e 
+congruência, Função  − Função exponencial e logarítmica; Funções trigonométricas;  função modular, funções dadas por 
+sentenças, Progressões; Combinatória e probabilidade , gráficos,  Demonstrações sem palavras.
+Metodologia:  Desenvolvimento de práticas pedagógicas voltadas para o ensino fundamental II, evidenciando aspectos 
+históricos, e com inserção de atividades lúdicas e computacionais  para elaboração de material didático que poderá ser 
+aplicado em cursos do ensino médio,  desenvolvido e apresentado pelos alunos sob a orientação do professor.
+ Conteúdo programático:
+1)
+Números racionais e irracionais: 
+2)
+Fração 
+3)
+ Aritmética :
+4)
+ Ordem 
+5)
+ Razão 
+6)
+ proporção e interpretação geométrica ,
+7)
+Regra da falsa posição. 
+8)
+Conceitos Geométricos:  
+9)
+Pitágoras,
+10) Simetria , 
+11) Perímetro , área e volume 
+12) Semelhança e congruência
+13) Função: 
+a.
+Função afim e quadrática
+b.
+Função modular
+c.
+Funções dadas por sentenças
+14) Função direta e inversamente proporcional
+15) Regra de três como problema de contorno.
+16)  Demonstrações sem palavras.

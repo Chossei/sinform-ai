@@ -1,0 +1,15 @@
+{
+  "curso": "Estatística (Bacharel)",
+  "documento": "Resolucao_05_2024_TCC_Estatistica.pdf",
+  "documento_nome": "Resolucao 05 2024 TCC Estatistica",
+  "caminho_pdf": "C:\\Users\\choss\\OneDrive\\Documentos\\Aplicação - Sinform AI\\Estatística (Bacharel)\\Resolucao_05_2024_TCC_Estatistica.pdf",
+  "header": "| Estatística (Bacharel) | Documento (Resolucao 05 2024 TCC Estatistica) |",
+  "max_tokens_per_chunk": 600,
+  "max_tokens_overlap": 100,
+  "densidade_visual": "Média com seções narrativas, artigos numerados, parágrafos e incisos bem estruturados",
+  "justificativa_chunking": "A calibração de 600 tokens por chunk garante que cada artigo regulamentar, acompanhado de seus parágrafos e incisos, seja mantido integralmente no mesmo contexto semântico. A sobreposição de 100 tokens assegura a continuidade entre transições de capítulos e anexos.",
+  "model_used": "gemini-3.5-flash-lite",
+  "input_tokens": 6641,
+  "output_tokens": 174,
+  "cost_usd": 0.0005502749999999999
+}

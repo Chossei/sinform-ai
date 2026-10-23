@@ -1,0 +1,15 @@
+{
+  "curso": "Matemática (Bacharel)",
+  "documento": "Resolucao_Estagio_Supervisionado_Bacharelado_Matematica.pdf",
+  "documento_nome": "Resolucao Estagio Supervisionado Bacharelado Matematica",
+  "caminho_pdf": "C:\\Users\\choss\\OneDrive\\Documentos\\Aplicação - Sinform AI\\Matemática (Bacharel)\\Resolucao_Estagio_Supervisionado_Bacharelado_Matematica.pdf",
+  "header": "| Matemática (Bacharel) | Documento (Resolucao Estagio Supervisionado Bacharelado Matematica) |",
+  "max_tokens_per_chunk": 500,
+  "max_tokens_overlap": 100,
+  "densidade_visual": "Média com seções normativas divididas em artigos e incisos enumerados",
+  "justificativa_chunking": "O documento possui uma estrutura normativa curta dividida em artigos e incisos, o que permite chunks menores para preservar o escopo de cada regra sem quebrar incisos relacionados.",
+  "model_used": "gemini-3.5-flash-lite",
+  "input_tokens": 1313,
+  "output_tokens": 135,
+  "cost_usd": 0.000138975
+}

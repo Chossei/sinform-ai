@@ -1,107 +1,73 @@
-| Matemática (Licenciatura) | Projeto_Pedagogico_Matematica_Diurno_Licenciatura.pdf | Normas e Diretrizes Gerais | Seção 51 | Diretriz Normativa 51 |
-
-58
+| Matemática (Licenciatura) | Documento (Projeto Pedagogico Matematica Diurno Licenciatura) |
+50
+− Em se tratando de um aluno do Bacharelado, cursando componentes curriculares da tabela seguinte, obedecendo aos pré-requisitos:  
  
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
-COMPONENTES CURRICULARES OPTATIVOS 
-PRÉ-REQUISITOS 
-ARQ006 – Desenho Geométrico II 
-ARQ005 
-EDC251 – Dimensão Estética da Educação 
------- 
-EDC266 – Introdução à Informática na Educação 
------- 
-EDC283 – Currículo 
------- 
-EDCA03 – Filosofia e Educação 
------- 
-EDCA04 – Sociedade e Educação 
------- 
-EDCA05 – História da Educação Brasileira 
------- 
-EDCA06 – Organização e Gestão do Trab. Pedagógico  
------- 
-FIS124 – Física Geral e Experimental IV-E 
-FIS123 
-MAT135 – Funções Analíticas II 
-MAT105 
-MAT137 – Métodos Matemáticos da Física 
-MATA04 ;  MAT105 
-MAT156 – Teoria dos Grafos 
-MATA07 / MAT201 
-MAT158 – Teoria da Computação 
-MAT201 
-MAT191 – Matemática Financeira 
------- 
-MAT192 – Matemática Aplicada à Economia 
------- 
-MAT205 – Álgebra III – Introdução à Teoria de Galois 
-MAT201 
-MAT206 – Análise Real II 
-MAT204 
-MAT207 – Topologia Geral 
-MAT200 / MAT204 
-MAT208 – Geometria Diferencial 
-MATA05 / MAT018 
-MAT209 – Teoria das Equações Diferenciais 
-MATA07 / MATA04 
-MAT210 – Equações Diferenciais Parciais 
-MAT204 
-MAT211 – Cálculo Avançado 
-MATA05 / MAT204 
-MAT213 – Tópicos em Álgebra 
-MAT205 
-MAT214 – Tópicos em Análise 
-MAT206 
-MAT215 – Tópicos de Geometria 
-MAT208 
-MAT216 – Tópicos da História da Matemática 
-MAT201 / MAT204 
-MAT221 – Estatística Básica 
------- 
-ARQ013 – Descritiva I-A 
-ARQ005 
-FIS123 – Física Geral e Experimental III-E 
-MATA03; FIS122 
-MAT045 – Processamento de Dados 
+  
+TABELA IV 
+Componentes curriculares 
+Pré-requisito 
+MATB47 - Laboratório de Ensino de Matemática I. 
 MATA03 
-MAT174 – Cálculo Numérico I 
-MAT045; MATA04; MATA07 
-MAT--- Grupos e Anéis II 
+MATB48 -Laboratório de Ensino de Matemática I.I 
+MATA03 
+MAB36 - Grupos e Anéis II 
 MAT201 
-MAT--- Introdução a Análise Combinatória 
-------- 
-MAT---.Introdução à Teoria dos Conjuntos 
--------- 
-MAT--- Construção de Conjuntos Numéricos 
---------
+MATB31 - Introdução a Análise Combinatória 
+------ 
+MATB49 - Seminários Temáticos 
+MATA03 
+MAT56 -.Introdução à Teoria dos Conjuntos 
+------ 
+MATB57 - Construção de Conjuntos Numéricos.  
+--------- 
+ 
+ 
+10. Qualquer disciplina da TABELA III, com exceção de EDCA81-  Estágio Supervisionado I e  EDCA82 -  Estágio Supervisionado II, se não 
+for usada para completar a carga horária em disciplinas do Currículo Mínimo e nem em disciplinas Obrigatórias Complementares de um aluno de 
+Licenciatura, então será considerada disciplina optativa para aquele aluno.  A mesma regra se aplica para as disciplinas da TABELA IV, em 
+relação ao aluno do Bacharelado.          
+ 
+ 
+    
+8.3. Adaptação para o aluno de Licenciatura que ingressou em 2006.1 
+ 
+ 
+Para o aluno de Licenciatura cujo currículo é de 2006.1 as modificações em seu currículo serão maiores. Isso ocorrerá porque o currículo 
+da Licenciatura deve atender à Resolução CNE/CP n.º 2, de 18 de fevereiro de 2002 que estabelece 400 h de estágio, 400 h de prática e 200 h de 
+atividades complementares. Vamos definir um novo  currículo para esses alunos de modo a atender a legislação, mas que cause o mínimo de 
+impacto na vida acadêmica do aluno que já está concluindo o primeiro ano do curso.
+51
+ 
+ 
+ 
+Para o aluno de Licenciatura cujo currículo é de 2006.1, que colar grau até o semestre 2007.2, serão aplicadas as regras de adaptação 
+curriculares anteriores.  
+ 
+ 
+ 
+Para o aluno de Licenciatura cujo currículo é de 2006.1, com exceção daqueles que colarem grau até o semestre 2007.2, valem as 
+seguintes regras de adaptação curricular: 
+ 
+1. Uma nova matriz curricular será definida de acordo com: 
+ 
+1.1 Os componentes curriculares,  
+ 
+ARQ013 − Descritiva I 
+FIS123 – Física Geral e Experimental III- E 
+MAT045 – Processamento de Dados 
+MAT174 – Cálculo Numérico 
+EDC140 – Didática I 
+EDC317 – Metodologia e Prática do Ensino da Matemática I 
+EDC318 – Metodologia e Prática do Ensino da Matemática II 
+MAT202 – Fundamentos de Matemática Elementar III 
+MAT203 – Fundamentos de Matemática Elementar IV, 
+ 
+que atualmente são obrigatórios para esses alunos, deixam de ser obrigatórios. 
+ 
+ 
+1.2 Os componentes curriculares,  
+ 
+ARQ005 – Desenho Geométrico I 
+EDCA01 – Fundamentos Psicológicos da Educação 
+EDCA02 – Organização da Educação Brasileira 2 
+FIS121 – Física Geral e Experimental I-E

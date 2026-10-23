@@ -1,62 +1,88 @@
-| Matemática (Licenciatura) | Projeto_Pedagogico_Matematica_Diurno_Licenciatura.pdf | Normas e Diretrizes Gerais | Seção 41 | Diretriz Normativa 41 |
-
+| Matemática (Licenciatura) | Documento (Projeto Pedagogico Matematica Diurno Licenciatura) |
 Ementa: 
-  Estudo, planejamento e prática de ensino em espaços formais de educação (níveis fundamental e/ou médio em escolas 
-oficiais), em espaços alternativos e/ou em outras modalidades educacionais, realizados de forma cumulativa, através da 
-aplicação dos fundamentos teórico-práticos estudados em Didática e Práxis Pedagógica e Meto dologia do En sino da 
-Matemática, de modo contextualizado e contemporâneo, tomando-se por base os conteúdos de cada campo de saber, 
-objeto da formação. 
- 
+Ao final d o semestre o aluno deverá ter esc rito uma monografia sobre um tema que complemente os seus 
+estudos de graduação. Poderão ser utilizados como fonte bibliográfica livros de graduação ou das disciplinas 
+iniciais do mestr ado e artigo s d e revistas d o nível do b acharelado em matemática, como p or ex emplo, 
+Matemática Universitária, American Mathemaical Monthly e Mathematics Magazine.  
+O aluno deverá apresentar o seu trabalho em aula aberta à comunidade, com divulgação prévia. 
+Será considerado aprovado o aluno que obtiver, no mínimo, nota 7,0 na avaliação do professor responsável 
+pela disciplina, o qual deverá levar em consideração todas as etapas do desenvolvimento do trabalho. 
+Uma cópia impressa e uma cópia digital deverão ficar arquivadas no Colegiado. 
  
  
  
 Nome e código do componente curricular: 
-Estágio Supervisionado II. EDCA82 
+Introdução à Teoria dos Conjuntos.  MATB56 
 Departamento: 
-Departamento de 
-Educação II 
+Matemática 
 Carga horária: 
-T:17  P:51 E: 34 
+T: 68 P:00 E:00 
 Modalidade: 
 Disciplina 
 Função: 
-Profissional 
+Complementar 
 Natureza: 
-Obrigatória 
+Optativa 
 Pré-requisito: 
-Didática e praxis pedagógicas  
- 
+Não tem. 
 Módulo de alunos: 
-15 
+40 
 Ementa: 
-  Estudo, planejamento e prática de ensino em espaços formais de educação (níveis fundamental e/ou médio em escolas 
-oficiais), em espaços alternativos e/ou em outras modalidades educacionais, realizados de forma cumulativa, através da 
-aplicação dos fundamentos teórico-práticos estudados em Didática e Práxis Pedagógica e Meto dologia do En sino da 
-Matemática, de modo contextualizado e con temporâneo, tomando-se por base os conteúdos de cada campo do saber, 
-objeto da formação. 
+              Conjuntos. Operadores Lógicos. Relações. Funções. Cardinalidade. 
  
  
  
  
 Nome e código do componente curricular: 
-Estágio Supervisionado III. EDCA83 
+Construção de Conjuntos Numéricos. MATB57 
 Departamento: 
-Departamento de Educação II 
+Matemática 
 Carga horária: 
-T: 17 P:34 E:51 
-Modalidade 
- Disciplina 
+T: 68 P:00 E:00 
+Modalidade: 
+Disciplina 
 Função: 
-Profissional 
+Complementar 
 Natureza: 
-Obrigatória 
+Optativa 
 Pré-requisito: 
-− Metodologia do Ensino da  Matemática. 
-− Laboratório de Ensino de Matemática I 
+Não tem. 
 Módulo de alunos: 
-15 
+40 
 Ementa: 
-Exercício efetivo da prática de ensino, pela aplicação d os fundamentos teórico-práticos desenvolvidos nas disciplinas 
-Didática e Práxis Pedagógica e Metodologia do Ensino da Matemática, dos conteúdos específicos de sua formação, de 
-forma co ntextualizada e com a in corporação das i novações contem porâneas que i nserem a educ ação no processo de 
-desenvolvimento sócio-histórico e humano.
+             Construção dos conjuntos dos números naturais, inteiros, racionais. Construção e estudo do conjunto dos 
+números reais, propriedades. Definição, estudo e propriedades do conjunto dos números complexos. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+COMPONENTE CURRICULAR DO DEPARTAMENTO DE ESTATÍSTICA  
+ 
+ 
+ 
+Nome e código do componente curricular:  
+                        Estatística Básica A. MATB59 
+Departamento: 
+Estatística 
+Carga horária: 
+T: 34 P:34 E:00 
+Modalidade: 
+Disciplina 
+Função: 
+Complementar 
+Natureza: 
+Obrigatória para 
+Licenciatura  e para 
+o Bacharelado 
+Pré-requisito: 
+Não Tem   
+Módulo de alunos: 
+30

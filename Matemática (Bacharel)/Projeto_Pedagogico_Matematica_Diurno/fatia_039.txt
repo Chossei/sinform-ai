@@ -1,89 +1,221 @@
-| Matemática (Bacharel) | Projeto_Pedagogico_Matematica_Diurno.pdf | Normas e Diretrizes Gerais | Seção 39 | Diretriz Normativa 39 |
-
-Ementa: 
-Ao final d o semestre o aluno deverá ter esc rito uma monografia sobre um tema que complemente os seus 
-estudos de graduação. Poderão ser utilizados como fonte bibliográfica livros de graduação ou das disciplinas 
-iniciais do mestr ado e artigo s d e revistas d o nível do b acharelado em matemática, como p or ex emplo, 
-Matemática Universitária, American Mathemaical Monthly e Mathematics Magazine.  
-O aluno deverá apresentar o seu trabalho em aula aberta à comunidade, com divulgação prévia. 
-Será considerado aprovado o aluno que obtiver, no mínimo, nota 7,0 na avaliação do professor responsável 
-pela disciplina, o qual deverá levar em consideração todas as etapas do desenvolvimento do trabalho. 
-Uma cópia impressa e uma cópia digital deverão ficar arquivadas no Colegiado. 
+| Matemática (Bacharel) | Documento (Projeto Pedagogico Matematica Diurno) |
+Código / Nome 
+C.H.  
+Hora/aula 
+Módulo 
+Função 
+Pré-requisito 
+Departamento de  
  
  
+EDC ---- Estágio Supervisionado III 
  
-Nome e código do componente curricular: 
-Introdução à Teoria dos Conjuntos.  MATB56 
-Departamento: 
+ 
+102 
+ 
+ 
+Disciplina 
+ 
+ 
+Profissional 
+− Metodologia do 
+Ensino 
+da Matemática. 
+− Laboratório de 
+Ensino de 
+Matemática I. 
+ 
+ 
+Educação II 
+MAT--- Seminários Temáticos  
+68 
+Módulo 
+interdisciplinar 
+Profissional 
+− Integrais e Funções 
+de Várias Variáveis. 
+ 
 Matemática 
-Carga horária: 
-T: 68 P:00 E:00 
-Modalidade: 
+ 
+EDC ---- Estágio Supervisionado IV 
+ 
+102 
+ 
 Disciplina 
-Função: 
+ 
+Profissional 
+− Metodologia do 
+Ensino 
+da Matemática. 
+− Laboratório de 
+Ensino de 
+Matemática I. 
+ 
+Educação II 
+ 
+ 
+Componentes Curriculares Optativos para a Licenciatura a partir de 2007.1 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Código / Nome 
+C.H.  
+Hora/aula 
+Módulo 
+Função 
+Pré-requisito 
+Departamento de  
+ARQ006 −  Desenho Geométrico II 
+68  
+Disciplina 
 Complementar 
-Natureza: 
-Optativa 
-Pré-requisito: 
-Não tem. 
-Módulo de alunos: 
-40 
-Ementa: 
-              Conjuntos. Operadores Lógicos. Relações. Funções. Cardinalidade. 
- 
- 
- 
- 
-Nome e código do componente curricular: 
-Construção de Conjuntos Numéricos. MATB57 
-Departamento: 
+− ARQ005 
+Geometrias de Representação 
+EDC251- Dimensão Estética da Educação. 
+102  Disciplina 
+Complementar 
+------ 
+Educação I 
+EDC266 - Introdução à Informática na Educação. 
+102  
+Disciplina 
+Complementar ------ 
+Educação I 
+EDC283 – Currículo. 
+68  
+Disciplina Com
+plementar 
+------ 
+Educação I 
+EDCA03 - Filosofia e Educação. 
+68  
+Disciplina Com
+plementar 
+------ 
+Educação I 
+EDCA04 - Sociedade e Educação. 
+68  
+Disciplina Com
+plementar 
+------ 
+Educação I 
+EDC05 - História da Educação Brasileira. 
+68  
+Disciplina 
+Complementar 
+------ 
+Educação I 
+EDCA06 - Organização e Gestão do Trab. 
+Pedagógico.  
+68  
+Disciplina 
+Complementar ------ 
+Educação I
+Código / Nome 
+C.H. 
+Hora/aula 
+Módulo 
+Função 
+Pré-requisito 
+Departamento de  
+ARQ013 − Descritiva I   
+68 Discip
+lina 
+Complementar 
+− ARQ005 
+Geometrias de 
+Representação 
+MAT135 – Funções Analíticas II 
+68  
+Disciplina 
+Complementar 
+− Funções Holomorfas 
 Matemática 
-Carga horária: 
-T: 68 P:00 E:00 
-Modalidade: 
+MATA53 – Teoria dos Grafos 
+68  
 Disciplina 
-Função: 
 Complementar 
-Natureza: 
-Optativa 
-Pré-requisito: 
-Não tem. 
-Módulo de alunos: 
-40 
-Ementa: 
-             Construção dos conjuntos dos números naturais, inteiros, racionais. Construção e estudo do conjunto dos 
-números reais, propriedades. Definição, estudo e propriedades do conjunto dos números complexos. 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
-COMPONENTE CURRICULAR DO DEPARTAMENTO DE ESTATÍSTICA  
- 
- 
- 
-Nome e código do componente curricular:  
-                        Estatística Básica A. MATB59 
-Departamento: 
-Estatística 
-Carga horária: 
-T: 34 P:34 E:00 
-Modalidade: 
+− MATA07  
+−  Grupos e Anéis I 
+Ciência da Computação 
+MATA51 – Teoria da Computação 
+68  
 Disciplina 
-Função: 
 Complementar 
-Natureza: 
-Obrigatória para 
-Licenciatura  e para 
-o Bacharelado 
-Pré-requisito: 
-Não Tem   
-Módulo de alunos: 
-30
+−  Grupos e Anéis I 
+Ciência da Computação 
+MAT192 – Matemática Aplicada à Economia 
+102  Discip
+lina 
+Complementar 
+------ 
+Matemática 
+MAT213 – Tópicos em Álgebra 
+68  
+Disciplina 
+Complementar 
+− MAT205 
+Matemática 
+MAT214 – Tópicos em Análise 
+68  
+Disciplina 
+Complementar 
+− Análise III 
+Matemática 
+MAT215 – Tópicos em Geometria 
+68  
+Disciplina 
+Complementar 
+− MAT208 
+Matemática 
+MAT216 – Tópicos da História da Matemática 
+68  
+Disciplina 
+Complementar 
+−  Grupos e Anéis I 
+  − Análise I 
+Matemática 
+FIS124 - Física Geral e Experimental IV-E 1
+02  
+Disciplina 
+Complementar 
+− FIS123 
+Física do Estado Sólido 
+MAT--- Teoria dos Conjuntos  
+68 
+Disciplina 
+Complementar 
+------ 
+Matemática 
+MAT--- Construção de Conjuntos Numéricos 
+68  
+Disciplina 
+Complementar 
+------ 
+Matemática 
+MAT--- Equações Diferenciais Parciais  
+68  
+Disciplina 
+Complementar 
+−  Análise I 
+Matemática 
+ 
+CLIQUE PARA VER OS NOVOS OS NOVOS FLUXOGRAMAS: 
+ 
+BACHARELADO 
+ 
+LICENCIATURA.

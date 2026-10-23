@@ -1,91 +1,136 @@
-| Matemática (Licenciatura) | Projeto_Pedagogico_Matematica_Noturno_Licenciatura.pdf | Normas e Diretrizes Gerais | Seção 21 | Diretriz Normativa 21 |
-
-Recomenda-se ter cursado o seguinte componente curricular:
-−
-Geometria Euclidiana.
+| Matemática (Licenciatura) | Documento (Projeto Pedagogico Matematica Noturno Licenciatura) |
+22
 Nome e código do componente curricular:
-Estatística Básica A. MAT B59
+Laboratório de Ensino de Matemática III. MAT---
 Departamento:
-Estatística
+Matemática
 Carga horária:
-68 horas/aula
+T: 00 P:68 E:00
 Modalidade:
-Disciplina
+Módulo interdisciplinar
 Função:
-Complementar
+Profissional
 Natureza:
-Obrigatória
+Obrigatória 
 Pré-requisito:
-Não tem.
+ Geometria analítica e 
+cálculo vetorial
 Módulo de alunos:
-45
+25
 Ementa:
-  
-Estatística: objetivos e divisão. Apresentação de dados. Introdução à estatística descritiva e à exploratória de 
-dados. Noções de probabilidade.
-Observação:
-       Disciplina já aprovada pelo Departamento de Estatística, como componente curricular obrigatório, integrante do 
-currículo do Curso de Bacharelado de Estatística.
+         Introdução ao Latex.  Coordenadas polares, Cônicas. Curvas parametrizadas. Áreas e aplicações. Superfícies. 
+Volumes. Inversões.  Simulações, animações  e traçado de curvas usando  pstricks.
+          
+Metodologia:   Seminários e aulas práticas para construção de práticas pedagógicas utilizando recursos computacionais 
+para elaboração de material didático  com suporte computacional   desenvolvido e apresentado pelos alunos sob a 
+orientação do professor.
+Conteúdo programático:
+1)
+Software e editoração matemática : Miktex, Latex,
+2)
+ pacotes geométricos do Latex: pstricks, PST-euclid,
+3)
+ Fórmulas, 
+4)
+Coordenadas polares 
+5)
+Traçados de curvas, 
+6)
+Desenho de superfícies, 
+7)
+ loops e animações no Latex
+8)
+Cônicas e Curvas parametrizadas. 
+9)
+ Áreas e aplicações.
+10)  Software de geometria dinâmica. (Geogebra e Cabri)
 Nome e código do componente curricular:
-Organização da Educação Brasileira 2.  EDCA02 
+Laboratório de Ensino de Matemática IV. MAT---
 Departamento:
-Departamento de 
-Educação I
+Matemática
 Carga horária:
-68 horas/aula
+T: 00 P:68 E:00
 Modalidade:
-Disciplina
+Módulo interdisciplinar
 Função:
-Básica
+Profissional
 Natureza:
-Obrigatória
-Pré-requisito:
-Não tem.
-Módulo de alunos:
-45
-Ementa:
-              Estudo e análise do sistema educacional brasileiro, considerando os aspectos legais, sócio-políticos, 
-administrativos e financeiros, enfatizando a organização dos sistemas de ensino nos diversos níveis e modalidades. 
-Análise das políticas públicas de educação no Brasil.
-Nome e código do componente curricular:
-Didática e Práxis Pedagógica. EDC A79
-Departamento:
-Departamento de 
-Educação II
-Carga horária:
-102 horas/aula
-Modalidade:
-Disciplina
-Função:
-Básica
-Natureza:
-Obrigatória
-Pré-requisito:
-Não tem
-Módulo de alunos:
-45
-Ementa:
-  
-Estudo da práxis pedagógica como prática social e dos fundamentos epistemológicos da Didática, seu objeto de 
-estudo e trajetória histórica. Construção da identidade docente. Princípios, elementos e relações fundamentais no 
-processo de trabalho docente. Estudo crítico do planejamento de ensino: suas etapas, modalidades e componentes. 
-Iniciação na práxis pedagógica, mediante construção de projetos didáticos, de planos de ensino e realização de micro-
-aulas.
-Nome e código do componente curricular:
-Física Geral e Experimental I-E.  FIS121 
-Departamento:
-Departamento de Geofísica Nuclear 
-Carga horária:
-102  h
-Modalidade:
-Disciplina
-Função:
-Básica
-Natureza:
-Obrigatória
+Obrigatória 
 Pré-requisito:
 Cálculo diferencial e 
-integral.
+integral 
 Módulo de alunos:
-45
-27
+25
+Ementa:
+          Métricas não euclidianas e construção de cônicas. Homeomorfismos entre espaços métricos. Invariantes 
+topológicos (Característica de Euler, Teorema das quatro cores).  Construção de modelos virtuais de 
+superfícies( computação gráfica). Noções de curvatura e geodésica de superfícies. Triângulos geodésicos e soma de 
+ângulos internos. Representação gráfica  e animações usando o Pstricks.
+Metodologia:  Seminários e aulas práticas para construção de práticas pedagógicas utilizando recursos computacionais 
+para elaboração de material didático  com suporte computacional   desenvolvido e apresentado pelos alunos sob a 
+orientação do professor.
+Conteúdo programático:
+1)
+Métricas não euclidianas e construção de cônicas. 
+2)
+Homeomorfismos entre espaços métricos. 
+3)
+Invariantes topológicos (Característica de Euler, Teorema das quatro cores). 
+4)
+Construção de modelos virtuais de superfícies ( computação gráfica).
+5)
+ Noções de curvatura e geodésica de superfícies. 
+6)
+Triângulos geodésicos e soma de ângulos internos.
+7)
+ Representação gráfica  e animações usando o Pstricks.
+23
+Nome e código do componente curricular:
+Matemática para a ensino fundamental  I. MAT ---
+Departamento:
+Matemática
+Carga horária:
+68 horas/aula
+Modalidade:
+Disciplina
+Função:
+Profissional
+Natureza:
+Obrigatória
+Pré-requisito:
+Estruturas algébricas 
+Módulo de alunos:
+25
+Ementa: 
+Números naturais:   cardinalidade ,ordem  ,Propriedades aritméticas ; Números inteiros: Simetrização dos naturais 
+( utilizando sistema posicional -- noção métrica) ,Ordem , Divisão euclidiana , Propriedades aritméticas, Divisibilidade 
+e congruência,  números primos; Números racionais: Fração , Aritmética , Ordem , Razão,  proporção e interpretação 
+geométrica , Regra da falsa posição. Conceitos Geométricos: Simetria , Perímetro , área e volume ,Semelhança e 
+congruência, Combinatória e contagem: Conjuntos e operações com conjuntos ; Principio multiplicativo da 
+combinatória , Principio da casa dos pombos. 
+Metodologia:  Desenvolvimento de práticas pedagógicas voltadas para o ensino fundamental I, evidenciando aspectos 
+históricos, e com inserção de atividades lúdicas e computacionais  para elaboração de material didático que poderá ser 
+aplicado em cursos do ensino médio,  desenvolvido e apresentado pelos alunos sob a orientação do professor.
+Conteúdo programático:
+1)
+Números naturais:   cardinalidade ,ordem, princípio da indução ,Propriedades aritméticas ; 
+2)
+Números inteiros: 
+3)
+Simetrização dos naturais ( utilizando sistema posicional -- noção métrica) ,
+4)
+Ordem ,
+5)
+ Divisão euclidiana
+6)
+ Propriedades aritméticas,
+7)
+ Divisibilidade e congruência
+8)
+ Números primos; 
+9)
+Números racionais: Fração , Aritmética , Ordem , Razão,  proporção e interpretação geométrica , Regra da falsa 
+posição. 
+10) Conceitos Geométricos: Simetria , Perímetro , área e volume ,Semelhança e congruência
+11) Combinatória e contagem: Conjuntos e operações com conjuntos ; Principio multiplicativo da combinatória , 
+Principio da casa dos pombos.

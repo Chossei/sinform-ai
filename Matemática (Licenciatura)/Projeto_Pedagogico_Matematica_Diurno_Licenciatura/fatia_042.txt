@@ -1,69 +1,86 @@
-| Matemática (Licenciatura) | Projeto_Pedagogico_Matematica_Diurno_Licenciatura.pdf | Normas e Diretrizes Gerais | Seção 42 | Diretriz Normativa 42 |
-
-Nome e código do componente 
-curricular: 
-Estágio Supervisionado IV.  EDCA84 
+| Matemática (Licenciatura) | Documento (Projeto Pedagogico Matematica Diurno Licenciatura) |
+Ementa: 
+Estatística: obj etivos e divisão. Apresentação de dados. I ntrodução à estatística de scritiva e à e xploratória de 
+dados. Noções de probabilidade. 
+ 
+ 
+ 
+ 
+COMPONENTES CURRICULARES DO DEPARTAMENTO DE EDUCAÇÃO II  
+ 
+ 
+Nome e código do componente curricular: 
+Didática e Práxis Pedagógica. EDCA79 
 Departamento: 
-Departamento de Educação II 
+Departamento de 
+Educação II 
 Carga horária: 
-T: 17 P:34 E:51 
+T:68  P:34  E:00 
+Modalidade: 
+Disciplina 
+Função: 
+Básica 
+Natureza: 
+Obrigatória 
+Pré-requisito: 
+Não tem 
+Módulo de alunos: 
+40 
+Ementa: 
+        Estudo da práxis pedagógica como prática social e d os fundamentos epistemológicos da Didática, seu objeto de 
+estudo e tra jetória histórica. Construção da iden tidade d ocente. Prin cípios, elem entos e relações fundamentais n o 
+processo de tra balho docente. Es tudo cr ítico do p lanejamento d e ensi no: suas et apas, m odalidades e co mponentes. 
+Iniciação na práxis pedagógica, mediante construção de projetos didáticos, de planos de ensino e realização de micro-
+aulas. 
+ 
+ 
+ 
+ 
+Nome e código do componente curricular: 
+Metodologia do Ensino da Matemática.  EDCA80 
+Departamento: 
+Departamento de 
+Educação II 
+Carga horária: 
+T: 34 P:34 E:00 
 Modalidade: 
  Disciplina 
 Função: 
 Profissional 
 Natureza: 
+Obrigatória para 
+a Licenciatura 
+Pré-requisito: 
+− Didática e Práxis Pedagógica. 
+− Matemática para Educação Básica I 
+Módulo de alunos: 
+30 
+ 
+Ementa: 
+Estudo teóric o m etodológico do atual en sino de Matemática n as escolas br asileiras. Relação d a sociedade 
+contemporânea e o sistema esco lar. Aná lise e co nstrução d e práticas p edagógicas para poss íveis esp aços de 
+aprendizagem.  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Nome e código do componente curricular: 
+Estágio Supervisionado I.  EDCA81 
+Departamento: 
+Departamento de 
+Educação II 
+Carga horária: 
+T:17  P:51 E: 34 
+Modalidade: 
+Disciplina 
+Função: 
+Profissional 
+Natureza: 
 Obrigatória 
 Pré-requisito: 
-− Metodologia do Ensino da  Matemática. 
-− Laboratório de Ensino de Matemática I 
+Didática e Práxis Pedagógica. 
 Módulo de alunos: 
-15 
-Ementa: 
-Exercício efetivo da prática de ensino, pela aplicação dos fundamentos teórico-práticos desenvolvidos nas disciplinas, 
-Didática e Práxis Pedagógica e Metodologia do Ensino da Matemática, dos conteúdos específicos de sua formação, de 
-forma contextualizada e com a incorporação das inovações contemporâneas que inserem a educação no processo de 
-desenvolvimento sócio-histórico e humano.
-46
-8. PLANO DE ADAPTAÇÃO CURRICULAR 
- 
-8. 1. Equivalência Entre Componentes Curriculares. 
- 
-As modificações propostas neste documento para as duas habilitações do Curso de Matemática devem atingir todos os alunos que 
-ingressarem no curso a partir de 2007.  Porém, boa parte dessas mudanças envolverá alunos que ingressaram antes desse período, principalmente 
-os alunos de 2006.  
- 
- 
- 
-As equivalências entre componentes curriculares atuais e os novos a serem implantados estão estabelecidas nos dois quadros abaixo e 
-serão válidas para todos os alunos atuais e os alunos que futuramente ingressarão no curso.  
- 
-TABELA I  
- 
-(EQUIVALÊNCIA ENTRE COMPONENTES CURRICULARES)  
- 
-ATUAIS 
-NOVOS 
-MATA01. Geometria Analítica  
-MATB34 -  Geometria Analítica e Álgebra Vetorial  
-MATA02. Cálculo A 
-MATB33 -  Limites e Derivadas  
-MATA03. Cálculo B  
-MATB37 - Integrais e Funções de Várias Variáveis 
-MATA04. Cálculo C  
-MATB40 - Seqüências,  Séries e EDO 
-MATA05. Cálculo D  
-MATB43 - Cálculo Diferencial Vetorial  
-MATA07. Álgebra Linear A 
-MATB38 - Álgebra Linear  I B  
-MAT018. Álgebra Linear II  
-MATB41 - Álgebra Linear  II B 
-MAT200. Álgebra I – Inteiros e Grupos  
-MATB32 - Introdução à Teoria dos Números  
-MAT201. Álgebra II – Anéis e Polinômios 
-MATB35 -  Grupos e Anéis I 
-MAT204. Análise Real I  
-MATB44 - Análise I   
-MAT206  Análise Real  II 
-MATB52 - Análise II  
-MAT211. Cálculo Avançado  
-MAT-B53 - Análise III
+15

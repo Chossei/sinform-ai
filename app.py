@@ -16,7 +16,8 @@ sys.path.append(str(BASE_DIR))
 
 load_dotenv()
 
-from rag_engine import SinformRAG, PRIMARY_MODEL, FALLBACK_MODEL, MODEL_LABELS
+from rag_engine import SinformRAG, PRIMARY_MODEL, FALLBACK_MODEL
+from cost_estimator import CostEstimator
 
 # Configuração da página
 st.set_page_config(
@@ -29,14 +30,12 @@ st.set_page_config(
 # Estilização CSS Moderna e Premium
 st.markdown("""
 <style>
-    /* Estilo Geral e Fontes */
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
     
     html, body, [class*="css"] {
         font-family: 'Inter', sans-serif;
     }
 
-    /* Top Banner */
     .top-header {
         background: linear-gradient(135deg, #0A192F 0%, #172A45 50%, #203A43 100%);
         border-radius: 14px;
@@ -60,7 +59,6 @@ st.markdown("""
         margin: 0;
     }
 
-    /* Course Selection Cards */
     .course-card {
         background: #112240;
         border: 1px solid #233554;
@@ -96,37 +94,36 @@ st.markdown("""
         border: 1px solid rgba(100, 255, 218, 0.25);
     }
 
-    /* Citation Box */
-    .citation-header {
-        background: #0D1B2A;
-        border-left: 4px solid #64FFDA;
-        padding: 8px 14px;
-        border-radius: 4px;
-        font-family: monospace;
-        font-size: 0.85rem;
-        color: #64FFDA;
-        margin-bottom: 8px;
+    .stChatMessage {
+        border-radius: 12px;
+        margin-bottom: 10px;
     }
 </style>
 """, unsafe_allow_html=True)
 
 # Inicializar motor RAG
 @st.cache_resource
-def load_rag():
+def get_rag_engine():
     return SinformRAG()
 
 try:
-    rag = load_rag()
+    rag = get_rag_engine()
 except Exception as e:
-    st.error(f"Erro ao inicializar base vetorial do Sinform AI: {e}")
+    st.error(f"Erro ao inicializar SinformRAG: {e}")
     st.stop()
 
-# Inicialização de estado da sessão
+# Estados de Sessão
 if "selected_course" not in st.session_state:
     st.session_state.selected_course = None
 
 if "messages" not in st.session_state:
     st.session_state.messages = []
+
+if "session_cost_usd" not in st.session_state:
+    st.session_state.session_cost_usd = 0.0
+
+if "session_tokens" not in st.session_state:
+    st.session_state.session_tokens = 0
 
 # Sidebar de navegação e configurações
 with st.sidebar:
@@ -135,7 +132,7 @@ with st.sidebar:
     st.markdown("**Consultor Inteligente de Normas Acadêmicas - UFBA**")
     st.markdown("---")
 
-    # Arquitetura de Modelos LLM com Fallback Automático (sem seleção manual)
+    # Arquitetura de Modelos LLM com Fallback Automático
     st.subheader("⚙️ Motor de Inteligência Artificial")
     st.markdown("""
     <div style="background: rgba(30, 41, 59, 0.7); border: 1px solid rgba(100, 255, 218, 0.25); border-radius: 8px; padding: 12px; margin-bottom: 12px;">
@@ -143,10 +140,28 @@ with st.sidebar:
             <span>🟢</span> Gemini 3.5 Flash Lite
         </div>
         <div style="color: #8892B0; font-size: 0.8rem; margin-top: 4px;">
-            Modelo Principal Ativo
+            Modelo Principal Ativo (Multi-Query + Resposta)
         </div>
         <div style="color: #CBD5E1; font-size: 0.82rem; margin-top: 8px; border-top: 1px dashed rgba(255,255,255,0.1); padding-top: 6px;">
             ↳ <strong>Fallback automático:</strong> Gemini 3.1 Flash Lite
+        </div>
+    </div>
+    """, unsafe_allow_html=True)
+
+    # Painel de Custos por Milhão de Tokens (Requisito do Plano)
+    st.subheader("💰 Auditoria de Custos da API")
+    st.markdown(f"""
+    <div style="background: #112240; border: 1px solid #233554; border-radius: 8px; padding: 10px; font-size: 0.82rem; color: #CCD6F6;">
+        <div><strong>Preços Oficiais (Google Gemini):</strong></div>
+        <div>• <em>LLM Input:</em> $0.075 / 1M tokens</div>
+        <div>• <em>LLM Output:</em> $0.300 / 1M tokens</div>
+        <div>• <em>Embeddings:</em> $0.020 / 1M tokens</div>
+        <div style="margin-top: 8px; padding-top: 6px; border-top: 1px solid #233554; color: #64FFDA;">
+            <strong>Custo Acumulado da Sessão:</strong><br>
+            <span style="font-size: 1.05rem; font-weight: 700;">${st.session_state.session_cost_usd:.6f} USD</span>
+        </div>
+        <div style="color: #8892B0; font-size: 0.78rem; margin-top: 4px;">
+            Total Tokens Processados: {st.session_state.session_tokens}
         </div>
     </div>
     """, unsafe_allow_html=True)
@@ -157,7 +172,7 @@ with st.sidebar:
     st.subheader("📊 Base Vetorial do Colegiado")
     try:
         count = rag.collection.count()
-        st.success(f"**{count}** fragmentos regulamentares indexados com `gemini-embedding-2`.")
+        st.success(f"**{count}** fragmentos indexados com `gemini-embedding-2`.")
     except:
         st.info("Base vetorial em atualização.")
 
@@ -183,6 +198,8 @@ with st.sidebar:
 
     if st.button("Limpar Histórico", use_container_width=True):
         st.session_state.messages = []
+        st.session_state.session_cost_usd = 0.0
+        st.session_state.session_tokens = 0
         st.rerun()
 
 # BANNER SUPERIOR
@@ -249,8 +266,7 @@ if st.session_state.selected_course is None:
 else:
     active_course = st.session_state.selected_course
 
-    # Barra informativa do curso ativo
-    st.info(f"**Atendimento Selecionado:** Aluno de **{active_course}** | Motor: **Gemini 3.5 Flash Lite** (com fallback automático para **Gemini 3.1 Flash Lite**) | Filtro vetorial ativo nos metadados.")
+    st.info(f"**Atendimento Selecionado:** Aluno de **{active_course}** | Motor: **Gemini 3.5 Flash Lite** (com fallback automático para **Gemini 3.1 Flash Lite**) | Filtro vetorial Top-10 ativo.")
 
     # Perguntas sugeridas conforme o curso selecionado
     st.markdown("##### 💡 Sugestões de perguntas frequentes:")
@@ -258,7 +274,7 @@ else:
     
     if active_course == "Estatística (Bacharel)":
         sug_list = [
-            "Como funciona a resolução de atividades complementares no SIGAA?",
+            "Como funciona a resolução de atividades complementares no SIGAA e quantas horas de extensão?",
             "Quais são as regras para o TCC e a banca examinadora?",
             "Quais as condições para trancamento e permanência no curso?",
             "Quais são as exigências para o estágio não obrigatório no IME?"
@@ -289,13 +305,22 @@ else:
         with st.chat_message(msg["role"]):
             st.markdown(msg["content"])
             if msg.get("model_used") and msg["role"] == "assistant":
-                st.caption(f"🤖 Motor: {msg['model_used']}")
+                meta_line = f"🤖 Motor: `{msg['model_used']}`"
+                if msg.get("cost_str"):
+                    meta_line += f" | Custo da operação: `{msg['cost_str']}`"
+                st.caption(meta_line)
+
+            if msg.get("dual_queries"):
+                with st.expander("🔍 Consultas Geradas via Multi-Query (Dois Vieses)"):
+                    st.markdown(f"**Viés A (Regras & Prazos):** {msg['dual_queries'][0]}")
+                    st.markdown(f"**Viés B (Procedimentos & SIGAA):** {msg['dual_queries'][1]}")
+
             if msg.get("citations"):
-                with st.expander("📚 Citações e Fragmentos Regulamentares de Origem"):
+                with st.expander(f"📚 {len(msg['citations'])} Fragmentos Regulamentares de Contexto (Top-5 + Top-5 Chunks)"):
                     for c in msg["citations"]:
-                        st.markdown(f"**Cabeçalho Oficial:** `{c['title']}`")
+                        st.markdown(f"**Cabeçalho Oficial:** `{c['header']}`")
                         st.markdown(f"- **Documento:** {c['documento']}")
-                        st.markdown(f"- **Capítulo/Seção/Artigo:** {c['capitulo']} · {c['secao']} · {c['artigo']}")
+                        st.markdown(f"- **Disposição:** {c['capitulo']} · {c['secao']} · {c['artigo']}")
                         st.caption(f"Tokens: {c.get('tokens', 'N/A')}")
                         st.markdown(f"```text\n{c['content']}\n```")
                         st.divider()
@@ -316,31 +341,53 @@ else:
         with st.chat_message("user"):
             st.markdown(user_input)
 
-        # Processar via RAG com Fallback Automático (Gemini 3.5 Flash Lite -> Gemini 3.1 Flash Lite)
+        # Processar via RAG com Status Dinâmico de Três Fases conforme especificado no Plano:
+        # 1. (Criando as consultas…)
+        # 2. Pesquisando os documentos
+        # 3. Gerando sua resposta…
         with st.chat_message("assistant"):
-            with st.spinner("Consultando acervo de normas e regulamentos da UFBA via ChromaDB e Gemini..."):
-                answer, citations, model_used = rag.ask(
+            with st.status("(Criando as consultas…)", expanded=True) as status_box:
+                def on_status_change(phase_text: str):
+                    status_box.update(label=phase_text, state="running")
+
+                answer, citations, model_used, cost_sum, dual_queries = rag.ask(
                     query=user_input,
                     curso=active_course,
-                    history=st.session_state.messages
+                    history=st.session_state.messages,
+                    status_callback=on_status_change
                 )
+                status_box.update(label="✅ Consulta regulamentar concluída!", state="complete", expanded=False)
 
-                st.markdown(answer)
-                st.caption(f"🤖 Motor: **{model_used}**")
+            st.markdown(answer)
+            cost_str = CostEstimator.format_cost(cost_sum.get("total_cost_usd", 0.0) - st.session_state.session_cost_usd)
+            st.caption(f"🤖 Motor: `{model_used}` | Custo estimado desta resposta: `{cost_str}`")
 
-                if citations:
-                    with st.expander("📚 Citações e Fragmentos Regulamentares de Origem"):
-                        for c in citations:
-                            st.markdown(f"**Cabeçalho Oficial:** `{c['title']}`")
-                            st.markdown(f"- **Documento:** {c['documento']}")
-                            st.markdown(f"- **Capítulo/Seção/Artigo:** {c['capitulo']} · {c['secao']} · {c['artigo']}")
-                            st.caption(f"Tokens: {c['tokens']}")
-                            st.markdown(f"```text\n{c['content']}\n```")
-                            st.divider()
+            # Atualizar custos globais na sessão
+            st.session_state.session_cost_usd = cost_sum.get("total_cost_usd", 0.0)
+            st.session_state.session_tokens = cost_sum.get("total_tokens", 0)
 
-            st.session_state.messages.append({
-                "role": "assistant",
-                "content": answer,
-                "citations": citations,
-                "model_used": model_used
-            })
+            if dual_queries:
+                with st.expander("🔍 Consultas Geradas via Multi-Query (Dois Vieses)"):
+                    st.markdown(f"**Viés A (Regras & Prazos):** {dual_queries[0]}")
+                    st.markdown(f"**Viés B (Procedimentos & SIGAA):** {dual_queries[1]}")
+
+            if citations:
+                with st.expander(f"📚 {len(citations)} Fragmentos Regulamentares de Contexto (Top-5 + Top-5 Chunks)"):
+                    for c in citations:
+                        st.markdown(f"**Cabeçalho Oficial:** `{c['header']}`")
+                        st.markdown(f"- **Documento:** {c['documento']}")
+                        st.markdown(f"- **Disposição:** {c['capitulo']} · {c['secao']} · {c['artigo']}")
+                        st.caption(f"Tokens: {c['tokens']}")
+                        st.markdown(f"```text\n{c['content']}\n```")
+                        st.divider()
+
+        st.session_state.messages.append({
+            "role": "assistant",
+            "content": answer,
+            "citations": citations,
+            "model_used": model_used,
+            "dual_queries": dual_queries,
+            "cost_str": cost_str
+        })
+        # Atualizar a barra lateral de custos imediatamente
+        st.rerun()

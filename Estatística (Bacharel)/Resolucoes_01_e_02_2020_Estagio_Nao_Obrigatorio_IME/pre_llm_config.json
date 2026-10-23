@@ -1,0 +1,15 @@
+{
+  "curso": "Estatística (Bacharel)",
+  "documento": "Resolucoes_01_e_02_2020_Estagio_Nao_Obrigatorio_IME.pdf",
+  "documento_nome": "Resolucoes 01 e 02 2020 Estagio Nao Obrigatorio IME",
+  "caminho_pdf": "C:\\Users\\choss\\OneDrive\\Documentos\\Aplicação - Sinform AI\\Estatística (Bacharel)\\Resolucoes_01_e_02_2020_Estagio_Nao_Obrigatorio_IME.pdf",
+  "header": "| Estatística (Bacharel) | Documento (Resolucoes 01 e 02 2020 Estagio Nao Obrigatorio IME) |",
+  "max_tokens_per_chunk": 600,
+  "max_tokens_overlap": 100,
+  "densidade_visual": "Alta com múltiplos artigos e parágrafos curtos, contendo seções regulamentares estruturadas e anexos com formulários",
+  "justificativa_chunking": "O documento é composto por artigos normativos curtos divididos em capítulos e anexos em formato de formulário. Um limite de 600 tokens por chunk garante que cada artigo completo, junto com seus incisos e parágrafos, seja processado sem fragmentação indesejada, preservando o contexto legal e regulamentar. A sobreposição de 100 tokens assegura a continuidade semântica entre as transições de seções e anexos.",
+  "model_used": "gemini-3.5-flash-lite",
+  "input_tokens": 7189,
+  "output_tokens": 219,
+  "cost_usd": 0.000604875
+}

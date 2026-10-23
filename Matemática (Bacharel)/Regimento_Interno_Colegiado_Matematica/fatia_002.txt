@@ -1,19 +1,19 @@
-| Matemática (Bacharel) | Regimento_Interno_Colegiado_Matematica.pdf | Capítulo Ii | Seção Geral | Artigo 3º |
-
-Art. 3º. O COLMAT é dirigido por 01 (um) Coordenador(a) e por 01 (um) Vice-Coordenador(a),
-ambos(as) do quadro permanente do Departamento de Matemática (DMAT) da UFBA, em
-regime de Dedicação Exclusiva.
-§ 1º O(A) Vice-Coordenador(a) citado(a) no caput deste artigo também desempenha a função
-de Coordenador(a) de Apoio Acadêmico ao Curso Noturno de Matemática.
-§ 2º Poderão se candidatar às funções de Coordenador(a) e Vice-Coordenador(a), os(as)
-professores que sejam membros do COLMAT e tenham pelo menos 01 (um) ano de exercício
-como docente efetivo(a) no DMAT.
-§ 3º O(A) Coordenador(a) e o(a) Vice-Coordenador(a) são eleitos(as), em escrutínio secreto, pela
-plenária do COLMAT em reunião ordinária como ponto único de pauta. Todos os membros
-presentes devem votar e todos os votos terão o mesmo peso. A contagem dos votos é feita por
-escrutinadores(as) escolhidos(as) no plenário e os(as) candidatos(as) que obtiverem maioria
-simples dos votos válidos (os votos em branco e nulo não são tidos como válidos) serão
-considerados(as) os(as) próximos(as) Coordenador(a) e Vice-Coordenador(a). Tal resultado deve
-ser encaminhado à Direção do IME para os devidos procedimentos.
-§ 4º O mandato terá duração de 02 (dois) anos para o(a) Coordenador(a) e para o(a) Vice-
-Coordenador(a), sendo permitida uma recondução.
+| Matemática (Bacharel) | Documento (Regimento Interno Colegiado Matematica) |
+de licenciatura e bacharelado, foi criado pelo decreto de nº 10664 de 20/10/1942 e foi
+reconhecido pelo decreto federal 17.206 de 21/11/1944, publicado no DOU em 19/11/1944.
+Desde março de 2008, o IME/UFBA conta também com o curso noturno de Licenciatura em
+Matemática, que foi autorizado pelo Parecer/CEG/UFBA - nº 643/08 de 16/08/2008.
+Art. 2º. O Colegiado dos Cursos de Graduação em Matemática (COLMAT) é um órgão consultivo
+e deliberativo, responsável pela coordenação e supervisão das atividades dos cursos diurno e
+noturno de Matemática, e pela fixação de diretrizes e orientações pedagógicas para os
+respectivos cursos de graduação, conforme o Art. 34º do Estatuto e Regimento Geral da UFBA.
+§ 1º Os cursos de graduação em Matemática coordenados pelo COLMAT são: Bacharelado
+(código 111130), Licenciatura Diurna (código 111120) e Licenciatura Noturna (código 183120).
+§ 2º O COLMAT é o órgão responsável pela coordenação dos colegiados dos cursos de
+Matemática diurno (código 111) e do curso de Matemática noturno (código 183).
+§ 3º Dentre as funções do COLMAT, destacam-se a solicitação de componentes e atividades
+curriculares a serem oferecidas nos semestres vigentes, o atendimento aos estudantes de
+graduação em Matemática, a comunicação discente-docente e a atualização das diretrizes
+curriculares e projetos político pedagógicos dos cursos de Matemática. Para realizar as funções
+citadas anteriormente, o COLMAT conta com a assessoria e apoio administrativo do Centro de
+Atendimento à Graduação (CEAG) do IME/UFBA.

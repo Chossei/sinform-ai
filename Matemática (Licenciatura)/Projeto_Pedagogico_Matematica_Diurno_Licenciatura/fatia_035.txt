@@ -1,87 +1,91 @@
-| Matemática (Licenciatura) | Projeto_Pedagogico_Matematica_Diurno_Licenciatura.pdf | Normas e Diretrizes Gerais | Seção 35 | Diretriz Normativa 35 |
-
-Matemática para a Educação Básica II. 
-MATB42 
+| Matemática (Licenciatura) | Documento (Projeto Pedagogico Matematica Diurno Licenciatura) |
+Nome e código do componente curricular: 
+Introdução à Teoria dos Números. MATB32 
+Departamento: 
+Matemática 
+Carga horária: 
+T:34  P:34 E:00 
 Modalidade: 
 Disciplina 
 Função: 
-Profissional 
+Básica 
 Natureza: 
 Obrigatória para a 
-Licenciatura 
+Licenciatura e para o 
+Bacharelado. 
 Pré-requisito: 
-− Limites e 
-Derivadas 
-Módulo de alunos: 
+Não tem. 
+Módulo de alunos:
 30 
 Ementa: 
-           Estudo de tópicos do ensino médio − Função exponencial e logarítmica; Funções trigonométricas; Progressões; 
-Combinatória e probabilidade − com inserção de atividades referentes à prática pedagógica. 
+             Conjunto dos números naturais, ordem, princípio de indução, conjunto dos números inteiros, Teorema 
+Fundamental da Aritmética, algoritmo de Euclides, bases e representação numérica, congruência e o princípio da casa 
+dos pombos, critérios de divisibilidade, equações Diofantinas e o T eorema Chinês dos restos. Números perfeitos, de 
+Fibonacci, de Fermat e de Mersenne. Criptografia RSA. 
  
  
  
 Nome e código do componente curricular: 
-Matemática para a Educação Básica III. MATB45 
+Grupos e Anéis I .  MATB35 
 Departamento: 
 Matemática 
 Carga horária: 
-T: 34 P:34 E:00 
+T:102 P:00 E:00 
 Modalidade: 
 Disciplina 
 Função: 
-Profissional 
+Básica 
 Natureza: 
 Obrigatória para a 
-Licenciatura 
+Licenciatura e para o 
+Bacharelado. 
 Pré-requisito: 
-− Álgebra Linear I-B 
+− Introdução à Teoria 
+dos Números 
+(MATB32) 
 Módulo de alunos: 
-30 
+40 
 Ementa: 
-        Estudo de tópicos do ensino médio − Ge ometria analítica plan a; Si stemas de eq uações line ares; Ma trizes e 
-determinantes; Números complexos; Equações algébricas − com inserção de atividades referentes à prática pedagógica.
+               Grupos, subgrupos, homomorfismos, subgrupos normais, grupos quocientes, teoremas de Isomorfismos, 
+grupos finitos, Teorema de Lagrange, Grupos de permutação. 
  
- 
+       Anéis, anéis quocientes, homomorfismos, teoremas de isomorfismos, ideais, domínios, domínio euclidiano, 
+domínio de fatoração única, anéis de polinômios, irredutibilidade. 
  
  
  
  
 Nome e código do componente curricular: 
-Laboratório de Ensino de Matemática I. 
-MATB47 
+Grupos e Anéis II .  MATB36 
 Departamento: 
 Matemática 
 Carga horária: 
-T: 24 P:44 E:00 
+T: 68 P:00 E:00 
 Modalidade: 
-Módulo interdisciplinar 
+Disciplina 
 Função: 
-Profissional 
+Básica 
 Natureza: 
-Obrigatória para a 
-Licenciatura 
+Obrigatória para o 
+Bacharelado e optativa 
+para a Licenciatura. 
 Pré-requisito: 
-− Integrais e Funções 
-de Várias Variáveis 
+− Grupos e Anéis I 
+(MATB35) 
 Módulo de alunos: 
-20 
+40 
 Ementa: 
-          Princípio de contagem. Cônicas. Curvas parametrizadas. Áreas e aplicações. Superfícies. Volumes. Método de 
-indução. 
-           
-Metodologia: 
-Serão desenvolvidos estudos de tópicos d a ementa, serão apresentadas palestras pelo professor responsável ou 
-por professores convidados. Todos os tópicos serão vistos com utilização de modelos concretos.  
-Durante o semestre, sob a orientação e supervisão do professor, cada aluno escolherá um tópico da ementa sobre 
-o qual construirá modelos concretos e apresentará dois seminários abertos à comunidade. 
-As aulas práticas ocorrerão no Laboratório LEMA-UFBa onde o aluno deverá  construir os modelos concretos. 
+               Ações de grupo; Produto Direto e Semi-direto; Grupos Abelianos; Teoremas de Sylow; Grupos Simples, 
+Nilpotentes e So lúveis. Noções sobre a T eoria das Rep resentações. Operações c om ideais; An éis No etherianos; 
+Decomposição Primária; Anéis de polinômios e m v árias variáveis; Polinôm ios Simétricos; Base d e Gr oebner; 
+Algoritmo de Buchberger; Aplicações de bases de Groebner. 
  
  
  
  
 Nome e código do componente curricular: 
-Laboratório de Ensino de Matemática II. MATB48 
+Álgebra Linear I-B. MATB38 
 Departamento: 
 Matemática 
 Carga horária: 
-T: 24 P:44 E:00
+T: 44 P:24 E:00

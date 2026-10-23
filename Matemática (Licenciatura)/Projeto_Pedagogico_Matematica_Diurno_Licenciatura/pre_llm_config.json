@@ -1,0 +1,15 @@
+{
+  "curso": "Matemática (Licenciatura)",
+  "documento": "Projeto_Pedagogico_Matematica_Diurno_Licenciatura.pdf",
+  "documento_nome": "Projeto Pedagogico Matematica Diurno Licenciatura",
+  "caminho_pdf": "C:\\Users\\choss\\OneDrive\\Documentos\\Aplicação - Sinform AI\\Matemática (Licenciatura)\\Projeto_Pedagogico_Matematica_Diurno_Licenciatura.pdf",
+  "header": "| Matemática (Licenciatura) | Documento (Projeto Pedagogico Matematica Diurno Licenciatura) |",
+  "max_tokens_per_chunk": 600,
+  "max_tokens_overlap": 100,
+  "densidade_visual": "Média com seções narrativas, tabelas curriculares e ementas",
+  "justificativa_chunking": "A escolha de 600 tokens por chunk com sobreposição de 100 tokens garante a preservação da coerência semântica e estrutural entre as seções dissertativas do projeto pedagógico, as tabelas complexas de equivalência de disciplinas e as ementas dos componentes curriculares, evitando a fragmentação de regras de adaptação e pré-requisitos.",
+  "model_used": "gemini-3.5-flash-lite",
+  "input_tokens": 31636,
+  "output_tokens": 178,
+  "cost_usd": 0.0024260999999999996
+}

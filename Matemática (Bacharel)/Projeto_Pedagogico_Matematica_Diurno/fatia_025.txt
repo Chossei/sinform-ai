@@ -1,142 +1,88 @@
-| Matemática (Bacharel) | Projeto_Pedagogico_Matematica_Diurno.pdf | Normas e Diretrizes Gerais | Seção 25 | Diretriz Normativa 25 |
-
-LICENCIATURA  
-Componentes Curriculares Obrigatórios para a Licenciatura a partir de 2007.1 
+| Matemática (Bacharel) | Documento (Projeto Pedagogico Matematica Diurno) |
+13
  
-   
-Código / Nome 
-C.H.  
-Hora/aula 
-Módulo 
-Função 
-Pré-requisito 
-Departamento de  
-ARQ005 - Desenho Geométrico I  
-68 
-Disciplina 
-Complementar --------- 
-Geometrias de Representação 
-MAT198 – Fundamentos de Matemática I 
-102 
-Disciplina 
-Básica 
---------- 
-Matemática 
-MAT199 –- Fundamentos de Matemática II 
-102 
-Disciplina 
-Básica 
---------- 
-Matemática 
- MAT191 – Matemática Financeira 
-68  
-Disciplina 
-Complementar 
+ 
+                                                                                      
+             
+CÓDIGO/NOME Carga 
+horária 
+PRÉ-REQUISITOS 
+MAT156 – Teoria dos Grafos 
+68 h 
+MATA07 / MAT201 
+MAT158 – Teoria da Computação 
+68 h 
+MAT201 
+MAT191 – Matemática Financeira 
+68 h 
 ------ 
-Matemática 
-MAT --- Introdução à Teoria dos Números  
-68 
-Disciplina 
-Básica 
---------- 
-Matemática 
-MAT --- Limites e Derivadas 
-102 
-Disciplina  
-Básica 
---------- 
-Matemática 
-MAT --- Geometria Analítica e Álgebra Vetorial 
-102 
-Disciplina  Básica 
---------- 
-Matemática 
-MAT --- Estatística Básica A  
-68 
-Disciplina 
-Complementar 
---------- 
-Estatística 
-EDCA01-Fundamentos Psicológicos da Educação 68 
-Disciplina 
-Básica 
---------- 
-Educação I 
-MAT--- Grupos e Anéis I 
-102 
-Disciplina  
-Básica 
-− Introdução à Teoria 
-dos Números. 
-Matemática 
+MAT192 – Matemática Aplicada à Economia 
+102 h 
+------ 
+MAT205 – Álgebra III – Introdução à Teoria de 
+Galois 
+68 h 
+MAT201 
+MAT206 – Análise Real II 
+102 h 
+MAT204 
+MAT207 – Topologia Geral 
+102 h 
+MAT200 / MAT204 
+MAT208 – Geometria Diferencial 
+102 h 
+MATA05 / MAT018 
+MAT209 – Teoria das Equações Diferenciais 
+68 h 
+MATA07 / MATA04 
+MAT210 – Equações Diferenciais Parciais 
+68 h 
+MAT204 
+MAT211 – Cálculo Avançado 
+68 h 
+MATA05 / MAT204 
+MAT213 – Tópicos em Álgebra 
+68 h 
+MAT205 
+MAT214 – Tópicos em Análise 
+68 h 
+MAT206 
+MAT215 – Tópicos de Geometria 
+68 h 
+MAT208 
+MAT216 – Tópicos da História da Matemática 
+68 h 
+MAT201 / MAT204 
+MAT221 – Estatística Básica 
+102 h 
+------
+conhecimentos teóricos e conhecimentos práticos que o futuro professor irá vivenciar nas suas 
+experiências de sala de aula. 
+       Uma di scussão perm anente sobre o que ensinar, para que
+m ensinar e com o ensinar, 
+deverá nessas atividades, propiciar com
+petências técnicas e m etodológicas ao licenciando 
+para que na sua prática possa integrar o 
+conhecimento sobre ensino e aprendizagem, que é 
+uma das tarefas essenciais do professor.      
  
  
-MAT--- Integrais e Funções de Várias Variáveis  
+BACHARELADO 
  
+A proposta curricular para o Bacharelado está de acordo com a resolução do Conselho 
+Nacional de Educação/Câm ara de Educação Superior , CNE/CES n o 1.302/2001 de 06 de 
+novembro de 2001, que estabelece diretrizes cu
+rriculares nacionais para os Cursos de
  
-102 
- 
- 
-Disciplina  
- 
- 
-Básica 
-− Limites e 
-Derivadas. 
-− Geometria 
-Analítica 
- e Álgebra Vetorial. 
- 
- 
-Matemática 
- 
-MAT --- Álgebra Linear I-B  
- 
-68 
- 
-Disciplina 
- 
-Básica 
-− Geometria 
-Analítica  
-e Álgebra Vetorial. 
- 
-Matemática 
-EDCA02 - Organização da Educação Brasileira 2 68 
-Disciplina 
-Básica 
---------- 
-Educação I 
-EDC ----Didática e Práxis Pedagógica  
-102 
-Disciplina  
-Básica 
---------- Educação 
-II 
- 
- 
-FIS121 - Física Geral e Experimental I-E  
- 
- 
-102 
- 
- 
-Disciplina 
- 
- 
-Complementar 
-− Limites e 
-Derivadas. 
-− Geometria 
-Analítica 
-e Álgebra Vetorial. 
- 
- 
-Geofísica Nuclear. 
-MAT--- Seqüências, Séries e EDO 
-102 
-Disciplina  
-Básica 
-− Integrais e Funções 
- de Várias Variáveis. 
-Matemática
+Matemática, Bacharelado e L
+icenciatura no que se refe
+re ao perfil dos form
+andos; 
+competência e habilidades; estrutu
+ra do curs
+o e conteúdos curricu
+lares. Tam bém foi 
+observado o parecer do Conselho Nacional de Educação/ Câm ara de Educação S uperior, 
+CNE/CES nº 184/2006, aprovado em 7 de julho de 2006, que estabelece que a carga horária 
+mínima para os Cursos de Bacharelado em Matemática no modo presencial é de 2400 h. 
+Na próxima página veremos a matriz curricular.

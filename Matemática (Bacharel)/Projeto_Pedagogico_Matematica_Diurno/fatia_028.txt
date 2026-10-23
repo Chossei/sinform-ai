@@ -1,120 +1,234 @@
-| Matemática (Bacharel) | Projeto_Pedagogico_Matematica_Diurno.pdf | Normas e Diretrizes Gerais | Seção 28 | Diretriz Normativa 28 |
-
-O aluno de Licenciatu ra participan te de p rogramas institu cionais envolvendo a p esquisa ou a exten são ou m onitorias poderá ter s eus trab alhos 
-convertidos em carga horária curricular optativa até o limite máximo de 136 horas.  
+| Matemática (Bacharel) | Documento (Projeto Pedagogico Matematica Diurno) |
+Componentes Curriculares Optativos para o Bacharelado a partir de 2007.1 
  
  
-Com exceção da d
-isciplina MAT ---- Estágio S
-upervisionado, são tam bém com ponentes curric ulares optativos para a Licenciatura to
-dos os 
-componentes curriculares obrigatórios ou opta
-tivos para o Bacharelado, que não são obrig
-atórios para a Licenciatura. Portanto à
- lista anterior 
-acrescentam-se os componentes curriculares: 
- 
-  
 Código / Nome 
-C.H. 
+C.H.  
 Hora/aula 
 Módulo 
 Função 
 Pré-requisito 
 Departamento de  
-MAT045 - Processamento de Dados 
-68 
-Disciplina 
-Complementar --------- 
-Ciência da Computação 
-FIS123 - Física Geral e Experimental III-E 
-102 
-Disciplina 
-Complementar 
-− FIS122 
- 
-Física do Estado Sólido 
- 
-MAT174-Cálculo Numérico 
- 
-68 
- 
-Disciplina 
- 
-Complementar  
-− MAT045 
-− Álgebra Linear I-B 
-− Séries, Seqüências e 
-EDO 
- 
-Ciência da Computação 
-MAT 205 - Introdução  à Teoria de Galois 
-68 
-Disciplina 
-Básica 
-− Grupos e Anéis I 
-Matemática 
- 
-MAT--- Teoria das Equações Diferenciais Ordinárias 
- 
-68 
- 
-Disciplina 
- 
-Básica 
-− Seqüências, Séries e 
-EDO. 
-− Álgebra Linear I-B. 
- 
-Matemática 
-MAT --- Análise II  
-102 
-Disciplina 
-Básica 
-− Análise I 
-Matemática 
-MAT --- Topologia e Espaços Métricos 6
-8 
-Disciplina 
-Básica 
-− Limites e Derivadas 
-Matemática 
- 
-MAT 208 - Geometria Diferencial 
- 
-102 
- 
-Disciplina 
- 
-Básica 
-− Cálculo Diferencial 
-Vetorial 
-− Álgebra Linear II-B 
- 
-Matemática 
-MAT --- Análise III  
-102 
-Disciplina 
-Básica 
-− Análise II 
-Matemática 
- MAT028 − Estatística III - C 
+ARQ013 − Descritiva I   
 68 Discip
 lina 
 Complementar 
-− Seqüências, Séries e 
-EDO. 
-Estatística 
+− ARQ005 
+Geometrias de Representação
+MAT135 – Funções Analíticas II 
+68  
+Disciplina 
+Complementar 
+− Funções Holomorfas 
+Matemática 
+MATA53 – Teoria dos Grafos 
+68  
+Disciplina 
+Complementar 
+− MATA07  
+−  Grupos e Anéis I 
+Ciência da Computação 
+MATA51 – Teoria da Computação 
+68  
+Disciplina 
+Complementar 
+−  Grupos e Anéis I 
+Ciência da Computação 
+MAT192 – Matemática Aplicada à Economia 
+102  Discip
+lina 
+Complementar 
+------ 
+Matemática 
+MAT213 – Tópicos em Álgebra 
+68  
+Disciplina 
+Complementar 
+− MAT205 
+Matemática 
+MAT214 – Tópicos em Análise 
+68  
+Disciplina 
+Complementar 
+− Análise III 
+Matemática 
+MAT215 – Tópicos de Geometria 
+68  
+Disciplina 
+Complementar 
+− MAT208 
+Matemática 
+MAT216 – Tópicos da História da Matemática 
+68  
+Disciplina 
+Complementar 
+−  Grupos e Anéis I 
+  − Análise I 
+Matemática 
+FIS124 - Física Geral e Experimental IV-E 1
+02  
+Disciplina 
+Complementar 
+− FIS123 
+Física do Estado Sólido 
+MAT--- Teoria dos Conjuntos  
+68 
+Disciplina 
+Complementar 
+------ 
+Matemática 
+MAT--- Construção de Conjuntos Numéricos 
+68  
+Disciplina 
+Complementar 
+------ 
+Matemática 
+MAT--- Equações Diferenciais Parciais  
+68  
+Disciplina 
+Complementar 
+−  Análise I 
+Matemática 
  
-MAT--- Monografia 
+O aluno do Bacharelado participante de programas institucionais envolvendo a pesquisa ou a ex tensão ou monitorias po derá ter seus trabalhos convertidos em 
+carga horária curricular optativa até o limite máximo de 136 horas.
+LICENCIATURA  
+Componentes Curriculares Obrigatórios para a Licenciatura a partir de 2007.1 
+ 
+   
+Código / Nome 
+C.H.  
+Hora/aula 
+Módulo 
+Função 
+Pré-requisito 
+Departamento de  
+ARQ005 - Desenho Geométrico I  
+68 
+Disciplina 
+Complementar --------- 
+Geometrias de Representação 
+MAT198 – Fundamentos de Matemática I 
+102 
+Disciplina 
+Básica 
+--------- 
+Matemática 
+MAT199 –- Fundamentos de Matemática II 
+102 
+Disciplina 
+Básica 
+--------- 
+Matemática 
+ MAT191 – Matemática Financeira 
+68  
+Disciplina 
+Complementar 
+------ 
+Matemática 
+MAT --- Introdução à Teoria dos Números  
+68 
+Disciplina 
+Básica 
+--------- 
+Matemática 
+MAT --- Limites e Derivadas 
+102 
+Disciplina  
+Básica 
+--------- 
+Matemática 
+MAT --- Geometria Analítica e Álgebra Vetorial 
+102 
+Disciplina  Básica 
+--------- 
+Matemática 
+MAT --- Estatística Básica A  
+68 
+Disciplina 
+Complementar 
+--------- 
+Estatística 
+EDCA01-Fundamentos Psicológicos da Educação 68 
+Disciplina 
+Básica 
+--------- 
+Educação I 
+MAT--- Grupos e Anéis I 
+102 
+Disciplina  
+Básica 
+− Introdução à Teoria 
+dos Números. 
+Matemática 
+ 
+ 
+MAT--- Integrais e Funções de Várias Variáveis  
+ 
+ 
+102 
+ 
+ 
+Disciplina  
+ 
+ 
+Básica 
+− Limites e 
+Derivadas. 
+− Geometria 
+Analítica 
+ e Álgebra Vetorial. 
+ 
+ 
+Matemática 
+ 
+MAT --- Álgebra Linear I-B  
  
 68 
-Módulo 
-Interdisciplinar 
  
-Profissional 
-− MAT 205. 
-− MAT208 
-− Análise III. 
+Disciplina 
  
+Básica 
+− Geometria 
+Analítica  
+e Álgebra Vetorial. 
+ 
+Matemática 
+EDCA02 - Organização da Educação Brasileira 2 68 
+Disciplina 
+Básica 
+--------- 
+Educação I 
+EDC ----Didática e Práxis Pedagógica  
+102 
+Disciplina  
+Básica 
+--------- Educação 
+II 
+ 
+ 
+FIS121 - Física Geral e Experimental I-E  
+ 
+ 
+102 
+ 
+ 
+Disciplina 
+ 
+ 
+Complementar 
+− Limites e 
+Derivadas. 
+− Geometria 
+Analítica 
+e Álgebra Vetorial. 
+ 
+ 
+Geofísica Nuclear. 
+MAT--- Seqüências, Séries e EDO 
+102 
+Disciplina  
+Básica 
+− Integrais e Funções 
+ de Várias Variáveis. 
 Matemática

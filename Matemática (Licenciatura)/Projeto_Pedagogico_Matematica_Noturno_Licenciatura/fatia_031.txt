@@ -1,17 +1,127 @@
-| Matemática (Licenciatura) | Projeto_Pedagogico_Matematica_Noturno_Licenciatura.pdf | Normas e Diretrizes Gerais | Seção 31 | Diretriz Normativa 31 |
-
-Conteúdo: Visões e leituras pós-modernas de realidade e de mundo convivem, no Brasil, com cosmovisões que, para 
-muitos, deveriam ter ficado a meio caminho. A disciplina procura refletir sobre este quadro e sobre os saberes e 
-transformações necessários ao desenvolvimento de um pensamento crítico no campo educacional: Cosmovisões e o que 
-delas decorrem; Liberdade e auto construção das sociedades; As cegueiras do conhecimento e o pensamento crítico; As 
-transformações sociais e a educação; Consciência da complexidade humana; Ética/comportamento/ação. 
+| Matemática (Licenciatura) | Documento (Projeto Pedagogico Matematica Noturno Licenciatura) |
+Modalidade:
+Disciplina
+Função:
+Profissional
+Natureza:
+Obrigatória
+Pré-requisito:
+Didática e praxis pedagógicas 
+Módulo de alunos:
+25
+Ementa:
+  Estudo, planejamento e prática de ensino em espaços formais de educação (níveis fundamental e/ou médio em escolas 
+oficiais), em espaços alternativos e/ou em outras modalidades educacionais, realizados de forma cumulativa, através da 
+aplicação dos fundamentos teórico-práticos estudados em Didática e Práxis Pedagógica e Metodologia do Ensino da 
+Matemática, de modo contextualizado e contemporâneo, tomando-se por base os conteúdos de cada campo do saber, 
+objeto da formação.
 Nome e código do componente curricular:
-Sociedade e Educação. EDCA04.
+Matemática Financeira - MAT191 
+Departamento:
+Matemática
+Carga horária:
+68 horas/aula
+Modalidade:
+Disciplina
+Função:
+Complementar
+Natureza:
+Obrigatória
+Pré-requisito:
+Não tem.
+Módulo de alunos:
+45
+Ementa:
+              Conceitos Fundamentais. Capitalização. Descontos. Equivalência de Capitais. Séries de Capitais. Custo 
+Efetivo de um Empréstimo. Sistemas de Amortização. Inflação. Depreciação.
+Nome e código do componente curricular:
+Estágio Supervisionado III. EDCA83
 Departamento:
 Departamento de 
-Educação I
+Educação II
+Carga horária: 102 h/a 
+Teórica:  17 h.
+Dimensão prática: 34 h. 
+Estágio Docente Supervisionado: 51 h
+Modalidade
+ Disciplina
+Função:
+Profissional
+Natureza:
+Obrigatória
+Pré-requisito:
+− Metodologia do 
+Ensino da  Matemática.
+Didática e Práxis 
+pedagógica
+Módulo de alunos:
+25
+Ementa:
+Exercício efetivo da prática de ensino, pela aplicação dos fundamentos teórico-práticos desenvolvidos nas disciplinas 
+Didática e Práxis Pedagógica e Metodologia do Ensino da Matemática, dos conteúdos específicos de sua formação, 
+de forma contextualizada e com a incorporação das inovações contemporâneas que inserem a educação no processo de 
+desenvolvimento sócio-histórico e humano.
+Nome e código do componente curricular:
+Seminários Temáticos.  MATB49
+Departamento:
+Matemática
+Carga horária:
+68 horas/aula
+Modalidade:
+Módulo interdisciplinar
+Função:
+Profissional
+Natureza:
+Obrigatória
+Pré-requisito:
+Cálculo diferencial e 
+integral
+Módulo de alunos:
+25
+Ementa:
+Temas relacionados com problemas de fundamentos da matemática e resolução de problemas, relativos a conteúdos 
+estudados no Ensino Fundamental e no Ensino Médio. 
+Objetivo geral: 
+Acrescentar maior flexibilidade ao curso, possibilitando que os alunos escolham temas para serem estudados e ao 
+mesmo tempo dando - lhes a oportunidade de organizar e participar de atividades variadas como palestras, debates etc. 
+sobre esses temas.
+          
+ 
+30
+Nome e código do componente curricular:
+Estágio Supervisionado IV.  EDCA84
+Departamento:
+Departamento de 
+Educação II
+Carga horária: 102 h/a 
+Teórica:  17 h.
+Dimensão prática: 34 h. 
+Estágio Docente Supervisionado: 51 h
+Modalidade
+ Disciplina
+Função:
+Profissional
+Natureza:
+Obrigatória
+Pré-requisito:
+− Metodologia do 
+Ensino da  Matemática.
+− Laboratório de 
+Ensino de Matemática III
+Módulo de alunos:
+25
+Ementa:
+Exercício efetivo da prática de ensino, pela aplicação dos fundamentos teórico-práticos desenvolvidos nas disciplinas, 
+Didática e Práxis Pedagógica e Metodologia do Ensino da Matemática, dos conteúdos específicos de sua formação, de 
+forma contextualizada e com a incorporação das inovações contemporâneas que inserem a educação no processo de 
+desenvolvimento sócio-histórico e humano.
+Componentes Optativos:
+Nome e código do componente curricular:
+Grupos e Anéis II .  MATB36
+Departamento:
+Matemática
 Carga horária: 68
-T:34  P:34  E:00
+T: 68 P:00 E:00
 Modalidade:
 Disciplina
 Função:
@@ -19,47 +129,20 @@ complementar
 Natureza:
 Optativa
 Pré-requisito:
-Não tem.
+Estruturas algébricas
 Módulo de alunos:
 45
-Conteúdo: 
-Estudo dos conceitos de sociedade e educação sob diferentes enfoques sociológicos,  com vistas a 
-problematizar a  relação destes conceitos  com as praticas e processos educativos na sociedade 
-contemporânea. 
-Tópicos abordados: 
-Educação e sociedade: enfoque sociológico;
-Educação, estrutura e  mudança social;
-A política educacional  e a relação com a sociedade;
-Educação, controle e relações sociais.
+Conteúdo:
+               Ações de grupo; Produto Direto e Semidireto; Grupos Abelianos; Teoremas de Sylow; Grupos Simples, 
+Nilpotentes e Solúveis. Noções sobre a Teoria das Representações. Operações com ideais; Anéis Noetherianos; 
+Decomposição Primária; Anéis de polinômios em várias variáveis; Polinômios Simétricos; Base de Groebner; 
+Algoritmo de Buchberger; Aplicações de bases de Groebner.
 Nome e código do componente curricular:
-História da Educação Brasileira. EDC05. 
+Álgebra III – Introdução a Teoria de Galois. MAT205
 Departamento:
-Departamento de 
-Educação I
+Matemática
 Carga horária: 68
-T:34  P:34  E:00
-Modalidade:
-Disciplina
-Função:
-complementar
-Natureza:
-optativa
-Pré-requisito:
-Não tem.
-Módulo de alunos:
-45
-Ementa: 
-Compreensão da Educação brasileira em sua perspectiva histórica, desde o séc. XVI até os dias atuais:  Pré-História 
-brasileira e baiana; Educação brasileira do séc. XVI ao XVIII; Educação brasileira no séc. XIX; Educação brasileira 
-nos tempos atuais. Reorganização educacional no regime militar: Reforma universitária 5.540/68 e a LDB 5.692/71.
-Nome e código do componente curricular:
-Organização e Gestão do Trab. Pedagógico. 
-EDCA06. 
-Departamento:
-Departamento de 
-Educação I
-Carga horária: 68
-T:34  P:34  E:00
+T: 34P:34 E:00
 Modalidade:
 Disciplina
 Função:
@@ -67,10 +150,18 @@ complementar
 Natureza:
 Optativa
 Pré-requisito:
-Não tem.
+Estruturas algébricas
 Módulo de alunos:
 45
-Conteúdo: 
-Teorias, princípios, métodos, processos e técnicas de operacionalização da gestão de atividades pedagógicas 
-escolares e não-escolares.
-37
+Conteúdo:
+Estudo das ferramentas da Teoria de Galois sobre o conjunto dos racionais, visando a compreensão do problema da 
+solubilidade de equações: Equação do 3º e 4º grau;  extensões solúveis por radicais;  extensões algébricas e 
+transcendentes;  grau de uma extensão;   construção com régua e compasso;  apresentação do teorema de Galois e 
+aplicação à do 5º grau.
+Nome e código do componente curricular:
+Funções Analíticas II.  MAT135
+Departamento:
+Matemática
+Carga horária: 68
+T:34 P:34 E:00
+31

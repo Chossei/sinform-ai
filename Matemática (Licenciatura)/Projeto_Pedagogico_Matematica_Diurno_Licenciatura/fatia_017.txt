@@ -1,290 +1,58 @@
-| Matemática (Licenciatura) | Projeto_Pedagogico_Matematica_Diurno_Licenciatura.pdf | Normas e Diretrizes Gerais | Seção 17 | Diretriz Normativa 17 |
-
-MATRIZ CURRICULAR DA LICENCIATURA PARA ALUNOS INGRESSOS  A PARTIR DE 2007.1 
-1º semestre 
- 
-2º semestre 
- 
-3º semestre 
-4º semestre 
-5º semestre 
- 
-6º semestre 
-7º semestre 
-8º semestre 
-ARQ005 –
-Desenho 
-Geométrico I 
-(68 h) 
- 
-MAT--- 
-Introd. à Teo.  
-dos  Números 
-(68 h) 
- 
-MAT--- 
-Grupos e Anéis I 
-(102 h) 
-FIS121 – Física 
-Geral e 
-Experimental I-E 
-(102 h) 
-FIS122 – Física 
-Geral e 
-Experimental II-E 
-(102 h  
- 
- 
- 
- 
- 
-Optativa 1 
-(68 h) 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
-MAT198 – 
-Fund. de Mat. 
-Elem. I 
-102h 
- 
-MAT--- 
-Limites e 
-Derivadas 
-(102 h) 
- 
-MAT--- 
-Integral e Funções 
-de Var. Variáveis 
-(102 h) 
-MAT--- 
-Seqüências, Séries 
-e EDO 
-(102 h) 
-MAT--- 
-Cálculo Dif. 
-Vetorial 
-(68 h) 
- 
-MAT--- 
-Análise I 
-(102 h) 
- 
-MAT --- 
-Funções 
-Holomorfas 
-(68 h) 
- 
-Optativa 3 
-(68 h) 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
-MAT199 – 
-Fund. de Mat. 
-Elem. II 
-102h 
- 
-MAT--- 
-Geom. Analítica 
-e Álg.  Vetorial 
-(102 h) 
- 
-MAT--- 
-Álgebra Linear I B 
-(68 h) 
- 
-MAT--- 
-Álgebra Linear II 
-B 
-(68 h) 
-MAT--- 
-Matemática para a 
-Educação Básica I 
-(68 h) 
- 
-MAT--- 
-Matemática para a 
-Educ. Básica III 
-(68 h) 
- 
-Optativa 2 
-(68 h) 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
-MAT191–  
-Mat. Financeira 
-(68 h) 
- 
-MAT--- 
-Estatística 
-Básica A 
-(68 h) 
- 
-EDCA02 
-Org. da Educação 
-Brasileira 2 
-(68 h)  
-MAT--- 
-Introdução a 
-Análise Comb. 
-(68 h)  
-MAT--- 
-Matemática para 
-Educ. Básica II 
-(68 h) 
- 
-MAT--- 
-Lab. de Ensino de 
-Matemática I 
-(68 h) 
-MAT--- 
-Lab. de Ensino 
-de Matemática II
-(68 h) 
-MAT--- 
-Seminários 
-Temáticos 
-(68 h) 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
-EDCA01 
-Fund.  Psico. da 
-Educação 
-(68 h) 
- 
-EDC --- 
-Didática e Práxis 
-Pedagógica  
-(102 h) 
-EDC--- 
-Met. do Ensino da 
-Matemática 
-(68 h) 
-EDC--- 
-Estágio 
-Supervisionado I 
-(102 h) 
- 
-EDC--- 
-Estágio 
-Supervisionado II 
-(102 h) 
-EDC--- 
-Estágio Super.  
-III 
-(102 h) 
-EDC--- 
-Estágio Supe.  IV
-(102 h) 
- 
-ATIVIDADES COMPLEMENTARES  (200 h) 
-Carga  horária  
- 
-Carga  horária  
- 
-Carga  horária  
- 
-Carga  horária  
- 
-Carga  horária  
- 
-Carga  horária  
- 
-Carga  horária  
- 
-Carga  horária  
-Total: 340 h  
-Total: 408 h  
-Total: 442 h 
-Total: 408 h 
-Total: 408 h 
- 
-Total: 340 h
-Total: 374 h
- 
-Total: 238 h 
- 
-CONTEÚDOS ESPECÍFICOS:
-1632 h 
- 
-CONTEÚDOS PEDAGÓGICOS: 
-306 h 
- 
-ESTÁGIO SUPERVISIONADO:   408 h  
- 
-PRÁTICA:
-408 h 
- 
-OPTATIVAS:   204 h 
- 
-ATIVIDADES COMPLEMENTARES:  200 h 
- 
-TOTAL:
-3158 h 
-      Duração do Curso em anos 
-   Mínima       Média     Máxima  
-03
-|
-04
-|
-07
-        O aluno deve cumprir a 
-carga horária mínima de 204 
-horas em componentes 
-curriculares optativos, mas não
+| Matemática (Licenciatura) | Documento (Projeto Pedagogico Matematica Diurno Licenciatura) |
+− Interagir com grupos multid isciplinares atuando em questões relacionadas ao ensin o 
+fundamental e médio. 
+− Compreender, analisar e utilizar novas metodologias e práticas pedagógicas. 
+− Refletir sobre a prática docente, investig
+ando o contexto educat ivo e analisando a 
+própria atuação docente. 
+− Elaborar propostas de ensino-aprendizagem de Matemática para a educação básica. 
+− Construir e analisar materiais didáticos, livros, textos e propostas curriculares. 
+− Desenvolver estratégias que estim ulem a cria tividade, a autonom ia e a flexibilidade 
+do pensamento do educando, enfatizando m ais a construção dos conceitos do que o 
+uso de técnicas e fórmulas. 
+− Fazer uso d e recu rsos da tecno logia da informação e da com unicação de form a a 
+ampliar as possibilidades da sua própria aprendizagem ou aprendizagens dos alunos. 
+ 
+ 
+ 
+7.7. Titulação  
+ 
+Mantendo-se o que oc orre atu almente, o egresso através do diplom a receberá, de 
+acordo com a habilita ção cursada, a titulação de Bacharel em Matemática ou Licenciado 
+em Matemática. 
+  
+7.8. As Novas Matrizes Curriculares 
+ 
+CONSIDERAÇÕES SOBRE AS DUAS MATRIZES CURRICULARES 
+ 
+Com o objetivo de superar a rigidez dos currículos trad icionais todos os pré-requisitos 
+foram discutidos em ambos os currículos e 
+conservaram-se apenas aqueles q
+ue foram 
+julgados essenciais.  Nesse sentido, será as segurado ao aluno, contando com a orientação de 
+professores, a escolha do seu percurso de aprendizagem. 
+       Isso significa que um outro princípio im portante na construção curricular, que é o da
+ 
+autonomia, deverá ser exercido pelo aluno, o que, por conseguinte contri bui para a aquisição 
+de novas com petências por parte dele, cujo
+s interesses e m
+otivações acadêm icas serão 
+valorizados. 
+       Procurou-se minimizar a dispersão de vários conteúdos em
+ program as das diversas 
+disciplinas, fazendo uma rev isão e estabelecend o de form a adequada as conexões entre os 
+conteúdos. 
+As matrizes curriculares que apresentaremos nessa seção deverão vigorar para alunos 
+que ingressarão a partir 2007.1 em diante.    
+ 
+ 
+LICENCIATURA 
+ 
+A proposta curricular para a Licenciatura es
+tá de acordo com a resolução do Conselho 
+Nacional de Educação  CNE/CP nº 2, de 19 de
+ fevereiro de 2002 no qu e se refere a carg a 
+horária total e a d istribuição desta entre a ca rga horária destinada à prática pedagógica; ao 
+estágio curricular supervisionado; aos  conteúdos curriculares de natureza científico.  cultural; 
+à outras formas de atividades acadêmico-científico-culturais e também ao tempo mínimo para 
+integralização do curso (03 anos).

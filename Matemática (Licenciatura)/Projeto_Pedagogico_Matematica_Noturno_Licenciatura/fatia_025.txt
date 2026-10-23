@@ -1,79 +1,172 @@
-| Matemática (Licenciatura) | Projeto_Pedagogico_Matematica_Noturno_Licenciatura.pdf | Normas e Diretrizes Gerais | Seção 25 | Diretriz Normativa 25 |
-
+| Matemática (Licenciatura) | Documento (Projeto Pedagogico Matematica Noturno Licenciatura) |
+Componentes curriculares já existentes:
 Nome e código do componente curricular:
-Estágio Supervisionado IV.  EDCA84
+Desenho Geométrico I.  ARQ005
 Departamento:
-Departamento de 
-Educação II
-Carga horária: 102 h/a 
-Teórica:  17 h.
-Dimensão prática: 34 h. 
-Estágio Docente Supervisionado: 51 h
-Modalidade
- Disciplina
+Geometrias de Representação
+Carga horária:
+68 horas/aula
+Modalidade:
+Disciplina
 Função:
-Profissional
+Complementar
 Natureza:
 Obrigatória
 Pré-requisito:
-− Metodologia do 
-Ensino da  Matemática.
-− Laboratório de 
-Ensino de Matemática III
+Não tem.
 Módulo de alunos:
-25
+45
 Ementa:
-Exercício efetivo da prática de ensino, pela aplicação dos fundamentos teórico-práticos desenvolvidos nas disciplinas, 
-Didática e Práxis Pedagógica e Metodologia do Ensino da Matemática, dos conteúdos específicos de sua formação, de 
-forma contextualizada e com a incorporação das inovações contemporâneas que inserem a educação no processo de 
-desenvolvimento sócio-histórico e humano.
-Componentes Optativos:
+Conhecimento para desenvolvimento da capacidade de expressão gráfica, adestramento manual, senso de ordem e de 
+proporção através do contato com entidades geométricas fundamentais do plano e da resolução dos problemas básicas a 
+ele relativos.
 Nome e código do componente curricular:
-Grupos e Anéis II .  MATB36
+Introdução a Análise Combinatória.  MAT B31
 Departamento:
 Matemática
-Carga horária: 68
-T: 68 P:00 E:00
+Carga horária:
+68 horas/aula
 Modalidade:
 Disciplina
 Função:
-complementar
+Básica
 Natureza:
-Optativa
+Obrigatória
 Pré-requisito:
-Estruturas algébricas
+Não tem
 Módulo de alunos:
 45
-Conteúdo:
-               Ações de grupo; Produto Direto e Semidireto; Grupos Abelianos; Teoremas de Sylow; Grupos Simples, 
-Nilpotentes e Solúveis. Noções sobre a Teoria das Representações. Operações com ideais; Anéis Noetherianos; 
-Decomposição Primária; Anéis de polinômios em várias variáveis; Polinômios Simétricos; Base de Groebner; 
-Algoritmo de Buchberger; Aplicações de bases de Groebner.
+Ementa:
+          Métodos de contagem: O princípio fundamental da contagem, arranjos, permutações e combinações. Números 
+binomiais. Introdução à probabilidade.
 Nome e código do componente curricular:
-Álgebra III – Introdução a Teoria de Galois. MAT205
+Fundamentos Psicológicos da Educação. EDCA01
 Departamento:
-Matemática
-Carga horária: 68
-T: 34P:34 E:00
+Departamento de 
+Educação I
+Carga horária:
+68 horas/aula
 Modalidade:
 Disciplina
 Função:
-complementar
+Básica
 Natureza:
-Optativa
+Obrigatória
 Pré-requisito:
-Estruturas algébricas
+Não tem.
 Módulo de alunos:
 45
-Conteúdo:
-Estudo das ferramentas da Teoria de Galois sobre o conjunto dos racionais, visando a compreensão do problema da 
-solubilidade de equações: Equação do 3º e 4º grau;  extensões solúveis por radicais;  extensões algébricas e 
-transcendentes;  grau de uma extensão;   construção com régua e compasso;  apresentação do teorema de Galois e 
-aplicação à do 5º grau.
+Ementa:
+              A psicologia como ciência e sua aplicação à educação. Fundamentos teórico-epistemológicos da relação 
+psicologia-educação. Principais correntes da psicologia e suas aplicações educacionais. Discussões contemporâneas na 
+psicologia da educação e na análise psico-educativa do trabalho escolar. A psicologia na formação dos professores.
 Nome e código do componente curricular:
-Funções Analíticas II.  MAT135
+Geometria Analítica e Álgebra Vetorial.  MAT B34
 Departamento:
 Matemática
-Carga horária: 68
-T:34 P:34 E:00
-31
+Carga horária:
+102 horas/aula
+Modalidade:
+Disciplina
+Função:
+Básica
+Natureza:
+Obrigatória
+Pré-requisito:
+Não tem.
+Módulo de alunos:
+45
+Ementa:
+             Álgebra vetorial. Geometria analítica com tratamento vetorial: estudo da reta e do plano no espaço 
+tridimensional. Coordenadas polares: Mudança de coordenadas e estudo de curvas. Estudo das cônicas. Estudo de 
+superfícies. Utilização de recursos computacionais.
+26
+Recomenda-se ter cursado o seguinte componente curricular:
+−
+Geometria Euclidiana.
+Nome e código do componente curricular:
+Estatística Básica A. MAT B59
+Departamento:
+Estatística
+Carga horária:
+68 horas/aula
+Modalidade:
+Disciplina
+Função:
+Complementar
+Natureza:
+Obrigatória
+Pré-requisito:
+Não tem.
+Módulo de alunos:
+45
+Ementa:
+  
+Estatística: objetivos e divisão. Apresentação de dados. Introdução à estatística descritiva e à exploratória de 
+dados. Noções de probabilidade.
+Observação:
+       Disciplina já aprovada pelo Departamento de Estatística, como componente curricular obrigatório, integrante do 
+currículo do Curso de Bacharelado de Estatística.
+Nome e código do componente curricular:
+Organização da Educação Brasileira 2.  EDCA02 
+Departamento:
+Departamento de 
+Educação I
+Carga horária:
+68 horas/aula
+Modalidade:
+Disciplina
+Função:
+Básica
+Natureza:
+Obrigatória
+Pré-requisito:
+Não tem.
+Módulo de alunos:
+45
+Ementa:
+              Estudo e análise do sistema educacional brasileiro, considerando os aspectos legais, sócio-políticos, 
+administrativos e financeiros, enfatizando a organização dos sistemas de ensino nos diversos níveis e modalidades. 
+Análise das políticas públicas de educação no Brasil.
+Nome e código do componente curricular:
+Didática e Práxis Pedagógica. EDC A79
+Departamento:
+Departamento de 
+Educação II
+Carga horária:
+102 horas/aula
+Modalidade:
+Disciplina
+Função:
+Básica
+Natureza:
+Obrigatória
+Pré-requisito:
+Não tem
+Módulo de alunos:
+45
+Ementa:
+  
+Estudo da práxis pedagógica como prática social e dos fundamentos epistemológicos da Didática, seu objeto de 
+estudo e trajetória histórica. Construção da identidade docente. Princípios, elementos e relações fundamentais no 
+processo de trabalho docente. Estudo crítico do planejamento de ensino: suas etapas, modalidades e componentes. 
+Iniciação na práxis pedagógica, mediante construção de projetos didáticos, de planos de ensino e realização de micro-
+aulas.
+Nome e código do componente curricular:
+Física Geral e Experimental I-E.  FIS121 
+Departamento:
+Departamento de Geofísica Nuclear 
+Carga horária:
+102  h
+Modalidade:
+Disciplina
+Função:
+Básica
+Natureza:
+Obrigatória
+Pré-requisito:
+Cálculo diferencial e 
+integral.
+Módulo de alunos:
+45
+27

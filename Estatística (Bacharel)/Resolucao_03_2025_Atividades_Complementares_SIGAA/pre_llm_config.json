@@ -1,0 +1,15 @@
+{
+  "curso": "Estatística (Bacharel)",
+  "documento": "Resolucao_03_2025_Atividades_Complementares_SIGAA.pdf",
+  "documento_nome": "Resolucao 03 2025 Atividades Complementares SIGAA",
+  "caminho_pdf": "C:\\Users\\choss\\OneDrive\\Documentos\\Aplicação - Sinform AI\\Estatística (Bacharel)\\Resolucao_03_2025_Atividades_Complementares_SIGAA.pdf",
+  "header": "| Estatística (Bacharel) | Documento (Resolucao 03 2025 Atividades Complementares SIGAA) |",
+  "max_tokens_per_chunk": 600,
+  "max_tokens_overlap": 100,
+  "densidade_visual": "Textual densa com tabelas complexas de conversão de carga horária e múltiplos artigos curtos",
+  "justificativa_chunking": "O documento possui uma estrutura mista contendo artigos normativos descritivos e um extenso anexo tabular com regras detalhadas de conversão de horas, modalidades e documentação comprobatória. Um tamanho de chunk de 600 tokens com sobreposição de 100 tokens garante que a relação entre as regras dos artigos da resolução e os limites estipulados na tabela do anexo não seja corrompida, mantendo o contexto íntegro para recuperação semântica.",
+  "model_used": "gemini-3.5-flash-lite",
+  "input_tokens": 4941,
+  "output_tokens": 213,
+  "cost_usd": 0.000434475
+}

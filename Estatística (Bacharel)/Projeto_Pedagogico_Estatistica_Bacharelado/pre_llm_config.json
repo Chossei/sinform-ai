@@ -1,0 +1,15 @@
+{
+  "curso": "Estatística (Bacharel)",
+  "documento": "Projeto_Pedagogico_Estatistica_Bacharelado.pdf",
+  "documento_nome": "Projeto Pedagogico Estatistica Bacharelado",
+  "caminho_pdf": "C:\\Users\\choss\\OneDrive\\Documentos\\Aplicação - Sinform AI\\Estatística (Bacharel)\\Projeto_Pedagogico_Estatistica_Bacharelado.pdf",
+  "header": "| Estatística (Bacharel) | Documento (Projeto Pedagogico Estatistica Bacharelado) |",
+  "max_tokens_per_chunk": 500,
+  "max_tokens_overlap": 100,
+  "densidade_visual": "Alta com múltiplos artigos e parágrafos curtos",
+  "justificativa_chunking": "O documento possui alta densidade normativa estruturada em artigos, parágrafos e seções. A calibração de 500 tokens por chunk com 100 tokens de sobreposição garante que cada unidade mantenha a coesão semântica integral de cada artigo sem fragmentar parágrafos dependentes.",
+  "model_used": "gemini-3.5-flash-lite",
+  "input_tokens": 1283,
+  "output_tokens": 157,
+  "cost_usd": 0.000143325
+}

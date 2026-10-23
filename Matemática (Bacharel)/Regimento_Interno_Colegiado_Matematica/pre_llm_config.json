@@ -1,0 +1,15 @@
+{
+  "curso": "Matemática (Bacharel)",
+  "documento": "Regimento_Interno_Colegiado_Matematica.pdf",
+  "documento_nome": "Regimento Interno Colegiado Matematica",
+  "caminho_pdf": "C:\\Users\\choss\\OneDrive\\Documentos\\Aplicação - Sinform AI\\Matemática (Bacharel)\\Regimento_Interno_Colegiado_Matematica.pdf",
+  "header": "| Matemática (Bacharel) | Documento (Regimento Interno Colegiado Matematica) |",
+  "max_tokens_per_chunk": 600,
+  "max_tokens_overlap": 100,
+  "densidade_visual": "Média com seções narrativas, artigos e incisos enumerados",
+  "justificativa_chunking": "O documento possui uma estrutura rígida baseada em capítulos, artigos e incisos numerados. Um limite de 600 tokens por chunk garante que cada artigo completo com seus respectivos parágrafos e incisos caiba perfeitamente no contexto, evitando a fragmentação de regras normativas. A sobreposição de 100 tokens preserva a continuidade semântica entre os capítulos e artigos vizinhos.",
+  "model_used": "gemini-3.5-flash-lite",
+  "input_tokens": 2903,
+  "output_tokens": 179,
+  "cost_usd": 0.000271425
+}

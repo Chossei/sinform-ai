@@ -1,27 +1,4 @@
-| Estatística (Bacharel) | Resolucao_01_2018_Trancamento_e_Permanencia.pdf | Capítulo Geral | Seção Geral | Artigo 1º, Artigo 2º e Artigo 3º |
-
-UNIVERSIDADE FEDERAL DA BAHIA
-INSTITUTO DE MATEMÁTICA E ESTATÍSTICA
-COLEGIADO DE ESTATÍSTICA
-Av. Adhemar de Barros, s/n – Ondina – CEP: 40.170-110
-Telefones: (071) 3283-6270/6336/6337/6340
-E-mail: colest@ufba.br  Homepage: http://www.colest.ufba.br
-RESOLUÇÃO No 01/2018
-DEFINE OS CRITÉRIOS A SEREM UTILIZADOS NA
-CONCESSÃO DE TRANCAMENTO PARCIAL OU TOTAL EM
-COMPONENTES CURRICULARES E NA CONCESSÃO DE
-PERMANÊNCIA DO CURSO.
-O COLEGIADO DE ESTATÍSTICA DA UFBA, no uso de suas atribuições, tendo em vista o que
-dispõe o Regulamento de Ensino de Graduação e Pós-Graduação stricto sensu (REGPG) da
-UFBA, fundamentado em que:
-Art. 1º O trancamento parcial de inscrição em componentes curriculares ocorre quando o
-aluno, inscrito em um ou mais componentes curriculares de um curso, depois de
-transcorrido determinado período de aulas, desiste formalmente de continuar cursando
-um ou parte deles;
-Art. 2º O trancamento total de inscrição em componentes curriculares ocorre quando o
-aluno desiste, formalmente, de continuar cursando todos os componentes curriculares
-nos quais se encontra inscrito, em um determinado período letivo;
-RESOLVE:
+| Estatística (Bacharel) | Documento (Resolucao 01 2018 Trancamento e Permanencia) |
 Art. 3º As solicitações de trancamento total ou parcial de inscrição em componentes
 curriculares terão seus pedidos deferidos quando:
 I -
@@ -54,5 +31,3 @@ documento de óbito;
 e) maternidade a menos de quatro meses, desde que apresente certidão de
 nascimento ou documento de adoção;
 f) necessidade de trabalho, desde que a admissão ou mudança de jornada
-tenha acontecido após o período de matrícula e seja documentada pela
-empresa.

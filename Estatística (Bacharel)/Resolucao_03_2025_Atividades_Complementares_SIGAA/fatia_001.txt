@@ -1,5 +1,4 @@
-| Estatística (Bacharel) | Resolucao_03_2025_Atividades_Complementares_SIGAA.pdf | Capítulo Geral | Seção Geral | Artigo 1º e Artigo 2º |
-
+| Estatística (Bacharel) | Documento (Resolucao 03 2025 Atividades Complementares SIGAA) |
 1
 UNIVERSIDADE FEDERAL DA BAHIA
 INSTITUTO DE MATEMÁTICA E ESTATÌSTICA
@@ -23,15 +22,3 @@ previsto no Projeto Pedagógico do Curso para integralização da grade curricul
 Parágrafo único. De forma a estimular a pluralidade de conhecimento, a distribuição
 da carga horária total das AC está estabelecida por limites para cada modalidade, conforme
 Anexo 1.
-Art. 2º
-Serão computadas como AC as atividades desenvolvidas pelo discente durante
-o período em que estiver matriculado no Curso de Estatística, exceto no(s) caso(s) de
-trancamento de matrícula ou trancamento total de inscrição em componentes curriculares.
-§ 1º Os discentes com transferência ex officio, ou reingressantes, poderão aproveitar
-2
-carga horária de AC desenvolvidas tanto na UFBA quanto em outra instituição de ensino
-superior, em período anterior à atual matrícula e que tenham sido realizadas há, no máximo,
-três anos;
-§ 2º A carga horária de que trata o parágrafo anterior será aproveitada com base nesta
-resolução, desde que comprovada no histórico, no caso de reingresso, e na documentação
-oficial da instituição de ensino superior, no caso de transferência ex officio.

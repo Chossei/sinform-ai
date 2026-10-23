@@ -1,67 +1,79 @@
-| Matemática (Bacharel) | Projeto_Pedagogico_Matematica_Diurno.pdf | Normas e Diretrizes Gerais | Seção 40 | Diretriz Normativa 40 |
-
+| Matemática (Bacharel) | Documento (Projeto Pedagogico Matematica Diurno) |
+Nome e código do componente curricular: 
+Teoria das Equações Diferenciais Ordinárias. 
+MATB51 
+Departamento: 
+Matemática 
+Carga horária: 
+T: 68 P:00 E:00 
+Modalidade: 
+Disciplina  
+Função: 
+Básico 
+Natureza: 
+Obrigatória para o 
+Bacharelado e 
+optativa para  a 
+Licenciatura 
+Pré-requisitos: 
+− Seqüências, Séries e EDO. 
+− Álgebra Linear I-B 
+Módulo de 
+alunos: 
+40 
 Ementa: 
-Estatística: obj etivos e divisão. Apresentação de dados. I ntrodução à estatística de scritiva e à e xploratória de 
-dados. Noções de probabilidade. 
+Estudo das equações diferenciais ordinárias. Existência e unicidade de soluções. Equações diferenciais lineares 
+e estudo qualitativo local (estabilidade estrutural). 
+           
  
- 
- 
- 
-COMPONENTES CURRICULARES DO DEPARTAMENTO DE EDUCAÇÃO II  
  
  
 Nome e código do componente curricular: 
-Didática e Práxis Pedagógica. EDCA79 
+Equações  Diferenciais Parciais.   MATB58 
 Departamento: 
-Departamento de 
-Educação II 
+Matemática 
 Carga horária: 
-T:68  P:34  E:00 
+T: 68 P:00 E:00 
 Modalidade: 
 Disciplina 
 Função: 
-Básica 
+Complementar  
 Natureza: 
-Obrigatória 
+Optativa para a 
+Licenciatura e para 
+o Bacharelado 
 Pré-requisito: 
-Não tem 
+− Análise I 
 Módulo de alunos: 
 40 
 Ementa: 
-        Estudo da práxis pedagógica como prática social e d os fundamentos epistemológicos da Didática, seu objeto de 
-estudo e tra jetória histórica. Construção da iden tidade d ocente. Prin cípios, elem entos e relações fundamentais n o 
-processo de tra balho docente. Es tudo cr ítico do p lanejamento d e ensi no: suas et apas, m odalidades e co mponentes. 
-Iniciação na práxis pedagógica, mediante construção de projetos didáticos, de planos de ensino e realização de micro-
-aulas. 
- 
+          Conceito de equação diferencial parcial. Condições de contorno e iniciais. Equação diferencial parcial linear de 
+primeira e d e segunda ordem. Método de separação de variáveis. Série de Fourier e transformada de Fourier. Tipos e 
+critérios de convergência da série de Fourier.  
+           
  
  
  
 Nome e código do componente curricular: 
-Metodologia do Ensino da Matemática.  EDCA80 
+Estágio Supervisionado.  MATB54 
 Departamento: 
-Departamento de 
-Educação II 
+Matemática 
 Carga horária: 
-T: 34 P:34 E:00 
+T:08 P:00 E:26 
 Modalidade: 
  Disciplina 
 Função: 
 Profissional 
 Natureza: 
-Obrigatória para 
-a Licenciatura 
+Obrigatória para o 
+Bacharelado e optativa 
+para a Licenciatura 
 Pré-requisito: 
-− Didática e Práxis Pedagógica. 
-− Matemática para Educação Básica I 
+− Análise II 
 Módulo de alunos: 
 30 
- 
 Ementa: 
-Estudo teóric o m etodológico do atual en sino de Matemática n as escolas br asileiras. Relação d a sociedade 
-contemporânea e o sistema esco lar. Aná lise e co nstrução d e práticas p edagógicas para poss íveis esp aços de 
-aprendizagem.  
- 
+           Exercício efetivo da prática de ensino em turmas do 3º grau, sob a orientação de um professor. 
  
  
  
@@ -69,19 +81,23 @@ aprendizagem.
  
  
 Nome e código do componente curricular: 
-Estágio Supervisionado I.  EDCA81 
+Monografia.  MATB55 
 Departamento: 
-Departamento de 
-Educação II 
+Matemática 
 Carga horária: 
-T:17  P:51 E: 34 
+T:34 P:34 E:00 
 Modalidade: 
-Disciplina 
+Módulo interdisciplinar 
 Função: 
 Profissional 
 Natureza: 
-Obrigatória 
-Pré-requisito: 
-Didática e Práxis Pedagógica. 
+Obrigatória para o 
+Bacharelado e 
+optativa para a 
+Licenciatura 
+Pré-requisitos: 
+− MAT 205. 
+− MAT208 
+− Análise III. 
 Módulo de alunos: 
-15
+30

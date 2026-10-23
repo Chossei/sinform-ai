@@ -1,126 +1,257 @@
-| Matemática (Licenciatura) | Projeto_Pedagogico_Matematica_Noturno_Licenciatura.pdf | Normas e Diretrizes Gerais | Seção 10 | Diretriz Normativa 10 (Parte 1) |
-
-EDC05 - História da Educação 
-Brasileira.
-68 
+| Matemática (Licenciatura) | Documento (Projeto Pedagogico Matematica Noturno Licenciatura) |
+X.
+Elenco de Componentes curriculares 
+Componentes Curriculares Obrigatórios
+Código 
+Nome
+C.H.
+Hora/aula
+Periodicidade
+Módulo
+Função
+Pré-requisito
+Departamento de
+ARQ005 -
+Desenho Geométrico I
+68
 Disciplina
 Complementar
-------
-Educação I
-EDCA06 - Organização e Gestão do 
-Trab. Pedagógico. 
-68 
-Disciplina 
-Complementar
-------
-Educação I
-EDC283
+---------
+G e o m e t r i a s d e 
+Representação
+MATC21
+Geometria Euclidiana 
+plana 
+102
+Disciplina
+Básica
+---------
+Matemática
+Matemática
+MAT191 
+Matemática Financeira
 68
 Disciplina
 Complementar
 ------
+Matemática
+MATC20
+Cálculo Diferencial e 
+integral
+204
+anual
+Disciplina
+Básica
+---------
+Matemática
+MAT B34
+Geometria Analítica e 
+Álgebra Vetorial
+102
+Disciplina
+Básica
+---------
+Matemática
+MAT B59
+Estatística Básica A
+68
+Disciplina
+Complementar
+---------
+Estatística
+EDCA01
+Fundamentos 
+P s i c o l ó g i c o s d a 
+Educação
+68
+Disciplina
+Básica
+---------
 Educação I
-MATB47
-Laboratório de Ensino de Matemática 
-I.
+MATC22
+Estruturas Algébricas
+204
+anual
+Disciplina
+Básica
+-----
+Matemática
+MATC23
+Álgebra Linear 
+136
+ anual
+Disciplina
+Básica
+− Geometria Analítica
+e Álgebra Vetorial.
+Matemática
+EDCA02 -
+O r g a n i z a ç ã o d a 
+Educação Brasileira 2
+68
+Disciplina
+Básica
+---------
+Educação I
+EDC A79
+Didática e Práxis 
+Pedagógica
+102
+Disciplina
+Básica
+---------
+Educação II
+FIS121 -
+F í s i c a G e r a l e 
+Experimental I-E
+102
+Disciplina
+Complementar
+Cálculo diferencial e integral .
+− Geometria Analítica
+e Álgebra Vetorial.
+Geofísica Nuclear.
+MATB40
+Seqüências, Séries e 
+EDO
+102
+Disciplina
+Básica
+Cálculo diferencial e integral .
+Matemática
+MAT B31
+Introdução à Análise 
+Combinatória.
+68
+Disciplina
+Básica
+---------
+Matemática
+EDC A80
+Metodologia do Ensino 
+68
+Disciplina
+Profissional
+------
+Educação II
+9
+da Matemática
+FIS122 -
+F í s i c a G e r a l e 
+Experimental II-E
+102
+Disciplina
+Complementar
+− FIS121.
+Física Geral
+MAT B43
+Cálculo Diferencial 
+Vetorial
+68
+Disciplina
+Básica
+Cálculo diferencial e integral .
+Matemática
+MATC26
+Matemática para o 
+ensino Fundamental I
+68
+Disciplina
+Profissional
+Estruturas algébricas
+Matemática
+MATC27
+M a t e m á t i c a p a r a 
+Ensino Fundamental II
+68
+Disciplina
+Profissional
+Cálculo diferencial e integral .
+Matemática
+EDCA81
+Estágio Supervisionado 
+I
+102
+Disciplina
+Profissional
+− 
+D i d á t i c a e P r á x i s 
+Pedagógica.
+Educação II
+MAT B44
+Análise I
+102
+Disciplina
+Básica
+− Seqüências, Séries e EDO.
+Matemática
+MATC28
+Matemática para o 
+ensino médio
+68
+Disciplina
+Profissional
+− Álgebra Linear I 
+Matemática
+EDC A82
+Estágio Supervisionado 
+II
+102
+Disciplina
+Profissional
+− 
+D i d á t i c a e P r á x i s 
+Pedagógica.
+Educação II
+MAT B46
+Funções Holomorfas
+68
+Disciplina
+Básica
+− Integral e Funções de
+Várias Variáveis.
+Matemática
+MATC24
+Laboratório de Ensino 
+de Matemática III
 68
 Módulo 
-interdisciplinar Profissional
+interdisciplinar
+Profissional
 Cálculo diferencial e integral .
- Matemática
-MATB48
-Laboratório de Ensino de Matemática 
-II.
+Matemática
+MATC25
+Laboratório de Ensino 
+de Matemática IV
+68
+Módulo 
+interdisciplinar
+Profissional
+Cálculo diferencial e integral .
+Matemática
+EDCA83
+Estágio Supervisionado 
+III
+102
+Disciplina
+Profissional
+− Metodologia do Ensino
+da Matemática.
+Educação II
+MATB49
+Seminários Temáticos
 68
 Módulo 
 interdisciplinar Profissional
 Cálculo diferencial e integral .
 Matemática
-FIS123 - Física Geral e Experimental 
-III-E
-102 
+EDC A84
+Estágio Supervisionado 
+IV
+102
 Disciplina
-Complementar
-− FIS122
-Física do Estado Sólido
-MAT174-Cálculo Numérico I
-68
-Disciplina
-Complementar 
-− Cálculo diferencial e integral 
-− Estruturas algébricas
-Ciência da Computação
-MAT028 Estatística III-C
-68
-Disciplina
-Complementar 
-Estatística básica A
-Estatística
-12
-XI.
-Normas de Funcionamento do Curso
-A matriz curricular para a Licenciatura proposto neste projeto tem uma carga horária total de 3.158 h, 
-distribuídas em 09 semestres letivos de acordo com a seguinte organização:
-−
-Conteúdos Específicos: 1.564 h.
-−
-Conteúdos Pedagógicos: 306 h 
-−
-Dimensão Prática: 408 h.
-−
-Estágio Docente: 408 h.
-−
-Disciplinas Optativas: 272 h.
-−
-Atividades Complementares: 200 h.
-O tempo mínimo para integralização do curso é de 03 anos, ou seja, 06 semestres letivos, 
-enquanto o tempo máximo é de 08 anos, ou seja, 16 semestres letivos.  
-Para integralização curricular, a carga horária mínima de 204 horas em disciplinas optativas deve 
-ser cumprida, mas não há obrigatoriedade quanto ao número de disciplinas optativas a cursar. 
-       Para fins de análise do atendimento às  Diretrizes Curriculares, observa-se que a carga horária  dos 
-componentes curriculares do curso de 3.158 horas  apresenta a seguinte distribuição:
-−
-Conteúdos de natureza específica – disciplinas específicas e quatro disciplinas pedagógicas: 
-1870 horas (o mínimo previsto na legislação é de 1.800 horas).
-−
-Prática de Ensino vivenciada em atividades em Seminários Temáticos, Matemática para a 
-Ensino Fundamental I, Matemática para a Ensino Fundamental II e Matemática para o Ensino 
-médio, e em Laboratório de Ensino de Matemática (III e IV) a  partir do terceiro semestre: 408 
-horas (o mínimo exigido na legislação é de 400 horas).
-−
-Estágio Supervisionado: 408 horas (o mínimo exigido na legislação é de 400 horas).
-−
-Atividades Complementares: 200 horas (que é o mínimo exigido pela legislação).
-−
-Carga horária flexível disponível para conteúdos de formação científico-cultural de natureza 
-geral:  272 horas.
-Os componentes curriculares estão alocados na matriz curricular conforme a Resolução nº 
-05/2003, da Câmara de Ensino de Graduação do Conselho de Ensino, Pesquisa e Extensão da UFBA, 
-classificados segundo a função, em básico, profissional ou complementar; e quanto à natureza, em 
-obrigatória ou optativa.
-       
-Quatro eixos delineiam o currículo:
-1)
-Eixo Estruturante – formado pelos conteúdos específicos da área;
-2)
-Eixo Pedagógico – contempla os fundamentos pedagógicos e os estágios supervisionados;
-3)
-Eixo Integrador – formado pelas atividades desenvolvidas em Seminários Temáticos, 
-Matemática para o Ensino Fundamental I, Matemática para a Ensino Fundamental II e 
-Matemática para o Ensino médio, e em Laboratório de Ensino de Matemática (III e IV)
-4)
-Eixo Acadêmico-Cultural – constituído por estudos e experiências de aprendizagem, realizados 
-de forma autônoma e não definidas na matriz.
-     Os componentes curriculares Seminários Temáticos, Matemática para o Ensino Fundamental I, 
-Matemática para o Ensino Fundamental II e Matemática para o Ensino médio, e em Laboratório de 
-Ensino de Matemática (III e IV) são componentes curriculares da dimensão prática, de função 
-profissional e fazem parte do eixo integrador, facilitando a articulação curricular que é um princípio a ser 
-considerado no currículo.  As atividades dessa dimensão devem desempenhar ainda um papel relevante, 
-na medida em que professores e alunos as utilizem para  refletir de modo sistemático sobre o desafio da 
-articulação dos conhecimentos teóricos e práticos que o futuro professor irá vivenciar nas suas 
-experiências de sala de aula, assim como,  para o desenvolvimento de práticas pedagógicas alternativas 
-com base no uso de dinâmicas de grupo, jogos pedagógicos e ferramentas computacionais capazes de agir 
-como facilitador do processo de transmissão do conhecimento e da aprendizagem. 
-       Uma discussão permanente sobre o que ensinar para quem ensinar e como ensinar, deverá nessas 
-atividades, propiciar competências técnicas e metodológicas ao licenciando para que na sua prática possa 
-integrar o conhecimento sobre ensino e aprendizagem, que é uma das tarefas essenciais do professor.
+Profissional
+ Metodologia do Ensino
+da Matemática.
+Educação II
+10

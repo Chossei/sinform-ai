@@ -1,80 +1,54 @@
-| Matemática (Licenciatura) | Projeto_Pedagogico_Matematica_Noturno_Licenciatura.pdf | Normas e Diretrizes Gerais | Seção 14 | Diretriz Normativa 14 |
-
-18
-19
-Nome e código do componente curricular:
-Cálculo diferencial e integral MAT---
-Departamento:
-Matemática
-Carga horária:
-204 horas/aula
-Modalidade:
-Disciplina
-Função:
-Básica
-Natureza:
-Obrigatória - Anual
-Pré-requisitos: 
-Não tem.
-Módulo de alunos:
-45
-Ementa:
-Conjuntos. Operadores lógicos. Relações. Função.
-Limites e continuidade de funções.  Derivadas.  Derivadas de ordem superior. Fórmula de Taylor de funções reais de 
-uma variável real. Teoremas do valor médio e intermediário.  Aplicações de derivadas. Construção de gráficos.  Taxas 
-relacionadas.                       
-Primitivas e integral indefinida de uma função real de uma variável. Integral de Riemann. Integral imprópria. Funções 
-vetoriais de uma variável real – Curvas parametrizadas no plano e no espaço. Limite, continuidade e derivadas de 
-funções reais de várias variáveis.
-Conteúdo programático:
-1.
-Conjuntos e operações elementares com conjuntos
-2.
-Operadores lógicos e quantificadores
-3.
-Funções polinomiais e racionais.
-4.
-Interpolação por polinômios (método de Newton).
-5.
-O limite de funções reais de variável real e suas principais propriedades.
-6.
-A continuidade de funções reais de variável real e suas principais propriedades.
-7.
-A derivada de funções reais de variável real e suas principais propriedades. A regra da cadeia.
-8.
-As funções circulares (seno, cosseno e tangente). As funções localmente inversíveis e a existência da
-9.
-Função inversa. A derivação da função inversa. As funções arcsin, arccos e arctan.
-10. Os pontos extremantes de funções: o mínimo e o máximo locais. O teorema de Rolle e o teorema de Lagrange.
-11. O crescimento e o decrescimento de funções. O teorema de Cauchy e o critério da segunda derivada.
-12. A concavidade e os pontos de inflexão. Estudo do gráfico de funções. As assíntotas oblíquas.
-13. A funçao logarítmica (definida como a área de um trapezóide). A derivada dessa função: (d/dx)lnx. A
-14. Existência da função exponencial. A derivada dessa função. As funções hiperbólicas.
-15. A definição implícita de funções e a sua derivada.
-16. A regra de l’Hôpital e o cálculo de limites (levantamento de indeterminações).
-17. O polinômio de Taylor. O refinamento do estudo dos pontos críticos.
-18. O problema do cálculo da área de um trapezóide. As partições de um intervalo limitado e fechado. As
-19. Somas inferiores e superiores. 
-20. A integral definida. 
-21. O conceito de valor médio de uma função em um intervalo limitado e fechado. 
-22. O teorema do valor médio. 
-23. O teorema de Barrow (a derivação sob o sinal de integração).
-24. A existência de primitivas de funções contínuas. 
-25. A fórmula fundamental do cálculo integral. 
-26. O cálculo de primitivas. 
-27. A mudança de variável no cálculo de primitivas. 
-28. A mudança de variável no cálculo de integrais definidas. 
-29. A integração por partes.
-30. Principais técnicas de cálculo de primitivas: decomposição em frações parciais, funções irracionais em que figuram 
-raízes de quocientes de polinômios de primeiro grau, funções compostas de funções circulares, funções irracionais 
-em que figuram raízes de polinômios de segundo grau.
-31. Integral de Riemann. 
-32. Integral imprópria. 
-33. Funções de duas ou mais variáveis:
-33.1.Definição, domínio, curvas de nível e representação gráfica
-33.2.Noções sobre limite e continuidade 
-33.3.Derivadas parciais e suas aplicações  
-33.4.Diferencial e suas aplicações 
-33.5.Derivação composta Derivação implícita
-33.6.Derivada direcional: gradiente, plano tangente e reta normal a uma superfície 
-33.7.Derivadas parciais de ordem superior - Teorema de Schwartz.
+| Matemática (Licenciatura) | Documento (Projeto Pedagogico Matematica Noturno Licenciatura) |
+Colegiado (Essa norma tem como base legal a RESOLUÇÃO CNE/CP 2, DE 19 DE FEVEREIRO DE 
+2002.) . A prática do Estágio supervisionado dar-se-á , sob a tutela do professor supervisor, em 
+Instituições de ensino devidamente cadastradas junto ao MEC;  em horário estabelecido em comum 
+acordo com a Instituição e o professor supervisor. 
+O aluno do Curso de Matemática que venha a participar de programas institucionais envolvendo 
+a pesquisa ou a extensão ou monitorias poderá ter seus trabalhos convertidos em carga horária curricular 
+optativa. 
+O aproveitamento de atividades de pesquisa ou extensão será feito de acordo com as normas 
+estabelecidas no Regulamento de Graduação de UFBA. Quanto às monitorias, elas deverão ser de 
+disciplinas do Departamento de Matemática, podendo ou não ter auxílio de bolsa. O aproveitamento será 
+feito de acordo com as Resoluções de números 02/99 e 01/2001 da Câmara de Graduação e a carga 
+horária a aproveitar será de no máximo 68 horas por disciplina. O aproveitamento de monitoria será 
+prioritariamente feito como atividade complementar, exceto quando o discente já possuir carga horária, 
+em atividades complementares, superior a 200 horas.
+Nenhuma carga horária ou atividade será contabilizada mais de uma vez para integralização 
+curricular. 
+        As Atividades Complementares têm como objetivo incentivar o aluno a participar de experiências 
+diversificadas que contribuam para a sua formação humana e profissional.  De acordo com as Diretrizes 
+Curriculares Nacionais para a Formação do Professor da Educação Básica, as atividades complementares 
+devem integrar o projeto pedagógico e curricular, como um componente de enriquecimento cultural e 
+científico, que propicia ao aluno ampliar, enriquecer e consolidar a sua formação acadêmica, bem como 
+atender os princípios da flexibilidade, autonomia e atualização, nos percursos de aprendizagem.
+O curso de Matemática caracteriza neste seu projeto pedagógico as atividades complementares, 
+como um conjunto de aprendizagens realizadas na UFBA ou em outras instituições, programas e/ou 
+serviços de natureza educacional, com caráter complementar à formação do licenciando.      
+A carga horária em Atividades Complementares deverá ser cumprida incluindo-se ao menos duas 
+das seguintes opções: 
+1) Participação em programas institucionais envolvendo a pesquisa. 
+2) Participação em projetos institucionais envolvendo a Extensão.
+Para estes dois casos, seguem-se as mesmas normas para aproveitamento de carga horária em disciplinas 
+optativas determinadas pelo Regulamento de Ensino de Graduação da UFBA. 
+3) Participação em Monitorias de disciplinas do Departamento de Matemática, com ou sem auxílio de 
+bolsa. Neste caso, a monitoria deve estar de acordo com as Resoluções nº 02/99 e nº 01/2001 da Câmara 
+de Graduação e a carga horária a aproveitar é de no máximo 68 horas por disciplina. 
+4) ACC - Atividade Curricular em Comunidade. A carga horária a aproveitar é igual à carga horária do 
+componente curricular cursado com aprovação, não extrapolando o máximo de 68 horas por componente 
+curricular.  
+5)  Participação em Eventos científicos e culturais como Encontros, Congressos, Exposições, Jornadas na 
+área de Matemática ou Educação Matemática ou áreas afins. Para aproveitamento dessas atividades, o 
+aluno deve apresentar: a) Cópia da programação divulgada pelo 
+ evento onde deve constar, 
+obrigatoriamente, temas, conteúdos, participantes envolvidos na apresentação dos trabalhos; b) 
+comprovante de sua participação constando a carga horária e especificando se a participação foi enquanto 
+ouvinte, como apresentador de trabalho ou membro da coordenação do evento; A carga horária  a ser 
+aproveitada será de no máximo 10 horas por evento, no caso de ouvinte; 20 horas por trabalho 
+apresentado;  40 horas,  para participante como membro da coordenação do evento. 
+6) Disciplina cursada na UFBA ou outra instituição de nível superior que não seja equivalente a nenhuma 
+das disciplinas obrigatórias do seu currículo. A carga horária aproveitada será a carga horária da disciplina 
+cursada até o máximo de 102h por disciplina. 
+Enquanto  a disciplina MATB59-Estatística Básica A não for ofertada pelo Departamento de 
+Estatística,  fica autorizada a sua substituição pela  disciplina MAT221-Estatística Básica.
+ 
+15

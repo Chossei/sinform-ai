@@ -1,57 +1,61 @@
-| Estatística (Bacharel) | Guia_Orientacoes_Registros_Academicos_2025.pdf | Normas e Diretrizes Gerais | Seção 2 | Diretriz Normativa 2 |
-
-Informações Gerais 
+| Estatística (Bacharel) | Documento (Guia Orientacoes Registros Academicos 2025) |
+-​
+O requerente deve ser cadastrado como interessado. Nos casos excepcionais, em que a 
+demanda seja referente a  mais de um estudante como interessado, o Colegiado (não o 
+Servidor) deve ser cadastrado como interessado; 
  
 -​
-No site da SUPAC estão disponíveis as orientações para que discentes e ex-discentes 
-solicitem documentos e serviços. Acesse https://supac.ufba.br/ e clique em Guia do 
-Estudante. 
--​
-Os Colegiados não possuem acesso ao histórico escolar oficial dos discentes. 
-Solicitamos que caso recebam algum pedido, direcione o requerente para a SUPAC.  
--​
-As solicitações podem ser encaminhadas ao NAREG através do SIPAC - Núcleo de 
-Admissão e de Registros da Graduação/CARE 12.01.85.04.01 ou por Email - 
-nareg@ufba.br conforme a lista abaixo. 
--​
-As solicitações podem ser encaminhadas ao NAGA através do SIPAC - Núcleo de 
-Apoio à Gestão Acadêmica/CARE 12.01.85.04.03 ou por Email - naga@ufba.br com 
-o nome completo do estudante, matrícula, com os dados do discente e a descrição da 
-situação. 
--​
-As solicitações enviadas pelo SIPAC devem ser cadastradas sob o código previsto na 
-tabela do CONARQ (é possível pesquisar esses códigos pelo nome, no SIPAC, no 
-momento do cadastro. Outra dica é que todo assunto referente a graduação começa 
-com o código 125). No caso das solicitações enviadas por email, deve-se atentar para 
-que o campo “assunto” seja preenchido de forma coerente com o que está sendo 
-solicitado 
+O processo precisa conter a assinatura eletrônica do Coordenador do Curso em pelo 
+menos um dos documentos, de preferência no documento que contém a deliberação 
+do Colegiado, considerando que é de responsabilidade do(a) Coordenador(a) do Curso 
+a execução do que é deliberado pela plenária - O NAREG não observará essa questão, 
+considerando que esta é de responsabilidade dos servidores do Colegiado; 
  
 -​
-A 
-SUPAD 
-disponibiliza 
-em 
-seu site um manual de uso do SIPAC 
-http://www.supad.ufba.br/sites/supad.ufba.br/files/manuais_sipac.pdf  e no canal do 
-Youtube do Programa UFBA SIM há orientações a respeito do módulo Protocolo do 
-SIPAC https://www.youtube.com/@programaufbasim4862/playlists 
+A deliberação do Colegiado deve estar de acordo com o estabelecido no REGPG  e 
+com os prazos informados; 
  
 -​
-Os documentos do processo devem ser cadastrados individualmente (no limite, podem 
-ser agrupados documentos semelhantes como por exemplo Atestados, Declarações, 
-Certificados, etc.). Preferencialmente, devem estar no formato PDF, tendo em vista 
-que documentos em outros formatos dificultam a visualização do processo; 
+Lembramos que os processos devem ser aprovados em plenária, podendo ser 
+aprovados Ad Referendum nos casos em que o Coordenador tenha essa prerrogativa 
+aprovada pela plenária do Colegiado por meio de Resolução específica e/ou prevista 
+no Regulamento do Colegiado do Curso O NAREG não observará essa questão, 
+considerando que esta é de responsabilidade dos servidores do Colegiado; 
  
 -​
-Os documentos (não o processo) devem ser classificados como “Restrito” caso 
-possuam informações pessoais dos estudantes (RG, CPF, endereço, telefone, e-mail, 
-etc.) devido ao Art. 31 da Lei Federal nº 12.527/2011. Mesmo estando restritos, os 
-documentos podem ser visualizados nas unidades por onde o processo tramita. 
-Qualquer dificuldade na visualização dos documentos restritos devem ser vistas junto 
-à STI (helpdesk@ufba.br); 
+O despacho com as informações a respeito do que será registrado precisa ser claro e 
+objetivo, conter explicitamente o que foi deliberado,  é aconselhável que seja o último 
+documento do processo e seja cadastrado como Ostensivo, a fim de permitir que o(a) 
+discente possa acompanhar o processo. No caso de processo de aproveitamento, favor 
+sinalizar na respectiva folha, o que está sendo deliberado; 
  
 -​
-Em respeito a LGPD, deve o Colegiado evitar expor dados pessoais desnecessários 
-do(a) discente nos documentos cadastrados com a natureza “Ostensivo”. Exemplo: se 
-o nome do(a) aluno(a) consta no Parecer/Despacho não é necessário mencionar o 
-número de matrícula, no mesmo documento e vice-versa;
+Processos indeferidos ou que não possuam registro a ser realizado devem ser 
+encaminhados ao Núcleo de Arquivo da CARE (Código SIPAC NARQ/CARE 
+12.01.85.04.07) ou arquivados no Colegiado 
+ 
+-​
+Serão registrados os processos que tiverem sido tramitados. Ressaltamos que incluir 
+despacho de encaminhamento não é tramitar o processo. É preciso utilizar a função 
+“Enviar” no SIPAC. Além disso, processos em que há pendência de assinatura não 
+podem ser visualizados; 
+ 
+-​
+Após os registros feitos os processos são encaminhados ao NARQ/CARE 12.01.85.04.07  
+ 
+-​
+Se o NAREG cometer algum erro no registro, o Colegiado e/ou o discente podem 
+enviar email para o NAREG informando o número do processo e indicando qual erro 
+foi cometido; 
+ 
+-​
+Se o equívoco é do Colegiado e o processo estiver no Núcleo de Arquivo, será preciso 
+que o Colegiado solicite através do email narq@ufba.br o desarquivamento do 
+processo e envio ao Colegiado; anexar despacho informando de forma objetiva, o que 
+deve ser corrigido e, se for processo de aproveitamento, anexar também a folha de 
+aproveitamento retificada; 
+ 
+-​
+Abaixo segue a lista dos registros realizados, com os respectivos documentos 
+necessários. Sendo o setor responsável pelos registros de mais de 100 cursos, não 
+fazemos análises detalhadas dos processos, focando apenas na decisão do Colegiado.

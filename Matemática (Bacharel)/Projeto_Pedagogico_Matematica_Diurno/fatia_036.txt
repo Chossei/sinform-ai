@@ -1,103 +1,90 @@
-| Matemática (Bacharel) | Projeto_Pedagogico_Matematica_Diurno.pdf | Normas e Diretrizes Gerais | Seção 36 | Diretriz Normativa 36 |
-
-Modalidade: 
-Módulo interdisciplinar 
-Função: 
-Profissional 
-Natureza: 
-Obrigatória para a 
-Licenciatura 
-Pré-requisito: 
-Integrais e Funções de 
-Várias Variáveis. 
-Módulo de alunos: 
-20 
-Ementa: 
-          Métricas não eu clidianas e con strução d e cônic as. Hom eomorfismos en tre esp aços m étricos. In variantes 
-topológicos (Característica de Eu ler, Te orema d as q uatro c ores). Técnica de c onstrução de m odelos concr etos de 
-superfícies. Noções de curvatura e geodésica de superfícies. Triângulos geodésicos e soma de ângulos internos.  
-           
-Metodologia: 
-Serão d esenvolvidos estudo s d e tópico s d a e menta, ap resentadas palestras p elo pr ofessor responsável o u por 
-professores convidados. Todos os tópicos serão vistos com utilização de modelos concretos.  
-Durante o semestre, sob a orientação e supervisão do professor, cada aluno escolherá um tópico da ementa sobre 
-o qual construirá modelos concretos e apresentará dois seminários abertos à comunidade. 
-As aulas práticas ocorrerão no Laboratório LEMA-UFBa onde o aluno deverá  construir os modelos concretos.. 
- 
- 
- 
- 
-Nome e código do componente curricular: 
-Seminários Temáticos.  MATB49 
-Departamento: 
-Matemática 
-Carga horária: 
-T: 24 P:44 E:00 
-Modalidade: 
-Módulo interdisciplinar 
-Função: 
-Profissional 
-Natureza: 
-Obrigatória para a 
-Licenciatura e para 
-o Bacharelado 
-Pré-requisito: 
-− Integrais e Funções 
-de Várias Variáveis 
-Módulo de alunos: 
-30 
-Ementa: 
-           Tópicos da Matemática relacionados a conteúdos estudados no Ensino Fundamental, ou no Ensino Médio, ou 
-temas extra-curriculares. 
-Objetivo geral:  
-Acrescentar m aior flexibilidade a o curs o, possibilitando que os alun os escolham te mas p ara ser em estu dados e ao 
-mesmo tempo dando - lhes a oportunidade de organizar e participar de atividades variadas como palestras, debates etc. 
-sobre esses temas.    
- 
- 
- 
-Nome e código do componente curricular: 
-Análise I. MATB44 
-Departamento: 
-Matemática 
-Carga horária: 
-T:102  P:00 E:00 
+| Matemática (Bacharel) | Documento (Projeto Pedagogico Matematica Diurno) |
 Modalidade: 
 Disciplina 
 Função: 
-Básica 
+Básico 
 Natureza: 
 Obrigatória para a 
 Licenciatura e para o 
-Bacharelado 
+Bacharelado. 
 Pré-requisito: 
-− Seqüências, Séries 
-e EDO 
+− Geometria Analítica 
+e Álgebra Vetorial. 
+(MATB34) 
 Módulo de alunos: 
 40 
 Ementa: 
-         Números Reais. Seqüências e séries de números reais. Topologia da reta real. Limite e continuidade de funções 
-reais. Derivada de função a uma variável real.  
+              Sistemas de equações lineares. Inversão de matrizes. Espaço vetorial. Transformações lineares. Operadores 
+lineares. Determinantes. Utilização de recursos computacionais. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
  
  
  
  
 Nome e código do componente curricular: 
-Análise II.  MATB52 
+Álgebra Linear II-B.  MATB41 
 Departamento: 
-Matemática  
+Matemática 
 Carga horária: 
-T:102  P:00 E:00 
+T: 44 P:24 E:00 
 Modalidade: 
 Disciplina 
 Função: 
-Básica 
+Básico 
 Natureza: 
-Obrigatória para o 
-Bacharelado e optativa 
-para  a Licenciatura 
+Obrigatória para a 
+Licenciatura e para 
+o Bacharelado. 
 Pré-requisito: 
-− Análise I 
- 
+− Álgebra Linear I-B. 
+(MATB38) 
 Módulo de alunos: 
-40
+40 
+Ementa: 
+              Espaços vetoriais de dimensão infinita. Operador linear. Subespaços invariantes. Autovalor e autovetor. 
+Polinômio mínimo e característico. Decomposição primária. Diagonalização. Forma de Jordan. Normas. Espaços com 
+produto interno. Ortogonalidade. Teorema de Riesz. Operador adjunto. Operadores normais e subclasses. O Teorema 
+Espectral. Aplicações bilineares. Fo rmas quadráticas e ap licação do Teo rema Espectral. Utilização d e r ecursos 
+computacionais. 
+ 
+ 
+ 
+ 
+Nome e código do componente curricular: 
+Matemática para a Educação Básica I. MATB39 
+Departamento: 
+Matemática 
+Carga horária: 
+T: 34 P:34 E:00 
+Modalidade: 
+Disciplina 
+Função: 
+Profissional 
+Natureza: 
+Obrigatória para 
+Licenciatura. 
+Pré-requisito: 
+− Introdução à Teoria 
+dos Números  
+Módulo de alunos: 
+30 
+Ementa: 
+              Estudo dos conjuntos numéricos − Naturais, Inteiros, Racionais, Reais − voltado para aplicações do ensino 
+fundamental, evidenciando aspectos históricos e com inserção de atividades referentes à prática pedagógica.  
+ 
+ 
+ 
+ 
+Nome e código do componente curricular: 
+Departamento: 
+Matemática 
+Carga horária: 
+T:34 P:34 E:00

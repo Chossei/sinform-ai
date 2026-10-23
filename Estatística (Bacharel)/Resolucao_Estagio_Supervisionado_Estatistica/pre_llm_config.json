@@ -1,0 +1,15 @@
+{
+  "curso": "Estatística (Bacharel)",
+  "documento": "Resolucao_Estagio_Supervisionado_Estatistica.pdf",
+  "documento_nome": "Resolucao Estagio Supervisionado Estatistica",
+  "caminho_pdf": "C:\\Users\\choss\\OneDrive\\Documentos\\Aplicação - Sinform AI\\Estatística (Bacharel)\\Resolucao_Estagio_Supervisionado_Estatistica.pdf",
+  "header": "| Estatística (Bacharel) | Documento (Resolucao Estagio Supervisionado Estatistica) |",
+  "max_tokens_per_chunk": 500,
+  "max_tokens_overlap": 100,
+  "densidade_visual": "Média com seções narrativas estruturadas por capítulos, artigos e parágrafos numerados",
+  "justificativa_chunking": "A calibração de 500 tokens por chunk com 100 tokens de sobreposição garante que a estrutura normativa (capítulos, artigos, parágrafos e incisos) seja preservada em sua totalidade sem fragmentar regras de estágio ou requisitos de matrícula.",
+  "model_used": "gemini-3.5-flash-lite",
+  "input_tokens": 1285,
+  "output_tokens": 160,
+  "cost_usd": 0.00014437499999999997
+}

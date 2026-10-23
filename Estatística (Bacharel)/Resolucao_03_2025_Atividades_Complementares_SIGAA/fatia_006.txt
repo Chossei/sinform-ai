@@ -1,96 +1,4 @@
-| Estatística (Bacharel) | Resolucao_03_2025_Atividades_Complementares_SIGAA.pdf | Capítulo Geral | Seção Geral | Artigo 9º (Parte 3) |
-
-projeto/programa
-cadastrado no SIATEX
-6
-Atuação em atividades de
-extensão desenvolvidas em
-centros de estudos e
-laboratórios vinculados a
-outras unidades da UFBA,
-cadastrados no SIATEX
-Máximo de 45
-horas por
-semestre
-90 horas
-Certificado do SIATEX ou
-declaração do
-coordenador do
-projeto/programa,
-explicitando o título do
-trabalho, a carga horária e
-o período de realização da
-atividade, o número do
-projeto/programa
-cadastrado no SIATEX
-Monitor em ACCS
-60 horas por
-semestre
-90 horas
-Certificado ou declaração
-da atividade explicitando o
-título do trabalho, a carga
-horária total e o período da
-realização da atividade.
-Monitor em oficinas
-registradas como atividades
-de extensão
-Número de
-horas informado
-no certificado da
-atividade
-60 horas
-Certificado emitido pela
-Pró-Reitoria de Extensão
-ou Coordenador da
-Atividade
-Monitor ou instrutor em
-eventos/cursos de extensão
-Máximo de 20
-horas por
-semestre
-40 horas
-Certificado emitido pela
-Pró-Reitoria de Extensão
-ou Coordenador da
-Atividade e evento/curso
-ocorrer na UFBA ou
-certificado da atividade,
-com título, carga horária e
-período de sua realização
-se ocorrer em outra
-instituição.
-Membro de comissão
-organizadora de eventos de
-extensão
-Máximo de 30
-horas por
-evento
-60 horas
-Certificado ou declaração
-emitido pela comissão do
-evento
-Componentes curriculares
-em áreas afins, com carga
-horária de extensão
-Comentário - excluir as
-disciplinas cursadas na ufba
-Aproveitamento
-integral da carga
-horária de
-extensão da
-disciplina
-cursada
-120
-horas
-No caso da UFBA, o
-histórico curricular e
-programa oficial da
-disciplina. No caso de
-outra instituição de ensino
-superior, documentação
-oficial da instituição com
-registro da carga horária
+| Estatística (Bacharel) | Documento (Resolucao 03 2025 Atividades Complementares SIGAA) |
 de extensão.
 7
 Atuação em Projeto de
@@ -104,3 +12,102 @@ Certificado ou declaração
 que registre a carga
 horária da atividade.
 Apresentação de trabalho em
+evento de extensão
+Dez horas
+por trabalho.
+40 horas
+Certificado de
+apresentação de trabalho
+no evento.
+Permanecer (Linha Extensão)
+60 horas por
+semestre
+120
+horas
+Certificado ou declaração
+da atividade explicitando o
+título do trabalho, a carga
+horária total e o período da
+realização da atividade.
+SANKOFA (Linha Extensão)
+60 horas por
+semestre
+120
+horas
+Certificado ou declaração
+da atividade explicitando o
+título do trabalho, a carga
+horária total e o período da
+realização da atividade.
+Bolsista PIBIEX
+60 horas por
+semestre
+120
+horas
+Certificado ou declaração
+da atividade explicitando o
+título do trabalho, a carga
+horária total e o período da
+realização da atividade.
+Bolsista de Projeto do PAEX
+60 horas por
+semestre
+120
+horas
+Certificado ou declaração
+da atividade explicitando o
+título do trabalho, a carga
+horária total e o período da
+realização da atividade.
+Programa
+Especial de
+Treinamento
+(PET)
+Carga horária
+total de
+30 horas, por
+semestre de
+atividade,
+ou o equivalente
+a 1/6
+das 30 horas por
+mês.
+60 horas
+Certificado ou
+declaração da
+atividade explicitando
+o título do trabalho, a
+carga horária total e o
+período da realização
+da atividade.
+Liga Acadêmica
+30 horas por
+semestre
+90 horas
+Comprovante de atividade
+de extensão.
+8
+Vivência
+Profissional.
+Carga horária
+máxima: 90
+Atividades em empresas
+juniores na UFBA.
+20 horas por
+semestre.
+60 horas
+Relatório do professor
+responsável pela Empresa
+Junior que avaliará a atuação
+do discente e seu
+aproveitamento, constando
+carga horária mínima de 45
+horas por semestre de
+trabalhos realizados.
+Estágio não-obrigatório que
+respeite as Normas de
+Estágio do IME e, na
+ausência destas, do
+Colegiado de Estatística.
+30 horas por
+semestre.

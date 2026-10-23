@@ -1,33 +1,23 @@
-| Matemática (Licenciatura) | Regimento_Interno_Colegiado_Matematica.pdf | Capítulo Iii | Seção Geral | Artigo 4º e Artigo 5º |
-
-Art. 4º.  Na ausência do(a) Coordenador(a) do COLMAT assumirá o(a) Vice-Coordenador(a), e na
-ausência de ambos(as), o cargo do(a) Coordenador(a) será assumido pelo(a) decano(a) dentre
-os(as) docentes membros do COLMAT.
-Art. 5º. A composição do COLMAT atende ao disposto no Regimento Interno da Unidade
-Universitária que o sedia, no caso o IME, e respeita os princípios do REGPG. Desta forma, o
-Colegiado dos Cursos de Graduação em Matemática é composto por:
-I.
-08 (oito) professores(as) do quadro permanente do DMAT da UFBA, dos(as) quais 01
-(um) é o(a) Coordenador(a) e 01 (um) é o(a) Vice-Coordenador(a);
-II.
-01 (um) representante do corpo técnico-administrativo do IME;
-III.
-03 (três) representações discentes dos Cursos de Matemática da UFBA;
-IV.
-01 (um) professor(a) de cada Departamento ou instância equivalente da UFBA que
-ofereça 02 (dois) ou mais componentes curriculares (obrigatórios ou optativos) no
-fluxograma em vigor dos Cursos de Matemática. Mais especificamente:
-i.
-01 (um) docente do Departamento de Educação I (FACED);
-ii.
-01 (um) docente do Departamento de Educação II (FACED);
-iii.
-01 (um) docente do Departamento de Estatística (DEST);
-iv.
-01 (um) docente do Faculdade de Arquitetura (FAUFBA);
-v.
-01 (um) docente do Instituto de Computação (IC) da UFBA;
-vi.
-01 (um) docente do Departamento de Física Geral (IF);
-vii.
-01 (um) docente do Departamento de Física do Estado Sólido (IF).
+| Matemática (Licenciatura) | Documento (Regimento Interno Colegiado Matematica) |
+curriculares a serem oferecidas nos semestres vigentes, o atendimento aos estudantes de
+graduação em Matemática, a comunicação discente-docente e a atualização das diretrizes
+curriculares e projetos político pedagógicos dos cursos de Matemática. Para realizar as funções
+citadas anteriormente, o COLMAT conta com a assessoria e apoio administrativo do Centro de
+Atendimento à Graduação (CEAG) do IME/UFBA.
+Art. 3º. O COLMAT é dirigido por 01 (um) Coordenador(a) e por 01 (um) Vice-Coordenador(a),
+ambos(as) do quadro permanente do Departamento de Matemática (DMAT) da UFBA, em
+regime de Dedicação Exclusiva.
+§ 1º O(A) Vice-Coordenador(a) citado(a) no caput deste artigo também desempenha a função
+de Coordenador(a) de Apoio Acadêmico ao Curso Noturno de Matemática.
+§ 2º Poderão se candidatar às funções de Coordenador(a) e Vice-Coordenador(a), os(as)
+professores que sejam membros do COLMAT e tenham pelo menos 01 (um) ano de exercício
+como docente efetivo(a) no DMAT.
+§ 3º O(A) Coordenador(a) e o(a) Vice-Coordenador(a) são eleitos(as), em escrutínio secreto, pela
+plenária do COLMAT em reunião ordinária como ponto único de pauta. Todos os membros
+presentes devem votar e todos os votos terão o mesmo peso. A contagem dos votos é feita por
+escrutinadores(as) escolhidos(as) no plenário e os(as) candidatos(as) que obtiverem maioria
+simples dos votos válidos (os votos em branco e nulo não são tidos como válidos) serão
+considerados(as) os(as) próximos(as) Coordenador(a) e Vice-Coordenador(a). Tal resultado deve
+ser encaminhado à Direção do IME para os devidos procedimentos.
+§ 4º O mandato terá duração de 02 (dois) anos para o(a) Coordenador(a) e para o(a) Vice-
+Coordenador(a), sendo permitida uma recondução.

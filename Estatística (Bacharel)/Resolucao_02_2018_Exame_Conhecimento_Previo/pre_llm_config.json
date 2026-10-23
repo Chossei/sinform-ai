@@ -1,0 +1,15 @@
+{
+  "curso": "Estatística (Bacharel)",
+  "documento": "Resolucao_02_2018_Exame_Conhecimento_Previo.pdf",
+  "documento_nome": "Resolucao 02 2018 Exame Conhecimento Previo",
+  "caminho_pdf": "C:\\Users\\choss\\OneDrive\\Documentos\\Aplicação - Sinform AI\\Estatística (Bacharel)\\Resolucao_02_2018_Exame_Conhecimento_Previo.pdf",
+  "header": "| Estatística (Bacharel) | Documento (Resolucao 02 2018 Exame Conhecimento Previo) |",
+  "max_tokens_per_chunk": 500,
+  "max_tokens_overlap": 100,
+  "densidade_visual": "Alta com múltiplos artigos e parágrafos curtos",
+  "justificativa_chunking": "O documento possui uma estrutura normativa curta e densa composta por artigos e alíneas sequenciais. Um limite de 500 tokens por chunk com 100 tokens de sobreposição garante que cada artigo individual e seus desdobramentos em alíneas sejam mantidos intactos dentro do mesmo contexto semântico, evitando a quebra de regras regulamentares.",
+  "model_used": "gemini-3.5-flash-lite",
+  "input_tokens": 1327,
+  "output_tokens": 178,
+  "cost_usd": 0.000152925
+}

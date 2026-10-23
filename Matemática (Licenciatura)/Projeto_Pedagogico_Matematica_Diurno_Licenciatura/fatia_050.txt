@@ -1,64 +1,71 @@
-| Matemática (Licenciatura) | Projeto_Pedagogico_Matematica_Diurno_Licenciatura.pdf | Normas e Diretrizes Gerais | Seção 50 | Diretriz Normativa 50 |
-
-57
-MATA01 – Geometria Analítica 
-MAT199 
-MATA02 – Cálculo A 
-MAT198 
-MATA03 – Cálculo B 
-MATA01; MATA02 
-MATA04 – Cálculo C 
-MATA03 
-MATA05 – Cálculo D 
-MATA03 
-MATA07 – Álgebra Linear A 
-MATA01 
-MAT198 – Fundamentos de Matemática Elementar I-A 
------------ 
-MAT199 – Fundamentos de Matemática Elementar II-A 
------------ 
-MAT200 – Álgebra I - Inteiros e Grupos 
-MAT198 
-MAT201 – Álgebra II - Anéis e Polinômios 
-MAT200 
-MAT018 – Álgebra Linear II 
-MATA07 
-MAT028 – Estatística III-C 
-MATA04 
-MAT105 – Funções Analíticas I 
-MATA03 
-MAT204 – Análise Real I 
-MATA04; MAT018 
-EDC A79 - Didática e Práxis Pedagógica 
------- 
-EDC A80 - Metodologia do Ensino da Matemática 
-EDCA79 - Didática e Práxis 
-Pedagógica 
-EDCA81 - Estágio Supervisionado I  
------- 
+| Matemática (Licenciatura) | Documento (Projeto Pedagogico Matematica Diurno Licenciatura) |
+49
+8. Se dois componentes curriculares, A e B, são equivalentes, e uma deles, digamos B, é pré-requisito (ou é parte do pré-requisito) de um 
+terceiro, C, então A poderá substituir B como pré-requisito (ou parte do pré-requisito) de C. O mesmo ocorre se no lugar de A houver um 
+conjunto de componentes curriculares. 
+ 
+9. Se ao completar a sua grade curricular, houver déficit na totalização da carga horária relativa a componentes curriculares do Currículo Mínimo 
+ou componentes curriculares Complementares Obrigatórios o aluno pode completar esse déficit da seguinte forma:   
+ 
+− Em se tratando de um aluno da Licenciatura, cursando componentes curriculares listados na próxima tabela, obedecendo aos pré-requisitos:  
+ 
+ 
+ 
+TABELA III 
+Componentes curriculares 
+Pré-requisito 
+EDCA81 - Estágio Supervisionado I 
+------- 
 EDCA82 - Estágio Supervisionado II 
------- 
- 
-EDCA83 - Estágio Supervisionado III  
-EDCA80 - Metodologia do 
-Ensino da Matemática e  
-MAT47 - Laboratório de Ensino 
-de Matemática I. 
- 
-EDCA84 - Estágio Supervisionado IV  
-EDCA80 - Metodologia do 
-Ensino da Matemática e  
-MATB47 -Laboratório de 
-Ensino de Matemática I. 
-MATB39 -  Matemática Para a Educação Básica I   
-MAT200 
-MATB42 - Matemática Para a Educação Básica II 
-MATA02 
-MATB45 - Matemática Para a Educação Básica III   
-MATA07 
+------- 
 MATB47 - Laboratório de Ensino de Matemática I. 
 MATA03 
-MATB48 - Laboratório de Ensino de Matemática II. 
+MATB48 - Laboratório de Ensino de Matemática I.I 
 MATA03 
+MATB36 -  Grupos e Anéis II 
+MAT201 
+MATB31 - Introdução a Análise Combinatória 
+------ 
 MATB49 - Seminários Temáticos 
-MATA03
+MATA03 
+MATB56 -.Introdução à Teoria dos Conjuntos 
+------ 
+MATB57 - Construção de Conjuntos Numéricos.  
+---------
+50
+− Em se tratando de um aluno do Bacharelado, cursando componentes curriculares da tabela seguinte, obedecendo aos pré-requisitos:  
+ 
+  
+TABELA IV 
+Componentes curriculares 
+Pré-requisito 
+MATB47 - Laboratório de Ensino de Matemática I. 
+MATA03 
+MATB48 -Laboratório de Ensino de Matemática I.I 
+MATA03 
+MAB36 - Grupos e Anéis II 
+MAT201 
+MATB31 - Introdução a Análise Combinatória 
+------ 
+MATB49 - Seminários Temáticos 
+MATA03 
+MAT56 -.Introdução à Teoria dos Conjuntos 
+------ 
+MATB57 - Construção de Conjuntos Numéricos.  
+--------- 
+ 
+ 
+10. Qualquer disciplina da TABELA III, com exceção de EDCA81-  Estágio Supervisionado I e  EDCA82 -  Estágio Supervisionado II, se não 
+for usada para completar a carga horária em disciplinas do Currículo Mínimo e nem em disciplinas Obrigatórias Complementares de um aluno de 
+Licenciatura, então será considerada disciplina optativa para aquele aluno.  A mesma regra se aplica para as disciplinas da TABELA IV, em 
+relação ao aluno do Bacharelado.          
+ 
+ 
+    
+8.3. Adaptação para o aluno de Licenciatura que ingressou em 2006.1 
+ 
+ 
+Para o aluno de Licenciatura cujo currículo é de 2006.1 as modificações em seu currículo serão maiores. Isso ocorrerá porque o currículo 
+da Licenciatura deve atender à Resolução CNE/CP n.º 2, de 18 de fevereiro de 2002 que estabelece 400 h de estágio, 400 h de prática e 200 h de 
+atividades complementares. Vamos definir um novo  currículo para esses alunos de modo a atender a legislação, mas que cause o mínimo de 
+impacto na vida acadêmica do aluno que já está concluindo o primeiro ano do curso.

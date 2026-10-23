@@ -1,141 +1,196 @@
-| Matemática (Licenciatura) | Projeto_Pedagogico_Matematica_Noturno_Licenciatura.pdf | Normas e Diretrizes Gerais | Seção 15 | Diretriz Normativa 15 |
-
-20
-Nome e código do componente curricular:
-Estruturas Algébricas  MAT---
-Departamento:
-Matemática
-Carga horária:
-204 horas/aula
-Modalidade:
+| Matemática (Licenciatura) | Documento (Projeto Pedagogico Matematica Noturno Licenciatura) |
+Componentes Curriculares Optativos
+Código / Nome
+C.H. 
+Hora/aula
+Módulo
+Função
+Pré-requisito
+Departamento de 
+ARQ013 − Descritiva I  
+68
 Disciplina
-Função:
-Básica
-Natureza:
-Obrigatória - anual
-Pré-requisito:
-Não tem.
-Módulo de alunos:
-45
-Ementa:
- Conjuntos, Conjunto dos números naturais, ordem, princípio de indução, conjunto dos números inteiros, Teorema 
-Fundamental da Aritmética, algoritmo de Euclides, bases e representação numérica, congruência e o princípio da casa 
-dos pombos, critérios de divisibilidade, equações Diofantinas e o Teorema Chinês dos restos. Números perfeitos, de 
-Fibonacci, de Fermat e de Mersenne. Criptografia RSA.
-               Grupos, subgrupos, homomorfismos, subgrupos normais, grupos quocientes, teoremas de Isomorfismos, 
-grupos finitos, Teorema de Lagrange, Grupos de permutação.
-       Anéis, anéis quocientes, homomorfismos, teoremas de isomorfismos, ideais, domínios, domínio euclidiano, 
-domínio de fatoração única, anéis de polinômios, irredutibilidade, Teorema Fundamental da Álgebra.
-Conteúdo programático:  
-1)
+Complementar
+Desenho geométrico I
+Geometrias de Representação
+MAT135 – Funções Analíticas II
+68 
+Disciplina
+Complementar
+− Funções Holomorfas
+Matemática
+MAT156 – Teoria dos Grafos
+68 
+Disciplina
+Complementar
+Estruturas algébricas 
+Ciência da Computação
+MAT045 Processamento de dados
+68
+Disciplina
+Complementar
+Estruturas algébricas 
+Ciência da Computação
+MAT158 – Teoria da Computação
+68 
+Disciplina
+Complementar
+Estruturas algébricas
+Ciência da Computação
+MAT192 – Matemática Aplicada à 
+Economia
+102 
+Disciplina
+Complementar
+------
+Matemática
+MATB36 Grupos e anéis II
+68
+Disciplina
+complementar
+Estruturas algébricas
+Matemática
+MAT 205- Álgebra III- introdução a 
+teoria de Galois
+68
+Disciplina
+complementar
+Estruturas algébricas
+Matemática
+MAT213 – Tópicos em Álgebra
+68 
+Disciplina
+Complementar
+− MAT205
+Matemática
+MAT214 – Tópicos em Análise
+68 
+Disciplina
+Complementar
+− Análise I
+Matemática
+MAT215 – Tópicos de Geometria
+68 
+Disciplina
+Complementar
+----
+Matemática
+MAT216 – Tópicos da História da 
+Matemática
+68 
+Disciplina
+Complementar
+−----
+Matemática
+FIS124 - Física Geral e Experimental 
+IV-E
+102 
+Disciplina
+Complementar
+− FIS123
+Física do Estado Sólido
+MATB56 Introdução a Teoria dos 
 Conjuntos 
-a.
-Operações com conjuntos: União, interseção,  cartesiano, complemento
-b.
-Axioma de extensão, axioma de especificação, e axioma da potência
-c.
-Relação, relação de ordem , relação de equivalência.
-d.
-Função e função inversa
-2)
-Conjunto dos números naturais:
-a.
- Axiomas de Peano
-b.
-ordem,
-c.
- princípio de indução
-3)
- Construção do conjunto dos números inteiros:
-4)
-Aritmética:
-a.
-Princípio de indução
-b.
-Propriedades aritméticas básicas dos números inteiros 
-c.
-MDC e MMC 
-d.
-Números primos e o crivo de Eratosthenes
-e.
-Lema de Gauss
-f.
-Teorema de  Bezout
-g.
-Teorema Fundamental da Aritmética
-h.
-Teorema Fundamental do MDC e MMC
-i.
- Algoritmo de divisão Euclidiana
-j.
- bases e representação numérica
-k.
-Algoritmo de Euclides para cálculo do MDC
-l.
-congruência  e o princípio da casa dos pombos
-m.
-Pequeno Teorema de Fermat
-n.
-Função de Euler e a generalização do Pequeno Teorema de Fermat
-o.
- critérios de divisibilidade
-p.
-Equações Diofantinas 
-q.
-Teorema Chinês dos restos. 
-r.
-Classes  especiais de números :  
-i.
-números primos, 
-ii.
-números  de Fibonacci
-iii.
-números de Fermat 
-iv.
-números de Mersenne. 
-s.
- Introdução a Criptografia RSA.
-5)
-Grupos:
-a.
- Subgrupos
-b.
- homomorfismos
-c.
-subgrupos normais
-d.
- grupos quocientes,
-e.
-teoremas de Isomorfismos
-f.
-grupos finitos
-g.
-Teorema de Lagrange
-h.
-Grupos Diedrais,  grupos de permutação
-6)
- Anéis:
-a.
- anéis quocientes e a construção dos números complexos.
-b.
-Homomorfismos
-c.
- teoremas de isomorfismos
-d.
- Ideais: primos e maximais
-e.
- Domínios:
-i.
-Domínio de integridade
-ii.
-domínio euclidiano, 
-iii.
-domínio de fatoração única
-f.
-anéis de fração e a construção dos racionais
-g.
- anéis de polinômios
-i.
-Irredutibilidade e o teorema de Eisenstein
-ii.
-Teorema Fundamental da Álgebra.
+68
+Disciplina
+Complementar
+------
+Matemática
+MATB57 Construção de Conjuntos 
+Numéricos
+68 
+Disciplina
+Complementar
+Estruturas algébricas
+Séries , seqüências e EDO
+Matemática
+ARQ006 −  Desenho Geométrico II
+68 
+Disciplina
+Complementar
+Desenho geométrico I
+Geometrias de Representação
+EDC251- Dimensão Estética da 
+Educação.
+102 
+Disciplina
+Complementar
+------
+Educação I
+EDC266 - Introdução à Informática na 
+Educação.
+102 
+Disciplina
+Complementar
+------
+Educação I
+EDCA03 - Filosofia e Educação.
+68 
+Disciplina
+Complementar
+------
+Educação I
+EDCA04 - Sociedade e Educação.
+68 
+Disciplina
+Complementar
+------
+Educação I
+11
+EDC05 - História da Educação 
+Brasileira.
+68 
+Disciplina
+Complementar
+------
+Educação I
+EDCA06 - Organização e Gestão do 
+Trab. Pedagógico. 
+68 
+Disciplina 
+Complementar
+------
+Educação I
+EDC283
+68
+Disciplina
+Complementar
+------
+Educação I
+MATB47
+Laboratório de Ensino de Matemática 
+I.
+68
+Módulo 
+interdisciplinar Profissional
+Cálculo diferencial e integral .
+ Matemática
+MATB48
+Laboratório de Ensino de Matemática 
+II.
+68
+Módulo 
+interdisciplinar Profissional
+Cálculo diferencial e integral .
+Matemática
+FIS123 - Física Geral e Experimental 
+III-E
+102 
+Disciplina
+Complementar
+− FIS122
+Física do Estado Sólido
+MAT174-Cálculo Numérico I
+68
+Disciplina
+Complementar 
+− Cálculo diferencial e integral 
+− Estruturas algébricas
+Ciência da Computação
+MAT028 Estatística III-C
+68
+Disciplina
+Complementar 
+Estatística básica A
+Estatística
+12

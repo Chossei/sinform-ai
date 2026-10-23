@@ -1,51 +1,57 @@
-| Estatística (Bacharel) | Resolucoes_01_e_02_2020_Estagio_Nao_Obrigatorio_IME.pdf | Capítulo Ix | Seção Geral | Artigo 20º (Parte 2) |
-
-Curso:
-E-mail do Estagiário:
-Telefone do Estagiário:
-Professor Orientador:
-As atividades desenvolvidas no
-estágio:
-Discordo
-plenamente
-Discordo
-parcialmente
-Concordo
-parcialmente
-Concordo
-plenamente
-a) Estão de acordo com o Plano de
-Estágio
-b) São compatíveis com o curso e o
-período do estagiário
-c) Satisfazem as expectativas da
-unidade concedente
-Avaliação do Estagiário - Assinale com “X” o desempenho do estagiário, utilizando:
-A = acima da expectativa, B = de acordo com a expectativa, C = abaixo da expectativa, D = não se aplica
-A
-B
-C
-D
-Aplicação de Conhecimentos - Aplica os conhecimentos adquiridos no curso no desenvolvimento das
-atividades.
-Autocrítica - Demonstra capacidade de reconhecer suas dificuldades e erros.
-Autodesenvolvimento - Demonstra interesse na aquisição de conhecimentos e na participação em
-treinamentos e eventos, visando o aperfeiçoamento profissional.
-Compreensão - Observa e analisa os elementos de uma situação, chegando à compreensão do todo.
-Comprometimento - Conhece e compartilha dos objetivos e metas da empresa.
-Cooperação - Oferecer auxílio e solicita a colaboração do grupo de trabalho nas atividades.
-Criatividade - Apresenta sugestões criativas e inovadores ou propõe melhorias nas atividades.
-Exigência de Qualidade e Eficiência - Procede de forma a executar atividades que satisfazem ou
-excedem os padrões de excelência estabelecidos pela empresa.
-Iniciativa - Busca solucionar ou encaminhar problemas e dificuldades encontradas.
-Planejamento - Sistematiza os meios para a realização das atividades.
-Relacionamento - Contribui para a harmonia do ambiente, relacionando-se bem com o grupo.
-Responsabilidade - Cumpre as tarefas nos prazos, respeita os horários de estágio e as normas.
-Zelo - Prima pela limpeza, organização e segurança dos recursos e dos ambientes.
-Considerações do Supervisor de Estágio:
+| Estatística (Bacharel) | Documento (Resolucoes 01 e 02 2020 Estagio Nao Obrigatorio IME) |
 Data: ____/____/____
 Supervisor de Estágio
 Estagiário
 ANEXO C - RESCISÃO DE TERMO DE COMPROMISSO DE ESTÁGIO
 Salvador, Bahia, ____ de _______________ de 20___
 Comunicamos que a partir de _____/_____/_______ fica rescindido o Termo de
+Compromisso
+de
+Estágio
+firmado
+na
+data
+de
+_____/_____/_______
+entre
+a
+________________________________________________ (Nome da empresa) e o (a)
+estagiário
+(a)
+_____________________________________
+(Nome
+do
+estagiário)
+regularmente matriculado no curso de _____________________________ (Nome do curso)
+sob o número de matrícula ________________ com interveniência da Universidade Federal da
+Bahia.
+Informamos que o referido estágio foi rescindido na supracitada data pelo seguinte
+motivo:
+(   ) Contratação do estagiário em regime CLT
+(   ) Por iniciativa da empresa
+(   ) Por iniciativa do estudante
+(   ) Situação irregular do estudante
+E por estarem de inteiro e comum acordo com as condições e dizeres desta Rescisão as partes
+assinam-na em 03 vias de igual teor, cabendo uma via à Unidade Concedente, uma via ao
+Estagiário(a) e uma via a Instituição de Ensino.
+_______________________
+_______________________
+INSTITUIÇÃO DE ENSINO
+UNIDADE CONCEDENTE
+(Carimbo e assinatura)
+(Carimbo e assinatura)
+_______________________
+ESTAGIÁRIO(A)
+CHECKLIST - ESTÁGIO NÃO OBRIGATÓRIO
+ A empresa possui convênio de estágio com a UFBA?
+ Apresentou o Plano de Estágio completamente preenchido e assinado pelas demais partes?
+ A duração do estágio é de no máximo 6 meses?
+ O termo de compromisso está assinado pelas demais partes?
+ A carga horária de disciplinas do estudante ao longo da realização do estágio está abaixo do
+limite máximo estabelecido nos regimentos da UFBA?
+ Se discente é do curso de Bacharelado em Estatística:
+
+Já foi aprovado em MATD38 – Estatística Básica B?
+ Se discente é do curso de Bacharelado em Ciência da Computação:
+
+Já foi aprovado em MATA40 – Estrutura de Dados e Algoritmos I?

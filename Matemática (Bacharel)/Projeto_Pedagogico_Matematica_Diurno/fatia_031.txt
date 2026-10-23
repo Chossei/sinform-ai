@@ -1,84 +1,251 @@
-| Matemática (Bacharel) | Projeto_Pedagogico_Matematica_Diurno.pdf | Normas e Diretrizes Gerais | Seção 31 | Diretriz Normativa 31 |
-
-7.10. Ementas dos Componentes Curriculares Novos 
- 
- 
- 
-COMPONENTES CURRICULARES DO DEPARTAMENTO DE MATEMÁTICA  
- 
- 
-Nome e código do componente curricular: 
-Introdução à Análise Combinatória.  MATB31 
-Departamento: 
-Matemática 
-Carga horária: 
-T:34 P: 34 E:00 
-Modalidade: 
+| Matemática (Bacharel) | Documento (Projeto Pedagogico Matematica Diurno) |
+Código / Nome 
+C.H.  
+Hora/aula 
+Módulo 
+Função 
+Pré-requisito 
+Departamento de  
+MAT--- Álgebra Linear II-B  
+68 
 Disciplina 
-Função: 
 Básica 
-Natureza: 
-Obrigatória para a 
-Licenciatura e para o 
-Bacharelado. 
-Pré-requisito: 
-Não tem 
-Módulo de alunos: 
-30 
-Ementa: 
-          Métodos de contagem: O princípio fundamental da contagem, arranjos, permutações e co mbinações. Números 
-binomiais. Introdução à probabilidade. 
- 
- 
- 
- 
-Nome e código do componente curricular: 
-Geometria Analítica e Álgebra Vetorial.  
-MATB34 
-Departamento: 
+− Álgebra Linear I-B. 
 Matemática 
-Carga horária: 
-T: 68 P:34 E:00 
-Modalidade: 
+MAT --- Introdução à Análise Combinatória.   
+68 
 Disciplina 
-Função: 
 Básica 
-Natureza: 
-Obrigatória para a 
-Licenciatura e para o 
-Bacharelado. 
-Pré-requisito: 
-Não tem. 
-Módulo de alunos: 
-40 
-Ementa: 
-             Álgebra v etorial. Geom etria analí tica co m tratamento v etorial: estu do d a reta e d
-o pl ano n o esp aço 
-tridimensional. C oordenadas po lares: M udança d e c oordenadas e estudo d e c urvas. Estudo d as c ônicas. E studo de 
-superfícies. Utilização de recursos computacionais. 
- 
- 
- 
- 
-Nome e código do componente curricular: 
-Limites e Derivadas. MATB33 
-Departamento: 
+--------- 
 Matemática 
-Carga horária: 
-T: 68 P:34 E:00 
-Modalidade: 
+EDC --- Metodologia do Ensino da Matemática  
+68 
 Disciplina 
-Função: 
+Profissional 
+− Didática e Práxis 
+Pedagógica. 
+Educação II 
+FIS122 - Física Geral e Experimental II-E 
+102 
+Disciplina 
+Complementar 
+ − FIS121. 
+Física Geral 
+ 
+MAT --- Cálculo Diferencial Vetorial  
+ 
+68 
+ 
+Disciplina 
+ 
+Básica  
+− Integrais e Funções 
+de 
+Várias Variáveis. 
+ 
+Matemática  
+MAT --- Matemática para a Educação Básica I  
+68 
+Disciplina  
+Profissional 
+− Introdução à Teoria 
+ dos Números. 
+Matemática 
+MAT --- Matemática para a Educação Básica II  
+68 
+Disciplina 
+Profissional 
+− Limites e 
+Derivadas. 
+Matemática 
+EDC--- Estágio Supervisionado I 
+102 
+Disciplina 
+Profissional 
+− Didática e Práxis 
+Pedagógica. 
+Educação II 
+MAT --- Análise I  
+102 
+Disciplina  
 Básica 
-Natureza: 
-Obrigatória para a 
-Licenciatura e para o 
-Bacharelado. 
-Pré-requisito: 
-Não tem. 
-Módulo de alunos: 
-40 
-Ementa: 
-               Limites e continuidade de funções.  Derivadas.  Derivadas de ordem superior. Fórmula de Taylor de funções 
-reais de uma variável real. Teoremas do valor médio e intermediário.  Aplicações de derivadas. Construção de gráficos.  
-Taxas relacionadas. Utilização de recursos computacionais.
+− Seqüências, Séries 
+e EDO. 
+Matemática 
+MAT --- Matemática para a Educação Básica III  
+68 
+Disciplina 
+Profissional  
+− Álgebra Linear I-B. 
+Matemática 
+ 
+MAT--- Laboratório de Ensino de Matemática I.  
+68 M
+ódulo 
+interdisciplinar 
+ 
+Profissional 
+− Integrais e Funções 
+de 
+Várias Variáveis. 
+ 
+Matemática 
+EDC --- Estágio Supervisionado II  
+102 
+Disciplina 
+Profissional 
+− Didática e Práxis 
+Pedagógica. 
+Educação II 
+ 
+MAT --- Funções Holomorfas  
+ 
+68 
+ 
+Disciplina 
+ 
+Básica  
+− Integrais e Funções 
+de 
+Várias Variáveis. 
+ 
+Matemática 
+ 
+MAT--- Laboratório de Ensino de Matemática II  
+ 
+68 
+Módulo 
+interdisciplinar 
+ 
+Profissional 
+− Integrais e Funções 
+de 
+Várias Variáveis. 
+ 
+Matemática
+Código / Nome 
+C.H.  
+Hora/aula 
+Módulo 
+Função 
+Pré-requisito 
+Departamento de  
+ 
+ 
+EDC ---- Estágio Supervisionado III 
+ 
+ 
+102 
+ 
+ 
+Disciplina 
+ 
+ 
+Profissional 
+− Metodologia do 
+Ensino 
+da Matemática. 
+− Laboratório de 
+Ensino de 
+Matemática I. 
+ 
+ 
+Educação II 
+MAT--- Seminários Temáticos  
+68 
+Módulo 
+interdisciplinar 
+Profissional 
+− Integrais e Funções 
+de Várias Variáveis. 
+ 
+Matemática 
+ 
+EDC ---- Estágio Supervisionado IV 
+ 
+102 
+ 
+Disciplina 
+ 
+Profissional 
+− Metodologia do 
+Ensino 
+da Matemática. 
+− Laboratório de 
+Ensino de 
+Matemática I. 
+ 
+Educação II 
+ 
+ 
+Componentes Curriculares Optativos para a Licenciatura a partir de 2007.1 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Código / Nome 
+C.H.  
+Hora/aula 
+Módulo 
+Função 
+Pré-requisito 
+Departamento de  
+ARQ006 −  Desenho Geométrico II 
+68  
+Disciplina 
+Complementar 
+− ARQ005 
+Geometrias de Representação 
+EDC251- Dimensão Estética da Educação. 
+102  Disciplina 
+Complementar 
+------ 
+Educação I 
+EDC266 - Introdução à Informática na Educação. 
+102  
+Disciplina 
+Complementar ------ 
+Educação I 
+EDC283 – Currículo. 
+68  
+Disciplina Com
+plementar 
+------ 
+Educação I 
+EDCA03 - Filosofia e Educação. 
+68  
+Disciplina Com
+plementar 
+------ 
+Educação I 
+EDCA04 - Sociedade e Educação. 
+68  
+Disciplina Com
+plementar 
+------ 
+Educação I 
+EDC05 - História da Educação Brasileira. 
+68  
+Disciplina 
+Complementar 
+------ 
+Educação I 
+EDCA06 - Organização e Gestão do Trab. 
+Pedagógico.  
+68  
+Disciplina 
+Complementar ------ 
+Educação I

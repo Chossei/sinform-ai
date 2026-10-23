@@ -1,60 +1,259 @@
-| Matemática (Licenciatura) | Projeto_Pedagogico_Matematica_Noturno_Licenciatura.pdf | Normas e Diretrizes Gerais | Seção 11 | Diretriz Normativa 11 |
-
-Para as Componentes Curriculares LEMA III e LEMA IV é condicional  para a aprovação na mesma, 
-que o discente apresente trabalho  descrevendo o uso de prática pedagógica alternativa, incluindo a sua 
-utilização, o tópico a ser trabalho, e o plano de aula para utilização da referida prática. Os produtos 
-obtidos serão disponibilizados em home Page do Colegiado do Curso para uso de toda a comunidade 
-brasileira de docentes do ensino Fundamental e do ensino Médio.
-Os conteúdos descritos a seguir, comuns a todos os cursos de Licenciatura por imposição do PCN, 
-encontram-se distribuídos ao longo do curso: 
-•
-Cálculo Diferencial e Integral 
-•
-Álgebra Linear 
-•
-Fundamentos de Análise
-•
-Fundamentos de Álgebra
-•
-Fundamentos de Geometria
-•
-Geometria Analítica
-Além destes tópicos obrigatórios, incluem-se ainda: 
-a) conteúdos matemáticos presentes na educação básica nas áreas de Álgebra, Geometria e Análise;
-b) conteúdos de áreas afins à Matemática, que são fontes inspiradoras de problemas e campos de 
-aplicação de suas teorias;
-c) conteúdos da Ciência da Educação, da História e Filosofia das Ciências e da Matemática.
-No conjunto dos conteúdos profissionais, encontram-se  os conteúdos da Educação Básica, 
-considerando-se as Diretrizes Curriculares Nacionais para a formação de professores em nível superior, 
-bem como as Diretrizes Nacionais para a Educação Básica, para o ensino fundamental e para o Ensino 
-Médio.
-Desde o início do curso o licenciando deve adquirir familiaridade com o uso do computador 
-como instrumento de trabalho, incentivando-se sua utilização para o ensino de matemática, em especial 
-para a formulação e solução de problemas. É importante também a familiarização e o desenvolvimento 
-por parte do licenciando, ao longo do curso,  de tecnologias que possam contribuir como facilitador do 
-ensino de Matemática.
- 
- O sistema de avaliação de desempenho e aprendizagem segue o disposto no Regulamento do 
-Ensino de Graduação da UFBA.  As disciplinas Cálculo Diferencial e integral, Estruturas algébricas, e 
-Álgebra linear são disciplinas de duração anual. Para estas disciplinas serão realizadas um mínimo de 4 e 
-no máximo 6 avaliações parciais.   No início de cada ano, se houver demanda, o Colegiado aplicará uma 
-prova de dispensa de disciplina anual que será confeccionada por no mínimo três professores do 
-Departamento de Matemática. Cada prova versará sobre o conteúdo programático das disciplinas: Cálculo 
-diferencial e integral, Estruturas algébricas, e Álgebra linear. O Colegiado dispensará da inscrição em 
-disciplina anual o discente que obtiver na prova correspondente, rendimento igual ou superior a 70% de 
-acerto.  Estarão habilitados a fazer inscrição para a prova de dispensa de disciplina anual apenas os 
-discentes regularmente matriculados que tenham sido reprovados por média ou por conceito no ano 
-anterior.  
-O curso funcionará, para a oferta de disciplinas, no horário das 18:30 às 22:30 horas, sendo 
-facultado ao aluno solicitar inscrição em disciplina optativa ofertada em  horário diurno. Entretanto, 
-excetuando-se os estágios supervisionados, o Colegiado não imporá a inscrição em componente 
-disciplinar em horário diurno. 
-Dentro da listagem dos componentes curriculares optativos as escolhas desses componentes 
-curriculares serão livres, possibilitando que o aluno possa aprofundar conhecimento em assuntos que 
-tenha maior interesse. Caberá ao colegiado em consonância com os alunos e Departamentos programar a 
-oferta dos componentes curriculares optativos a serem oferecidos a cada semestre.  
-O aluno de Licenciatura que tenha exercido atividade docente regular, em matemática, na 
-educação básica, poderá ser dispensado de cursar uma ou duas das disciplinas Estágio Supervisionado I e 
-Estágio Supervisionado II. Neste caso o aluno deverá apresentar uma documentação comprobatória 
-emitida pela Unidade de Ensino onde tenha exercido a atividade e sua solicitação será apreciada pelo 
-14
+| Matemática (Licenciatura) | Documento (Projeto Pedagogico Matematica Noturno Licenciatura) |
+da Matemática
+FIS122 -
+F í s i c a G e r a l e 
+Experimental II-E
+102
+Disciplina
+Complementar
+− FIS121.
+Física Geral
+MAT B43
+Cálculo Diferencial 
+Vetorial
+68
+Disciplina
+Básica
+Cálculo diferencial e integral .
+Matemática
+MATC26
+Matemática para o 
+ensino Fundamental I
+68
+Disciplina
+Profissional
+Estruturas algébricas
+Matemática
+MATC27
+M a t e m á t i c a p a r a 
+Ensino Fundamental II
+68
+Disciplina
+Profissional
+Cálculo diferencial e integral .
+Matemática
+EDCA81
+Estágio Supervisionado 
+I
+102
+Disciplina
+Profissional
+− 
+D i d á t i c a e P r á x i s 
+Pedagógica.
+Educação II
+MAT B44
+Análise I
+102
+Disciplina
+Básica
+− Seqüências, Séries e EDO.
+Matemática
+MATC28
+Matemática para o 
+ensino médio
+68
+Disciplina
+Profissional
+− Álgebra Linear I 
+Matemática
+EDC A82
+Estágio Supervisionado 
+II
+102
+Disciplina
+Profissional
+− 
+D i d á t i c a e P r á x i s 
+Pedagógica.
+Educação II
+MAT B46
+Funções Holomorfas
+68
+Disciplina
+Básica
+− Integral e Funções de
+Várias Variáveis.
+Matemática
+MATC24
+Laboratório de Ensino 
+de Matemática III
+68
+Módulo 
+interdisciplinar
+Profissional
+Cálculo diferencial e integral .
+Matemática
+MATC25
+Laboratório de Ensino 
+de Matemática IV
+68
+Módulo 
+interdisciplinar
+Profissional
+Cálculo diferencial e integral .
+Matemática
+EDCA83
+Estágio Supervisionado 
+III
+102
+Disciplina
+Profissional
+− Metodologia do Ensino
+da Matemática.
+Educação II
+MATB49
+Seminários Temáticos
+68
+Módulo 
+interdisciplinar Profissional
+Cálculo diferencial e integral .
+Matemática
+EDC A84
+Estágio Supervisionado 
+IV
+102
+Disciplina
+Profissional
+ Metodologia do Ensino
+da Matemática.
+Educação II
+10
+Componentes Curriculares Optativos
+Código / Nome
+C.H. 
+Hora/aula
+Módulo
+Função
+Pré-requisito
+Departamento de 
+ARQ013 − Descritiva I  
+68
+Disciplina
+Complementar
+Desenho geométrico I
+Geometrias de Representação
+MAT135 – Funções Analíticas II
+68 
+Disciplina
+Complementar
+− Funções Holomorfas
+Matemática
+MAT156 – Teoria dos Grafos
+68 
+Disciplina
+Complementar
+Estruturas algébricas 
+Ciência da Computação
+MAT045 Processamento de dados
+68
+Disciplina
+Complementar
+Estruturas algébricas 
+Ciência da Computação
+MAT158 – Teoria da Computação
+68 
+Disciplina
+Complementar
+Estruturas algébricas
+Ciência da Computação
+MAT192 – Matemática Aplicada à 
+Economia
+102 
+Disciplina
+Complementar
+------
+Matemática
+MATB36 Grupos e anéis II
+68
+Disciplina
+complementar
+Estruturas algébricas
+Matemática
+MAT 205- Álgebra III- introdução a 
+teoria de Galois
+68
+Disciplina
+complementar
+Estruturas algébricas
+Matemática
+MAT213 – Tópicos em Álgebra
+68 
+Disciplina
+Complementar
+− MAT205
+Matemática
+MAT214 – Tópicos em Análise
+68 
+Disciplina
+Complementar
+− Análise I
+Matemática
+MAT215 – Tópicos de Geometria
+68 
+Disciplina
+Complementar
+----
+Matemática
+MAT216 – Tópicos da História da 
+Matemática
+68 
+Disciplina
+Complementar
+−----
+Matemática
+FIS124 - Física Geral e Experimental 
+IV-E
+102 
+Disciplina
+Complementar
+− FIS123
+Física do Estado Sólido
+MATB56 Introdução a Teoria dos 
+Conjuntos 
+68
+Disciplina
+Complementar
+------
+Matemática
+MATB57 Construção de Conjuntos 
+Numéricos
+68 
+Disciplina
+Complementar
+Estruturas algébricas
+Séries , seqüências e EDO
+Matemática
+ARQ006 −  Desenho Geométrico II
+68 
+Disciplina
+Complementar
+Desenho geométrico I
+Geometrias de Representação
+EDC251- Dimensão Estética da 
+Educação.
+102 
+Disciplina
+Complementar
+------
+Educação I
+EDC266 - Introdução à Informática na 
+Educação.
+102 
+Disciplina
+Complementar
+------
+Educação I
+EDCA03 - Filosofia e Educação.
+68 
+Disciplina
+Complementar
+------
+Educação I
+EDCA04 - Sociedade e Educação.
+68 
+Disciplina
+Complementar
+------
+Educação I
+11

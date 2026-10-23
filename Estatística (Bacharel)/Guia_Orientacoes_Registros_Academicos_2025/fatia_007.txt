@@ -1,41 +1,43 @@
-| Estatística (Bacharel) | Guia_Orientacoes_Registros_Academicos_2025.pdf | Normas e Diretrizes Gerais | Seção 7 | Diretriz Normativa 7 |
-
-Importante: Não há  previsão no novo  REGPG para inscrição fora do prazo para TCC. 
-O ajuste de inscrição dos demais componentes deve respeitar o limite de 25% do semestre, 
-conforme estabelece a Resolução 07/2022 do CAE. 
-Lembramos que se o discente não está inscrito no componente, a carga horária cursada não 
-será reconhecida (Art. 166, REGPG) 
-PORTADOR DIPLOMA - CARÁTER ESPECIAL (exclusivo para os cursos previstos no 
-REGPG) 
+| Estatística (Bacharel) | Documento (Guia Orientacoes Registros Academicos 2025) |
+RETIFICAÇÃO DE SAÍDA DE CONCLUINTE JUBILADO 
  
-➔​ Objetivo - Permitir que o(a) portador(a) de diploma graduado pela UFBA ingresse em um 
-novo curso de Graduação sem a necessidade de prestar novo Vestibular/ENEM 
+➔​ Objetivo - Regularizar a situação do discente que concluiu o curso, mas teve a matrícula 
+cancelada posteriormente a conclusão, por ausência registros ou de tramitação de processo 
+de integralização 
  
-➔​ Documentos de Referência - Seção VI do REGPG 
+➔​ Procedimento - O Colegiado1 realizará avaliação curricular e, caso identifique que o 
+estudante concluiu antes do jubilamento, deve enviar ficha de avaliação curricular, por 
+email, para o NIC (integralizacao@ufba.br), com cópia para o NAREG (nareg@ufba.br) e 
+NAGA (naga@ufba.br)  informando o semestre da conclusão e justificando a solicitação de 
+retirada do jubilamento, bem como as pendências identificadas. O NIC homologa a 
+conclusão, o NAREG retira a saída e as situações de matrículas posteriores à conclusão, se 
+houver e o NAGA registra resultado pendente de semestres anteriores (não inclui alteração 
+de registros existentes), se for o caso.  
+Importante: Para registro de resultado do semestre anterior o procedimento é encaminhar ofício 
+para o NAGA (naga@ufba.br) contendo nome completo, matrícula, nota/conceito, semestre e 
+disciplina (código) que deve ter seu registro efetuado. 
+SEMESTRE DE EQUIVALÊNCIA 
  
-➔​ Procedimento - No prazo definido no Calendário Acadêmico, o requerente solicita ao 
-NAE/SUPAC reingresso como Portador de  Diploma. NAE/SUPAC envia processo ao 
-Colegiado, que analisa, delibera e, no prazo estabelecido no Calendário, envia ao NAREG 
-para registro ou ao NARQ para arquivamento 
-➔​ Documentação - Além dos documentos incluídos pelo NAE, o Colegiado deve adicionar: 
-Despacho com a avaliação do Colegiado  (se deferido deve conter código e nome do novo 
-curso), Folha de  aproveitamento  (se deferido) com semestre de equivalência e Despacho 
-de encaminhamento  
-REINGRESSO IMEDIATO (exclusivo para os cursos previstos no REGPG) 
+➔​ Objetivo - semestre letivo a partir do qual se deve começar a computar o tempo 
+despendido pelo aluno de graduação para integralizar o currículo do curso em que está 
+matriculado.  
  
-➔​ Objetivo - Permitir ao(a) estudante concluinte de curso de graduação, o retorno à UFBA 
-em um novo curso da mesma área básica de ingresso 
+➔​ Documentos de Referência - Art. 75 REGPG 
  
-➔​ Documentos de Referência - Seção VIII, REGPG 
+➔​ Procedimento - Indicado na folha de aproveitamento OU por meio de Ofício, assinado 
+pelo Coordenador do Curso, enviado por email 
+Importante: Deve ser expresso no formato: ano de ingresso e indicação do semestre. Ex: 2023.1 
+TRANCAMENTO PARCIAL 
  
-➔​ Procedimento - No prazo definido no Calendário Acadêmico, requerente solicita 
-reingresso ao  Colegiado do novo curso, o qual dentro do prazo, envia por email ao 
-NAREG, a lista dos reingressantes 
-➔​ Documentação - Planilha no formato Excel, contendo: Número de matrícula ou nome 
-completo do discente, Código do novo curso de ingresso (apenas os números), currículo e 
-semestre de equivalência. É possível anexar também as folhas de aproveitamento de estudo 
-Importante: Para os pedidos posteriores ao prazo estabelecido no Calendário Acadêmico, 
-segue-se o disposto na IN 005/2025 - SUPAC  
-Alunos concluintes de semestres anteriores ao vigente não podem solicitar reingresso. Podem 
-solicitar matrícula como Portador de Diploma - especial (seção VI do REGPG) ou participar do 
-processo seletivo de vagas residuais.
+➔​ Objetivo - Registrar o resultado Trancamento no histórico escolar do(a) discente que 
+solicitar a desistência de cursar um ou parte dos componentes curriculares em que está 
+inscrito(a) no semestre 
+➔​ Documentos de Referência - Seção I  do Capítulo II e Glossário do REGPG 
+ 
+➔​ Procedimento 1  - Estudante realiza a solicitação por meio do sistema acadêmico no 
+período estabelecido no Calendário Acadêmico. STI processa solicitações 
+➔​ Procedimento 2- Estudante apresenta pedido de trancamento, a qualquer tempo dentro do 
+semestre objeto da solicitação, com a devida justificativa e documentos comprobatórios, ao 
+NAE/SUPAC  ou ao Colegiado. Colegiado analisa pedido e documentos, delibera e  ao 
+NAREG para registro ou ao NARQ para arquivamento 
+1 Normalmente essa demanda é iniciada pelo estudante.
