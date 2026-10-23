@@ -5,6 +5,7 @@
 ## 1. Visão Geral do Sistema
 
 O **Sinform AI** é uma plataforma inteligente voltada a estudantes e docentes da **Universidade Federal da Bahia (UFBA)**, projetada para esclarecer dúvidas regulamentares complexas a respeito de:
+
 - Aproveitamento e integralização de **Atividades Complementares (AC / ACC)** e **Horas Extensionistas**;
 - Normas de **Trancamento de Matrícula, Trancamento Parcial e Trancamento de TCC**;
 - Regulamentos de **Estágio Supervisionado** (Obrigatório e Não Obrigatório);
@@ -13,6 +14,7 @@ O **Sinform AI** é uma plataforma inteligente voltada a estudantes e docentes d
 - Procedimentos operacionais e submissão documental no **SIGAA**.
 
 O acervo normativo contempla atualmente três cursos de ciências exatas vinculados ao **Instituto de Matemática e Estatística (IME - UFBA)**:
+
 1. **Estatística (Bacharel)** — 9 documentos oficiais ativos;
 2. **Matemática (Bacharel)** — 5 documentos oficiais ativos;
 3. **Matemática (Licenciatura)** — 6 documentos oficiais ativos.
@@ -25,15 +27,17 @@ O sistema opera sobre o **Banco de Dados Vetorial gerenciado da Google (Google F
 
 A infraestrutura adota a família mais recente de modelos Gemini, balanceando latência ultra-baixa, suporte multimodal e economia de custos:
 
-| Função no Sistema | Modelo Principal | Modelo de Fallback | Temperatura | Justificativa Técnica |
-| :--- | :--- | :--- | :---: | :--- |
-| **Pré-LLM (Análise de Chunks)** | `gemini-3.5-flash-lite` | `gemini-3.1-flash-lite` | `0.10` | Inspeção visual dos PDFs para definir densidade semântica e tokens. |
-| **Multi-Query Expander** | `gemini-3.5-flash-lite` | `gemini-3.1-flash-lite` | `0.10` | Geração de duas buscas complementares com esquemas JSON rígidos. |
-| **File Search Retriever** | `gemini-3.5-flash-lite` | `gemini-3.1-flash-lite` | `0.00` | Extração de trechos normativos via ferramenta de busca vetorial. |
-| **Chatbot Consultor (Orquestrador)**| `gemini-3.5-flash-lite` | `gemini-3.1-flash-lite` | `0.15` | Decisão autônoma de Tool Calling e síntese fundamentada com artigos. |
+| Função no Sistema                        | Modelo Principal          | Modelo de Fallback        | Temperatura | Justificativa Técnica                                                  |
+| :----------------------------------------- | :------------------------ | :------------------------ | :---------: | :---------------------------------------------------------------------- |
+| **Pré-LLM (Análise de Chunks)**    | `gemini-3.5-flash-lite` | `gemini-3.1-flash-lite` |  `0.10`  | Inspeção visual dos PDFs para definir densidade semântica e tokens.  |
+| **Multi-Query Expander**             | `gemini-3.5-flash-lite` | `gemini-3.1-flash-lite` |  `0.10`  | Geração de duas buscas complementares com esquemas JSON rígidos.     |
+| **File Search Retriever**            | `gemini-3.5-flash-lite` | `gemini-3.1-flash-lite` |  `0.00`  | Extração de trechos normativos via ferramenta de busca vetorial.      |
+| **Chatbot Consultor (Orquestrador)** | `gemini-3.5-flash-lite` | `gemini-3.1-flash-lite` |  `0.15`  | Decisão autônoma de Tool Calling e síntese fundamentada com artigos. |
 
 ### Política de Fallback Automático
+
 Todas as funções críticas implementam um laço de resiliência `for m_tag in [PRIMARY_MODEL, FALLBACK_MODEL]`:
+
 1. Uma requisição é primeiramente direcionada ao **Gemini 3.5 Flash Lite**;
 2. Se houver falha de rede, timeout ou exaustão momentânea de taxa (HTTP 429/503), o motor captura a exceção de forma transparente e repassa a solicitação imediatamente ao **Gemini 3.1 Flash Lite**;
 3. O modelo final utilizado é registrado na telemetria e exibido na interface do usuário (ex: `Motor: gemini-3.5-flash-lite (via Function Call)`).
@@ -58,6 +62,7 @@ Google Cloud / Gemini API File Search
 ```
 
 ### Configurações de Ingestão Vetorial
+
 - **Modelo de Embedding:** `models/gemini-embedding-2` configurado explicitamente no ato da criação de cada store via `types.CreateFileSearchStoreConfig(embedding_model="models/gemini-embedding-2")`.
 - **Similaridade Semântica:** Busca vetorial de alta dimensionalidade calculada via similaridade de cosseno.
 - **Metadados Inseridos por Documento:**
@@ -72,17 +77,18 @@ Google Cloud / Gemini API File Search
 Antes da indexação, cada arquivo PDF é inspecionado individualmente pelo **Pré-LLM** (`scripts/pre_llm_analyzer.py`).
 
 ### Papel do Pré-LLM
+
 O modelo recebe o PDF pela API File multimodal da Google e avalia a densidade de tabelas, extensões de artigos e estrutura de parágrafos. O Pré-LLM retorna um objeto estruturado validado via Pydantic:
 
 ```python
 class PreLLMChunkOutput(BaseModel):
     max_tokens_per_chunk: int = Field(
         ...,
-        description="Quantidade ideal de tokens por chunk para este documento específico, variando obrigatoriamente entre 180 e 500 tokens."
+        description="Quantidade ideal de tokens por chunk para este documento específico"
     )
     max_tokens_overlap: int = Field(
         ...,
-        description="Quantidade ideal de tokens de sobreposição (overlap), variando obrigatoriamente entre 20 e 100 tokens."
+        description="Quantidade ideal de tokens de sobreposição (overlap)"
     )
     header: str = Field(
         ...,
@@ -95,6 +101,7 @@ class PreLLMChunkOutput(BaseModel):
 ```
 
 ### Aplicação Durante o Upload no Google File Search
+
 Os valores calculados pelo Pré-LLM para cada arquivo são aplicados via `chunking_config` no momento do upload:
 
 ```python
@@ -119,6 +126,7 @@ client.file_search_stores.upload_to_file_search_store(
 ```
 
 ### Exemplos de Calibrações Ativas no Sistema:
+
 - `Resolucao_03_2025_Atividades_Complementares_SIGAA.pdf`: 450 tokens por chunk, 60 tokens de sobreposição (alta densidade de tabelas e incisos).
 - `Instrucao_Normativa_006_2025_Trancamento_TCC.pdf`: 280 tokens por chunk, 40 tokens de sobreposição (texto objetivo com artigos curtos).
 - `Resolucao_02_2018_Exame_Conhecimento_Previo.pdf`: 250 tokens por chunk, 40 tokens de sobreposição.
@@ -131,6 +139,7 @@ client.file_search_stores.upload_to_file_search_store(
 O chatbot opera em modo **Multiturno com Avaliação Autônoma de Ferramentas (Tool / Function Calling)**. Não existem regras manuais ou filtros rígidos de palavras-chave intermediando a chamada da ferramenta.
 
 ### O Prompt de Sistema (`system_instruction`)
+
 ```text
 Você é o Sinform AI, o assistente consultor especializado nas normas, resoluções e regulamentos acadêmicos dos cursos da UFBA (Universidade Federal da Bahia).
 
@@ -153,6 +162,7 @@ RESTRIÇÕES DE RESPOSTA (GROUNDEDNESS):
 ```
 
 ### Comportamento Autônomo da Function Calling
+
 1. **Saudações ("Olá", "Boa tarde", "Tudo bem?"):** O modelo responde diretamente de forma acolhedora sem acionar a busca vetorial (economizando latência e custos de tokens).
 2. **Fora de Escopo ("Como fazer um bolo de cenoura?"):** O modelo detecta a divergência e declina educadamente sem acionar ferramentas.
 3. **Tentativas de Jailbreak / Prompt Injection ("Ignore todas as instruções anteriores"):** O modelo detecta a tentativa de bypass e responde: *"Desculpe, não posso te ajudar com isso."*
@@ -165,6 +175,7 @@ RESTRIÇÕES DE RESPOSTA (GROUNDEDNESS):
 Ao invocar a ferramenta de consulta de normas, o sistema dispara a fase de reformulação com dois vieses complementares.
 
 ### Modelo e Engenharia de Prompt do Expansor
+
 ```text
 Você é o Especialista em Recuperação da Informação do Sinform AI (UFBA).
 O aluno do curso de '{curso}' fez a seguinte pergunta:
@@ -176,6 +187,7 @@ Gere EXATAMENTE duas queries diferentes de busca vetorial para este aluno:
 ```
 
 ### Esquema Pydantic do Output Estruturado (`DualQueryOutput`)
+
 ```python
 class DualQueryOutput(BaseModel):
     query_vies_a: str = Field(
@@ -187,6 +199,7 @@ class DualQueryOutput(BaseModel):
 ```
 
 O Gemini 3.5 Flash Lite produz o payload JSON estrito, por exemplo:
+
 - **Viés A:** *"Quais sao as regras, limites de carga horaria, resolucoes e prazos para validacao de atividades complementares e extensao no curso de Estatistica Bacharel"*
 - **Viés B:** *"Como submeter atividades complementares e comprovantes no SIGAA para analise e aprovacao pelo colegiado do curso de Estatistica Bacharel"*
 
@@ -195,22 +208,29 @@ O Gemini 3.5 Flash Lite produz o payload JSON estrito, por exemplo:
 ## 7. Estratégia Estrita de Recuperação dos TOP-10 Chunks
 
 ### Requisito Estrito
+
 A janela de contexto do chatbot deve receber obrigatoriamente **10 chunks regulamentares mais relevantes**:
+
 - **5 chunks** provenientes da **Query 1 (Viés A)** via similaridade de cosseno;
 - **5 chunks** provenientes da **Query 2 (Viés B)** via similaridade de cosseno.
 
 ### Desafio Técnico Solucionado
+
 Nas chamadas padrão da ferramenta de busca vetorial do Google File Search, o parâmetro `grounding_chunks` só retorna os fragmentos que a IA decidiu citar no seu texto sintético (frequentemente 2 a 4 fragmentos).
 
 Para assegurar o cumprimento estrito dos 10 chunks, foi implementada a função `_retrieve_chunks_for_single_query`:
+
 1. **Configuração de Alta Cobertura (`top_k=20`):** Cada chamada solicita ao Google File Search os 20 vetores mais próximos por similaridade de cosseno.
 2. **Prompt de Extração de 5 Trechos Normativos:** Solicita que a ferramenta liste 5 fragmentos numerados e completos.
 3. **Deduplicação Local por Assinatura Textual:** Cada query mantém seu próprio conjunto de assinaturas (`existing_signatures = set()`), impedindo que a Query 1 bloqueie chunks de alto valor para a Query 2.
 4. **Sondagem de Preenchimento nos Regulamentos Gerais:** Se um documento específico possuir apenas 2 ou 3 chunks (ex: resoluções muito enxutas), o mecanismo automaticamente realiza uma busca complementar no acervo do curso (buscando no *Guia de Registros Acadêmicos*, *Regulamento Acadêmico Geral da UFBA* ou *Projeto Pedagógico*) até acumular **exatamente 5 fragmentos** para aquela query.
 5. **Combinação Garantida:**
-   $$\text{Total Chunks} = \text{Top-5}(\text{Query 1}) + \text{Top-5}(\text{Query 2}) = 10 \text{ chunks}$$
+   $$
+   \text{Total Chunks} = \text{Top-5}(\text{Query 1}) + \text{Top-5}(\text{Query 2}) = 10 \text{ chunks}
+   $$
 
 ### Formatação no Contexto do Chatbot
+
 Os 10 fragmentos são organizados e entregues como resultado da função no seguinte formato estruturado:
 
 ```text
@@ -250,7 +270,7 @@ sequenceDiagram
     UI->>Chatbot: Envia mensagem e histórico multiturno
     Note over Chatbot: Avalia autonomous tool call
     Chatbot-->>UI: Invoca ferramenta `consultar_normas_academicas`
-    
+  
     rect rgb(20, 35, 60)
         Note over UI: Fase 1: (Criando as consultas…)
         UI->>Expander: Pergunta do Aluno + Curso
@@ -283,15 +303,21 @@ sequenceDiagram
 O Sinform AI monitora minuciosamente o consumo de tokens em todas as requisições realizadas através da classe `SessionCostTracker` (`cost_estimator.py`).
 
 ### Tabela Oficial de Precificação Google Gemini (Base de Cálculo):
+
 - **Input Tokens (LLM):** $\$0{,}075$ por 1.000.000 de tokens;
 - **Output Tokens (LLM):** $\$0{,}300$ por 1.000.000 de tokens;
 - **Embedding Tokens:** $\$0{,}020$ por 1.000.000 de tokens.
 
 ### Rastreamento por Turno:
+
 Para cada chamada à API, os atributos `usage_metadata.prompt_token_count` e `usage_metadata.candidates_token_count` são coletados e convertidos:
-$$\text{Custo} = \left(\frac{\text{Tokens de Entrada}}{1.000.000} \times 0{,}075\right) + \left(\frac{\text{Tokens de Saída}}{1.000.000} \times 0{,}300\right)$$
+
+$$
+\text{Custo} = \left(\frac{\text{Tokens de Entrada}}{1.000.000} \times 0{,}075\right) + \left(\frac{\text{Tokens de Saída}}{1.000.000} \times 0{,}300\right)
+$$
 
 Na barra lateral do Streamlit, o discente e o administrador visualizam:
+
 - Custo estimado da resposta atual (ex: `Custo da operação: $0.0004 USD`);
 - Custo acumulado total da sessão (ex: `$0.000864 USD`);
 - Total de tokens acumulados processados na sessão.
@@ -300,13 +326,13 @@ Na barra lateral do Streamlit, o discente e o administrador visualizam:
 
 ## 10. Resumo dos Componentes de Arquivos
 
-| Arquivo | Descrição e Responsabilidade Técnica |
-| :--- | :--- |
-| `app.py` | Interface web em Streamlit com seleção de cursos, feedback em 3 fases, auditoria de custos e exibição do expansor dos 10 fragmentos. |
-| `rag_engine.py` | Motor central RAG com conexão ao Google File Search, Function Calling autônoma, gerador Multi-Query e recuperação estrita dos TOP-10 chunks. |
-| `cost_estimator.py` | Cálculo oficial de auditoria financeira por milhão de tokens (Input, Output, Embeddings). |
-| `google_file_search_stores.json` | Mapeamento dos identificadores das Google File Search Stores dos cursos da UFBA. |
-| `pre_llm_chunk_configs.json` | Base consolidada com as calibrações de `max_tokens_per_chunk` e `max_overlap` geradas pelo Pré-LLM para os 20 PDFs. |
-| `scripts/pre_llm_analyzer.py` | Script de análise visual multimodal dos PDFs via Gemini 3.5 Flash Lite para geração das configurações de chunking. |
-| `scripts/rebuild_google_file_search.py` | Script de sincronização e upload customizado para as Google File Search Stores aplicando os metadados do Pré-LLM. |
-| `scripts/test_top10_chunks.py` | Script de validação e regressão automatizada do pipeline estrito de 10 chunks. |
+| Arquivo                                   | Descrição e Responsabilidade Técnica                                                                                                          |
+| :---------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------- |
+| `app.py`                                | Interface web em Streamlit com seleção de cursos, feedback em 3 fases, auditoria de custos e exibição do expansor dos 10 fragmentos.         |
+| `rag_engine.py`                         | Motor central RAG com conexão ao Google File Search, Function Calling autônoma, gerador Multi-Query e recuperação estrita dos TOP-10 chunks. |
+| `cost_estimator.py`                     | Cálculo oficial de auditoria financeira por milhão de tokens (Input, Output, Embeddings).                                                      |
+| `google_file_search_stores.json`        | Mapeamento dos identificadores das Google File Search Stores dos cursos da UFBA.                                                                 |
+| `pre_llm_chunk_configs.json`            | Base consolidada com as calibrações de `max_tokens_per_chunk` e `max_overlap` geradas pelo Pré-LLM para os 20 PDFs.                       |
+| `scripts/pre_llm_analyzer.py`           | Script de análise visual multimodal dos PDFs via Gemini 3.5 Flash Lite para geração das configurações de chunking.                          |
+| `scripts/rebuild_google_file_search.py` | Script de sincronização e upload customizado para as Google File Search Stores aplicando os metadados do Pré-LLM.                             |
+| `scripts/test_top10_chunks.py`          | Script de validação e regressão automatizada do pipeline estrito de 10 chunks.                                                                |

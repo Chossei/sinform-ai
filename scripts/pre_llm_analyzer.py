@@ -32,22 +32,22 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 sys.path.append(str(BASE_DIR))
 from cost_estimator import CostEstimator
 
-# Esquema de Output Estruturado conforme especificado no Plano de Implementação e limites da Google File Search
+# Esquema de Output Estruturado conforme especificado no Plano de Implementação
 class PreLLMDocumentAnalysis(BaseModel):
     header: str = Field(
-        description="Cabeçalho oficial no padrão estrito: | Curso | Documento (Nome do documento) |"
+        description="Cabeçalho padrão no formato exato: | Curso | Documento (Nome do documento limpo) |"
     )
     max_tokens_per_chunk: int = Field(
-        description="Quantidade máxima de tokens por chunk calculada com base na densidade visual (limite estrito da Google File Search API: entre 180 e 500 tokens)"
+        description="Quantidade ideal de tokens por chunk para este documento específico"
     )
     max_tokens_overlap: int = Field(
-        description="Quantidade de tokens de sobreposição entre chunks para preservar continuidade semântica (limite estrito: entre 20 e 100 tokens, e estritamente menor que max_tokens_per_chunk)"
+        description="Quantidade ideal de tokens de sobreposição (overlap)"
     )
     densidade_visual: str = Field(
-        description="Avaliação da densidade visual do PDF (ex: 'Alta com múltiplos artigos e parágrafos curtos', 'Média com seções narrativas', 'Textual densa com tabelas')"
+        description="Avaliação da densidade visual do PDF analisando artigos, parágrafos e tabelas"
     )
     justificativa_chunking: str = Field(
-        description="Justificativa da calibração de tokens baseada na hierarquia dos capítulos, seções, artigos e incisos do documento"
+        description="Breve explicação técnica analisando a estrutura visual, artigos e tabelas do PDF"
     )
 
 class PreLLMAnalyzer:
@@ -82,20 +82,16 @@ Sua missão é inspecionar visualmente este documento acadêmico/regulamentar em
 DOCUMENTO: {doc_clean_name}
 CURSO: {curso_nome}
 
-INSTRUÇÕES OBRIGATÓRIAS:
+INSTRUÇÕES:
 1. Examine a estrutura visual do documento: capítulos, seções, artigos, parágrafos, incisos, tabelas e notas de rodapé.
-2. Defina a quantidade de tokens máxima por chunk (max_tokens_per_chunk) CUSTOMIZADA especificamente para este documento:
-   - O banco vetorial da Google (File Search) aceita entre 100 e 500 tokens por chunk.
-   - Calibre um valor específico para este documento entre 180 e 500 tokens de acordo com o tamanho médio dos seus artigos e seções.
-   - Documentos mais concisos com artigos curtos devem usar valores menores (ex: 220 a 320 tokens).
-   - Documentos regulamentares longos e densos com múltiplos incisos e tabelas devem usar valores maiores (ex: 380 a 500 tokens).
-3. Defina a quantidade de tokens de sobreposição (max_tokens_overlap) CUSTOMIZADA para este documento entre 20 e 100 tokens (sempre menor que max_tokens_per_chunk) para garantir continuidade das normas.
+2. Defina com total liberdade a quantidade ideal de tokens por chunk (max_tokens_per_chunk) para este documento específico, de acordo com o tamanho médio e densidade de seus artigos e seções.
+3. Defina a quantidade ideal de tokens de sobreposição (max_tokens_overlap) para este documento (menor que max_tokens_per_chunk) para preservar a continuidade das normas.
 4. Formate o cabeçalho no padrão estrito:
    | {curso_nome} | Documento ({doc_clean_name}) |
 5. Forneça a justificativa técnica objetiva para as escolhas de tokens deste documento específico.
 """
 
-        models_chain = [self.primary_model, self.fallback_model, "gemini-2.5-flash"]
+        models_chain = [self.primary_model, self.fallback_model]
         analysis_data = None
         model_used = None
         tokens_input = 0

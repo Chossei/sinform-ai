@@ -119,8 +119,8 @@ def main():
             cfg = course_cfgs.get(pdf.name, {})
             doc_clean = pdf.stem.replace("_", " ")
             header = cfg.get("header") or f"| {curso_nome} | Documento ({doc_clean}) |"
-            max_tokens = min(int(cfg.get("max_tokens_per_chunk", 500)), 500)
-            max_overlap = min(int(cfg.get("max_tokens_overlap", 100)), 100)
+            max_tokens = int(cfg.get("max_tokens_per_chunk", 400))
+            max_overlap = int(cfg.get("max_tokens_overlap", 50))
 
             # Verificar se já foi indexado
             if pdf.name in existing_titles or header in existing_titles:
