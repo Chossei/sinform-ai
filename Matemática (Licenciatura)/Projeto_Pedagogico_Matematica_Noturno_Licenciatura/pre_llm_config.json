@@ -4,12 +4,12 @@
   "documento_nome": "Projeto Pedagogico Matematica Noturno Licenciatura",
   "caminho_pdf": "C:\\Users\\choss\\OneDrive\\Documentos\\Aplicação - Sinform AI\\Matemática (Licenciatura)\\Projeto_Pedagogico_Matematica_Noturno_Licenciatura.pdf",
   "header": "| Matemática (Licenciatura) | Documento (Projeto Pedagogico Matematica Noturno Licenciatura) |",
-  "max_tokens_per_chunk": 800,
-  "max_tokens_overlap": 100,
-  "densidade_visual": "Textual densa com tabelas e ementas curriculares detalhadas",
-  "justificativa_chunking": "O documento possui seções narrativas longas intercaladas com tabelas curriculares e ementas estruturadas de disciplinas. A calibração de 800 tokens por chunk com 100 tokens de sobreposição garante a integridade semântica das seções e das ementas completas de componentes curriculares, evitando cortes na continuidade de pré-requisitos e cargas horárias.",
+  "max_tokens_per_chunk": 380,
+  "max_tokens_overlap": 50,
+  "densidade_visual": "Média com seções narrativas e quadros curriculares detalhados",
+  "justificativa_chunking": "O documento possui seções textuais descritivas, tabelas extensas de matriz curricular e ementas analíticas de disciplinas. Um limite de 380 tokens com sobreposição de 50 tokens garante que a estrutura dos componentes curriculares, pré-requisitos e normativas institucionais sejam preservadas adequadamente nos chunks sem perda de contexto semântico.",
   "model_used": "gemini-3.5-flash-lite",
-  "input_tokens": 20996,
-  "output_tokens": 181,
-  "cost_usd": 0.001629
+  "input_tokens": 21152,
+  "output_tokens": 174,
+  "cost_usd": 0.0016386
 }

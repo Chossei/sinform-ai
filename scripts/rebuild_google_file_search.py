@@ -68,6 +68,16 @@ def main():
     existing_stores = list(client.file_search_stores.list())
     stores_by_display = {s.display_name: s for s in existing_stores if s.display_name}
 
+    # Deletar stores anteriores para reconstruir com as novas calibrações personalizadas por documento
+    for s in existing_stores:
+        if s.display_name in COURSES.values():
+            print(f"  Deletando store anterior: {s.display_name} ({s.name})...")
+            try:
+                client.file_search_stores.delete(name=s.name, config=types.DeleteFileSearchStoreConfig(force=True))
+                print(f"  [OK] Store deletada com sucesso.")
+            except Exception as e:
+                print(f"  [Aviso] Falha ao deletar {s.name}: {e}")
+
     final_mapping = {}
 
     for curso_nome, store_display in COURSES.items():
@@ -79,19 +89,14 @@ def main():
         pdf_files = sorted(list(course_dir.glob("*.pdf")))
         print(f"\n>>> Curso: {curso_nome} ({len(pdf_files)} PDFs)")
 
-        store = stores_by_display.get(store_display)
-        if not store:
-            print(f"  Criando store '{store_display}' com embedding_model='models/gemini-embedding-2'...")
-            store = client.file_search_stores.create(
-                config=types.CreateFileSearchStoreConfig(
-                    display_name=store_display,
-                    embedding_model="models/gemini-embedding-2"
-                )
+        print(f"  Criando nova store '{store_display}' com embedding_model='models/gemini-embedding-2'...")
+        store = client.file_search_stores.create(
+            config=types.CreateFileSearchStoreConfig(
+                display_name=store_display,
+                embedding_model="models/gemini-embedding-2"
             )
-            print(f"  Store criada: {store.name}")
-        else:
-            print(f"  Store existente: {store.name}")
-
+        )
+        print(f"  Store criada com sucesso: {store.name}")
         final_mapping[curso_nome] = store.name
 
         # Mapear documentos existentes na store para evitar uploads duplicados

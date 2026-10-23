@@ -4,12 +4,12 @@
   "documento_nome": "Regimento Interno Colegiado Matematica",
   "caminho_pdf": "C:\\Users\\choss\\OneDrive\\Documentos\\Aplicação - Sinform AI\\Matemática (Licenciatura)\\Regimento_Interno_Colegiado_Matematica.pdf",
   "header": "| Matemática (Licenciatura) | Documento (Regimento Interno Colegiado Matematica) |",
-  "max_tokens_per_chunk": 500,
-  "max_tokens_overlap": 100,
-  "densidade_visual": "Alta com múltiplos artigos e parágrafos curtos",
-  "justificativa_chunking": "O documento possui uma estrutura altamente normativa dividida em capítulos, artigos, parágrafos e incisos curtos. Um limite de 500 tokens por chunk, com sobreposição de 100 tokens, garante a preservação do contexto semântico e normativo entre artigos e incisos correlatos.",
+  "max_tokens_per_chunk": 320,
+  "max_tokens_overlap": 50,
+  "densidade_visual": "Média com seções narrativas, artigos e incisos enumerados",
+  "justificativa_chunking": "O documento possui uma estrutura normativa clara dividida em capítulos, artigos e incisos de tamanho moderado. O limite de 320 tokens por chunk garante a captura completa de artigos inteiros com seus respectivos parágrafos ou incisos, mantendo a coesão semântica e normativa, enquanto os 50 tokens de sobreposição asseguram a continuidade contextual entre os trechos para o sistema de busca.",
   "model_used": "gemini-3.5-flash-lite",
-  "input_tokens": 2906,
-  "output_tokens": 156,
-  "cost_usd": 0.00026475
+  "input_tokens": 3062,
+  "output_tokens": 180,
+  "cost_usd": 0.00028365
 }

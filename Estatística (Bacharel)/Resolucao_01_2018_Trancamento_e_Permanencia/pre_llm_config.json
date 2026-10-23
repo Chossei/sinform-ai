@@ -4,12 +4,12 @@
   "documento_nome": "Resolucao 01 2018 Trancamento e Permanencia",
   "caminho_pdf": "C:\\Users\\choss\\OneDrive\\Documentos\\Aplicação - Sinform AI\\Estatística (Bacharel)\\Resolucao_01_2018_Trancamento_e_Permanencia.pdf",
   "header": "| Estatística (Bacharel) | Documento (Resolucao 01 2018 Trancamento e Permanencia) |",
-  "max_tokens_per_chunk": 500,
-  "max_tokens_overlap": 100,
-  "densidade_visual": "Média com seções narrativas, artigos e múltiplos incisos e alíneas detalhadas",
-  "justificativa_chunking": "O documento possui artigos estruturados com incisos e alíneas detalhadas, exigindo um tamanho de chunk moderado (500 tokens) para manter o contexto regulamentar completo de cada regra de trancamento e permanência, com sobreposição de 100 tokens para garantir a continuidade entre os artigos e suas condições.",
+  "max_tokens_per_chunk": 300,
+  "max_tokens_overlap": 50,
+  "densidade_visual": "Média com seções normativas estruturadas em artigos e incisos detalhados",
+  "justificativa_chunking": "O documento possui 8 artigos com múltiplos incisos e alíneas que contêm regras detalhadas sobre trancamento e permanência. Um limite de 300 tokens garante a captura completa de cada artigo e suas condições sem quebrar a continuidade lógica entre incisos e alíneas.",
   "model_used": "gemini-3.5-flash-lite",
-  "input_tokens": 1857,
-  "output_tokens": 178,
-  "cost_usd": 0.00019267499999999998
+  "input_tokens": 2013,
+  "output_tokens": 167,
+  "cost_usd": 0.000201075
 }

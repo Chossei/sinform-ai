@@ -4,12 +4,12 @@
   "documento_nome": "Regulamento Academico Graduacao UFBA",
   "caminho_pdf": "C:\\Users\\choss\\OneDrive\\Documentos\\Aplicação - Sinform AI\\Matemática (Bacharel)\\Regulamento_Academico_Graduacao_UFBA.pdf",
   "header": "| Matemática (Bacharel) | Documento (Regulamento Academico Graduacao UFBA) |",
-  "max_tokens_per_chunk": 600,
-  "max_tokens_overlap": 100,
-  "densidade_visual": "Alta com múltiplos artigos e parágrafos curtos",
-  "justificativa_chunking": "O documento possui uma estrutura normativa densa dividida em capítulos, seções, artigos e parágrafos que contêm regras acadêmicas críticas. Um limite de 600 tokens garante que cada chunk capture unidades semânticas completas sem fraturar artigos correlacionados, enquanto os 100 tokens de sobreposição preservam a continuidade regulamentar entre as seções vizinhas.",
+  "max_tokens_per_chunk": 320,
+  "max_tokens_overlap": 40,
+  "densidade_visual": "Média com seções narrativas estruturadas por artigos e parágrafos numerados",
+  "justificativa_chunking": "O documento possui artigos de tamanho moderado com diversos parágrafos curtos, exigindo um limite equilibrado para preservar a integridade das normas de matrícula e avaliação sem fragmentar os parágrafos.",
   "model_used": "gemini-3.5-flash-lite",
-  "input_tokens": 1284,
-  "output_tokens": 174,
-  "cost_usd": 0.0001485
+  "input_tokens": 1440,
+  "output_tokens": 140,
+  "cost_usd": 0.00015000000000000001
 }

@@ -4,12 +4,12 @@
   "documento_nome": "Guia Orientacoes Registros Academicos 2025",
   "caminho_pdf": "C:\\Users\\choss\\OneDrive\\Documentos\\Aplicação - Sinform AI\\Estatística (Bacharel)\\Guia_Orientacoes_Registros_Academicos_2025.pdf",
   "header": "| Estatística (Bacharel) | Documento (Guia Orientacoes Registros Academicos 2025) |",
-  "max_tokens_per_chunk": 600,
-  "max_tokens_overlap": 100,
-  "densidade_visual": "Alta com múltiplos procedimentos operacionais, tabelas organizacionais e diretrizes administrativas em tópicos",
-  "justificativa_chunking": "O documento possui alta densidade de seções operacionais, listas de procedimentos e requisitos documentais divididos por blocos temáticos. Um limite de 600 tokens por chunk garante que cada procedimento administrativo completo (com objetivo, base normativa, procedimento e documentação exigida) seja mantido íntegro em um único segmento, enquanto os 100 tokens de sobreposição preservam o contexto das instruções gerais de atendimento da SUPAC.",
+  "max_tokens_per_chunk": 420,
+  "max_tokens_overlap": 60,
+  "densidade_visual": "Média com seções narrativas e blocos estruturados por procedimentos e tabelas de registros",
+  "justificativa_chunking": "O documento apresenta uma estrutura baseada em procedimentos administrativos e listas de exigências documentais divididas por seções. Um limite de 420 tokens permite capturar integralmente as diretrizes de cada processo (objetivo, referências, procedimento e documentação) sem fragmentar instruções críticas, mantendo a coesão semântica com uma sobreposição adequada de 60 tokens.",
   "model_used": "gemini-3.5-flash-lite",
-  "input_tokens": 5573,
-  "output_tokens": 196,
-  "cost_usd": 0.0004767749999999999
+  "input_tokens": 5729,
+  "output_tokens": 184,
+  "cost_usd": 0.00048487499999999995
 }

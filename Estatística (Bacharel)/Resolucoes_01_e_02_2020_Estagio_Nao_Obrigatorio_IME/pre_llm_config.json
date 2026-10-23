@@ -4,12 +4,12 @@
   "documento_nome": "Resolucoes 01 e 02 2020 Estagio Nao Obrigatorio IME",
   "caminho_pdf": "C:\\Users\\choss\\OneDrive\\Documentos\\Aplicação - Sinform AI\\Estatística (Bacharel)\\Resolucoes_01_e_02_2020_Estagio_Nao_Obrigatorio_IME.pdf",
   "header": "| Estatística (Bacharel) | Documento (Resolucoes 01 e 02 2020 Estagio Nao Obrigatorio IME) |",
-  "max_tokens_per_chunk": 600,
-  "max_tokens_overlap": 100,
-  "densidade_visual": "Alta com múltiplos artigos e parágrafos curtos, contendo seções regulamentares estruturadas e anexos com formulários",
-  "justificativa_chunking": "O documento é composto por artigos normativos curtos divididos em capítulos e anexos em formato de formulário. Um limite de 600 tokens por chunk garante que cada artigo completo, junto com seus incisos e parágrafos, seja processado sem fragmentação indesejada, preservando o contexto legal e regulamentar. A sobreposição de 100 tokens assegura a continuidade semântica entre as transições de seções e anexos.",
+  "max_tokens_per_chunk": 350,
+  "max_tokens_overlap": 50,
+  "densidade_visual": "Média com seções regulamentares estruturadas por capítulos, artigos e incisos enumerados, além de formulários em anexo",
+  "justificativa_chunking": "O documento possui artigos normativos curtos intercalados com incisos detalhados e anexos estruturados em tabelas e campos de formulário. Um limite de 350 tokens garante que cada artigo completo com seus respectivos incisos e parágrafos caiba integralmente no chunk, preservando a coesão semântica das regras de estágio, enquanto a sobreposição de 50 tokens assegura a continuidade lógica entre as seções transicionais.",
   "model_used": "gemini-3.5-flash-lite",
-  "input_tokens": 7189,
-  "output_tokens": 219,
-  "cost_usd": 0.000604875
+  "input_tokens": 7345,
+  "output_tokens": 218,
+  "cost_usd": 0.0006162749999999999
 }

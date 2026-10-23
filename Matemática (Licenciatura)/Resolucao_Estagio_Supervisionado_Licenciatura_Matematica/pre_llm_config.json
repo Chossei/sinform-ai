@@ -4,12 +4,12 @@
   "documento_nome": "Resolucao Estagio Supervisionado Licenciatura Matematica",
   "caminho_pdf": "C:\\Users\\choss\\OneDrive\\Documentos\\Aplicação - Sinform AI\\Matemática (Licenciatura)\\Resolucao_Estagio_Supervisionado_Licenciatura_Matematica.pdf",
   "header": "| Matemática (Licenciatura) | Documento (Resolucao Estagio Supervisionado Licenciatura Matematica) |",
-  "max_tokens_per_chunk": 500,
-  "max_tokens_overlap": 100,
-  "densidade_visual": "Alta com múltiplos artigos, parágrafos e subdivisões normativas estruturadas",
-  "justificativa_chunking": "O documento possui alta densidade normativa dividida em quatro capítulos curtos compostos por artigos e parágrafos numerados. Um limite de 500 tokens com 100 tokens de sobreposição garante que cada capítulo ou conjunto correlato de artigos seja processado sem a perda de contexto dos parágrafos e incisos subordinados.",
+  "max_tokens_per_chunk": 280,
+  "max_tokens_overlap": 40,
+  "densidade_visual": "Média com seções narrativas e artigos estruturados em parágrafos normativos",
+  "justificativa_chunking": "O documento possui uma estrutura concisa dividida em quatro capítulos curtos e seis artigos principais com parágrafos descritivos. Um limite de 280 tokens é ideal para manter cada artigo e seus parágrafos correlacionados dentro do mesmo chunk, preservando o contexto regulamentar, enquanto a sobreposição de 40 tokens garante a continuidade semântica entre as seções.",
   "model_used": "gemini-3.5-flash-lite",
-  "input_tokens": 772,
-  "output_tokens": 172,
-  "cost_usd": 0.0001095
+  "input_tokens": 928,
+  "output_tokens": 182,
+  "cost_usd": 0.00012419999999999998
 }

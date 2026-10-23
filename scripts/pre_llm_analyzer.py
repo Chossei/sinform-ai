@@ -32,16 +32,16 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 sys.path.append(str(BASE_DIR))
 from cost_estimator import CostEstimator
 
-# Esquema de Output Estruturado conforme especificado no Plano de Implementação
+# Esquema de Output Estruturado conforme especificado no Plano de Implementação e limites da Google File Search
 class PreLLMDocumentAnalysis(BaseModel):
     header: str = Field(
         description="Cabeçalho oficial no padrão estrito: | Curso | Documento (Nome do documento) |"
     )
     max_tokens_per_chunk: int = Field(
-        description="Quantidade máxima de tokens por chunk calculada com base na densidade visual (tipicamente entre 400 e 1000 tokens)"
+        description="Quantidade máxima de tokens por chunk calculada com base na densidade visual (limite estrito da Google File Search API: entre 180 e 500 tokens)"
     )
     max_tokens_overlap: int = Field(
-        description="Quantidade máxima de tokens de sobreposição entre chunks para preservar continuidade semântica (tipicamente entre 50 e 150 tokens)"
+        description="Quantidade de tokens de sobreposição entre chunks para preservar continuidade semântica (limite estrito: entre 20 e 100 tokens, e estritamente menor que max_tokens_per_chunk)"
     )
     densidade_visual: str = Field(
         description="Avaliação da densidade visual do PDF (ex: 'Alta com múltiplos artigos e parágrafos curtos', 'Média com seções narrativas', 'Textual densa com tabelas')"
@@ -83,12 +83,16 @@ DOCUMENTO: {doc_clean_name}
 CURSO: {curso_nome}
 
 INSTRUÇÕES OBRIGATÓRIAS:
-1. Examine a estrutura visual do documento: capítulos, seções, artigos, parágrafos, incisos e notas de rodapé.
-2. Defina a quantidade de tokens máxima necessária por chunk (max_tokens_per_chunk) conforme a densidade visual dos artigos e seções.
-3. Defina a quantidade de tokens máxima de sobreposição (max_tokens_overlap) entre chunks vizinhos para evitar corte de contexto regulamentar.
+1. Examine a estrutura visual do documento: capítulos, seções, artigos, parágrafos, incisos, tabelas e notas de rodapé.
+2. Defina a quantidade de tokens máxima por chunk (max_tokens_per_chunk) CUSTOMIZADA especificamente para este documento:
+   - O banco vetorial da Google (File Search) aceita entre 100 e 500 tokens por chunk.
+   - Calibre um valor específico para este documento entre 180 e 500 tokens de acordo com o tamanho médio dos seus artigos e seções.
+   - Documentos mais concisos com artigos curtos devem usar valores menores (ex: 220 a 320 tokens).
+   - Documentos regulamentares longos e densos com múltiplos incisos e tabelas devem usar valores maiores (ex: 380 a 500 tokens).
+3. Defina a quantidade de tokens de sobreposição (max_tokens_overlap) CUSTOMIZADA para este documento entre 20 e 100 tokens (sempre menor que max_tokens_per_chunk) para garantir continuidade das normas.
 4. Formate o cabeçalho no padrão estrito:
    | {curso_nome} | Documento ({doc_clean_name}) |
-5. Forneça a justificativa técnica objetiva para as escolhas de tokens.
+5. Forneça a justificativa técnica objetiva para as escolhas de tokens deste documento específico.
 """
 
         models_chain = [self.primary_model, self.fallback_model, "gemini-2.5-flash"]
@@ -165,11 +169,15 @@ INSTRUÇÕES OBRIGATÓRIAS:
         print(f"[Pré-LLM Sucesso] {pdf_path.name} -> Chunk Max: {result['max_tokens_per_chunk']} tokens, Overlap: {result['max_tokens_overlap']} tokens | Custo: ${cost:.6f} USD")
         return result
 
-    def analyze_all_courses(self, base_dir: Path = BASE_DIR) -> Dict[str, List[Dict[str, Any]]]:
+    def analyze_all_courses(self, base_dir: Path = BASE_DIR, force_recompute: bool = True) -> Dict[str, List[Dict[str, Any]]]:
         """
         Varre todas as pastas de cursos, executa a análise estruturada em cada PDF
         e salva um arquivo de configuração persistente `pre_llm_chunk_configs.json`.
         """
+        import unicodedata
+        def norm(s):
+            return "".join(c for c in unicodedata.normalize("NFD", s) if unicodedata.category(c) != "Mn").lower()
+
         courses = [
             "Estatística (Bacharel)",
             "Matemática (Bacharel)",
@@ -180,10 +188,18 @@ INSTRUÇÕES OBRIGATÓRIAS:
         total_cost = 0.0
 
         for course in courses:
-            course_dir = base_dir / course
-            if not course_dir.exists():
+            target_norm = norm(course)
+            course_dir = None
+            for sub in base_dir.iterdir():
+                if sub.is_dir() and norm(sub.name) == target_norm:
+                    course_dir = sub
+                    break
+
+            if not course_dir or not course_dir.exists():
+                print(f"[Aviso] Pasta para {course} nao encontrada.")
                 continue
 
+            # Apenas PDFs ativos (excluindo qualquer um em _desatualizados)
             pdf_files = sorted(list(course_dir.glob("*.pdf")))
             course_results = []
             print(f"\n=======================================================")
@@ -191,11 +207,10 @@ INSTRUÇÕES OBRIGATÓRIAS:
             print(f"=======================================================")
 
             for pdf_file in pdf_files:
-                # Verificar se já existe análise em cache na subpasta do documento
                 doc_subfolder = course_dir / pdf_file.stem
                 cache_file = doc_subfolder / "pre_llm_config.json"
                 
-                if cache_file.exists():
+                if not force_recompute and cache_file.exists():
                     try:
                         with open(cache_file, "r", encoding="utf-8") as f:
                             cached_res = json.load(f)

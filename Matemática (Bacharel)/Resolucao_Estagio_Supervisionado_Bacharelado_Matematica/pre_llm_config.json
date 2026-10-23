@@ -4,12 +4,12 @@
   "documento_nome": "Resolucao Estagio Supervisionado Bacharelado Matematica",
   "caminho_pdf": "C:\\Users\\choss\\OneDrive\\Documentos\\Aplicação - Sinform AI\\Matemática (Bacharel)\\Resolucao_Estagio_Supervisionado_Bacharelado_Matematica.pdf",
   "header": "| Matemática (Bacharel) | Documento (Resolucao Estagio Supervisionado Bacharelado Matematica) |",
-  "max_tokens_per_chunk": 500,
-  "max_tokens_overlap": 100,
-  "densidade_visual": "Média com seções normativas divididas em artigos e incisos enumerados",
-  "justificativa_chunking": "O documento possui uma estrutura normativa curta dividida em artigos e incisos, o que permite chunks menores para preservar o escopo de cada regra sem quebrar incisos relacionados.",
+  "max_tokens_per_chunk": 280,
+  "max_tokens_overlap": 40,
+  "densidade_visual": "Média com seções normativas estruturadas em artigos e incisos",
+  "justificativa_chunking": "O documento possui extensão curta e estrutura normativo-legal dividida em artigos e incisos concisos. Um limite de 280 tokens acomoda perfeitamente blocos inteiros de artigos sem fracionar incisos, garantindo alta coesão semântica para indexação no vector store, com sobreposição de 40 tokens para preservar o contexto entre regras subsequentes.",
   "model_used": "gemini-3.5-flash-lite",
-  "input_tokens": 1313,
-  "output_tokens": 135,
-  "cost_usd": 0.000138975
+  "input_tokens": 1469,
+  "output_tokens": 178,
+  "cost_usd": 0.000163575
 }
