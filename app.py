@@ -377,7 +377,7 @@ else:
                         st.markdown(f"**Cabeçalho Oficial:** `{c['header']}`")
                         st.markdown(f"- **Documento:** {c['documento']}")
                         st.markdown(f"- **Disposição:** {c['capitulo']} · {c['secao']} · {c['artigo']}")
-                        st.caption(f"Tokens: {c['tokens']}")
+                        st.caption(f"Tokens: {c.get('tokens', 'N/A')}")
                         st.markdown(f"```text\n{c['content']}\n```")
                         st.divider()
 
