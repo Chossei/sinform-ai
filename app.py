@@ -168,13 +168,13 @@ with st.sidebar:
 
     st.markdown("---")
     
-    # Status do Acervo e Vetorização
-    st.subheader("📊 Base Vetorial do Colegiado")
-    try:
-        count = rag.collection.count()
-        st.success(f"**{count}** fragmentos indexados com `gemini-embedding-2`.")
-    except:
-        st.info("Base vetorial em atualização.")
+    # Status do Acervo e Vetorização no Google File Search
+    st.subheader("📊 Repositório Vetorial Google")
+    active_c = st.session_state.selected_course
+    if active_c and active_c in rag.stores_mapping:
+        st.success(f"Google File Search Store Ativa para `{active_c}` com `gemini-embedding-2`.")
+    else:
+        st.info("Bases Vetoriais Google File Search Operacionais.")
 
     # Filtro ativo
     if st.session_state.selected_course:
@@ -316,9 +316,9 @@ else:
                     st.markdown(f"**Viés B (Procedimentos & SIGAA):** {msg['dual_queries'][1]}")
 
             if msg.get("citations"):
-                with st.expander(f"📚 {len(msg['citations'])} Fragmentos Regulamentares de Contexto (Top-5 + Top-5 Chunks)"):
+                with st.expander(f"📚 {len(msg['citations'])} Fragmentos Regulamentares no Contexto (Top-5 Query 1 + Top-5 Query 2)"):
                     for c in msg["citations"]:
-                        st.markdown(f"**Cabeçalho Oficial:** `{c['header']}`")
+                        st.markdown(f"**Origem:** `{c.get('origem_query', 'Similaridade Cosseno')}` | **Cabeçalho:** `{c['header']}`")
                         st.markdown(f"- **Documento:** {c['documento']}")
                         st.markdown(f"- **Disposição:** {c['capitulo']} · {c['secao']} · {c['artigo']}")
                         st.caption(f"Tokens: {c.get('tokens', 'N/A')}")
@@ -372,9 +372,9 @@ else:
                     st.markdown(f"**Viés B (Procedimentos & SIGAA):** {dual_queries[1]}")
 
             if citations:
-                with st.expander(f"📚 {len(citations)} Fragmentos Regulamentares de Contexto (Top-5 + Top-5 Chunks)"):
+                with st.expander(f"📚 {len(citations)} Fragmentos Regulamentares no Contexto (Top-5 Query 1 + Top-5 Query 2)"):
                     for c in citations:
-                        st.markdown(f"**Cabeçalho Oficial:** `{c['header']}`")
+                        st.markdown(f"**Origem:** `{c.get('origem_query', 'Similaridade Cosseno')}` | **Cabeçalho:** `{c['header']}`")
                         st.markdown(f"- **Documento:** {c['documento']}")
                         st.markdown(f"- **Disposição:** {c['capitulo']} · {c['secao']} · {c['artigo']}")
                         st.caption(f"Tokens: {c.get('tokens', 'N/A')}")

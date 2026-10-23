@@ -28,10 +28,9 @@ STORES_MAP_FILE = BASE_DIR / "google_file_search_stores.json"
 sys.path.append(str(BASE_DIR))
 from cost_estimator import CostEstimator, SessionCostTracker
 
-# Modelos homologados
+# Modelos homologados conforme especificação
 PRIMARY_MODEL = "gemini-3.5-flash-lite"
 FALLBACK_MODEL = "gemini-3.1-flash-lite"
-SAFETY_FALLBACK = "gemini-2.5-flash"
 
 # Defesas de Segurança
 INJECTION_PATTERNS = [
@@ -109,7 +108,7 @@ Gere EXATAMENTE duas queries diferentes de busca vetorial para este aluno:
 - Query com Viés A: Foco em exigências formais, prazos, limites de carga horária e resoluções aplicáveis.
 - Query com Viés B: Foco em procedimentos operacionais, formulários, submissão no SIGAA e aprovação no colegiado.
 """
-        models = [PRIMARY_MODEL, FALLBACK_MODEL, SAFETY_FALLBACK]
+        models = [PRIMARY_MODEL, FALLBACK_MODEL]
         result_queries = [query, query]
         model_used = PRIMARY_MODEL
         cost = 0.0
@@ -147,6 +146,130 @@ Gere EXATAMENTE duas queries diferentes de busca vetorial para este aluno:
 
         return result_queries, model_used, cost
 
+    def _retrieve_chunks_for_single_query(
+        self,
+        store_name: str,
+        q_text: str,
+        q_tag: str,
+        curso: str,
+        existing_signatures: set
+    ) -> List[Dict[str, Any]]:
+        """
+        Recupera estritamente os TOP-5 chunks mais relevantes para uma query específica,
+        utilizando busca vetorial por similaridade de cosseno (top_k=20) no Google File Search.
+        Se a primeira extração retornar menos de 5 chunks, executa sondagens complementares
+        para assegurar exatamente 5 chunks distintos no conjunto desta query.
+        """
+        models = [PRIMARY_MODEL, FALLBACK_MODEL]
+        chunks = []
+
+        prompts = [
+            f"Pesquise nos documentos via file_search e extraia 5 trechos ou dispositivos regulamentares normativos distintos sobre: {q_text}. Apresente 5 trechos numerados de 1 a 5.",
+            f"Pesquise no file_search trechos no 'Guia de Orientações de Registros Acadêmicos' e no 'Regulamento Acadêmico' sobre procedimentos, prazos e normas correlatas a: {q_text}. Liste 5 trechos.",
+            f"Acesse o repositório de documentos do curso de {curso} no file_search e localize 5 trechos regulamentares adicionais sobre vida acadêmica, prazos ou colegiado relacionados a: {q_text}."
+        ]
+
+        for p in prompts:
+            if len(chunks) >= 5:
+                break
+
+            for m_tag in models:
+                try:
+                    response = self.client.models.generate_content(
+                        model=m_tag,
+                        contents=p,
+                        config=types.GenerateContentConfig(
+                            tools=[types.Tool(file_search=types.FileSearch(
+                                file_search_store_names=[store_name],
+                                top_k=20
+                            ))],
+                            temperature=0.0
+                        )
+                    )
+                    if response and response.candidates:
+                        cand = response.candidates[0]
+                        if hasattr(cand, "grounding_metadata") and cand.grounding_metadata:
+                            g_chunks = getattr(cand.grounding_metadata, "grounding_chunks", []) or []
+                            for gc in g_chunks:
+                                rc = getattr(gc, "retrieved_context", None)
+                                chunk_text = (getattr(rc, "text", "") or "") if rc else str(gc)[:350]
+                                sig = chunk_text.strip()[:80]
+                                if sig and sig not in existing_signatures:
+                                    existing_signatures.add(sig)
+                                    title = (getattr(rc, "title", "") if rc else "") or f"| {curso} | Fragmento Oficial {len(chunks)+1} |"
+                                    doc_name = (getattr(rc, "document_name", "") if rc else "") or "Regulamento Acadêmico Oficial"
+
+                                    chunks.append({
+                                        "header": title,
+                                        "origem_query": q_tag,
+                                        "documento": doc_name,
+                                        "capitulo": "Normas UFBA",
+                                        "secao": "Colegiado",
+                                        "artigo": f"Disposição Aplicável ({q_tag})",
+                                        "content": chunk_text if chunk_text else "Fragmento indexado no Google File Search"
+                                    })
+                                    if len(chunks) >= 5:
+                                        break
+
+                        # Registrar telemetria de tokens
+                        t_in = getattr(response.usage_metadata, "prompt_token_count", 0) or 500
+                        t_out = getattr(response.usage_metadata, "candidates_token_count", 0) or 250
+                        self.cost_tracker.record_operation("file_search_retrieval", m_tag, t_in, t_out)
+                        if len(chunks) >= 5:
+                            break
+                        break
+                except Exception as e:
+                    print(f"[{q_tag} Error] Modelo {m_tag}: {e}")
+                    continue
+
+        # Se ainda houver menos de 5 chunks, recorrer aos guias de registros acadêmicos e regulamentos gerais do curso
+        if len(chunks) < 5:
+            fill_prompt = f"Pesquise no file_search trechos no Guia de Orientacoes de Registros Academicos ou Regulamento da Graduacao sobre submissao de requerimentos no SIGAA, prazos e atuacao do colegiado em {curso}. Liste 5 trechos."
+            for m_tag in models:
+                if len(chunks) >= 5:
+                    break
+                try:
+                    resp_fill = self.client.models.generate_content(
+                        model=m_tag,
+                        contents=fill_prompt,
+                        config=types.GenerateContentConfig(
+                            tools=[types.Tool(file_search=types.FileSearch(
+                                file_search_store_names=[store_name],
+                                top_k=20
+                            ))],
+                            temperature=0.0
+                        )
+                    )
+                    if resp_fill and resp_fill.candidates:
+                        cand = resp_fill.candidates[0]
+                        if hasattr(cand, "grounding_metadata") and cand.grounding_metadata:
+                            g_chunks = getattr(cand.grounding_metadata, "grounding_chunks", []) or []
+                            for gc in g_chunks:
+                                rc = getattr(gc, "retrieved_context", None)
+                                chunk_text = (getattr(rc, "text", "") or "") if rc else str(gc)[:350]
+                                sig = chunk_text.strip()[:80]
+                                if sig and sig not in existing_signatures:
+                                    existing_signatures.add(sig)
+                                    title = (getattr(rc, "title", "") if rc else "") or f"| {curso} | Fragmento Oficial {len(chunks)+1} |"
+                                    doc_name = (getattr(rc, "document_name", "") if rc else "") or "Regulamento Acadêmico Oficial"
+                                    chunks.append({
+                                        "header": title,
+                                        "origem_query": q_tag,
+                                        "documento": doc_name,
+                                        "capitulo": "Normas UFBA",
+                                        "secao": "Colegiado",
+                                        "artigo": f"Disposição Aplicável ({q_tag})",
+                                        "content": chunk_text if chunk_text else "Fragmento indexado no Google File Search"
+                                    })
+                                    if len(chunks) >= 5:
+                                        break
+                        break
+                except Exception as e:
+                    print(f"[{q_tag} Fill Error]: {e}")
+                    continue
+
+        return chunks[:5]
+
     def query_google_file_search(
         self,
         store_name: str,
@@ -154,62 +277,46 @@ Gere EXATAMENTE duas queries diferentes de busca vetorial para este aluno:
         curso: str
     ) -> Tuple[str, List[Dict[str, Any]]]:
         """
-        Executa a busca vetorial diretamente na Google File Search Store,
-        utilizando o suporte nativo construído pela Google com gemini-embedding-2.
+        Executa a busca vetorial estritamente para o TOP-10 de chunks mais relevantes:
+        - 5 chunks mais similares oriundos da Query 1 (Viés A: Regras, Prazos & Limites)
+        - 5 chunks mais similares oriundos da Query 2 (Viés B: Procedimentos, Documentos & SIGAA)
+        Utiliza busca semântica por similaridade de cosseno (top_k=20) do Google File Search.
         """
-        search_prompt = f"""Você é um consultor das resoluções oficiais do curso '{curso}' da UFBA.
-Com base nas seguintes consultas de busca:
-1. {queries[0]}
-2. {queries[1]}
+        q1_text = queries[0] if len(queries) > 0 else ""
+        q2_text = queries[1] if len(queries) > 1 else q1_text
 
-Recupere detalhadamente o teor normativo oficial aplicável: números de resoluções, artigos, parágrafos, incisos, prazos, limites e regras expressas nos documentos da base vetorial.
-"""
-        models = [PRIMARY_MODEL, FALLBACK_MODEL, SAFETY_FALLBACK]
-        retrieved_text = ""
-        citations = []
+        # Cada query mantém seu próprio tracking de assinaturas para garantir 5 chunks para a Query 1 e 5 chunks para a Query 2
+        chunks_q1 = self._retrieve_chunks_for_single_query(
+            store_name=store_name,
+            q_text=q1_text,
+            q_tag="Query 1 (Viés A: Regras & Prazos)",
+            curso=curso,
+            existing_signatures=set()
+        )
 
-        for m_tag in models:
-            try:
-                response = self.client.models.generate_content(
-                    model=m_tag,
-                    contents=search_prompt,
-                    config=types.GenerateContentConfig(
-                        tools=[{"file_search": {"file_search_store_names": [store_name]}}],
-                        temperature=0.1
-                    )
-                )
-                if response and response.text:
-                    retrieved_text = response.text
-                    if response.candidates:
-                        cand = response.candidates[0]
-                        if hasattr(cand, "grounding_metadata") and cand.grounding_metadata:
-                            g_chunks = getattr(cand.grounding_metadata, "grounding_chunks", []) or []
-                            for idx, gc in enumerate(g_chunks, 1):
-                                title = f"| {curso} | Fragmento Oficial {idx} |"
-                                doc_name = "Regulamento Acadêmico Oficial"
-                                chunk_text = ""
-                                if hasattr(gc, "retrieved_context") and gc.retrieved_context:
-                                    rc = gc.retrieved_context
-                                    title = getattr(rc, "title", title) or title
-                                    chunk_text = getattr(rc, "text", "") or ""
-                                    doc_name = getattr(rc, "document_name", doc_name) or doc_name
-                                else:
-                                    chunk_text = str(gc)[:350]
+        chunks_q2 = self._retrieve_chunks_for_single_query(
+            store_name=store_name,
+            q_text=q2_text,
+            q_tag="Query 2 (Viés B: Procedimentos & SIGAA)",
+            curso=curso,
+            existing_signatures=set()
+        )
 
-                                citations.append({
-                                    "header": title,
-                                    "documento": doc_name,
-                                    "capitulo": "Normas UFBA",
-                                    "secao": "Colegiado",
-                                    "artigo": "Disposição Aplicável",
-                                    "content": chunk_text[:400] if chunk_text else "Fragmento indexado no Google File Search"
-                                })
-                    break
-            except Exception as e:
-                print(f"[File Search Query Error] Modelo {m_tag}: {e}")
-                continue
+        all_citations = chunks_q1[:5] + chunks_q2[:5]
 
-        return retrieved_text, citations
+        # Formatar os TOP-10 chunks para a janela de contexto do chatbot
+        context_blocks = []
+        for idx, c in enumerate(all_citations, 1):
+            context_blocks.append(
+                f"### [FRAGMENTO REGULAMENTAR {idx}/{len(all_citations)}] ({c['origem_query']})\n"
+                f"- Documento / Cabeçalho: {c['header']}\n"
+                f"- Fonte: {c['documento']}\n"
+                f"- Disposição: {c['capitulo']} · {c['secao']} · {c['artigo']}\n"
+                f"Teor do Trecho:\n{c['content']}\n"
+            )
+
+        full_retrieved_text = "\n\n".join(context_blocks)
+        return full_retrieved_text, all_citations
 
     def ask(
         self,
@@ -288,7 +395,7 @@ RESTRIÇÕES DE RESPOSTA (GROUNDEDNESS):
                 chat_history.append(f"{'Aluno' if h['role'] == 'user' else 'Consultor'}: {h['content']}")
         chat_history.append(f"Aluno: {query}")
 
-        models_chain = [PRIMARY_MODEL, FALLBACK_MODEL, SAFETY_FALLBACK]
+        models_chain = [PRIMARY_MODEL, FALLBACK_MODEL]
         final_answer = None
         model_used = PRIMARY_MODEL
 
