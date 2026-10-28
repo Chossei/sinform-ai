@@ -16,8 +16,7 @@ sys.path.append(str(BASE_DIR))
 
 load_dotenv()
 
-from rag_engine import SinformRAG, PRIMARY_MODEL, FALLBACK_MODEL
-from cost_estimator import CostEstimator
+from rag_engine import SinformRAG, PRIMARY_MODEL, FALLBACK_MODEL, EMBEDDING_MODEL, PRICING
 
 # Configuração da página
 st.set_page_config(
@@ -101,7 +100,7 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
-# Inicializar motor RAG
+# Inicializar motor RAG com cache
 @st.cache_resource
 def get_rag_engine():
     return SinformRAG()
@@ -132,18 +131,21 @@ with st.sidebar:
     st.markdown("**Consultor Inteligente de Normas Acadêmicas - UFBA**")
     st.markdown("---")
 
-    # Arquitetura de Modelos LLM com Fallback Automático
-    st.subheader("⚙️ Motor de Inteligência Artificial")
+    # Arquitetura de Modelos
+    st.subheader("⚙️ Arquitetura de IA & Fallback")
     st.markdown("""
     <div style="background: rgba(30, 41, 59, 0.7); border: 1px solid rgba(100, 255, 218, 0.25); border-radius: 8px; padding: 12px; margin-bottom: 12px;">
         <div style="color: #64FFDA; font-weight: 600; font-size: 0.95rem; display: flex; align-items: center; gap: 6px;">
             <span>🟢</span> Gemini 3.5 Flash Lite
         </div>
         <div style="color: #8892B0; font-size: 0.8rem; margin-top: 4px;">
-            Modelo Principal Ativo (Multi-Query + Resposta)
+            Modelo Principal (Pre-LLM & Chatbot Multimodal)
         </div>
         <div style="color: #CBD5E1; font-size: 0.82rem; margin-top: 8px; border-top: 1px dashed rgba(255,255,255,0.1); padding-top: 6px;">
             ↳ <strong>Fallback automático:</strong> Gemini 3.1 Flash Lite
+        </div>
+        <div style="color: #64FFDA; font-size: 0.82rem; margin-top: 4px;">
+            ↳ <strong>Embeddings:</strong> Gemini Embedding 2 (3072 dim)
         </div>
     </div>
     """, unsafe_allow_html=True)
@@ -152,29 +154,32 @@ with st.sidebar:
     st.subheader("💰 Auditoria de Custos da API")
     st.markdown(f"""
     <div style="background: #112240; border: 1px solid #233554; border-radius: 8px; padding: 10px; font-size: 0.82rem; color: #CCD6F6;">
-        <div><strong>Preços Oficiais (Google Gemini):</strong></div>
-        <div>• <em>LLM Input:</em> $0.075 / 1M tokens</div>
-        <div>• <em>LLM Output:</em> $0.300 / 1M tokens</div>
-        <div>• <em>Embeddings:</em> $0.020 / 1M tokens</div>
+        <div><strong>Preços Oficiais por 1M Tokens (Google Gemini):</strong></div>
+        <div>• <em>LLM Input (3.5):</em> ${PRICING['gemini-3.5-flash-lite']['input_per_million']:.2f} / 1M tokens</div>
+        <div>• <em>LLM Output (3.5):</em> ${PRICING['gemini-3.5-flash-lite']['output_per_million']:.2f} / 1M tokens</div>
+        <div>• <em>Fallback Input (3.1):</em> ${PRICING['gemini-3.1-flash-lite']['input_per_million']:.2f} / 1M tokens</div>
+        <div>• <em>Embeddings:</em> ${PRICING['gemini-embedding-2']['input_per_million']:.2f} / 1M tokens</div>
         <div style="margin-top: 8px; padding-top: 6px; border-top: 1px solid #233554; color: #64FFDA;">
             <strong>Custo Acumulado da Sessão:</strong><br>
             <span style="font-size: 1.05rem; font-weight: 700;">${st.session_state.session_cost_usd:.6f} USD</span>
-        </div>
-        <div style="color: #8892B0; font-size: 0.78rem; margin-top: 4px;">
-            Total Tokens Processados: {st.session_state.session_tokens}
+            <span style="font-size: 0.85rem; color: #8892B0;"> (~ R$ {st.session_state.session_cost_usd * 5.75:.4f})</span>
         </div>
     </div>
     """, unsafe_allow_html=True)
 
     st.markdown("---")
     
-    # Status do Acervo e Vetorização no Google File Search
-    st.subheader("📊 Repositório Vetorial Google")
+    # Status do Banco Vetorial Próprio
+    st.subheader("📊 Banco Vetorial Próprio")
     active_c = st.session_state.selected_course
-    if active_c and active_c in rag.stores_mapping:
-        st.success(f"Google File Search Store Ativa para `{active_c}` com `gemini-embedding-2`.")
+    if active_c:
+        df_cur = rag.vector_dbs.get(active_c)
+        if df_cur is not None:
+            st.success(f"DataFrame `{active_c}` ativo com **{len(df_cur)} chunks** fatiados.")
+        else:
+            st.warning(f"Carregando banco vetorial de `{active_c}`...")
     else:
-        st.info("Bases Vetoriais Google File Search Operacionais.")
+        st.info("Selecione um curso para ativar o banco vetorial.")
 
     # Filtro ativo
     if st.session_state.selected_course:
@@ -199,7 +204,6 @@ with st.sidebar:
     if st.button("Limpar Histórico", use_container_width=True):
         st.session_state.messages = []
         st.session_state.session_cost_usd = 0.0
-        st.session_state.session_tokens = 0
         st.rerun()
 
 # BANNER SUPERIOR
@@ -266,7 +270,7 @@ if st.session_state.selected_course is None:
 else:
     active_course = st.session_state.selected_course
 
-    st.info(f"**Atendimento Selecionado:** Aluno de **{active_course}** | Motor: **Gemini 3.5 Flash Lite** (com fallback automático para **Gemini 3.1 Flash Lite**) | Filtro vetorial Top-10 ativo.")
+    st.info(f"**Atendimento Selecionado:** Aluno de **{active_course}** | Motor: **Gemini 3.5 Flash Lite** (com fallback automático para **Gemini 3.1 Flash Lite**) | Filtro vetorial Top-10 ativo via API File.")
 
     # Perguntas sugeridas conforme o curso selecionado
     st.markdown("##### 💡 Sugestões de perguntas frequentes:")
@@ -310,19 +314,14 @@ else:
                     meta_line += f" | Custo da operação: `{msg['cost_str']}`"
                 st.caption(meta_line)
 
-            if msg.get("dual_queries"):
-                with st.expander("🔍 Consultas Geradas via Multi-Query (Dois Vieses)"):
-                    st.markdown(f"**Viés A (Regras & Prazos):** {msg['dual_queries'][0]}")
-                    st.markdown(f"**Viés B (Procedimentos & SIGAA):** {msg['dual_queries'][1]}")
-
             if msg.get("citations"):
-                with st.expander(f"📚 {len(msg['citations'])} Fragmentos Regulamentares no Contexto (Top-5 Query 1 + Top-5 Query 2)"):
-                    for c in msg["citations"]:
-                        st.markdown(f"**Origem:** `{c.get('origem_query', 'Similaridade Cosseno')}` | **Cabeçalho:** `{c['header']}`")
-                        st.markdown(f"- **Documento:** {c['documento']}")
-                        st.markdown(f"- **Disposição:** {c['capitulo']} · {c['secao']} · {c['artigo']}")
-                        st.caption(f"Tokens: {c.get('tokens', 'N/A')}")
-                        st.markdown(f"```text\n{c['content']}\n```")
+                with st.expander(f"📚 {len(msg['citations'])} Fatias e Fichamentos no Contexto (Top-10 via gemini-embedding-2)"):
+                    for idx, c in enumerate(msg["citations"], 1):
+                        st.markdown(f"**Chunk #{idx}** · **Documento:** `{c['nome_documento']}` · **Páginas:** `{c['paginas']}`")
+                        st.markdown(f"- **Link Oficial:** [{c['nome_documento']}]({c['link']})")
+                        st.markdown(f"- **Arquivo Fatiado:** `{c.get('pdf_chunk_path', 'N/A')}`")
+                        st.markdown(f"- **Tokens do Fichamento:** `{c.get('quantidade_tokens', 'N/A')}` | Similaridade: `{c.get('similarity', 0.0):.4f}`")
+                        st.markdown(f"**Fichamento Detalhado:**\n> {c['fichamento']}")
                         st.divider()
 
     # Entrada do usuário (input chat ou sugestão/teste)
@@ -336,49 +335,41 @@ else:
         user_input = st.chat_input("Faça uma pergunta sobre normas, estágios, trancamento, TCC ou horas complementares...")
 
     if user_input:
-        # Registrar pergunta do usuário
         st.session_state.messages.append({"role": "user", "content": user_input})
         with st.chat_message("user"):
             st.markdown(user_input)
 
-        # Processar via RAG com Status Dinâmico de Três Fases conforme especificado no Plano:
-        # 1. (Criando as consultas…)
-        # 2. Pesquisando os documentos
-        # 3. Gerando sua resposta…
+        # Processar via RAG com Status Dinâmico de Duas Fases conforme especificado no Plano:
+        # Fase 1: "Avaliando sua pergunta..."
+        # Fase 2: "Pesquisando e gerando a resposta..."
         with st.chat_message("assistant"):
-            with st.status("(Criando as consultas…)", expanded=True) as status_box:
+            with st.status("Avaliando sua pergunta...", expanded=True) as status_box:
                 def on_status_change(phase_text: str):
                     status_box.update(label=phase_text, state="running")
 
-                answer, citations, model_used, cost_sum, dual_queries = rag.ask(
+                answer, citations, model_used, cost_sum, queries_used = rag.ask(
                     query=user_input,
                     curso=active_course,
                     history=st.session_state.messages,
                     status_callback=on_status_change
                 )
-                status_box.update(label="✅ Consulta regulamentar concluída!", state="complete", expanded=False)
+                status_box.update(label="✅ Resposta gerada com sucesso!", state="complete", expanded=False)
 
             st.markdown(answer)
-            cost_str = CostEstimator.format_cost(cost_sum.get("total_cost_usd", 0.0) - st.session_state.session_cost_usd)
-            st.caption(f"🤖 Motor: `{model_used}` | Custo estimado desta resposta: `{cost_str}`")
+            cost_str = cost_sum["formatted_cost"]
+            st.caption(f"🤖 Motor: `{model_used}` | Custo acumulado: `{cost_str}`")
 
             # Atualizar custos globais na sessão
             st.session_state.session_cost_usd = cost_sum.get("total_cost_usd", 0.0)
-            st.session_state.session_tokens = cost_sum.get("total_tokens", 0)
-
-            if dual_queries:
-                with st.expander("🔍 Consultas Geradas via Multi-Query (Dois Vieses)"):
-                    st.markdown(f"**Viés A (Regras & Prazos):** {dual_queries[0]}")
-                    st.markdown(f"**Viés B (Procedimentos & SIGAA):** {dual_queries[1]}")
 
             if citations:
-                with st.expander(f"📚 {len(citations)} Fragmentos Regulamentares no Contexto (Top-5 Query 1 + Top-5 Query 2)"):
-                    for c in citations:
-                        st.markdown(f"**Origem:** `{c.get('origem_query', 'Similaridade Cosseno')}` | **Cabeçalho:** `{c['header']}`")
-                        st.markdown(f"- **Documento:** {c['documento']}")
-                        st.markdown(f"- **Disposição:** {c['capitulo']} · {c['secao']} · {c['artigo']}")
-                        st.caption(f"Tokens: {c.get('tokens', 'N/A')}")
-                        st.markdown(f"```text\n{c['content']}\n```")
+                with st.expander(f"📚 {len(citations)} Fatias e Fichamentos no Contexto (Top-10 via gemini-embedding-2)"):
+                    for idx, c in enumerate(citations, 1):
+                        st.markdown(f"**Chunk #{idx}** · **Documento:** `{c['nome_documento']}` · **Páginas:** `{c['paginas']}`")
+                        st.markdown(f"- **Link Oficial:** [{c['nome_documento']}]({c['link']})")
+                        st.markdown(f"- **Arquivo Fatiado:** `{c.get('pdf_chunk_path', 'N/A')}`")
+                        st.markdown(f"- **Tokens do Fichamento:** `{c.get('quantidade_tokens', 'N/A')}` | Similaridade: `{c.get('similarity', 0.0):.4f}`")
+                        st.markdown(f"**Fichamento Detalhado:**\n> {c['fichamento']}")
                         st.divider()
 
         st.session_state.messages.append({
@@ -386,8 +377,6 @@ else:
             "content": answer,
             "citations": citations,
             "model_used": model_used,
-            "dual_queries": dual_queries,
             "cost_str": cost_str
         })
-        # Atualizar a barra lateral de custos imediatamente
         st.rerun()
