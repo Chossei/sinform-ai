@@ -112,11 +112,12 @@ class SinformRAG:
         self.client = genai.Client(api_key=api_key)
         self.cost_tracker = SessionCostTracker()
         self.vector_dbs: Dict[str, pd.DataFrame] = {}
+        self.embeddings_dbs: Dict[str, np.ndarray] = {}
         self.file_cache: Dict[str, Any] = {}
         self.load_all_vector_dbs()
 
     def load_all_vector_dbs(self):
-        """Carrega os dataframes vetoriais de cada curso da pasta 'banco vetorial'."""
+        """Carrega os dataframes de metadados de cada curso e as matrizes numpy de embeddings."""
         courses = [
             "Estatística (Bacharel)",
             "Matemática (Bacharel)",
@@ -126,23 +127,32 @@ class SinformRAG:
             c_dir = BASE_DIR / course / "banco vetorial"
             parquet_file = c_dir / "banco_vetorial.parquet"
             json_file = c_dir / "banco_vetorial.json"
+            npy_file = c_dir / "embeddings.npy"
             
+            df = None
             if parquet_file.exists():
                 try:
                     df = pd.read_parquet(parquet_file)
-                    self.vector_dbs[course] = df
-                    print(f"[Vector Store] Carregado Parquet de {course}: {len(df)} chunks")
-                    continue
                 except Exception as e:
                     print(f"[Vector Store Error] Falha ao ler parquet de {course}: {e}")
                     
-            if json_file.exists():
+            if df is None and json_file.exists():
                 try:
                     df = pd.read_json(json_file)
-                    self.vector_dbs[course] = df
-                    print(f"[Vector Store] Carregado JSON de {course}: {len(df)} chunks")
                 except Exception as e:
                     print(f"[Vector Store Error] Falha ao ler json de {course}: {e}")
+
+            if df is not None:
+                self.vector_dbs[course] = df
+                print(f"[Vector Store] Carregado DataFrame de {course}: {len(df)} chunks")
+
+            if npy_file.exists():
+                try:
+                    emb_matrix = np.load(npy_file)
+                    self.embeddings_dbs[course] = emb_matrix
+                    print(f"[Vector Store] Carregada Matriz de Embeddings de {course}: {emb_matrix.shape}")
+                except Exception as e:
+                    print(f"[Vector Store Error] Falha ao ler embeddings.npy de {course}: {e}")
 
     def detect_prompt_injection(self, text: str) -> bool:
         lower_text = text.lower()
@@ -155,16 +165,19 @@ class SinformRAG:
     def retrieve_top_chunks(self, query: str, curso: str, top_k: int = 10) -> List[Dict[str, Any]]:
         """
         Converte a consulta em embedding via gemini-embedding-2 e calcula
-        a similaridade de cosseno com os embeddings dos fichamentos no banco vetorial do curso.
+        a similaridade de cosseno vetorizada com a matriz de embeddings do curso.
         Retorna os TOP-10 chunks mais relevantes.
         """
         df = self.vector_dbs.get(curso)
-        if df is None or len(df) == 0:
+        emb_matrix = self.embeddings_dbs.get(curso)
+
+        if df is None or len(df) == 0 or emb_matrix is None:
             # Tentar recarregar sob demanda
             self.load_all_vector_dbs()
             df = self.vector_dbs.get(curso)
-            if df is None or len(df) == 0:
-                print(f"[Retrieve Warning] Banco vetorial não encontrado para {curso}.")
+            emb_matrix = self.embeddings_dbs.get(curso)
+            if df is None or len(df) == 0 or emb_matrix is None:
+                print(f"[Retrieve Warning] Banco vetorial ou matriz de embeddings não encontrado para {curso}.")
                 return []
 
         # 1. Gerar embedding da query
@@ -182,21 +195,17 @@ class SinformRAG:
         if q_norm == 0:
             q_norm = 1.0
 
-        similarities = []
-        for idx, row in df.iterrows():
-            emb = np.array(row["embedding"], dtype=np.float32)
-            emb_norm = np.linalg.norm(emb)
-            if emb_norm == 0:
-                emb_norm = 1.0
-            cos_sim = float(np.dot(q_vec, emb) / (q_norm * emb_norm))
-            similarities.append(cos_sim)
+        # Similaridade de cosseno vetorizada (alta performance)
+        dot_products = np.dot(emb_matrix, q_vec)
+        matrix_norms = np.linalg.norm(emb_matrix, axis=1)
+        matrix_norms[matrix_norms == 0] = 1.0
+        similarities = dot_products / (q_norm * matrix_norms)
 
-        df_copy = df.copy()
-        df_copy["similarity"] = similarities
-        df_sorted = df_copy.sort_values(by="similarity", ascending=False).head(top_k)
+        top_indices = np.argsort(similarities)[::-1][:top_k]
 
         top_chunks = []
-        for _, r in df_sorted.iterrows():
+        for idx in top_indices:
+            r = df.iloc[idx]
             top_chunks.append({
                 "curso": r.get("curso", curso),
                 "nome_documento": r.get("nome do documento", ""),
@@ -205,7 +214,7 @@ class SinformRAG:
                 "fichamento": r.get("fichamento/resumo", ""),
                 "quantidade_tokens": r.get("quantidade de tokens", 0),
                 "pdf_chunk_path": r.get("pdf_chunk_path", ""),
-                "similarity": r.get("similarity", 0.0)
+                "similarity": float(similarities[idx])
             })
 
         return top_chunks

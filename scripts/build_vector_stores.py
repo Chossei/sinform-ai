@@ -278,15 +278,30 @@ def build_vector_store():
                 
         df = pd.DataFrame(course_rows)
         
-        # Salvar Parquet
-        parquet_path = banco_vetorial_dir / "banco_vetorial.parquet"
-        df.to_parquet(parquet_path, index=False)
-        print(f"\n-> Salvo Parquet: {parquet_path} ({len(df)} registros)")
+        # Salvar matriz de embeddings dedicada
+        if "embedding" in df.columns:
+            emb_matrix = np.array(df["embedding"].tolist(), dtype=np.float32)
+            npy_path = banco_vetorial_dir / "embeddings.npy"
+            np.save(npy_path, emb_matrix)
+            print(f"-> Salvo Embeddings NumPy: {npy_path} {emb_matrix.shape}")
+            clean_df = df.drop(columns=["embedding"])
+        else:
+            clean_df = df
         
-        # Salvar JSON
+        # Salvar Parquet limpo
+        parquet_path = banco_vetorial_dir / "banco_vetorial.parquet"
+        clean_df.to_parquet(parquet_path, index=False)
+        print(f"-> Salvo Parquet: {parquet_path} ({len(clean_df)} registros)")
+        
+        # Salvar JSON limpo e legível
         json_path = banco_vetorial_dir / "banco_vetorial.json"
-        df.to_json(json_path, orient="records", indent=2, force_ascii=False)
+        clean_df.to_json(json_path, orient="records", indent=2, force_ascii=False)
         print(f"-> Salvo JSON: {json_path}")
+
+        # Salvar CSV para fácil inspeção
+        csv_path = banco_vetorial_dir / "banco_vetorial.csv"
+        clean_df.to_csv(csv_path, index=False, encoding="utf-8")
+        print(f"-> Salvo CSV: {csv_path}")
         
     print("\n" + "=" * 70)
     print("RELATÓRIO CONSOLIDADO DE EXECUÇÃO E CUSTOS")
