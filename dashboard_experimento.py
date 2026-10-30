@@ -268,95 +268,47 @@ def render_experiment_dashboard():
         lambda r: f"{r['documento']} (n={r['n']})", axis=1
     )
 
-    # Linha 2: Dois gráficos embaixo (Probabilidade Média por Documento + Acurácia >= 0,9 por Documento)
-    col_bot_left, col_bot_right = st.columns(2, gap="medium")
+    # Linha 2: Gráfico de Acurácia >= 0,9 por Documento (3 modelos agrupados, altura expandida)
+    with st.container(border=True):
+        st.markdown('<div class="exp-subtitle">Acurácia ≥ 0,9 por Documento (%)</div>', unsafe_allow_html=True)
 
-    with col_bot_left:
-        with st.container(border=True):
-            st.markdown('<div class="exp-subtitle">Probabilidade Média por Documento (%)</div>', unsafe_allow_html=True)
+        df_doc_acc = pd.concat([
+            pd.DataFrame({
+                "Documento": doc_group["doc_com_n"],
+                "Modelo": "RAG Fichamento (Emb)",
+                "Acurácia (%)": doc_group["ac90_emb"],
+                "n": doc_group["n"]
+            }),
+            pd.DataFrame({
+                "Documento": doc_group["doc_com_n"],
+                "Modelo": "RAG Fichamento (JEV)",
+                "Acurácia (%)": doc_group["ac90_jev"],
+                "n": doc_group["n"]
+            }),
+            pd.DataFrame({
+                "Documento": doc_group["doc_com_n"],
+                "Modelo": "RAG Tradicional",
+                "Acurácia (%)": doc_group["ac90_trad"],
+                "n": doc_group["n"]
+            }),
+        ], ignore_index=True)
 
-            df_doc_prob = pd.concat([
-                pd.DataFrame({
-                    "Documento": doc_group["doc_com_n"],
-                    "Modelo": "RAG Fichamento (Emb)",
-                    "Probabilidade Média (%)": doc_group["prob_emb"],
-                    "n": doc_group["n"]
-                }),
-                pd.DataFrame({
-                    "Documento": doc_group["doc_com_n"],
-                    "Modelo": "RAG Fichamento (JEV)",
-                    "Probabilidade Média (%)": doc_group["prob_jev"],
-                    "n": doc_group["n"]
-                }),
-                pd.DataFrame({
-                    "Documento": doc_group["doc_com_n"],
-                    "Modelo": "RAG Tradicional",
-                    "Probabilidade Média (%)": doc_group["prob_trad"],
-                    "n": doc_group["n"]
-                }),
-            ], ignore_index=True)
-
-            fig_doc_prob = px.bar(
-                df_doc_prob,
-                x="Probabilidade Média (%)",
-                y="Documento",
-                color="Modelo",
-                orientation="h",
-                barmode="group",
-                color_discrete_map=COLOR_MAP,
-                text_auto=".1f",
-                hover_data={"n": True},
-                height=520
-            )
-            fig_doc_prob.update_xaxes(range=[0, 108])
-            fig_doc_prob.update_layout(
-                margin=dict(l=10, r=10, t=20, b=20),
-                yaxis_title=None,
-                legend=dict(orientation="h", yanchor="bottom", y=1.01, xanchor="right", x=1, title=None)
-            )
-            st.plotly_chart(fig_doc_prob, use_container_width=True)
-
-    with col_bot_right:
-        with st.container(border=True):
-            st.markdown('<div class="exp-subtitle">Acurácia ≥ 0,9 por Documento (%)</div>', unsafe_allow_html=True)
-
-            df_doc_acc = pd.concat([
-                pd.DataFrame({
-                    "Documento": doc_group["doc_com_n"],
-                    "Modelo": "RAG Fichamento (Emb)",
-                    "Acurácia (%)": doc_group["ac90_emb"],
-                    "n": doc_group["n"]
-                }),
-                pd.DataFrame({
-                    "Documento": doc_group["doc_com_n"],
-                    "Modelo": "RAG Fichamento (JEV)",
-                    "Acurácia (%)": doc_group["ac90_jev"],
-                    "n": doc_group["n"]
-                }),
-                pd.DataFrame({
-                    "Documento": doc_group["doc_com_n"],
-                    "Modelo": "RAG Tradicional",
-                    "Acurácia (%)": doc_group["ac90_trad"],
-                    "n": doc_group["n"]
-                }),
-            ], ignore_index=True)
-
-            fig_doc_acc = px.bar(
-                df_doc_acc,
-                x="Acurácia (%)",
-                y="Documento",
-                color="Modelo",
-                orientation="h",
-                barmode="group",
-                color_discrete_map=COLOR_MAP,
-                text_auto=".1f",
-                hover_data={"n": True},
-                height=520
-            )
-            fig_doc_acc.update_xaxes(range=[0, 108])
-            fig_doc_acc.update_layout(
-                margin=dict(l=10, r=10, t=20, b=20),
-                yaxis_title=None,
-                legend=dict(orientation="h", yanchor="bottom", y=1.01, xanchor="right", x=1, title=None)
-            )
-            st.plotly_chart(fig_doc_acc, use_container_width=True)
+        fig_doc_acc = px.bar(
+            df_doc_acc,
+            x="Acurácia (%)",
+            y="Documento",
+            color="Modelo",
+            orientation="h",
+            barmode="group",
+            color_discrete_map=COLOR_MAP,
+            text_auto=".1f",
+            hover_data={"n": True},
+            height=680
+        )
+        fig_doc_acc.update_xaxes(range=[0, 108])
+        fig_doc_acc.update_layout(
+            margin=dict(l=10, r=10, t=20, b=20),
+            yaxis_title=None,
+            legend=dict(orientation="h", yanchor="bottom", y=1.01, xanchor="right", x=1, title=None)
+        )
+        st.plotly_chart(fig_doc_acc, use_container_width=True)
