@@ -301,14 +301,23 @@ def render_experiment_dashboard():
             orientation="h",
             barmode="group",
             color_discrete_map=COLOR_MAP,
-            text_auto=".1f",
             hover_data={"n": True},
-            height=680
+            height=820
         )
-        fig_doc_acc.update_xaxes(range=[0, 108])
+        fig_doc_acc.update_traces(
+            texttemplate="%{x:.1f}%",
+            textposition="outside",
+            constraintext="none",
+            cliponaxis=False,
+            textfont=dict(size=15)
+        )
+        fig_doc_acc.update_xaxes(range=[0, 114])
         fig_doc_acc.update_layout(
-            margin=dict(l=10, r=10, t=20, b=20),
+            bargap=0.22,
+            bargroupgap=0.08,
+            margin=dict(l=10, r=25, t=20, b=20),
             yaxis_title=None,
+            yaxis=dict(tickfont=dict(size=13)),
             legend=dict(orientation="h", yanchor="bottom", y=1.01, xanchor="right", x=1, title=None)
         )
         st.plotly_chart(fig_doc_acc, use_container_width=True)
