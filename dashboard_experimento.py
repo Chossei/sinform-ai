@@ -298,26 +298,29 @@ def render_experiment_dashboard():
             x="Acurácia (%)",
             y="Documento",
             color="Modelo",
+            facet_col="Modelo",
+            facet_col_spacing=0.04,
             orientation="h",
-            barmode="group",
             color_discrete_map=COLOR_MAP,
             hover_data={"n": True},
-            height=820
+            height=540
         )
         fig_doc_acc.update_traces(
             texttemplate="%{x:.1f}%",
             textposition="outside",
             constraintext="none",
             cliponaxis=False,
-            textfont=dict(size=15)
+            textfont=dict(size=14)
         )
-        fig_doc_acc.update_xaxes(range=[0, 114])
+        fig_doc_acc.update_xaxes(range=[0, 122], title_text="Acurácia (%)")
+        fig_doc_acc.for_each_annotation(
+            lambda a: a.update(text=f"<b>{a.text.split('=')[-1]}</b>", font=dict(size=14))
+        )
         fig_doc_acc.update_layout(
-            bargap=0.22,
-            bargroupgap=0.08,
-            margin=dict(l=10, r=25, t=20, b=20),
+            bargap=0.28,
+            margin=dict(l=10, r=25, t=35, b=20),
             yaxis_title=None,
             yaxis=dict(tickfont=dict(size=13)),
-            legend=dict(orientation="h", yanchor="bottom", y=1.01, xanchor="right", x=1, title=None)
+            showlegend=False
         )
         st.plotly_chart(fig_doc_acc, use_container_width=True)
