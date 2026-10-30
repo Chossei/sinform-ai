@@ -284,59 +284,50 @@ def render_experiment_dashboard():
         lambda r: f"{r['documento']} (n={r['n']})", axis=1
     )
 
-    # Linha 2: Gráfico de Acurácia >= 0,9 por Documento (3 modelos agrupados, altura expandida)
-    with st.container(border=True):
-        st.markdown('<div class="exp-subtitle">Acurácia ≥ 0,9 por Documento (%)</div>', unsafe_allow_html=True)
+    # Linha 2: Grid 1x3 com 3 gráficos separados (um para cada tipo de RAG)
+    col_doc_emb, col_doc_jev, col_doc_trad = st.columns(3, gap="medium")
 
-        df_doc_acc = pd.concat([
-            pd.DataFrame({
-                "Documento": doc_group["doc_com_n"],
-                "Modelo": "RAG Fichamento (Emb)",
-                "Acurácia (%)": doc_group["ac90_emb"],
-                "n": doc_group["n"]
-            }),
-            pd.DataFrame({
-                "Documento": doc_group["doc_com_n"],
-                "Modelo": "RAG Fichamento (JEV)",
-                "Acurácia (%)": doc_group["ac90_jev"],
-                "n": doc_group["n"]
-            }),
-            pd.DataFrame({
-                "Documento": doc_group["doc_com_n"],
-                "Modelo": "RAG Tradicional",
-                "Acurácia (%)": doc_group["ac90_trad"],
-                "n": doc_group["n"]
-            }),
-        ], ignore_index=True)
+    modelos_doc = [
+        (col_doc_emb, "RAG Fichamento (Emb)", "ac90_emb", COLOR_MAP["RAG Fichamento (Emb)"]),
+        (col_doc_jev, "RAG Fichamento (JEV)", "ac90_jev", COLOR_MAP["RAG Fichamento (JEV)"]),
+        (col_doc_trad, "RAG Tradicional", "ac90_trad", COLOR_MAP["RAG Tradicional"]),
+    ]
 
-        fig_doc_acc = px.bar(
-            df_doc_acc,
-            x="Acurácia (%)",
-            y="Documento",
-            color="Modelo",
-            facet_col="Modelo",
-            facet_col_spacing=0.04,
-            orientation="h",
-            color_discrete_map=COLOR_MAP,
-            hover_data={"n": True},
-            height=540
-        )
-        fig_doc_acc.update_traces(
-            texttemplate="%{x:.1f}%",
-            textposition="outside",
-            constraintext="none",
-            cliponaxis=False,
-            textfont=dict(size=14)
-        )
-        fig_doc_acc.update_xaxes(range=[0, 122], title_text="Acurácia (%)")
-        fig_doc_acc.for_each_annotation(
-            lambda a: a.update(text=f"<b>{a.text.split('=')[-1]}</b>", font=dict(size=14))
-        )
-        fig_doc_acc.update_layout(
-            bargap=0.28,
-            margin=dict(l=10, r=25, t=35, b=20),
-            yaxis_title=None,
-            yaxis=dict(tickfont=dict(size=13)),
-            showlegend=False
-        )
-        st.plotly_chart(fig_doc_acc, use_container_width=True)
+    for col_target, nome_modelo, col_metrica, cor_barra in modelos_doc:
+        with col_target:
+            with st.container(border=True):
+                st.markdown(
+                    f'<div class="exp-subtitle">Acurácia ≥ 0,9 por Documento · {nome_modelo}</div>',
+                    unsafe_allow_html=True
+                )
+                df_single = pd.DataFrame({
+                    "Documento": doc_group["doc_com_n"],
+                    "Acurácia (%)": doc_group[col_metrica],
+                    "n": doc_group["n"]
+                })
+
+                fig_single = px.bar(
+                    df_single,
+                    x="Acurácia (%)",
+                    y="Documento",
+                    orientation="h",
+                    hover_data={"n": True},
+                    height=520
+                )
+                fig_single.update_traces(
+                    marker_color=cor_barra,
+                    texttemplate="%{x:.1f}%",
+                    textposition="outside",
+                    constraintext="none",
+                    cliponaxis=False,
+                    textfont=dict(size=13)
+                )
+                fig_single.update_xaxes(range=[0, 125])
+                fig_single.update_layout(
+                    bargap=0.25,
+                    margin=dict(l=10, r=25, t=15, b=20),
+                    yaxis_title=None,
+                    yaxis=dict(tickfont=dict(size=11)),
+                    showlegend=False
+                )
+                st.plotly_chart(fig_single, use_container_width=True)
