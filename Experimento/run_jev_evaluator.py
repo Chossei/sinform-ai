@@ -242,6 +242,9 @@ def save_progress(df: pd.DataFrame, checkpoint_data: dict, log_entry: dict):
                 if "prob_fichamento" in item and item["prob_fichamento"] is not None:
                     df.at[idx_int, "prob_acerto_jev_fichamento"] = item["prob_fichamento"]
                     df.at[idx_int, "acerto_95_fichamento"] = bool(item["acerto_95_fichamento"])
+                if "prob_fichamento_jev" in item and item["prob_fichamento_jev"] is not None:
+                    df.at[idx_int, "prob_acerto_jev_fichamento_jev"] = item["prob_fichamento_jev"]
+                    df.at[idx_int, "acerto_95_fichamento_jev"] = bool(item["acerto_95_fichamento_jev"])
 
         df.to_excel(EXCEL_BACKUP_LATEST, index=False)
         df.to_excel(DATASET_PATH, index=False)
@@ -262,10 +265,10 @@ def run_jev_evaluation(max_workers: int = 5):
 
     df = pd.read_excel(DATASET_PATH)
 
-    for col in ["prob_acerto_jev_tradicional", "prob_acerto_jev_fichamento"]:
+    for col in ["prob_acerto_jev_tradicional", "prob_acerto_jev_fichamento", "prob_acerto_jev_fichamento_jev"]:
         if col not in df.columns:
             df[col] = None
-    for col in ["acerto_95_tradicional", "acerto_95_fichamento"]:
+    for col in ["acerto_95_tradicional", "acerto_95_fichamento", "acerto_95_fichamento_jev"]:
         if col not in df.columns:
             df[col] = None
         df[col] = df[col].astype(object)
@@ -284,6 +287,10 @@ def run_jev_evaluation(max_workers: int = 5):
             p_f = float(row["prob_acerto_jev_fichamento"])
             entry["prob_fichamento"] = p_f
             entry["acerto_95_fichamento"] = bool(p_f >= 0.95)
+        if pd.notna(row.get("prob_acerto_jev_fichamento_jev")) and "prob_fichamento_jev" not in entry:
+            p_fj = float(row["prob_acerto_jev_fichamento_jev"])
+            entry["prob_fichamento_jev"] = p_fj
+            entry["acerto_95_fichamento_jev"] = bool(p_fj >= 0.95)
         if entry:
             checkpoint[idx_str] = entry
 
@@ -291,10 +298,16 @@ def run_jev_evaluation(max_workers: int = 5):
         entry = checkpoint.get(str(idx), {})
         has_trad_resp = pd.notna(df.at[idx, "resposta_modelo_rag_tradicional"]) and str(df.at[idx, "resposta_modelo_rag_tradicional"]).strip() != ""
         has_fich_resp = pd.notna(df.at[idx, "resposta_modelo_rag_fichamento"]) and str(df.at[idx, "resposta_modelo_rag_fichamento"]).strip() != ""
+        has_fich_jev_resp = (
+            "resposta_modelo_rag_fichamento_jev" in df.columns
+            and pd.notna(df.at[idx, "resposta_modelo_rag_fichamento_jev"])
+            and str(df.at[idx, "resposta_modelo_rag_fichamento_jev"]).strip() != ""
+        )
 
         need_trad = has_trad_resp and ("prob_tradicional" not in entry or entry["prob_tradicional"] is None)
         need_fich = has_fich_resp and ("prob_fichamento" not in entry or entry["prob_fichamento"] is None)
-        return need_trad or need_fich
+        need_fich_jev = has_fich_jev_resp and ("prob_fichamento_jev" not in entry or entry["prob_fichamento_jev"] is None)
+        return need_trad or need_fich or need_fich_jev
 
     pending_indices = [idx for idx in range(len(df)) if is_row_pending(idx)]
     logger.info(f"Total de linhas na planilha: {len(df)} | Pendentes de avaliação JEV: {len(pending_indices)}")
@@ -308,12 +321,14 @@ def run_jev_evaluation(max_workers: int = 5):
         gabarito = str(df.at[row_idx, "resposta_gabarito"]).strip()
         resp_trad = df.at[row_idx, "resposta_modelo_rag_tradicional"]
         resp_fich = df.at[row_idx, "resposta_modelo_rag_fichamento"]
+        resp_fich_jev = df.at[row_idx, "resposta_modelo_rag_fichamento_jev"] if "resposta_modelo_rag_fichamento_jev" in df.columns else None
 
         with _SAVE_LOCK:
             entry = dict(checkpoint.get(str(row_idx), {}))
 
         meta_trad = {}
         meta_fich = {}
+        meta_fich_jev = {}
 
         # Avaliar RAG Tradicional se disponível e ainda não avaliado
         if pd.notna(resp_trad) and str(resp_trad).strip() != "" and entry.get("prob_tradicional") is None:
@@ -337,6 +352,17 @@ def run_jev_evaluation(max_workers: int = 5):
             entry["prob_fichamento"] = prob_f
             entry["acerto_95_fichamento"] = ac95_f
 
+        # Avaliar RAG Fichamento JEV se disponível e ainda não avaliado
+        if pd.notna(resp_fich_jev) and str(resp_fich_jev).strip() != "" and entry.get("prob_fichamento_jev") is None:
+            prob_fj, ac95_fj, meta_fich_jev = evaluate_with_jev(
+                pergunta=pergunta,
+                resposta_gabarito=gabarito,
+                resposta_modelo=str(resp_fich_jev).strip(),
+                rag_label="RAG_Fichamento_JEV"
+            )
+            entry["prob_fichamento_jev"] = prob_fj
+            entry["acerto_95_fichamento_jev"] = ac95_fj
+
         log_entry = {
             "timestamp": datetime.now().isoformat(),
             "question_index": row_idx,
@@ -345,8 +371,11 @@ def run_jev_evaluation(max_workers: int = 5):
             "acerto_95_tradicional": entry.get("acerto_95_tradicional"),
             "prob_acerto_jev_fichamento": entry.get("prob_fichamento"),
             "acerto_95_fichamento": entry.get("acerto_95_fichamento"),
+            "prob_acerto_jev_fichamento_jev": entry.get("prob_fichamento_jev"),
+            "acerto_95_fichamento_jev": entry.get("acerto_95_fichamento_jev"),
             "meta_tradicional": meta_trad,
-            "meta_fichamento": meta_fich
+            "meta_fichamento": meta_fich,
+            "meta_fichamento_jev": meta_fich_jev
         }
 
         with _SAVE_LOCK:
@@ -355,8 +384,9 @@ def run_jev_evaluation(max_workers: int = 5):
         save_progress(df, checkpoint, log_entry)
         logger.info(
             f"[JEV Q-{row_idx + 1:03d}/100] "
-            f"Tradicional: prob={entry.get('prob_tradicional')} (95%={entry.get('acerto_95_tradicional')}) | "
-            f"Fichamento: prob={entry.get('prob_fichamento')} (95%={entry.get('acerto_95_fichamento')})"
+            f"Tradicional: prob={entry.get('prob_tradicional')} | "
+            f"Fichamento: prob={entry.get('prob_fichamento')} | "
+            f"Fichamento_JEV: prob={entry.get('prob_fichamento_jev')} (95%={entry.get('acerto_95_fichamento_jev')})"
         )
         return row_idx
 
@@ -377,17 +407,22 @@ def run_jev_evaluation(max_workers: int = 5):
     df_final = pd.read_excel(DATASET_PATH)
     trad_acertos = df_final["acerto_95_tradicional"].dropna()
     fich_acertos = df_final["acerto_95_fichamento"].dropna()
+    fich_jev_acertos = df_final["acerto_95_fichamento_jev"].dropna()
 
     logger.info("=" * 70)
-    logger.info(f" AVALIAÇÃO JEV 1.14 CONCLUÍDA | Processadas: {completed} | Falhas: {failed}")
+    logger.info(f" AVALIAÇÃO JEV 1.14 CONCLUÍDA | Processadas: 100 | Falhas: {failed}")
     if len(trad_acertos) > 0:
         acc_trad = (trad_acertos == True).mean() * 100
         prob_mean_trad = df_final["prob_acerto_jev_tradicional"].dropna().mean()
-        logger.info(f" -> RAG Tradicional: Acurácia (>=0.95) = {acc_trad:.2f}% | Prob Média = {prob_mean_trad:.4f}")
+        logger.info(f" -> RAG Tradicional:     Acurácia (>=0.95) = {acc_trad:.2f}% | Prob Média = {prob_mean_trad:.4f}")
     if len(fich_acertos) > 0:
         acc_fich = (fich_acertos == True).mean() * 100
         prob_mean_fich = df_final["prob_acerto_jev_fichamento"].dropna().mean()
-        logger.info(f" -> RAG Fichamento:  Acurácia (>=0.95) = {acc_fich:.2f}% | Prob Média = {prob_mean_fich:.4f}")
+        logger.info(f" -> RAG Fichamento Emb:  Acurácia (>=0.95) = {acc_fich:.2f}% | Prob Média = {prob_mean_fich:.4f}")
+    if len(fich_jev_acertos) > 0:
+        acc_fj = (fich_jev_acertos == True).mean() * 100
+        prob_mean_fj = df_final["prob_acerto_jev_fichamento_jev"].dropna().mean()
+        logger.info(f" -> RAG Fichamento JEV:  Acurácia (>=0.95) = {acc_fj:.2f}% | Prob Média = {prob_mean_fj:.4f}")
     logger.info("=" * 70)
 
 

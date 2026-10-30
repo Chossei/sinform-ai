@@ -1,0 +1,573 @@
+2026-10-30 02:13:25,141 [INFO] [Fichamentos Carregados] Curso: Estatística (Bacharel) | Total de Fichamentos: 29
+2026-10-30 02:13:44,771 [INFO] ======================================================================
+2026-10-30 02:13:44,772 [INFO]  INICIANDO EXECUÇÃO: RAG FICHAMENTO COM SELETOR JEV 1.14 (Estatística)
+2026-10-30 02:13:44,772 [INFO] ======================================================================
+2026-10-30 02:13:44,775 [INFO] Backup inicial criado em: C:\Users\choss\OneDrive\Documentos\Aplicação - Sinform AI\Experimento\backups\Conjunto_de_Testes_pre_rag_fichamento_jev_20261030_021344.xlsx
+2026-10-30 02:13:45,280 [INFO] Total de perguntas: 100 | Já concluídas: 0 | Pendentes: 100
+2026-10-30 02:13:46,267 [INFO] [Fichamentos Carregados] Curso: Estatística (Bacharel) | Total de Fichamentos: 29
+2026-10-30 02:13:46,268 [INFO] [Q-001/100] Iniciando consulta | Doc: Guia_Orientacoes_Registros_Academicos_2025
+2026-10-30 02:13:46,287 [INFO] [Q-002/100] Iniciando consulta | Doc: Guia_Orientacoes_Registros_Academicos_2025
+2026-10-30 02:13:46,290 [INFO] [Q-003/100] Iniciando consulta | Doc: Guia_Orientacoes_Registros_Academicos_2025
+2026-10-30 02:13:52,195 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:13:53,896 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:13:55,776 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/upload/v1beta/files "HTTP/1.1 200 OK"
+2026-10-30 02:13:57,173 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/upload/v1beta/files?upload_id=AFy3sg0OvFEuZgN_WPNuVfDOJS-oGe7hdYdcGc0ygoOUOlufwDVCumfCsNz1YM27CEdph7dYbLOrr-xRerFZPNnlL3ZA7JM3YaMh4qtW0Frhfg&upload_protocol=resumable "HTTP/1.1 200 OK"
+2026-10-30 02:13:57,821 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/upload/v1beta/files "HTTP/1.1 200 OK"
+2026-10-30 02:13:59,135 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/upload/v1beta/files?upload_id=AFy3sg0ABjfwL4SEK_AGqYApr5Q5VnJxabUXOYrxRvi57Z7aC8WY5inP_i3FYp0p6CCCyn-W4xMUWx0LJ_qj9ChPAXCL3kW3Y0uOvZRN23avDA&upload_protocol=resumable "HTTP/1.1 200 OK"
+2026-10-30 02:13:59,792 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/upload/v1beta/files "HTTP/1.1 200 OK"
+2026-10-30 02:14:01,170 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/upload/v1beta/files?upload_id=AFy3sg13KIBn6IA18Ey5X87Fgudwy77faAAk_siKdKCZr7ABbqDiuzA1X3glecc67MVgl4lGVX0R1pp6I7z5In9-gFQV5qJpuBkZHJwsjLomQQ&upload_protocol=resumable "HTTP/1.1 200 OK"
+2026-10-30 02:14:01,290 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:14:01,912 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/upload/v1beta/files "HTTP/1.1 200 OK"
+2026-10-30 02:14:03,820 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/upload/v1beta/files?upload_id=AFy3sg22Q1GDlFmFYtlb8R2QYXkYbkXwJBnq9LdeBPS_Zhs9gKPgRaV1ojPbp6THSseCEYzFqFno39wPfHGJPhMe5NL8wFjPjo7Vrw3Yq8bOFy8&upload_protocol=resumable "HTTP/1.1 200 OK"
+2026-10-30 02:14:04,514 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/upload/v1beta/files "HTTP/1.1 200 OK"
+2026-10-30 02:14:05,676 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/upload/v1beta/files?upload_id=AFy3sg3EAaqmht7vynqXcb0yal9l8YkKapdxZ4rhtagdeZ_5En7lrojdI4Uph-P_6b0cUSzYZjk_yCOtVHyaJF1uda8BZzppo1YqCcyFa25Gqg&upload_protocol=resumable "HTTP/1.1 200 OK"
+2026-10-30 02:14:06,425 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/upload/v1beta/files "HTTP/1.1 200 OK"
+2026-10-30 02:14:07,797 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/upload/v1beta/files?upload_id=AFy3sg3Fj3UVwjF7FV5CzY7qM3wSYly4NLiOKEIYIwRjjTMueCn6Bovwrs_UhYJ4Uw-vi2yplyDKCJwByhjyWXBcKprZ7Is9vsczMoyF0ls7cA&upload_protocol=resumable "HTTP/1.1 200 OK"
+2026-10-30 02:14:08,521 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/upload/v1beta/files "HTTP/1.1 200 OK"
+2026-10-30 02:14:10,069 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/upload/v1beta/files?upload_id=AFy3sg0TqvdFXC9KJssUDZcmsWYa5PwQyyqxqDRsogleFT7Um7l2hn2BdHELJrZCA13oj_DnOavX2heVqs4pEFGZbXconDFFlxuGNbsNwunVxeM&upload_protocol=resumable "HTTP/1.1 200 OK"
+2026-10-30 02:14:11,132 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/upload/v1beta/files "HTTP/1.1 200 OK"
+2026-10-30 02:14:12,695 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/upload/v1beta/files?upload_id=AFy3sg0YKHgMLDqpsgyjGoZj7PV5Ad8WBjm4gsrhOb0pPpueMJPrfXy8i4gAySYDUcDbv3cAHGMqhwEapnpm-3Qt3CdjX9TlGABdNUDkyo8P3Ws&upload_protocol=resumable "HTTP/1.1 200 OK"
+2026-10-30 02:14:13,964 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/upload/v1beta/files "HTTP/1.1 200 OK"
+2026-10-30 02:14:15,792 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/upload/v1beta/files?upload_id=AFy3sg3HyxHymTQJNkRZr8lbD9VbvVFTw5BwQsed5I2Yk5Ep-DxM_rdpfDZadgQjsalznRW-wr9ft6gY0meYVMqE5Op65QXeD7wbiQ8xmGQE-mQ&upload_protocol=resumable "HTTP/1.1 200 OK"
+2026-10-30 02:14:16,873 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/upload/v1beta/files "HTTP/1.1 200 OK"
+2026-10-30 02:14:17,971 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/upload/v1beta/files?upload_id=AFy3sg0_ffk65sIjL1vyAhcwFHMFj1vnVYINq4TyGsInWozQufNm_KbQoeY-Yc-i1xb8mJ1iC3UfoCZsjIX1AwILBtcyYXfYL-LnpJ1WqnnGTA&upload_protocol=resumable "HTTP/1.1 200 OK"
+2026-10-30 02:14:19,123 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/upload/v1beta/files "HTTP/1.1 200 OK"
+2026-10-30 02:14:20,532 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/upload/v1beta/files?upload_id=AFy3sg2BRiwXwJKCHhFe_y5aYzzQo0lPPR7p5DRpkGicrAS4SSll7hblFOEAFrASpPMxrjCkqNj94vcMTzM8rhJnLC8GQowt2tzTHMA3_5c7GyQ&upload_protocol=resumable "HTTP/1.1 200 OK"
+2026-10-30 02:14:21,268 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/upload/v1beta/files "HTTP/1.1 200 OK"
+2026-10-30 02:14:22,738 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/upload/v1beta/files?upload_id=AFy3sg0heI0RYrQ2w8OiE3MkHRaz3AxODlkn3Jq__5PL093TO-hNum1JU33LJkcNn-eke6sM-PBu-E4P6T5cK3DNt2wdedmpejUU-j34iZ90Eg&upload_protocol=resumable "HTTP/1.1 200 OK"
+2026-10-30 02:14:22,744 [INFO] AFC is enabled with max remote calls: 10.
+2026-10-30 02:14:24,113 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/upload/v1beta/files "HTTP/1.1 200 OK"
+2026-10-30 02:14:25,350 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/upload/v1beta/files?upload_id=AFy3sg2k_Oq4JBThNtNTDbAGqOv1jpKQ7oecVgAZ3q1NJ9-CD-ci7XBzex7VDDWIT-8M59845fZ3Rueg8cEfDqZGdm4D1cnYLce_fItA-mWtRbQ&upload_protocol=resumable "HTTP/1.1 200 OK"
+2026-10-30 02:14:26,995 [INFO] AFC is enabled with max remote calls: 10.
+2026-10-30 02:14:27,930 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:14:28,038 [INFO] [Q-002/100] Concluída em 41.65s | RPM=4/15 | RPD=4/500 | JEV Top1=0.76..Top10=0.08
+2026-10-30 02:14:28,040 [INFO] [Q-004/100] Iniciando consulta | Doc: Guia_Orientacoes_Registros_Academicos_2025
+2026-10-30 02:14:31,239 [INFO] AFC is enabled with max remote calls: 10.
+2026-10-30 02:14:32,899 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:14:33,082 [INFO] [Q-001/100] Concluída em 46.64s | RPM=5/15 | RPD=5/500 | JEV Top1=0.46..Top10=0.11
+2026-10-30 02:14:33,083 [INFO] [Q-005/100] Iniciando consulta | Doc: Guia_Orientacoes_Registros_Academicos_2025
+2026-10-30 02:14:34,192 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:14:34,296 [INFO] [Q-003/100] Concluída em 47.9s | RPM=6/15 | RPD=6/500 | JEV Top1=0.31..Top10=0.06
+2026-10-30 02:14:34,297 [INFO] [Q-006/100] Iniciando consulta | Doc: Guia_Orientacoes_Registros_Academicos_2025
+2026-10-30 02:14:36,209 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:14:39,809 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/upload/v1beta/files "HTTP/1.1 200 OK"
+2026-10-30 02:14:40,970 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/upload/v1beta/files?upload_id=AFy3sg0FIRXNNCdfRmqIH-RTuAIoJj5m0P0MVp8QxVXECyH8YwlMNuWqZOMfwqIlulFJLajQjVtnvLq_BJuClLJh1uvoqgFmF7irQ4hgpn66le4&upload_protocol=resumable "HTTP/1.1 200 OK"
+2026-10-30 02:14:41,815 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:14:42,101 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/upload/v1beta/files "HTTP/1.1 200 OK"
+2026-10-30 02:14:43,215 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/upload/v1beta/files?upload_id=AFy3sg0kK0hiRZvImquCwAmcjAnzLuiBAPsXCEbmkDa5w3OdlVv0ngo9QipE8VQ3rznRVsD9u0zk01Z7I9c2vb2bm0c4M8JVxI5K7KPYtVPHDQ&upload_protocol=resumable "HTTP/1.1 200 OK"
+2026-10-30 02:14:44,356 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/upload/v1beta/files "HTTP/1.1 200 OK"
+2026-10-30 02:14:45,237 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:14:45,661 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/upload/v1beta/files?upload_id=AFy3sg1vzmb289sJQ27pkQYGnTIVfhFVef7I56O3WKYgwQFbhEAr2wxBp3C677qonTDT2BXNlYLFTfv0dlM8mBgoeaYsjJkEyI2V2mvN4aCIbA&upload_protocol=resumable "HTTP/1.1 200 OK"
+2026-10-30 02:14:46,320 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/upload/v1beta/files "HTTP/1.1 200 OK"
+2026-10-30 02:14:47,935 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/upload/v1beta/files?upload_id=AFy3sg0Tbkh5p7C11MQg9HpsnapCx-5z5cwh8eQb5BssW15OtpI019KwO52ju971vTmzLWfl1qNjiXD47wyBO5MXdExYEZr8pzdKZY9_YWTRxA&upload_protocol=resumable "HTTP/1.1 200 OK"
+2026-10-30 02:14:48,236 [INFO] AFC is enabled with max remote calls: 10.
+2026-10-30 02:14:49,263 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/upload/v1beta/files "HTTP/1.1 200 OK"
+2026-10-30 02:14:50,427 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/upload/v1beta/files?upload_id=AFy3sg0tRa7NnKuAKs5ooEhP3uSMqMZVY7Bf4sRwVO6kNIcb10V9Cle1wH-8GSnMyI8SDgU1ECggqkER2txKPLnP__GD1EE1y7pbXyIdyIQZRkc&upload_protocol=resumable "HTTP/1.1 200 OK"
+2026-10-30 02:14:51,058 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/upload/v1beta/files "HTTP/1.1 200 OK"
+2026-10-30 02:14:52,089 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/upload/v1beta/files?upload_id=AFy3sg3jqYsmUA9YhUgtf6eyAuFtf-1izMhfgfdD9sRe-8oClAToMj57yu-OkhPmdMYj1_61nVhM-EfQDV3NTwIWulnpYG9C1hypy_49XM3Z_v4&upload_protocol=resumable "HTTP/1.1 200 OK"
+2026-10-30 02:14:52,489 [INFO] AFC is enabled with max remote calls: 10.
+2026-10-30 02:14:53,264 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/upload/v1beta/files "HTTP/1.1 200 OK"
+2026-10-30 02:14:54,548 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/upload/v1beta/files?upload_id=AFy3sg34fsm4FW29XM4f5q8-tl3DsynqgiNRfaGJazNB6Et1Idcm20p8r_s8qaPgrUA3oLv1q61S1prtUIIYnvJ5bPhRKckHYE5L1vgu33HNcA&upload_protocol=resumable "HTTP/1.1 200 OK"
+2026-10-30 02:14:56,739 [INFO] AFC is enabled with max remote calls: 10.
+2026-10-30 02:14:56,800 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:14:56,841 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:14:56,913 [INFO] [Q-005/100] Concluída em 23.72s | RPM=9/15 | RPD=11/500 | JEV Top1=0.46..Top10=0.08
+2026-10-30 02:14:56,914 [INFO] [Q-007/100] Iniciando consulta | Doc: Guia_Orientacoes_Registros_Academicos_2025
+2026-10-30 02:14:57,018 [INFO] [Q-004/100] Concluída em 28.8s | RPM=9/15 | RPD=10/500 | JEV Top1=0.96..Top10=0.09
+2026-10-30 02:14:57,018 [INFO] [Q-008/100] Iniciando consulta | Doc: Guia_Orientacoes_Registros_Academicos_2025
+2026-10-30 02:15:01,155 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:15:01,254 [INFO] [Q-006/100] Concluída em 26.86s | RPM=9/15 | RPD=12/500 | JEV Top1=0.87..Top10=0.11
+2026-10-30 02:15:01,254 [INFO] [Q-009/100] Iniciando consulta | Doc: Guia_Orientacoes_Registros_Academicos_2025
+2026-10-30 02:15:05,371 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:15:09,493 [INFO] AFC is enabled with max remote calls: 10.
+2026-10-30 02:15:10,024 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:15:12,280 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:15:12,412 [INFO] [Q-008/100] Concluída em 15.26s | RPM=12/15 | RPD=15/500 | JEV Top1=0.71..Top10=0.05
+2026-10-30 02:15:12,412 [INFO] [Q-010/100] Iniciando consulta | Doc: Guia_Orientacoes_Registros_Academicos_2025
+2026-10-30 02:15:13,851 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/upload/v1beta/files "HTTP/1.1 200 OK"
+2026-10-30 02:15:14,568 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:15:15,431 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/upload/v1beta/files?upload_id=AFy3sg0uwtqyUKSkV4Q1orKmLQ3iQU-cgWha_coqH808lRBpKnEaSrNNUst9_kyqaDsLXL1Lkk5XTqP43-tuo49nYBtMYvITeDXMVERIXLxXhw&upload_protocol=resumable "HTTP/1.1 200 OK"
+2026-10-30 02:15:17,756 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/upload/v1beta/files "HTTP/1.1 200 OK"
+2026-10-30 02:15:17,989 [INFO] AFC is enabled with max remote calls: 10.
+2026-10-30 02:15:19,456 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/upload/v1beta/files?upload_id=AFy3sg0jpYBBfWYcQN5nrb8q9bBsgi0JjyDjaGhUsLCqO745MfH8AdIe1y6o4aH2txuiLjQLz0bxdmV2tOWESTsej8lMkePo5yZCUFPcSI7G9w&upload_protocol=resumable "HTTP/1.1 200 OK"
+2026-10-30 02:15:20,025 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/upload/v1beta/files "HTTP/1.1 200 OK"
+2026-10-30 02:15:21,609 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/upload/v1beta/files?upload_id=AFy3sg0oipg5B9nb2FV1jA6tRQmt1cM_l8dckYHTV5skPt9RckRNU9tdXEeJmzgQrB6T3-5iY4a1m1r95y0VXiqepw6YEYulNVnON5DeRXdaTA&upload_protocol=resumable "HTTP/1.1 200 OK"
+2026-10-30 02:15:22,942 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:15:23,164 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:15:23,351 [INFO] [Q-007/100] Concluída em 26.31s | RPM=14/15 | RPD=17/500 | JEV Top1=0.86..Top10=0.06
+2026-10-30 02:15:23,352 [INFO] [Q-011/100] Iniciando consulta | Doc: Guia_Orientacoes_Registros_Academicos_2025
+2026-10-30 02:15:26,489 [INFO] AFC is enabled with max remote calls: 10.
+2026-10-30 02:15:26,655 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/upload/v1beta/files "HTTP/1.1 200 OK"
+2026-10-30 02:15:28,414 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/upload/v1beta/files?upload_id=AFy3sg0RZcOy4n_jXze8Do73gwnugEJbBasQYxaI2uJEBnRGa1ATpdDXM8CMW7LhjlhrmWvSTMmuDvzXT8GPjRAZUr_u6ElKkvIZ_iQTd-dYKvk&upload_protocol=resumable "HTTP/1.1 200 OK"
+2026-10-30 02:15:32,026 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:15:33,086 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:15:33,201 [INFO] [Q-009/100] Concluída em 31.83s | RPM=15/15 | RPD=19/500 | JEV Top1=0.93..Top10=0.13
+2026-10-30 02:15:33,201 [INFO] [Q-012/100] Iniciando consulta | Doc: Guia_Orientacoes_Registros_Academicos_2025
+2026-10-30 02:15:35,356 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/upload/v1beta/files "HTTP/1.1 200 OK"
+2026-10-30 02:15:36,267 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:15:36,998 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/upload/v1beta/files?upload_id=AFy3sg23F4YHDZpJQhg7PYIFT2V-ht2Z_-VfBtaV9BEtlqOzLgtGx0ZRKvmML99iv0O0J2wc4lOvfZH9yUMCp3DjxyM6-5niReCRKHVPE6cu9Wc&upload_protocol=resumable "HTTP/1.1 200 OK"
+2026-10-30 02:15:39,235 [INFO] AFC is enabled with max remote calls: 10.
+2026-10-30 02:15:39,675 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/upload/v1beta/files "HTTP/1.1 200 OK"
+2026-10-30 02:15:40,979 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/upload/v1beta/files?upload_id=AFy3sg1H23Aza9JYBQM65Vi33azd3m0qxSCMEK6pcky0a1MGZ0hLVdOdLbs_pa3v5E9_8F6pvmm-C90yeBn76ux7IJIsIi_auq6M1u8dtT0hZ60&upload_protocol=resumable "HTTP/1.1 200 OK"
+2026-10-30 02:15:43,482 [INFO] AFC is enabled with max remote calls: 10.
+2026-10-30 02:15:47,734 [INFO] AFC is enabled with max remote calls: 10.
+2026-10-30 02:15:48,196 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-10-30 02:15:48,732 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:15:48,859 [INFO] [Q-010/100] Concluída em 36.34s | RPM=15/15 | RPD=22/500 | JEV Top1=0.84..Top10=0.1
+2026-10-30 02:15:48,860 [INFO] [Q-013/100] Iniciando consulta | Doc: Guia_Orientacoes_Registros_Academicos_2025
+2026-10-30 02:15:49,242 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:15:49,361 [INFO] [Q-012/100] Concluída em 16.05s | RPM=15/15 | RPD=23/500 | JEV Top1=0.62..Top10=0.16
+2026-10-30 02:15:49,361 [INFO] [Q-014/100] Iniciando consulta | Doc: Guia_Orientacoes_Registros_Academicos_2025
+2026-10-30 02:15:52,910 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:15:59,092 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:16:00,492 [INFO] AFC is enabled with max remote calls: 10.
+2026-10-30 02:16:04,015 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:16:04,131 [INFO] [Q-013/100] Concluída em 15.16s | RPM=15/15 | RPD=27/500 | JEV Top1=0.76..Top10=0.09
+2026-10-30 02:16:04,133 [INFO] [Q-015/100] Iniciando consulta | Doc: Guia_Orientacoes_Registros_Academicos_2025
+2026-10-30 02:16:04,745 [INFO] AFC is enabled with max remote calls: 10.
+2026-10-30 02:16:07,888 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:16:08,108 [INFO] [Q-014/100] Concluída em 18.53s | RPM=15/15 | RPD=28/500 | JEV Top1=0.95..Top10=0.11
+2026-10-30 02:16:08,109 [INFO] [Q-016/100] Iniciando consulta | Doc: Guia_Orientacoes_Registros_Academicos_2025
+2026-10-30 02:16:11,340 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:16:15,375 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/upload/v1beta/files "HTTP/1.1 200 OK"
+2026-10-30 02:16:16,799 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:16:17,284 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/upload/v1beta/files?upload_id=AFy3sg1HtqTFmGgJuQEjR-yBvNv2R_2wKA4BERCYMHJaskemprNXdBlbal6dSJ0xdyJNZ8IN9uVoT38mevrPw8K0rc4HVDBpEsgQczL_xBduoTA&upload_protocol=resumable "HTTP/1.1 200 OK"
+2026-10-30 02:16:18,508 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:16:21,735 [INFO] AFC is enabled with max remote calls: 10.
+2026-10-30 02:16:25,984 [INFO] AFC is enabled with max remote calls: 10.
+2026-10-30 02:16:26,463 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:16:26,927 [INFO] [Q-011/100] Concluída em 63.11s | RPM=15/15 | RPD=32/500 | JEV Top1=0.91..Top10=0.11
+2026-10-30 02:16:26,927 [INFO] [Q-017/100] Iniciando consulta | Doc: Guia_Orientacoes_Registros_Academicos_2025
+2026-10-30 02:16:29,277 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:16:29,402 [INFO] [Q-016/100] Concluída em 21.17s | RPM=15/15 | RPD=33/500 | JEV Top1=0.86..Top10=0.18
+2026-10-30 02:16:29,402 [INFO] [Q-018/100] Iniciando consulta | Doc: Guia_Orientacoes_Registros_Academicos_2025
+2026-10-30 02:16:33,088 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:16:37,017 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:16:38,802 [INFO] AFC is enabled with max remote calls: 10.
+2026-10-30 02:16:42,932 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:16:43,051 [INFO] [Q-018/100] Concluída em 13.53s | RPM=15/15 | RPD=36/500 | JEV Top1=0.73..Top10=0.07
+2026-10-30 02:16:43,051 [INFO] [Q-019/100] Iniciando consulta | Doc: Instrucao_Normativa_006_2025_Trancamento_TCC
+2026-10-30 02:16:45,631 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:16:47,298 [INFO] AFC is enabled with max remote calls: 10.
+2026-10-30 02:16:51,553 [INFO] AFC is enabled with max remote calls: 10.
+2026-10-30 02:16:51,651 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:16:51,765 [INFO] [Q-017/100] Concluída em 24.73s | RPM=15/15 | RPD=38/500 | JEV Top1=0.96..Top10=0.12
+2026-10-30 02:16:51,766 [INFO] [Q-020/100] Iniciando consulta | Doc: Instrucao_Normativa_006_2025_Trancamento_TCC
+2026-10-30 02:16:58,964 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:16:58,987 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:16:59,357 [INFO] [Q-019/100] Concluída em 15.94s | RPM=15/15 | RPD=39/500 | JEV Top1=0.98..Top10=0.11
+2026-10-30 02:16:59,358 [INFO] [Q-021/100] Iniciando consulta | Doc: Instrucao_Normativa_006_2025_Trancamento_TCC
+2026-10-30 02:17:00,048 [INFO] AFC is enabled with max remote calls: 10.
+2026-10-30 02:17:03,713 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/upload/v1beta/files "HTTP/1.1 200 OK"
+2026-10-30 02:17:04,888 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:17:05,005 [INFO] [Q-015/100] Concluída em 60.76s | RPM=15/15 | RPD=41/500 | JEV Top1=0.93..Top10=0.11
+2026-10-30 02:17:05,006 [INFO] [Q-022/100] Iniciando consulta | Doc: Projeto_Pedagogico_Estatistica_Bacharelado
+2026-10-30 02:17:05,233 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:17:05,672 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/upload/v1beta/files?upload_id=AFy3sg21D7V8jVNN3R5ObUEpNUCJJnEq1JPy1rhvvg-vd1tLTk2_Dcf8mPKUUX2dzeG075kyPx7d_B59la2ntbCxJIVkYr06Ze5JbrHWjDl9xRM&upload_protocol=resumable "HTTP/1.1 200 OK"
+2026-10-30 02:17:10,606 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:17:12,817 [INFO] AFC is enabled with max remote calls: 10.
+2026-10-30 02:17:17,063 [INFO] AFC is enabled with max remote calls: 10.
+2026-10-30 02:17:17,776 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:17:17,892 [INFO] [Q-021/100] Concluída em 18.42s | RPM=15/15 | RPD=44/500 | JEV Top1=0.97..Top10=0.16
+2026-10-30 02:17:17,893 [INFO] [Q-023/100] Iniciando consulta | Doc: Projeto_Pedagogico_Estatistica_Bacharelado
+2026-10-30 02:17:21,901 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:17:22,021 [INFO] [Q-020/100] Concluída em 30.14s | RPM=15/15 | RPD=45/500 | JEV Top1=0.97..Top10=0.12
+2026-10-30 02:17:22,022 [INFO] [Q-024/100] Iniciando consulta | Doc: Projeto_Pedagogico_Estatistica_Bacharelado
+2026-10-30 02:17:25,314 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:17:25,609 [INFO] AFC is enabled with max remote calls: 10.
+2026-10-30 02:17:28,243 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:17:28,363 [INFO] [Q-022/100] Concluída em 23.24s | RPM=15/15 | RPD=47/500 | JEV Top1=0.97..Top10=0.05
+2026-10-30 02:17:28,363 [INFO] [Q-025/100] Iniciando consulta | Doc: Regulamento_Academico_Graduacao_UFBA
+2026-10-30 02:17:31,716 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:17:36,978 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:17:38,359 [INFO] AFC is enabled with max remote calls: 10.
+2026-10-30 02:17:42,616 [INFO] AFC is enabled with max remote calls: 10.
+2026-10-30 02:17:43,237 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:17:43,363 [INFO] [Q-024/100] Concluída em 21.22s | RPM=15/15 | RPD=50/500 | JEV Top1=0.97..Top10=0.19
+2026-10-30 02:17:43,364 [INFO] [Q-026/100] Iniciando consulta | Doc: Regulamento_Academico_Graduacao_UFBA
+2026-10-30 02:17:46,866 [INFO] AFC is enabled with max remote calls: 10.
+2026-10-30 02:17:48,480 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:17:48,600 [INFO] [Q-025/100] Concluída em 20.12s | RPM=15/15 | RPD=51/500 | JEV Top1=0.97..Top10=0.11
+2026-10-30 02:17:48,601 [INFO] [Q-027/100] Iniciando consulta | Doc: Regulamento_Academico_Graduacao_UFBA
+2026-10-30 02:17:51,251 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:17:51,368 [INFO] [Q-023/100] Concluída em 33.36s | RPM=15/15 | RPD=52/500 | JEV Top1=0.95..Top10=0.07
+2026-10-30 02:17:51,369 [INFO] [Q-028/100] Iniciando consulta | Doc: Resolucao_01_2018_Trancamento_e_Permanencia
+2026-10-30 02:17:55,928 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:17:58,656 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:17:59,614 [INFO] AFC is enabled with max remote calls: 10.
+2026-10-30 02:18:06,800 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:18:08,173 [INFO] AFC is enabled with max remote calls: 10.
+2026-10-30 02:18:12,427 [INFO] AFC is enabled with max remote calls: 10.
+2026-10-30 02:18:25,283 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:18:25,402 [INFO] [Q-026/100] Concluída em 41.92s | RPM=15/15 | RPD=55/500 | JEV Top1=0.96..Top10=0.11
+2026-10-30 02:18:25,403 [INFO] [Q-029/100] Iniciando consulta | Doc: Resolucao_01_2018_Trancamento_e_Permanencia
+2026-10-30 02:18:26,650 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:18:27,881 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:18:28,194 [INFO] [Q-027/100] Concluída em 39.28s | RPM=15/15 | RPD=58/500 | JEV Top1=0.96..Top10=0.14
+2026-10-30 02:18:28,196 [INFO] [Q-030/100] Iniciando consulta | Doc: Resolucao_01_2018_Trancamento_e_Permanencia
+2026-10-30 02:18:29,487 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:18:29,614 [INFO] [Q-028/100] Concluída em 38.12s | RPM=15/15 | RPD=57/500 | JEV Top1=0.95..Top10=0.1
+2026-10-30 02:18:29,614 [INFO] [Q-031/100] Iniciando consulta | Doc: Resolucao_01_2018_Trancamento_e_Permanencia
+2026-10-30 02:18:31,916 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:18:38,167 [INFO] AFC is enabled with max remote calls: 10.
+2026-10-30 02:18:40,882 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:18:42,471 [INFO] AFC is enabled with max remote calls: 10.
+2026-10-30 02:18:44,641 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:18:44,773 [INFO] [Q-029/100] Concluída em 19.25s | RPM=13/15 | RPD=62/500 | JEV Top1=0.98..Top10=0.12
+2026-10-30 02:18:44,773 [INFO] [Q-032/100] Iniciando consulta | Doc: Resolucao_01_2018_Trancamento_e_Permanencia
+2026-10-30 02:18:46,723 [INFO] AFC is enabled with max remote calls: 10.
+2026-10-30 02:18:48,531 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:18:48,652 [INFO] [Q-030/100] Concluída em 20.34s | RPM=13/15 | RPD=63/500 | JEV Top1=0.97..Top10=0.13
+2026-10-30 02:18:48,652 [INFO] [Q-033/100] Iniciando consulta | Doc: Resolucao_02_2018_Exame_Conhecimento_Previo
+2026-10-30 02:18:54,100 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:18:54,221 [INFO] [Q-031/100] Concluída em 24.49s | RPM=13/15 | RPD=64/500 | JEV Top1=0.97..Top10=0.17
+2026-10-30 02:18:54,221 [INFO] [Q-034/100] Iniciando consulta | Doc: Resolucao_02_2018_Exame_Conhecimento_Previo
+2026-10-30 02:18:54,289 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:19:00,003 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:19:03,722 [INFO] AFC is enabled with max remote calls: 10.
+2026-10-30 02:19:03,767 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:19:07,966 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:19:07,995 [INFO] AFC is enabled with max remote calls: 10.
+2026-10-30 02:19:08,096 [INFO] [Q-033/100] Concluída em 19.32s | RPM=13/15 | RPD=68/500 | JEV Top1=0.82..Top10=0.09
+2026-10-30 02:19:08,097 [INFO] [Q-035/100] Iniciando consulta | Doc: Resolucao_02_2018_Exame_Conhecimento_Previo
+2026-10-30 02:19:12,236 [INFO] AFC is enabled with max remote calls: 10.
+2026-10-30 02:19:12,285 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:19:12,404 [INFO] [Q-032/100] Concluída em 27.51s | RPM=13/15 | RPD=69/500 | JEV Top1=0.97..Top10=0.15
+2026-10-30 02:19:12,404 [INFO] [Q-036/100] Iniciando consulta | Doc: Resolucao_03_2025_Atividades_Complementares_SIGAA
+2026-10-30 02:19:17,238 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:19:18,178 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:19:18,356 [INFO] [Q-034/100] Concluída em 24.01s | RPM=13/15 | RPD=70/500 | JEV Top1=0.94..Top10=0.1
+2026-10-30 02:19:18,357 [INFO] [Q-037/100] Iniciando consulta | Doc: Resolucao_03_2025_Atividades_Complementares_SIGAA
+2026-10-30 02:19:24,726 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:19:26,774 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:19:29,405 [INFO] AFC is enabled with max remote calls: 10.
+2026-10-30 02:19:33,656 [INFO] AFC is enabled with max remote calls: 10.
+2026-10-30 02:19:36,730 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:19:36,858 [INFO] [Q-035/100] Concluída em 28.64s | RPM=15/15 | RPD=74/500 | JEV Top1=0.96..Top10=0.11
+2026-10-30 02:19:36,860 [INFO] [Q-038/100] Iniciando consulta | Doc: Resolucao_03_2025_Atividades_Complementares_SIGAA
+2026-10-30 02:19:37,907 [INFO] AFC is enabled with max remote calls: 10.
+2026-10-30 02:19:42,697 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:19:42,813 [INFO] [Q-037/100] Concluída em 24.34s | RPM=15/15 | RPD=76/500 | JEV Top1=0.93..Top10=0.11
+2026-10-30 02:19:42,814 [INFO] [Q-039/100] Iniciando consulta | Doc: Resolucao_03_2025_Atividades_Complementares_SIGAA
+2026-10-30 02:19:43,982 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:19:48,966 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:19:49,274 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:19:49,420 [INFO] [Q-036/100] Concluída em 36.89s | RPM=15/15 | RPD=75/500 | JEV Top1=0.92..Top10=0.05
+2026-10-30 02:19:49,420 [INFO] [Q-040/100] Iniciando consulta | Doc: Resolucao_03_2025_Atividades_Complementares_SIGAA
+2026-10-30 02:19:50,691 [INFO] AFC is enabled with max remote calls: 10.
+2026-10-30 02:19:52,789 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/upload/v1beta/files "HTTP/1.1 200 OK"
+2026-10-30 02:19:54,616 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/upload/v1beta/files?upload_id=AFy3sg0KqN_Yc-MKBN_NyZJrZ4p5VwIFZYKVC5sTEBqhU0Jhsu1S-mdmazvQ4oQX8NSe9t_Sns5kB7BMsR1VJUceeC5Z2bayN-ohjmO7_m1etg&upload_protocol=resumable "HTTP/1.1 200 OK"
+2026-10-30 02:19:58,530 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:19:58,654 [INFO] [Q-038/100] Concluída em 21.67s | RPM=15/15 | RPD=79/500 | JEV Top1=0.97..Top10=0.08
+2026-10-30 02:19:58,655 [INFO] [Q-041/100] Iniciando consulta | Doc: Resolucao_03_2025_Atividades_Complementares_SIGAA
+2026-10-30 02:19:59,187 [INFO] AFC is enabled with max remote calls: 10.
+2026-10-30 02:20:02,135 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:20:05,036 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:20:05,159 [INFO] [Q-039/100] Concluída em 22.22s | RPM=15/15 | RPD=81/500 | JEV Top1=0.97..Top10=0.15
+2026-10-30 02:20:05,161 [INFO] [Q-042/100] Iniciando consulta | Doc: Resolucao_03_2025_Atividades_Complementares_SIGAA
+2026-10-30 02:20:07,721 [INFO] AFC is enabled with max remote calls: 10.
+2026-10-30 02:20:11,622 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:20:16,217 [INFO] AFC is enabled with max remote calls: 10.
+2026-10-30 02:20:16,796 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:20:16,919 [INFO] [Q-040/100] Concluída em 27.38s | RPM=15/15 | RPD=83/500 | JEV Top1=0.97..Top10=0.08
+2026-10-30 02:20:16,920 [INFO] [Q-043/100] Iniciando consulta | Doc: Resolucao_03_2025_Atividades_Complementares_SIGAA
+2026-10-30 02:20:19,674 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:20:23,347 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:20:24,779 [INFO] AFC is enabled with max remote calls: 10.
+2026-10-30 02:20:24,833 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:20:24,960 [INFO] [Q-041/100] Concluída em 26.19s | RPM=15/15 | RPD=85/500 | JEV Top1=0.74..Top10=0.09
+2026-10-30 02:20:24,961 [INFO] [Q-044/100] Iniciando consulta | Doc: Resolucao_03_2025_Atividades_Complementares_SIGAA
+2026-10-30 02:20:29,030 [INFO] AFC is enabled with max remote calls: 10.
+2026-10-30 02:20:33,070 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:20:33,202 [INFO] [Q-042/100] Concluída em 27.91s | RPM=15/15 | RPD=87/500 | JEV Top1=0.96..Top10=0.09
+2026-10-30 02:20:33,203 [INFO] [Q-045/100] Iniciando consulta | Doc: Resolucao_03_2025_Atividades_Complementares_SIGAA
+2026-10-30 02:20:33,282 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:20:33,405 [INFO] [Q-043/100] Concluída em 16.37s | RPM=15/15 | RPD=88/500 | JEV Top1=0.95..Top10=0.07
+2026-10-30 02:20:33,407 [INFO] [Q-046/100] Iniciando consulta | Doc: Resolucao_03_2025_Atividades_Complementares_SIGAA
+2026-10-30 02:20:37,245 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:20:41,783 [INFO] AFC is enabled with max remote calls: 10.
+2026-10-30 02:20:42,606 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:20:46,270 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:20:46,398 [INFO] [Q-044/100] Concluída em 21.31s | RPM=15/15 | RPD=91/500 | JEV Top1=0.97..Top10=0.09
+2026-10-30 02:20:46,399 [INFO] [Q-047/100] Iniciando consulta | Doc: Resolucao_03_2025_Atividades_Complementares_SIGAA
+2026-10-30 02:20:47,149 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:20:51,502 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:20:54,535 [INFO] AFC is enabled with max remote calls: 10.
+2026-10-30 02:20:58,783 [INFO] AFC is enabled with max remote calls: 10.
+2026-10-30 02:21:02,673 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:21:02,825 [INFO] [Q-047/100] Concluída em 16.28s | RPM=15/15 | RPD=94/500 | JEV Top1=0.97..Top10=0.07
+2026-10-30 02:21:02,827 [INFO] [Q-048/100] Iniciando consulta | Doc: Resolucao_03_2025_Atividades_Complementares_SIGAA
+2026-10-30 02:21:03,030 [INFO] AFC is enabled with max remote calls: 10.
+2026-10-30 02:21:03,840 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:21:03,965 [INFO] [Q-046/100] Concluída em 30.44s | RPM=15/15 | RPD=95/500 | JEV Top1=0.91..Top10=0.09
+2026-10-30 02:21:03,965 [INFO] [Q-049/100] Iniciando consulta | Doc: Resolucao_03_2025_Atividades_Complementares_SIGAA
+2026-10-30 02:21:08,436 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:21:08,564 [INFO] [Q-045/100] Concluída em 35.24s | RPM=15/15 | RPD=96/500 | JEV Top1=0.94..Top10=0.06
+2026-10-30 02:21:08,564 [INFO] [Q-050/100] Iniciando consulta | Doc: Resolucao_03_2025_Atividades_Complementares_SIGAA
+2026-10-30 02:21:09,246 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:21:13,124 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:21:15,785 [INFO] AFC is enabled with max remote calls: 10.
+2026-10-30 02:21:21,302 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:21:21,416 [INFO] [Q-049/100] Concluída em 17.34s | RPM=15/15 | RPD=99/500 | JEV Top1=0.89..Top10=0.1
+2026-10-30 02:21:21,418 [INFO] [Q-051/100] Iniciando consulta | Doc: Resolucao_03_2025_Atividades_Complementares_SIGAA
+2026-10-30 02:21:23,618 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:21:25,290 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:21:28,533 [INFO] AFC is enabled with max remote calls: 10.
+2026-10-30 02:21:32,782 [INFO] AFC is enabled with max remote calls: 10.
+2026-10-30 02:21:34,528 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:21:34,655 [INFO] [Q-048/100] Concluída em 31.71s | RPM=15/15 | RPD=102/500 | JEV Top1=0.9..Top10=0.1
+2026-10-30 02:21:34,658 [INFO] [Q-052/100] Iniciando consulta | Doc: Resolucao_05_2024_TCC_Estatistica
+2026-10-30 02:21:39,659 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:21:40,339 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:21:40,603 [INFO] [Q-050/100] Concluída em 31.78s | RPM=15/15 | RPD=103/500 | JEV Top1=0.96..Top10=0.05
+2026-10-30 02:21:40,604 [INFO] [Q-053/100] Iniciando consulta | Doc: Resolucao_05_2024_TCC_Estatistica
+2026-10-30 02:21:41,297 [INFO] AFC is enabled with max remote calls: 10.
+2026-10-30 02:21:47,491 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:21:47,619 [INFO] [Q-051/100] Concluída em 26.08s | RPM=15/15 | RPD=105/500 | JEV Top1=0.96..Top10=0.04
+2026-10-30 02:21:47,619 [INFO] [Q-054/100] Iniciando consulta | Doc: Resolucao_05_2024_TCC_Estatistica
+2026-10-30 02:21:49,157 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:21:51,918 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:21:54,047 [INFO] AFC is enabled with max remote calls: 10.
+2026-10-30 02:21:58,298 [INFO] AFC is enabled with max remote calls: 10.
+2026-10-30 02:22:01,912 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:22:02,047 [INFO] [Q-053/100] Concluída em 21.32s | RPM=15/15 | RPD=108/500 | JEV Top1=0.93..Top10=0.06
+2026-10-30 02:22:02,047 [INFO] [Q-055/100] Iniciando consulta | Doc: Resolucao_05_2024_TCC_Estatistica
+2026-10-30 02:22:03,588 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:22:05,853 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:22:05,982 [INFO] [Q-052/100] Concluída em 31.2s | RPM=15/15 | RPD=109/500 | JEV Top1=0.96..Top10=0.08
+2026-10-30 02:22:05,982 [INFO] [Q-056/100] Iniciando consulta | Doc: Resolucao_05_2024_TCC_Estatistica
+2026-10-30 02:22:06,797 [INFO] AFC is enabled with max remote calls: 10.
+2026-10-30 02:22:11,861 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:22:11,993 [INFO] [Q-054/100] Concluída em 24.24s | RPM=15/15 | RPD=111/500 | JEV Top1=0.95..Top10=0.09
+2026-10-30 02:22:11,993 [INFO] [Q-057/100] Iniciando consulta | Doc: Resolucao_05_2024_TCC_Estatistica
+2026-10-30 02:22:12,418 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:22:15,299 [INFO] AFC is enabled with max remote calls: 10.
+2026-10-30 02:22:19,561 [INFO] AFC is enabled with max remote calls: 10.
+2026-10-30 02:22:20,617 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:22:20,791 [INFO] [Q-056/100] Concluída em 14.64s | RPM=15/15 | RPD=113/500 | JEV Top1=0.89..Top10=0.12
+2026-10-30 02:22:20,791 [INFO] [Q-058/100] Iniciando consulta | Doc: Resolucao_05_2024_TCC_Estatistica
+2026-10-30 02:22:24,144 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:22:24,271 [INFO] [Q-055/100] Concluída em 22.11s | RPM=15/15 | RPD=114/500 | JEV Top1=0.79..Top10=0.16
+2026-10-30 02:22:24,271 [INFO] [Q-059/100] Iniciando consulta | Doc: Resolucao_05_2024_TCC_Estatistica
+2026-10-30 02:22:26,059 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:22:29,939 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:22:32,313 [INFO] AFC is enabled with max remote calls: 10.
+2026-10-30 02:22:40,825 [INFO] AFC is enabled with max remote calls: 10.
+2026-10-30 02:22:43,343 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:22:45,866 [INFO] AFC is enabled with max remote calls: 10.
+2026-10-30 02:22:48,847 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:22:48,965 [INFO] [Q-058/100] Concluída em 28.06s | RPM=15/15 | RPD=117/500 | JEV Top1=0.73..Top10=0.14
+2026-10-30 02:22:48,966 [INFO] [Q-060/100] Iniciando consulta | Doc: Resolucao_05_2024_TCC_Estatistica
+2026-10-30 02:22:53,459 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:22:53,577 [INFO] [Q-059/100] Concluída em 29.19s | RPM=15/15 | RPD=119/500 | JEV Top1=0.95..Top10=0.06
+2026-10-30 02:22:53,578 [INFO] [Q-061/100] Iniciando consulta | Doc: Resolucao_05_2024_TCC_Estatistica
+2026-10-30 02:22:58,681 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:22:58,878 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:22:59,103 [INFO] [Q-057/100] Concluída em 46.98s | RPM=14/15 | RPD=120/500 | JEV Top1=0.91..Top10=0.06
+2026-10-30 02:22:59,103 [INFO] [Q-062/100] Iniciando consulta | Doc: Resolucao_05_2024_TCC_Estatistica
+2026-10-30 02:22:59,169 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:23:03,219 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:23:03,504 [INFO] AFC is enabled with max remote calls: 10.
+2026-10-30 02:23:07,761 [INFO] AFC is enabled with max remote calls: 10.
+2026-10-30 02:23:07,968 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:23:08,092 [INFO] [Q-061/100] Concluída em 14.39s | RPM=14/15 | RPD=124/500 | JEV Top1=0.52..Top10=0.12
+2026-10-30 02:23:08,093 [INFO] [Q-063/100] Iniciando consulta | Doc: Resolucao_05_2024_TCC_Estatistica
+2026-10-30 02:23:12,000 [INFO] AFC is enabled with max remote calls: 10.
+2026-10-30 02:23:13,060 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:23:13,194 [INFO] [Q-062/100] Concluída em 13.96s | RPM=14/15 | RPD=125/500 | JEV Top1=0.97..Top10=0.08
+2026-10-30 02:23:13,194 [INFO] [Q-064/100] Iniciando consulta | Doc: Resolucao_05_2024_TCC_Estatistica
+2026-10-30 02:23:17,156 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:23:19,542 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:23:19,668 [INFO] [Q-060/100] Concluída em 30.58s | RPM=14/15 | RPD=126/500 | JEV Top1=0.96..Top10=0.07
+2026-10-30 02:23:19,669 [INFO] [Q-065/100] Iniciando consulta | Doc: Resolucao_05_2024_TCC_Estatistica
+2026-10-30 02:23:21,342 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:23:24,753 [INFO] AFC is enabled with max remote calls: 10.
+2026-10-30 02:23:28,999 [INFO] AFC is enabled with max remote calls: 10.
+2026-10-30 02:23:30,122 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:23:30,247 [INFO] [Q-064/100] Concluída em 16.93s | RPM=14/15 | RPD=129/500 | JEV Top1=0.95..Top10=0.08
+2026-10-30 02:23:30,248 [INFO] [Q-066/100] Iniciando consulta | Doc: Resolucao_05_2024_TCC_Estatistica
+2026-10-30 02:23:33,483 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:23:33,662 [INFO] [Q-063/100] Concluída em 25.39s | RPM=14/15 | RPD=130/500 | JEV Top1=0.96..Top10=0.08
+2026-10-30 02:23:33,663 [INFO] [Q-067/100] Iniciando consulta | Doc: Resolucao_05_2024_TCC_Estatistica
+2026-10-30 02:23:34,239 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:23:38,391 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:23:43,028 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:23:46,011 [INFO] AFC is enabled with max remote calls: 10.
+2026-10-30 02:23:50,252 [INFO] AFC is enabled with max remote calls: 10.
+2026-10-30 02:23:52,516 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:23:52,629 [INFO] [Q-065/100] Concluída em 32.85s | RPM=14/15 | RPD=134/500 | JEV Top1=0.85..Top10=0.06
+2026-10-30 02:23:52,630 [INFO] [Q-068/100] Iniciando consulta | Doc: Resolucao_05_2024_TCC_Estatistica
+2026-10-30 02:23:54,500 [INFO] AFC is enabled with max remote calls: 10.
+2026-10-30 02:24:00,097 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:24:00,226 [INFO] [Q-066/100] Concluída em 29.85s | RPM=14/15 | RPD=136/500 | JEV Top1=0.91..Top10=0.07
+2026-10-30 02:24:00,227 [INFO] [Q-069/100] Iniciando consulta | Doc: Resolucao_05_2024_TCC_Estatistica
+2026-10-30 02:24:02,634 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:24:06,373 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:24:07,278 [INFO] AFC is enabled with max remote calls: 10.
+2026-10-30 02:24:11,534 [INFO] AFC is enabled with max remote calls: 10.
+2026-10-30 02:24:13,942 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:24:14,075 [INFO] [Q-068/100] Concluída em 21.32s | RPM=15/15 | RPD=139/500 | JEV Top1=0.97..Top10=0.06
+2026-10-30 02:24:14,076 [INFO] [Q-070/100] Iniciando consulta | Doc: Resolucao_05_2024_TCC_Estatistica
+2026-10-30 02:24:18,699 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:24:19,901 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:24:20,391 [INFO] [Q-067/100] Concluída em 46.24s | RPM=14/15 | RPD=135/500 | JEV Top1=0.88..Top10=0.06
+2026-10-30 02:24:20,393 [INFO] [Q-071/100] Iniciando consulta | Doc: Resolucao_05_2024_TCC_Estatistica
+2026-10-30 02:24:21,531 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:24:21,661 [INFO] [Q-069/100] Concluída em 21.31s | RPM=15/15 | RPD=140/500 | JEV Top1=0.96..Top10=0.06
+2026-10-30 02:24:21,662 [INFO] [Q-072/100] Iniciando consulta | Doc: Resolucao_05_2024_TCC_Estatistica
+2026-10-30 02:24:25,883 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:24:28,891 [INFO] AFC is enabled with max remote calls: 10.
+2026-10-30 02:24:28,949 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:24:33,145 [INFO] AFC is enabled with max remote calls: 10.
+2026-10-30 02:24:35,806 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:24:35,980 [INFO] [Q-070/100] Concluída em 21.73s | RPM=15/15 | RPD=144/500 | JEV Top1=0.93..Top10=0.07
+2026-10-30 02:24:35,980 [INFO] [Q-073/100] Iniciando consulta | Doc: Resolucao_05_2024_TCC_Estatistica
+2026-10-30 02:24:41,651 [INFO] AFC is enabled with max remote calls: 10.
+2026-10-30 02:24:41,678 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:24:41,802 [INFO] [Q-071/100] Concluída em 21.29s | RPM=15/15 | RPD=145/500 | JEV Top1=0.94..Top10=0.08
+2026-10-30 02:24:41,803 [INFO] [Q-074/100] Iniciando consulta | Doc: Resolucao_05_2024_TCC_Estatistica
+2026-10-30 02:24:42,171 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:24:47,118 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:24:47,748 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:24:47,914 [INFO] [Q-072/100] Concluída em 26.09s | RPM=15/15 | RPD=147/500 | JEV Top1=0.95..Top10=0.08
+2026-10-30 02:24:47,914 [INFO] [Q-075/100] Iniciando consulta | Doc: Resolucoes_01_e_02_2020_Estagio_Nao_Obrigatorio_IME
+2026-10-30 02:24:50,142 [INFO] AFC is enabled with max remote calls: 10.
+2026-10-30 02:24:54,394 [INFO] AFC is enabled with max remote calls: 10.
+2026-10-30 02:24:56,730 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:24:56,883 [INFO] [Q-073/100] Concluída em 20.75s | RPM=15/15 | RPD=149/500 | JEV Top1=0.96..Top10=0.61
+2026-10-30 02:24:56,884 [INFO] [Q-076/100] Iniciando consulta | Doc: Resolucoes_01_e_02_2020_Estagio_Nao_Obrigatorio_IME
+2026-10-30 02:24:59,583 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:24:59,713 [INFO] [Q-074/100] Concluída em 17.78s | RPM=15/15 | RPD=150/500 | JEV Top1=0.96..Top10=0.47
+2026-10-30 02:24:59,714 [INFO] [Q-077/100] Iniciando consulta | Doc: Resolucoes_01_e_02_2020_Estagio_Nao_Obrigatorio_IME
+2026-10-30 02:25:03,202 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:25:04,347 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:25:04,481 [INFO] [Q-077/100] Concluída em 4.63s | RPM=15/15 | RPD=152/500 | JEV Top1=None..Top10=None
+2026-10-30 02:25:04,482 [INFO] [Q-078/100] Iniciando consulta | Doc: Resolucoes_01_e_02_2020_Estagio_Nao_Obrigatorio_IME
+2026-10-30 02:25:07,995 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:25:11,393 [INFO] AFC is enabled with max remote calls: 10.
+2026-10-30 02:25:15,648 [INFO] AFC is enabled with max remote calls: 10.
+2026-10-30 02:25:16,574 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:25:16,705 [INFO] [Q-075/100] Concluída em 28.66s | RPM=15/15 | RPD=154/500 | JEV Top1=0.97..Top10=0.21
+2026-10-30 02:25:16,706 [INFO] [Q-079/100] Iniciando consulta | Doc: Resolucoes_01_e_02_2020_Estagio_Nao_Obrigatorio_IME
+2026-10-30 02:25:19,486 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:25:19,616 [INFO] [Q-076/100] Concluída em 22.6s | RPM=15/15 | RPD=155/500 | JEV Top1=0.74..Top10=0.18
+2026-10-30 02:25:19,617 [INFO] [Q-080/100] Iniciando consulta | Doc: Resolucoes_01_e_02_2020_Estagio_Nao_Obrigatorio_IME
+2026-10-30 02:25:20,967 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:25:25,915 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:25:28,403 [INFO] AFC is enabled with max remote calls: 10.
+2026-10-30 02:25:31,349 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:25:31,482 [INFO] [Q-079/100] Concluída em 14.65s | RPM=15/15 | RPD=158/500 | JEV Top1=0.97..Top10=0.36
+2026-10-30 02:25:31,483 [INFO] [Q-081/100] Iniciando consulta | Doc: Resolucoes_01_e_02_2020_Estagio_Nao_Obrigatorio_IME
+2026-10-30 02:25:32,659 [INFO] AFC is enabled with max remote calls: 10.
+2026-10-30 02:25:35,473 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:25:35,602 [INFO] [Q-078/100] Concluída em 30.99s | RPM=15/15 | RPD=159/500 | JEV Top1=0.97..Top10=0.11
+2026-10-30 02:25:35,602 [INFO] [Q-082/100] Iniciando consulta | Doc: Resolucoes_01_e_02_2020_Estagio_Nao_Obrigatorio_IME
+2026-10-30 02:25:37,620 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:25:41,167 [INFO] AFC is enabled with max remote calls: 10.
+2026-10-30 02:25:41,488 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-10-30 02:25:45,687 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-10-30 02:25:50,458 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:25:53,913 [INFO] AFC is enabled with max remote calls: 10.
+2026-10-30 02:25:58,594 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:25:58,723 [INFO] [Q-082/100] Concluída em 23.0s | RPM=15/15 | RPD=164/500 | JEV Top1=0.96..Top10=0.12
+2026-10-30 02:25:58,724 [INFO] [Q-083/100] Iniciando consulta | Doc: Resolucoes_01_e_02_2020_Estagio_Nao_Obrigatorio_IME
+2026-10-30 02:25:59,442 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:26:02,409 [INFO] AFC is enabled with max remote calls: 10.
+2026-10-30 02:26:05,568 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:26:05,703 [INFO] [Q-080/100] Concluída em 45.96s | RPM=15/15 | RPD=166/500 | JEV Top1=0.97..Top10=0.17
+2026-10-30 02:26:05,704 [INFO] [Q-084/100] Iniciando consulta | Doc: Resolucoes_01_e_02_2020_Estagio_Nao_Obrigatorio_IME
+2026-10-30 02:26:11,870 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:26:12,602 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:26:17,891 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:26:18,031 [INFO] [Q-084/100] Concluída em 12.19s | RPM=15/15 | RPD=169/500 | JEV Top1=None..Top10=None
+2026-10-30 02:26:18,032 [INFO] [Q-085/100] Iniciando consulta | Doc: Resolucoes_01_e_02_2020_Estagio_Nao_Obrigatorio_IME
+2026-10-30 02:26:19,406 [INFO] AFC is enabled with max remote calls: 10.
+2026-10-30 02:26:23,969 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:26:24,106 [INFO] [Q-081/100] Concluída em 52.49s | RPM=15/15 | RPD=170/500 | JEV Top1=0.97..Top10=0.16
+2026-10-30 02:26:24,106 [INFO] [Q-086/100] Iniciando consulta | Doc: Resolucoes_01_e_02_2020_Estagio_Nao_Obrigatorio_IME
+2026-10-30 02:26:26,582 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:26:27,958 [INFO] AFC is enabled with max remote calls: 10.
+2026-10-30 02:26:32,210 [INFO] AFC is enabled with max remote calls: 10.
+2026-10-30 02:26:32,273 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:26:32,387 [INFO] [Q-083/100] Concluída em 33.55s | RPM=15/15 | RPD=172/500 | JEV Top1=0.97..Top10=0.13
+2026-10-30 02:26:32,389 [INFO] [Q-087/100] Iniciando consulta | Doc: Resolucoes_01_e_02_2020_Estagio_Nao_Obrigatorio_IME
+2026-10-30 02:26:35,917 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:26:36,054 [INFO] [Q-085/100] Concluída em 17.89s | RPM=15/15 | RPD=173/500 | JEV Top1=0.94..Top10=0.09
+2026-10-30 02:26:36,054 [INFO] [Q-088/100] Iniciando consulta | Doc: Resolucoes_01_e_02_2020_Estagio_Nao_Obrigatorio_IME
+2026-10-30 02:26:38,690 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:26:41,552 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:26:44,961 [INFO] AFC is enabled with max remote calls: 10.
+2026-10-30 02:26:48,417 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:26:48,555 [INFO] [Q-087/100] Concluída em 16.03s | RPM=15/15 | RPD=176/500 | JEV Top1=0.95..Top10=0.14
+2026-10-30 02:26:48,556 [INFO] [Q-089/100] Iniciando consulta | Doc: Resolucoes_01_e_02_2020_Estagio_Nao_Obrigatorio_IME
+2026-10-30 02:26:53,066 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:26:53,452 [INFO] AFC is enabled with max remote calls: 10.
+2026-10-30 02:26:57,703 [INFO] AFC is enabled with max remote calls: 10.
+2026-10-30 02:26:58,053 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:26:58,185 [INFO] [Q-088/100] Concluída em 22.0s | RPM=15/15 | RPD=178/500 | JEV Top1=0.96..Top10=0.11
+2026-10-30 02:26:58,185 [INFO] [Q-090/100] Iniciando consulta | Doc: Resolucoes_01_e_02_2020_Estagio_Nao_Obrigatorio_IME
+2026-10-30 02:27:03,702 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:27:03,843 [INFO] [Q-086/100] Concluída em 39.6s | RPM=15/15 | RPD=179/500 | JEV Top1=0.95..Top10=0.09
+2026-10-30 02:27:03,844 [INFO] [Q-091/100] Iniciando consulta | Doc: Resolucoes_01_e_02_2020_Estagio_Nao_Obrigatorio_IME
+2026-10-30 02:27:06,473 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:27:09,956 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:27:10,463 [INFO] AFC is enabled with max remote calls: 10.
+2026-10-30 02:27:15,926 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:27:16,670 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:27:17,035 [INFO] [Q-089/100] Concluída em 28.12s | RPM=15/15 | RPD=182/500 | JEV Top1=0.96..Top10=0.06
+2026-10-30 02:27:17,036 [INFO] [Q-092/100] Iniciando consulta | Doc: Resolucoes_01_e_02_2020_Estagio_Nao_Obrigatorio_IME
+2026-10-30 02:27:18,955 [INFO] AFC is enabled with max remote calls: 10.
+2026-10-30 02:27:23,204 [INFO] AFC is enabled with max remote calls: 10.
+2026-10-30 02:27:25,090 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:27:25,226 [INFO] [Q-091/100] Concluída em 21.25s | RPM=15/15 | RPD=184/500 | JEV Top1=0.82..Top10=0.14
+2026-10-30 02:27:25,226 [INFO] [Q-093/100] Iniciando consulta | Doc: Resolucoes_01_e_02_2020_Estagio_Nao_Obrigatorio_IME
+2026-10-30 02:27:26,116 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:27:26,249 [INFO] [Q-090/100] Concluída em 27.93s | RPM=15/15 | RPD=185/500 | JEV Top1=0.94..Top10=0.1
+2026-10-30 02:27:26,250 [INFO] [Q-094/100] Iniciando consulta | Doc: Resolucoes_01_e_02_2020_Estagio_Nao_Obrigatorio_IME
+2026-10-30 02:27:31,392 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:27:35,953 [INFO] AFC is enabled with max remote calls: 10.
+2026-10-30 02:27:37,019 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:27:40,937 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:27:41,055 [INFO] [Q-093/100] Concluída em 15.72s | RPM=15/15 | RPD=188/500 | JEV Top1=0.86..Top10=0.13
+2026-10-30 02:27:41,056 [INFO] [Q-095/100] Iniciando consulta | Doc: Resolucoes_01_e_02_2020_Estagio_Nao_Obrigatorio_IME
+2026-10-30 02:27:41,638 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:27:44,452 [INFO] AFC is enabled with max remote calls: 10.
+2026-10-30 02:27:48,698 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:27:48,708 [INFO] AFC is enabled with max remote calls: 10.
+2026-10-30 02:27:48,819 [INFO] [Q-094/100] Concluída em 22.45s | RPM=15/15 | RPD=190/500 | JEV Top1=0.78..Top10=0.18
+2026-10-30 02:27:48,820 [INFO] [Q-096/100] Iniciando consulta | Doc: Resolucoes_01_e_02_2020_Estagio_Nao_Obrigatorio_IME
+2026-10-30 02:27:52,855 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:27:52,996 [INFO] [Q-092/100] Concluída em 35.82s | RPM=15/15 | RPD=191/500 | JEV Top1=0.67..Top10=0.12
+2026-10-30 02:27:52,997 [INFO] [Q-097/100] Iniciando consulta | Doc: Resolucoes_01_e_02_2020_Estagio_Nao_Obrigatorio_IME
+2026-10-30 02:27:54,228 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:27:57,220 [INFO] AFC is enabled with max remote calls: 10.
+2026-10-30 02:28:02,165 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:28:02,297 [INFO] [Q-096/100] Concluída em 13.35s | RPM=15/15 | RPD=193/500 | JEV Top1=0.97..Top10=0.11
+2026-10-30 02:28:02,298 [INFO] [Q-098/100] Iniciando consulta | Doc: Resolucoes_01_e_02_2020_Estagio_Nao_Obrigatorio_IME
+2026-10-30 02:28:04,429 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:28:08,211 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:28:09,993 [INFO] AFC is enabled with max remote calls: 10.
+2026-10-30 02:28:12,674 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:28:12,806 [INFO] [Q-097/100] Concluída em 19.68s | RPM=15/15 | RPD=196/500 | JEV Top1=0.56..Top10=0.08
+2026-10-30 02:28:12,808 [INFO] [Q-099/100] Iniciando consulta | Doc: Resolucoes_01_e_02_2020_Estagio_Nao_Obrigatorio_IME
+2026-10-30 02:28:14,236 [INFO] AFC is enabled with max remote calls: 10.
+2026-10-30 02:28:19,502 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:28:19,637 [INFO] [Q-095/100] Concluída em 38.45s | RPM=15/15 | RPD=197/500 | JEV Top1=0.9..Top10=0.18
+2026-10-30 02:28:19,637 [INFO] [Q-100/100] Iniciando consulta | Doc: Resolucoes_01_e_02_2020_Estagio_Nao_Obrigatorio_IME
+2026-10-30 02:28:22,615 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:28:25,432 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:28:27,171 [INFO] AFC is enabled with max remote calls: 10.
+2026-10-30 02:28:30,863 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:28:30,999 [INFO] [Q-099/100] Concluída em 18.06s | RPM=15/15 | RPD=200/500 | JEV Top1=0.89..Top10=0.11
+2026-10-30 02:28:35,684 [INFO] AFC is enabled with max remote calls: 10.
+2026-10-30 02:28:36,181 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:28:39,380 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:28:39,514 [INFO] [Q-098/100] Concluída em 37.09s | RPM=15/15 | RPD=202/500 | JEV Top1=0.89..Top10=0.14
+2026-10-30 02:28:39,936 [INFO] AFC is enabled with max remote calls: 10.
+2026-10-30 02:28:43,527 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-10-30 02:28:43,661 [INFO] [Q-100/100] Concluída em 23.89s | RPM=15/15 | RPD=203/500 | JEV Top1=0.71..Top10=0.18
+2026-10-30 02:28:43,662 [INFO] ======================================================================
+2026-10-30 02:28:43,663 [INFO]  FIM DA EXECUÇÃO DO RAG FICHAMENTO JEV | Sucesso: 100 | Falhas: 0
+2026-10-30 02:28:43,663 [INFO]  Planilha atualizada: C:\Users\choss\OneDrive\Documentos\Aplicação - Sinform AI\Experimento\Conjunto de Testes.xlsx
+2026-10-30 02:28:43,663 [INFO]  Backup salvo em: C:\Users\choss\OneDrive\Documentos\Aplicação - Sinform AI\Experimento\backups\Conjunto_de_Testes_backup_rag_fichamento_jev.xlsx
+2026-10-30 02:28:43,663 [INFO] ======================================================================
