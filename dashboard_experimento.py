@@ -68,7 +68,17 @@ def render_experiment_dashboard():
             font-size: 0.95rem;
             line-height: 1.55;
             opacity: 0.85;
-            margin: 0;
+            margin: 0 0 0.65rem 0;
+        }
+        .exp-list {
+            font-size: 0.93rem;
+            line-height: 1.5;
+            opacity: 0.85;
+            margin: 0.35rem 0 0 0;
+            padding-left: 1.2rem;
+        }
+        .exp-list li {
+            margin-bottom: 0.25rem;
         }
         .exp-subtitle {
             font-size: 1.02rem;
@@ -153,6 +163,12 @@ def render_experiment_dashboard():
             <p class="exp-desc">
                 Para avaliar a acurácia dos métodos, elaboramos 100 perguntas distribuídas proporcionalmente à extensão dos documentos oficiais do Colegiado de Estatística. Em seguida, utilizamos o modelo TypeSafe JEV 1.14 tanto na seleção de contexto quanto para calcular a probabilidade de acerto de cada resposta gerada.
             </p>
+            <p class="exp-desc" style="margin-bottom: 0.2rem;">Foram realizados três experimentos:</p>
+            <ul class="exp-list">
+                <li>RAG tradicional com chunking simples</li>
+                <li>RAG com pré-LLM para definir os chunkings (fatias de PDFs) e embeddings sobre os fichamentos dessas fatias</li>
+                <li>RAG com pré-LLM para definir os chunkings (fatias de PDFs), mas com o modelo TypeSafe JEV 1.14 determinando as fatias a serem inseridas na janela de contexto</li>
+            </ul>
         </div>
         """, unsafe_allow_html=True)
 
