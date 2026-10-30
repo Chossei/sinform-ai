@@ -1,0 +1,11 @@
+{
+  "date": "2026-10-29",
+  "counts": {
+    "GEMINI_API_KEY::gemini-3.5-flash-lite": 237,
+    "GEMINI_API_KEY::gemini-embedding-2": 118,
+    "GEMINI_API_KEY_2::gemini-embedding-2": 167,
+    "GEMINI_API_KEY_2::gemini-3.5-flash-lite": 361,
+    "OPEN_ROUTER_API_KEY_1::typesafe/jev-1.14": 100,
+    "OPEN_ROUTER_API_KEY_2::typesafe/jev-1.14": 99
+  }
+}

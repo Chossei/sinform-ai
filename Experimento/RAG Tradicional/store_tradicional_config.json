@@ -1,0 +1,57 @@
+{
+  "created_at": "2026-10-29T02:29:26.327742",
+  "curso": "Estatística (Bacharel)",
+  "store_name": "fileSearchStores/sinformragtradicionalestati-9tmz2g5pmyx6",
+  "display_name": "sinform-rag-tradicional-estatistica-default",
+  "embedding_model": "models/gemini-embedding-2",
+  "chunking_config": "default",
+  "api_key_env": "GEMINI_API_KEY_2",
+  "total_documents": 9,
+  "documents": [
+    {
+      "documento": "Guia_Orientacoes_Registros_Academicos_2025.pdf",
+      "size_bytes": 289775,
+      "chunking": "default"
+    },
+    {
+      "documento": "Instrucao_Normativa_006_2025_Trancamento_TCC.pdf",
+      "size_bytes": 83406,
+      "chunking": "default"
+    },
+    {
+      "documento": "Projeto_Pedagogico_Estatistica_Bacharelado.pdf",
+      "size_bytes": 4473,
+      "chunking": "default"
+    },
+    {
+      "documento": "Regulamento_Academico_Graduacao_UFBA.pdf",
+      "size_bytes": 6064,
+      "chunking": "default"
+    },
+    {
+      "documento": "Resolucao_01_2018_Trancamento_e_Permanencia.pdf",
+      "size_bytes": 477533,
+      "chunking": "default"
+    },
+    {
+      "documento": "Resolucao_02_2018_Exame_Conhecimento_Previo.pdf",
+      "size_bytes": 458593,
+      "chunking": "default"
+    },
+    {
+      "documento": "Resolucao_03_2025_Atividades_Complementares_SIGAA.pdf",
+      "size_bytes": 312206,
+      "chunking": "default"
+    },
+    {
+      "documento": "Resolucao_05_2024_TCC_Estatistica.pdf",
+      "size_bytes": 196512,
+      "chunking": "default"
+    },
+    {
+      "documento": "Resolucoes_01_e_02_2020_Estagio_Nao_Obrigatorio_IME.pdf",
+      "size_bytes": 349611,
+      "chunking": "default"
+    }
+  ]
+}
