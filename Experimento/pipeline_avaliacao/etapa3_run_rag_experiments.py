@@ -101,8 +101,8 @@ class BudgetCapReachedException(Exception):
 
 MAX_GEMINI_PAID_USD = 5.00
 MAX_OPENROUTER_USD = 5.00
-_PRIOR_GEMINI_PAID_USD = 0.1932
-_PRIOR_OPENROUTER_USD = 0.2716
+_PRIOR_GEMINI_PAID_USD = 0.2661
+_PRIOR_OPENROUTER_USD = 0.7346
 
 _BUDGET_LOCK = threading.Lock()
 _GEMINI_PAID_SPENT_USD = _PRIOR_GEMINI_PAID_USD
@@ -748,6 +748,7 @@ def run_evaluation_for_question(
     needs_jev_sel = needs_jev_topk or needs_jev_livre
 
     sorted_emb_indices: List[int] = []
+    emb_score_map: Dict[int, float] = {}
     if needs_emb:
         # 1. Cálculo Embeddings para a pergunta
         print("    [Passo 1/4] Calculando embeddings da pergunta...", flush=True)
@@ -759,6 +760,7 @@ def run_evaluation_for_question(
             norms[norms == 0] = 1e-10
             sims = np.dot(emb_matrix, q_emb) / norms
             sorted_emb_indices = list(np.argsort(sims)[::-1])
+            emb_score_map = {int(i): float(sims[i]) for i in range(len(sims))}
             if use_paid_key:
                 record_gemini_paid_cost(max(10, len(pergunta) // 3) * COST_EMBEDDING_TOKEN)
         except BudgetCapReachedException:
@@ -772,6 +774,7 @@ def run_evaluation_for_question(
 
     sorted_jev_indices: List[int] = []
     true_slices_indices: List[int] = []
+    jev_score_map: Dict[int, float] = {}
     total_custo_jev_consultas = 0.0
     if needs_jev_sel:
         # 2. Consultas JEV (Uma chamada paralela para CADA fatiamento do banco vetorial)
@@ -791,6 +794,7 @@ def run_evaluation_for_question(
 
         jev_evals.sort(key=lambda x: x[2], reverse=True)
         sorted_jev_indices = [x[0] for x in jev_evals]
+        jev_score_map = {int(x[0]): float(x[2]) for x in jev_evals}
         true_slices_indices = [x[0] for x in jev_evals if x[2] > 0.50]
         if not true_slices_indices:
             true_slices_indices = [sorted_jev_indices[0]]
@@ -825,16 +829,29 @@ def run_evaluation_for_question(
 
             def upload_single_slice(idx: int):
                 sp = get_slice_path(idx)
-                if sp and to_long_path(sp).exists():
-                    clean_stem = "".join(c for c in unicodedata.normalize("NFKD", sp.stem) if not unicodedata.combining(c))
-                    safe_ascii_name = f"rag_{idx}_{int(time.time()*1000)%100000}_{re.sub(r'[^a-zA-Z0-9_.-]', '_', clean_stem)[:40]}.pdf"
+                if not sp or not to_long_path(sp).exists():
+                    return idx, None, None
+                clean_stem = "".join(c for c in unicodedata.normalize("NFKD", sp.stem) if not unicodedata.combining(c))
+                last_err = None
+                for up_attempt in range(1, 5):
+                    safe_ascii_name = f"rag_{idx}_{int(time.time()*1000)%100000}_{up_attempt}_{re.sub(r'[^a-zA-Z0-9_.-]', '_', clean_stem)[:35]}.pdf"
                     tmp = Path(tempfile.gettempdir()) / safe_ascii_name
                     try:
                         shutil.copy2(to_long_path(sp), tmp)
                         up = client.files.upload(file=str(tmp))
                         return idx, up, tmp
                     except Exception as e:
-                        print(f"      [Erro upload fatia {idx}]: {e}", flush=True)
+                        last_err = e
+                        try:
+                            tmp.unlink(missing_ok=True)
+                        except Exception:
+                            pass
+                        err_s = str(e)
+                        if "429" in err_s or "RESOURCE_EXHAUSTED" in err_s or "403" in err_s or "PERMISSION_DENIED" in err_s:
+                            break
+                        if up_attempt < 4:
+                            time.sleep(1.5 * up_attempt)
+                print(f"      [Erro upload fatia {idx}]: {last_err}", flush=True)
                 return idx, None, None
 
             with ThreadPoolExecutor(max_workers=8) as executor:
@@ -848,6 +865,39 @@ def run_evaluation_for_question(
 
     print(f"    [Passo 4/4] Executando {len(pending_configs)} configuração(ões) pendente(s) e julgamentos JEV em paralelo...", flush=True)
 
+    def _trace_slices(indices: List[int], score_map: Dict[int, float]) -> List[Dict[str, Any]]:
+        out = []
+        for idx_s in indices:
+            row_s = df_bv.iloc[idx_s]
+            out.append({
+                "bv_idx": int(idx_s),
+                "doc": str(row_s.get("nome do documento", "")),
+                "paginas": str(row_s.get("páginas", "")),
+                "score": round(float(score_map[idx_s]), 4) if idx_s in score_map else None,
+                "uploaded": (idx_s in uploaded_handles),
+            })
+        return out
+
+    def _log_blackbox(metodo_b: str, k_b: Any, trace_items: List[Dict[str, Any]], qtd_b: int, decisao_b: str):
+        try:
+            LOGS_DIR.mkdir(parents=True, exist_ok=True)
+            entry = {
+                "timestamp": time.strftime("%Y-%m-%dT%H:%M:%S"),
+                "ID_Pergunta": q_id,
+                "curso": course_name,
+                "documento_gabarito": doc_name,
+                "metodo_rag": metodo_b,
+                "top_k": k_b,
+                "quantidade_documentos": qtd_b,
+                "decisao_julgador": decisao_b,
+                "selected_items": trace_items,
+            }
+            with _SAVE_LOCK:
+                with open(LOGS_DIR / "caixa_preta_etapa3.jsonl", "a", encoding="utf-8") as bf:
+                    bf.write(json.dumps(entry, ensure_ascii=False) + "\n")
+        except Exception:
+            pass
+
     def process_config(cfg):
         metodo, k = cfg
         exec_key = f"{q_id}__{metodo}__k{k}"
@@ -858,6 +908,7 @@ def run_evaluation_for_question(
         custo_consultas = 0.0
         ans = "Não foi possível gerar resposta."
         qtd_docs = 0
+        trace_items: List[Dict[str, Any]] = []
 
         # --- A. RAG TRADICIONAL (FileSearchStore com PDFs inteiros) ---
         if metodo == "rag_tradicional":
@@ -870,6 +921,13 @@ def run_evaluation_for_question(
                     raise RuntimeError(f"Resposta inválida do RAGTradicional em {q_id} (k={k_val}): {resp_trad}")
                 ans = resp_trad
                 qtd_docs = len(chunks) or k_val
+                trace_items = [
+                    {
+                        "title": str(c.get("document_name") or c.get("title") or ""),
+                        "text_preview": str(c.get("text") or "")[:180],
+                    }
+                    for c in (chunks or [])
+                ]
                 p_tok = usage_info.get("input_tokens", 0)
                 c_tok = usage_info.get("output_tokens", 0)
                 custo_gemini = (p_tok * COST_PROMPT_TOKEN_FLEX) + (c_tok * COST_CANDIDATE_TOKEN_FLEX)
@@ -884,23 +942,37 @@ def run_evaluation_for_question(
         # --- B. RAG FICHAMENTO EMBEDDING ---
         elif metodo == "rag_fichamento_embedding":
             k_val = int(k)
-            handles = [uploaded_handles[i] for i in sorted_emb_indices[:k_val] if i in uploaded_handles]
+            target_idxs = sorted_emb_indices[:k_val]
+            missing_idxs = [i for i in target_idxs if i not in uploaded_handles]
+            if missing_idxs:
+                raise RuntimeError(f"Fatia(s) sem upload em {q_id} ({metodo}, k={k_val}): {missing_idxs}")
+            handles = [uploaded_handles[i] for i in target_idxs]
             qtd_docs = len(handles)
+            trace_items = _trace_slices(target_idxs, emb_score_map)
             ans, custo_gemini = generate_gemini_rag_answer_with_handles(client, pergunta, handles, use_paid_key=use_paid_key, key_id=key_id)
 
         # --- C. RAG FICHAMENTO JEV TOP-K ---
         elif metodo == "rag_fichamento_jev_topk":
             k_val = int(k)
-            handles = [uploaded_handles[i] for i in sorted_jev_indices[:k_val] if i in uploaded_handles]
+            target_idxs = sorted_jev_indices[:k_val]
+            missing_idxs = [i for i in target_idxs if i not in uploaded_handles]
+            if missing_idxs:
+                raise RuntimeError(f"Fatia(s) sem upload em {q_id} ({metodo}, k={k_val}): {missing_idxs}")
+            handles = [uploaded_handles[i] for i in target_idxs]
             qtd_docs = len(handles)
             custo_consultas = total_custo_jev_consultas
+            trace_items = _trace_slices(target_idxs, jev_score_map)
             ans, custo_gemini = generate_gemini_rag_answer_with_handles(client, pergunta, handles, use_paid_key=use_paid_key, key_id=key_id)
 
         # --- D. RAG FICHAMENTO JEV LIVRE (TODOS COM PROB > 0.5) ---
         elif metodo == "rag_fichamento_jev_livre":
-            handles = [uploaded_handles[i] for i in true_slices_indices if i in uploaded_handles]
+            missing_idxs = [i for i in true_slices_indices if i not in uploaded_handles]
+            if missing_idxs:
+                raise RuntimeError(f"Fatia(s) sem upload em {q_id} ({metodo}): {missing_idxs}")
+            handles = [uploaded_handles[i] for i in true_slices_indices]
             qtd_docs = len(handles)
             custo_consultas = total_custo_jev_consultas
+            trace_items = _trace_slices(true_slices_indices, jev_score_map)
             ans, custo_gemini = generate_gemini_rag_answer_with_handles(client, pergunta, handles, use_paid_key=use_paid_key, key_id=key_id)
 
         # --- JULGAMENTO PELO JEV 1.14 ---
@@ -910,6 +982,8 @@ def run_evaluation_for_question(
             custo_julgador = 0.0
         else:
             decisao, probs, custo_julgador = evaluate_with_jev_judge(pergunta, gabarito, ans)
+
+        _log_blackbox(metodo, k, trace_items, qtd_docs, decisao)
 
         return {
             "ID_Pergunta": q_id,
