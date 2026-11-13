@@ -157,28 +157,34 @@ _LIMITERS: Dict[str, ModelRateLimiter] = {}
 
 def get_rate_limiter(model_name: str, key_id: str = "default") -> ModelRateLimiter:
     """
-    Obtém ou instancia o limitador oficial para o modelo e chave informados:
-    - gemini-3.5-flash-lite / gemini-3.1-flash-lite: 15 RPM, 500 RPD
-    - gemini-embedding-2: 100 RPM, 1000 RPD
-    - typesafe/jev-1.14: 60 RPM, 10000 RPD
+    Obtém ou instancia o limitador de taxa thread-safe para o modelo e chave informados:
+    - Para contas pagas (GEMINI_PAGO_RICARDO / chave paga): 500 RPM, RPD ilimitado (1.000.000).
+    - Para OpenRouter Decisions (typesafe/jev-1.14): 500 RPM, RPD ilimitado (1.000.000).
+    - Para gemini-embedding-2: 500 RPM, RPD ilimitado.
     """
     clean_model = model_name.replace("models/", "").lower()
+    is_paid_key = any(p in key_id.lower() for p in ["pago", "ricardo", "paid", "chave_paga", "open_router_api_key_2"])
+
     if "embedding-2" in clean_model:
         canonical = "gemini-embedding-2"
-        rpm, rpd = 100, 1000
-        margin = 0.05
+        rpm = 500 if is_paid_key else 100
+        rpd = 1000000 if is_paid_key else 1000
+        margin = 0.01 if is_paid_key else 0.05
     elif "flash-lite" in clean_model:
         canonical = "gemini-3.5-flash-lite"
-        rpm, rpd = 15, 500
-        margin = 0.25
+        rpm = 500 if is_paid_key else 15
+        rpd = 1000000 if is_paid_key else 500
+        margin = 0.01 if is_paid_key else 0.15
     elif "jev" in clean_model:
         canonical = "typesafe/jev-1.14"
-        rpm, rpd = 60, 10000
-        margin = 0.05
+        rpm = 500
+        rpd = 1000000
+        margin = 0.01
     else:
         canonical = clean_model
-        rpm, rpd = 15, 500
-        margin = 0.25
+        rpm = 500 if is_paid_key else 15
+        rpd = 1000000 if is_paid_key else 500
+        margin = 0.01 if is_paid_key else 0.15
 
     reg_key = f"{key_id}::{canonical}"
     with _REGISTRY_LOCK:

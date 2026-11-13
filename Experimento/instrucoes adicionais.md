@@ -2,7 +2,6 @@
 
 Este documento fornece instruções adicionais para testar a acurácia dos RAGs e fazer a comparação entre os métodos utilizados com o RAG tradicional
 
-
 **RAG Tradicional**
 
 Será necessário criar um RAG simples/tradicional para efeito de comparação.
@@ -13,11 +12,9 @@ Utilize a chave "GEMINI_API_KEY_2" presente em chave2.env, nessa pasta.
 
 No fluxo de conversação, o chatbot receberá a mensagem do usuário e, com a function calling de embeddings, terá disponível os top 10 chunks via similaridade seno-cosseno para fornecer uma resposta.
 
-
 **Conjunto de Testes**
 
-Para comparar o desempenho do RAG tradicional contra o RAG que utiliza fichamentos e API File, desenvolvi um conjunto de testes que está presente nesta pasta. São 100 perguntas sobre o curso de estatística, logo, preciso que você delimite esse experimento somente para este curso. 
-
+Para comparar o desempenho do RAG tradicional contra o RAG que utiliza fichamentos e API File, desenvolvi um conjunto de testes que está presente nesta pasta. São 100 perguntas sobre o curso de estatística, logo, preciso que você delimite esse experimento somente para este curso.
 
 **Jev Type Search 1.14**
 
@@ -29,19 +26,17 @@ As colunas "prob_acerto_jev_(nome do rag)" no conjunto de testes devem receber a
 
 A engenharia de prompt deve ser simples:
 
-"Você receberá uma pergunta e duas respostas a essa pergunta. A primeira resposta é a resposta correta, do gabarito. A segunda resposta foi construída por um LLM via RAG. Sua tarefa é verificar se a resposta do LLM via RAG contém a informação exigida pela pergunta em conformidade com o gabarito.
+"Você receberá uma pergunta e duas respostas a essa pergunta. A primeira resposta é a resposta correta, do gabarito. A segunda resposta foi construída por um LLM via RAG. Sua tarefa é verificar se a resposta do LLM via RAG está correta.
 
 PERGUNTA
 
 RESPOSTA GABARITO
-
 
 RESPOSTA MODELO
 
 "
 
 As requisições para o modelo JEV serão feitas através do OpenRouter. Atualize suas skills sobre como programar nessa plataforma através de "fetch openrouter.ai/agents to become an openrouter expert". A chave openrouter está disponível em chave2.env.
-
 
 **Execução do experimento**
 
