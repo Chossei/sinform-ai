@@ -181,9 +181,16 @@ ORDEM_CONFIGS = [
 
 CORES_DECISAO = {
     "Correta": "#10b981",
-    "Parcialmente correta": "#3b82f6",
-    "Parcialmente incorreta": "#f59e0b",
+    "Parcialmente correta": "#86efac",
+    "Parcialmente incorreta": "#fca5a5",
     "Incorreta": "#ef4444",
+}
+
+TEXT_CORES_DECISAO = {
+    "Correta": "#ffffff",
+    "Parcialmente correta": "#064e3b",
+    "Parcialmente incorreta": "#7f1d1d",
+    "Incorreta": "#ffffff",
 }
 
 ORDEM_DECISAO = [
@@ -193,7 +200,15 @@ ORDEM_DECISAO = [
     "Incorreta",
 ]
 
-ORDEM_FAIXAS_DOCS = ["1-2", "3-4", "5-6", "7+"]
+ORDEM_FAIXAS_DOCS = ["1", "2", "3", "4+"]
+LIGHT_BLUE_BOX = "#38bdf8"
+LIGHT_BLUE_BORDER = "#0284c7"
+
+
+def _clean_html(html_block: str) -> str:
+    """Remove indentação por linha para evitar que o parser Markdown do Streamlit renderize divs como bloco de código."""
+    lines = [line.lstrip() for line in html_block.strip().splitlines()]
+    return "\n".join(line for line in lines if line)
 
 
 def format_config_label(row: pd.Series) -> str:
@@ -215,13 +230,13 @@ def categorize_doc_count(n: Any) -> str:
         val = int(float(n))
     except Exception:
         val = 1
-    if val <= 2:
-        return "1-2"
-    if val <= 4:
-        return "3-4"
-    if val <= 6:
-        return "5-6"
-    return "7+"
+    if val <= 1:
+        return "1"
+    if val == 2:
+        return "2"
+    if val == 3:
+        return "3"
+    return "4+"
 
 
 def normalize_classificacao(val: Any, doc_str: Any = "") -> str:
@@ -360,7 +375,8 @@ def build_vertical_stacked_bar(df_sub: pd.DataFrame, title: str, height: int = 4
                 text=[f"{v:.1f}%" if v >= 6.0 else "" for v in vals],
                 textposition="inside",
                 insidetextanchor="middle",
-                textfont=dict(color="#ffffff", size=11, family="Inter"),
+                textangle=0,
+                textfont=dict(color=TEXT_CORES_DECISAO[cat], size=10.5, family="Inter"),
                 customdata=np.stack([counts, totals], axis=-1),
                 hovertemplate=(
                     "<b>%{x}</b><br>"
@@ -411,26 +427,18 @@ def build_general_score_boxplot(df_sub: pd.DataFrame, title: str) -> go.Figure:
     if not present_configs:
         present_configs = sorted(df_sub["config_label"].unique().tolist())
 
-    palette = [
-        "#64748b", "#475569", "#334155",
-        "#38bdf8", "#0284c7", "#0369a1",
-        "#a855f7", "#9333ea", "#7e22ce",
-        "#10b981",
-    ]
-
     fig = go.Figure()
-    for idx, cfg in enumerate(present_configs):
+    for cfg in present_configs:
         d_cfg = df_sub[df_sub["config_label"] == cfg]["score_esperado"]
-        color = palette[idx % len(palette)]
         fig.add_trace(
             go.Box(
                 y=d_cfg,
                 name=cfg,
                 boxmean=True,
-                marker_color=color,
-                line=dict(color=color, width=2),
-                fillcolor=color,
-                opacity=0.82,
+                marker_color=LIGHT_BLUE_BOX,
+                line=dict(color=LIGHT_BLUE_BORDER, width=1.8),
+                fillcolor=LIGHT_BLUE_BOX,
+                opacity=0.80,
                 boxpoints="outliers",
                 hovertemplate=(
                     f"<b>{cfg}</b><br>"
@@ -483,7 +491,7 @@ def build_grid_2x5_boxplots(df_sub: pd.DataFrame, title: str) -> go.Figure:
         vertical_spacing=0.18,
     )
 
-    color_map = {"única": "#0284c7", "híbrida": "#f59e0b"}
+    color_map = {"única": LIGHT_BLUE_BOX, "híbrida": "#f59e0b"}
     label_map = {"única": "Única (1 PDF)", "híbrida": "Híbrida (>1 PDF)"}
 
     for idx, cfg in enumerate(configs_grid):
@@ -539,34 +547,28 @@ def build_grid_2x5_boxplots(df_sub: pd.DataFrame, title: str) -> go.Figure:
     return fig
 
 
-def build_docs_vs_score_boxplot(df_jev_livre: pd.DataFrame, title: str, color_hex: str = "#10b981") -> go.Figure:
+def build_docs_vs_score_boxplot(df_jev_livre: pd.DataFrame, title: str, color_hex: str = LIGHT_BLUE_BOX) -> go.Figure:
     """
-    Boxplot cruzando Score Esperado pela quantidade categorizada de documentos ('1-2', '3-4', '5-6', '7+').
+    Boxplot cruzando Score Esperado pela quantidade categorizada de documentos ('1', '2', '3', '4+').
     """
     fig = go.Figure()
-    palette_bins = {
-        "1-2": "#38bdf8",
-        "3-4": "#3b82f6",
-        "5-6": "#6366f1",
-        "7+": "#8b5cf6",
-    }
 
     for faixa in ORDEM_FAIXAS_DOCS:
         d_f = df_jev_livre[df_jev_livre["faixa_documentos"] == faixa]["score_esperado"]
-        c_hex = palette_bins.get(faixa, color_hex)
         n_obs = len(d_f)
+        doc_unit = "doc" if faixa == "1" else "docs"
         fig.add_trace(
             go.Box(
                 y=d_f,
-                name=f"{faixa} docs (n={n_obs})",
+                name=f"{faixa} {doc_unit} (n={n_obs})",
                 boxmean=True,
-                marker_color=c_hex,
-                line=dict(color=c_hex, width=2),
-                boxpoints="all",
-                jitter=0.3,
-                pointpos=-1.5,
+                marker_color=color_hex,
+                line=dict(color=LIGHT_BLUE_BORDER, width=1.8),
+                fillcolor=color_hex,
+                opacity=0.80,
+                boxpoints="outliers",
                 hovertemplate=(
-                    f"Faixa: <b>{faixa} documentos (n={n_obs})</b><br>"
+                    f"Faixa: <b>{faixa} {doc_unit} (n={n_obs})</b><br>"
                     "Score Esperado: <b>%{y:.3f}</b><extra></extra>"
                 ),
             )
@@ -602,7 +604,7 @@ def _render_section_acuracia(df: pd.DataFrame):
     col_intro_1, col_intro_2 = st.columns(2, gap="medium")
 
     with col_intro_1:
-        st.markdown("""
+        st.markdown(_clean_html("""
         <div class="intro-card">
             <h3>📚 Comparação entre RAG Tradicional e RAG Fichamentos</h3>
             <p>
@@ -619,15 +621,15 @@ def _render_section_acuracia(df: pd.DataFrame):
                 Em seguida, foi utilizado o modelo <strong>TypeSafe Jev 1.14</strong> para classificar a resposta gerada pelos RAGs
                 (<strong>gemini 3.5 flash lite</strong>) em
                 <span style="color:#ef4444;font-weight:700;">"Incorreta"</span>,
-                <span style="color:#f59e0b;font-weight:700;">"Parcialmente incorreta"</span>,
-                <span style="color:#3b82f6;font-weight:700;">"Parcialmente correta"</span> e
+                <span style="color:#f87171;font-weight:700;">"Parcialmente incorreta"</span>,
+                <span style="color:#4ade80;font-weight:700;">"Parcialmente correta"</span> e
                 <span style="color:#10b981;font-weight:700;">"Correta"</span>.
             </p>
         </div>
-        """, unsafe_allow_html=True)
+        """), unsafe_allow_html=True)
 
     with col_intro_2:
-        st.markdown("""
+        st.markdown(_clean_html("""
         <div class="intro-card" style="border-top-color: #f59e0b;">
             <h3>🧪 Foram realizados quatro experimentos:</h3>
             <ul>
@@ -637,7 +639,7 @@ def _render_section_acuracia(df: pd.DataFrame):
                 <li><strong>RAG com o mesmo pipeline anterior</strong>, diferenciando-se quanto à <strong>liberdade do modelo TypeSafe</strong>: sem restrições de <em>k</em> fatias mais relevantes, o modelo seleciona a quantidade de fatias que devem entrar no contexto.</li>
             </ul>
         </div>
-        """, unsafe_allow_html=True)
+        """), unsafe_allow_html=True)
 
     st.markdown("<div style='height: 1.1rem;'></div>", unsafe_allow_html=True)
 
@@ -676,7 +678,7 @@ def _render_section_qualidade(df: pd.DataFrame):
     col_q1, col_q2 = st.columns(2, gap="medium")
 
     with col_q1:
-        st.markdown("""
+        st.markdown(_clean_html("""
         <div class="formula-card">
             <h4>📐 Fórmula do Score Esperado</h4>
             <p style="font-size: 0.91rem; color: #cbd5e1; line-height: 1.55; margin-bottom: 0.5rem;">
@@ -692,10 +694,10 @@ def _render_section_qualidade(df: pd.DataFrame):
                 <em>Parcialmente correto (0,55)</em> e <em>Correto (1)</em>.
             </p>
         </div>
-        """, unsafe_allow_html=True)
+        """), unsafe_allow_html=True)
 
     with col_q2:
-        st.markdown("""
+        st.markdown(_clean_html("""
         <div class="intro-card" style="border-top-color: #10b981;">
             <h3>💡 Interpretação Interativa do Score Esperado</h3>
             <p style="font-size: 0.9rem; margin-bottom: 0.7rem;">
@@ -710,16 +712,16 @@ def _render_section_qualidade(df: pd.DataFrame):
                 <span style="font-size:0.82rem; color:#64748b; min-width:130px; text-align:right;">Penalização total (100%)</span>
             </div>
             <div class="interactive-weight-row" title="Peso 0,15: penalização severa de 85% para respostas predominantemente incorretas.">
-                <span style="min-width: 162px; font-weight: 700; color: #f59e0b; font-size: 0.86rem;">Parc. Incorreto (× 0,15)</span>
-                <div style="flex:1; background:#fef3c7; height:12px; border-radius:999px; overflow:hidden;">
-                    <div style="width:15%; background:#f59e0b; height:100%;"></div>
+                <span style="min-width: 162px; font-weight: 700; color: #f87171; font-size: 0.86rem;">Parc. Incorreto (× 0,15)</span>
+                <div style="flex:1; background:#fee2e2; height:12px; border-radius:999px; overflow:hidden;">
+                    <div style="width:15%; background:#fca5a5; height:100%;"></div>
                 </div>
                 <span style="font-size:0.82rem; color:#64748b; min-width:130px; text-align:right;">Penalização de 85%</span>
             </div>
             <div class="interactive-weight-row" title="Peso 0,55: penalização moderada de 45% quando faltam elementos complementares.">
-                <span style="min-width: 162px; font-weight: 700; color: #3b82f6; font-size: 0.86rem;">Parc. Correto (× 0,55)</span>
-                <div style="flex:1; background:#dbeafe; height:12px; border-radius:999px; overflow:hidden;">
-                    <div style="width:55%; background:#3b82f6; height:100%;"></div>
+                <span style="min-width: 162px; font-weight: 700; color: #22c55e; font-size: 0.86rem;">Parc. Correto (× 0,55)</span>
+                <div style="flex:1; background:#dcfce7; height:12px; border-radius:999px; overflow:hidden;">
+                    <div style="width:55%; background:#86efac; height:100%;"></div>
                 </div>
                 <span style="font-size:0.82rem; color:#64748b; min-width:130px; text-align:right;">Penalização de 45%</span>
             </div>
@@ -731,7 +733,7 @@ def _render_section_qualidade(df: pd.DataFrame):
                 <span style="font-size:0.82rem; color:#64748b; min-width:130px; text-align:right;">Pontuação integral</span>
             </div>
         </div>
-        """, unsafe_allow_html=True)
+        """), unsafe_allow_html=True)
 
     st.markdown("<div style='height: 1.1rem;'></div>", unsafe_allow_html=True)
     fig_box_geral = build_general_score_boxplot(df, title="Qual a qualidade média das respostas?")
@@ -771,7 +773,6 @@ def _render_section_documentos(df: pd.DataFrame):
         fig_doc_hib = build_docs_vs_score_boxplot(
             df_livre_hib,
             title=f"Perguntas Híbridas (n={len(df_livre_hib)})",
-            color_hex="#f59e0b",
         )
         st.plotly_chart(fig_doc_hib, width="stretch")
 
@@ -780,7 +781,6 @@ def _render_section_documentos(df: pd.DataFrame):
         fig_doc_uni = build_docs_vs_score_boxplot(
             df_livre_uni,
             title=f"Perguntas Únicas (n={len(df_livre_uni)})",
-            color_hex="#0284c7",
         )
         st.plotly_chart(fig_doc_uni, width="stretch")
 
@@ -810,10 +810,10 @@ def _render_section_documentos(df: pd.DataFrame):
         .reindex(ORDEM_FAIXAS_DOCS, fill_value=0)
     )
     total_livre = max(1, len(df_livre))
-    pct_1_2 = dist_faixas["1-2"] / total_livre * 100.0
-    pct_3_4 = dist_faixas["3-4"] / total_livre * 100.0
-    pct_5_6 = dist_faixas["5-6"] / total_livre * 100.0
-    pct_7_plus = dist_faixas["7+"] / total_livre * 100.0
+    pct_1 = dist_faixas["1"] / total_livre * 100.0
+    pct_2 = dist_faixas["2"] / total_livre * 100.0
+    pct_3 = dist_faixas["3"] / total_livre * 100.0
+    pct_4_plus = dist_faixas["4+"] / total_livre * 100.0
 
     score_medio_livre = float(df_livre["score_esperado"].mean()) if len(df_livre) else 0.0
     score_by_bin = {
@@ -821,21 +821,20 @@ def _render_section_documentos(df: pd.DataFrame):
         for f in ORDEM_FAIXAS_DOCS
     }
 
-    st.markdown(f"""
+    metrics_html = _clean_html(f"""
     <div style="background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); border-radius: 16px; padding: 1.6rem 2rem; color: #f8fafc; box-shadow: 0 10px 25px rgba(15,23,42,0.16); border: 1px solid #334155;">
         <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1rem; margin-bottom:1.2rem;">
             <div>
-                <span style="background:rgba(16,185,129,0.2); border:1px solid #10b981; color:#6ee7b7; padding:0.2rem 0.65rem; border-radius:999px; font-size:0.75rem; font-weight:700; text-transform:uppercase;">
+                <span style="background:rgba(56,189,248,0.2); border:1px solid #38bdf8; color:#bae6fd; padding:0.2rem 0.65rem; border-radius:999px; font-size:0.75rem; font-weight:700; text-transform:uppercase;">
                     Seleção Autônoma JEV 1.14 (Prob &gt; 0,50)
                 </span>
                 <h3 style="margin:0.45rem 0 0 0; color:#ffffff; font-size:1.25rem;">Sumário Descritivo dos Documentos Utilizados (JEV Livre)</h3>
             </div>
             <div style="text-align:right;">
                 <span style="font-size:0.82rem; color:#94a3b8;">Score Esperado Médio (JEV Livre)</span>
-                <div style="font-size:1.65rem; font-weight:800; color:#10b981;">{score_medio_livre:.3f}</div>
+                <div style="font-size:1.65rem; font-weight:800; color:#38bdf8;">{score_medio_livre:.3f}</div>
             </div>
         </div>
-
         <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(155px, 1fr)); gap: 0.9rem; margin-bottom: 1.35rem;">
             <div class="metric-mini-card" style="border-left:4px solid #38bdf8;" title="Média aritmética de documentos enviados ao gerador">
                 <div style="font-size:0.78rem; color:#94a3b8; text-transform:uppercase; font-weight:600;">Média Geral</div>
@@ -858,44 +857,44 @@ def _render_section_documentos(df: pd.DataFrame):
                 <div style="font-size:1.5rem; font-weight:800; color:#fbbf24; margin-top:0.2rem;">{media_hib:.2f} <span style="font-size:0.85rem; font-weight:500; color:#cbd5e1;">docs</span></div>
             </div>
         </div>
-
         <div style="font-size:0.85rem; color:#cbd5e1; margin-bottom:0.45rem; font-weight:600;">
             Distribuição Proporcional e Score Médio por Faixa de Documentos Selecionados:
         </div>
         <div style="display:flex; height:26px; border-radius:999px; overflow:hidden; background:#0b1324; border:1px solid #475569; margin-bottom:0.85rem;">
-            <div title="1-2 docs: {int(dist_faixas['1-2'])} ({pct_1_2:.1f}%) | Score médio: {score_by_bin['1-2']:.3f}" style="width:{max(pct_1_2, 0.5):.2f}%; background:#38bdf8; display:flex; align-items:center; justify-content:center; font-size:0.75rem; font-weight:700; color:#0f172a;">
-                {f"{pct_1_2:.0f}%" if pct_1_2 >= 8 else ""}
+            <div title="1 doc: {int(dist_faixas['1'])} ({pct_1:.1f}%) | Score médio: {score_by_bin['1']:.3f}" style="width:{max(pct_1, 0.5):.2f}%; background:#38bdf8; display:flex; align-items:center; justify-content:center; font-size:0.75rem; font-weight:700; color:#0f172a;">
+                {f"{pct_1:.0f}%" if pct_1 >= 8 else ""}
             </div>
-            <div title="3-4 docs: {int(dist_faixas['3-4'])} ({pct_3_4:.1f}%) | Score médio: {score_by_bin['3-4']:.3f}" style="width:{max(pct_3_4, 0.5):.2f}%; background:#3b82f6; display:flex; align-items:center; justify-content:center; font-size:0.75rem; font-weight:700; color:#ffffff;">
-                {f"{pct_3_4:.0f}%" if pct_3_4 >= 6 else ""}
+            <div title="2 docs: {int(dist_faixas['2'])} ({pct_2:.1f}%) | Score médio: {score_by_bin['2']:.3f}" style="width:{max(pct_2, 0.5):.2f}%; background:#3b82f6; display:flex; align-items:center; justify-content:center; font-size:0.75rem; font-weight:700; color:#ffffff;">
+                {f"{pct_2:.0f}%" if pct_2 >= 6 else ""}
             </div>
-            <div title="5-6 docs: {int(dist_faixas['5-6'])} ({pct_5_6:.1f}%) | Score médio: {score_by_bin['5-6']:.3f}" style="width:{max(pct_5_6, 0.5):.2f}%; background:#6366f1; display:flex; align-items:center; justify-content:center; font-size:0.75rem; font-weight:700; color:#ffffff;">
-                {f"{pct_5_6:.0f}%" if pct_5_6 >= 6 else ""}
+            <div title="3 docs: {int(dist_faixas['3'])} ({pct_3:.1f}%) | Score médio: {score_by_bin['3']:.3f}" style="width:{max(pct_3, 0.5):.2f}%; background:#6366f1; display:flex; align-items:center; justify-content:center; font-size:0.75rem; font-weight:700; color:#ffffff;">
+                {f"{pct_3:.0f}%" if pct_3 >= 6 else ""}
             </div>
-            <div title="7+ docs: {int(dist_faixas['7+'])} ({pct_7_plus:.1f}%) | Score médio: {score_by_bin['7+']:.3f}" style="width:{max(pct_7_plus, 0.5):.2f}%; background:#8b5cf6; display:flex; align-items:center; justify-content:center; font-size:0.75rem; font-weight:700; color:#ffffff;">
-                {f"{pct_7_plus:.0f}%" if pct_7_plus >= 6 else ""}
+            <div title="4+ docs: {int(dist_faixas['4+'])} ({pct_4_plus:.1f}%) | Score médio: {score_by_bin['4+']:.3f}" style="width:{max(pct_4_plus, 0.5):.2f}%; background:#8b5cf6; display:flex; align-items:center; justify-content:center; font-size:0.75rem; font-weight:700; color:#ffffff;">
+                {f"{pct_4_plus:.0f}%" if pct_4_plus >= 6 else ""}
             </div>
         </div>
         <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(175px, 1fr)); gap:0.65rem; font-size:0.82rem; color:#cbd5e1;">
             <div class="metric-mini-card" style="padding:0.65rem 0.85rem; border-top:3px solid #38bdf8;">
-                <strong>🔹 1-2 docs:</strong> {int(dist_faixas['1-2'])} ({pct_1_2:.1f}%)<br>
-                <span style="color:#94a3b8;">Score médio: <strong style="color:#f8fafc;">{score_by_bin['1-2']:.3f}</strong></span>
+                <strong>🔹 1 doc:</strong> {int(dist_faixas['1'])} ({pct_1:.1f}%)<br>
+                <span style="color:#94a3b8;">Score médio: <strong style="color:#f8fafc;">{score_by_bin['1']:.3f}</strong></span>
             </div>
             <div class="metric-mini-card" style="padding:0.65rem 0.85rem; border-top:3px solid #3b82f6;">
-                <strong>🔵 3-4 docs:</strong> {int(dist_faixas['3-4'])} ({pct_3_4:.1f}%)<br>
-                <span style="color:#94a3b8;">Score médio: <strong style="color:#f8fafc;">{score_by_bin['3-4']:.3f}</strong></span>
+                <strong>🔵 2 docs:</strong> {int(dist_faixas['2'])} ({pct_2:.1f}%)<br>
+                <span style="color:#94a3b8;">Score médio: <strong style="color:#f8fafc;">{score_by_bin['2']:.3f}</strong></span>
             </div>
             <div class="metric-mini-card" style="padding:0.65rem 0.85rem; border-top:3px solid #6366f1;">
-                <strong>🟣 5-6 docs:</strong> {int(dist_faixas['5-6'])} ({pct_5_6:.1f}%)<br>
-                <span style="color:#94a3b8;">Score médio: <strong style="color:#f8fafc;">{score_by_bin['5-6']:.3f}</strong></span>
+                <strong>🟣 3 docs:</strong> {int(dist_faixas['3'])} ({pct_3:.1f}%)<br>
+                <span style="color:#94a3b8;">Score médio: <strong style="color:#f8fafc;">{score_by_bin['3']:.3f}</strong></span>
             </div>
             <div class="metric-mini-card" style="padding:0.65rem 0.85rem; border-top:3px solid #8b5cf6;">
-                <strong>🔮 7+ docs:</strong> {int(dist_faixas['7+'])} ({pct_7_plus:.1f}%)<br>
-                <span style="color:#94a3b8;">Score médio: <strong style="color:#f8fafc;">{score_by_bin['7+']:.3f}</strong></span>
+                <strong>🔮 4+ docs:</strong> {int(dist_faixas['4+'])} ({pct_4_plus:.1f}%)<br>
+                <span style="color:#94a3b8;">Score médio: <strong style="color:#f8fafc;">{score_by_bin['4+']:.3f}</strong></span>
             </div>
         </div>
     </div>
-    """, unsafe_allow_html=True)
+    """)
+    st.markdown(metrics_html, unsafe_allow_html=True)
 
 
 def render_experiment_dashboard(embedded: bool = True):
@@ -922,13 +921,13 @@ def render_experiment_dashboard(embedded: bool = True):
             st.metric("Total de Avaliações (Linhas)", f"{len(df):,}")
             st.metric("Perguntas Avaliadas", f"{n_perguntas_unicas} (Únicas: {n_unicas_tipo} | Híbridas: {n_hibridas_tipo})")
 
-    st.markdown("""
+    st.markdown(_clean_html("""
     <div class="hero-banner">
         <div class="hero-badge">Experimento Científico • Sinform AI UFBA</div>
         <h1>Comparação entre RAG Tradicional e RAG Fichamentos</h1>
         <p>Avaliação comparativa em 200 perguntas regulamentares da UFBA (100 únicas e 100 híbridas multi-documento), com julgamento probabilístico via TypeSafe JEV 1.14.</p>
     </div>
-    """, unsafe_allow_html=True)
+    """), unsafe_allow_html=True)
 
     if df.empty:
         st.warning(

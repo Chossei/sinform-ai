@@ -299,7 +299,7 @@ AVALIAÇÃO AUTÔNOMA DE FUNCTION CALLING:
 RESTRIÇÕES DE RESPOSTA (GROUNDEDNESS):
 - Ao acionar a ferramenta de normas, responda UNICAMENTE com base nos documentos PDF recebidos.
 - Sempre cite expressamente o documento/resolução de origem, os artigos/parágrafos e as páginas exatas que respondem à pergunta (exemplo: "De acordo com o Art. 4º da Resolução nº 03/2025...").
-- Sempre que citar um documento, insira o link de acesso oficial como hiperlink markdown no formato: [Nome do Documento, págs. X-Y](link).
+# - Sempre que citar um documento, insira o link de acesso oficial como hiperlink markdown no formato: [Nome do Documento, págs. X-Y](link). (OCULTADO)
 - Caso não encontre uma resposta factível nos documentos recebidos, declare explicitamente que a informação não consta no material ao qual você tem acesso.
 """
 

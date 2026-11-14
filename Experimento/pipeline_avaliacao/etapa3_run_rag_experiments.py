@@ -442,22 +442,32 @@ def generate_gemini_rag_answer_with_handles(
 ) -> Tuple[str, float]:
     """
     Gera a resposta no Gemini utilizando handles já carregados na API File.
-    Usa estritamente PRIMARY_MODEL (gemini-3.5-flash-lite).
+    Usa estritamente PRIMARY_MODEL (gemini-3.5-flash-lite). Nunca retorna fallback silencioso em erro.
     """
     contents = list(file_handles)
     contents.append(RAG_USER_PROMPT_TEMPLATE.format(pergunta=pergunta))
 
-    res_text = "Esta informação não consta nos documentos consultados."
-    custo_gemini = 0.0
-
     limiter = get_rate_limiter(PRIMARY_MODEL, key_id=key_id)
+    max_attempts = 6
+    recitation_hit = False
+    last_err = "sem resposta"
 
-    for attempt in range(1, 4):
+    for attempt in range(1, max_attempts + 1):
         try:
             limiter.acquire()
+            sys_inst = RAG_GENERATOR_SYSTEM_PROMPT
+            temp_cur = 0.2
+            if recitation_hit:
+                sys_inst = (
+                    f"{RAG_GENERATOR_SYSTEM_PROMPT}\n\n"
+                    "[INSTRUÇÃO ADICIONAL]: Responda sintetizando e parafraseando as informações "
+                    "com suas próprias palavras, de forma clara e objetiva, sem reproduzir "
+                    "literalmente parágrafos ou frases inteiras dos documentos."
+                )
+                temp_cur = 0.35
             cfg_kwargs = {
-                "system_instruction": RAG_GENERATOR_SYSTEM_PROMPT,
-                "temperature": 0.2
+                "system_instruction": sys_inst,
+                "temperature": temp_cur,
             }
             if use_paid_key:
                 cfg_kwargs["service_tier"] = "flex"
@@ -467,29 +477,38 @@ def generate_gemini_rag_answer_with_handles(
                 contents=contents,
                 config=types.GenerateContentConfig(**cfg_kwargs)
             )
-            res_text = res.text.strip()
-            if res.usage_metadata:
+            custo_gemini = 0.0
+            if getattr(res, "usage_metadata", None):
                 p_tok = res.usage_metadata.prompt_token_count or 0
                 c_tok = res.usage_metadata.candidates_token_count or 0
                 custo_gemini = (p_tok * COST_PROMPT_TOKEN_FLEX) + (c_tok * COST_CANDIDATE_TOKEN_FLEX)
                 if use_paid_key:
                     record_gemini_paid_cost(custo_gemini)
-            return res_text, custo_gemini
+
+            raw_text = getattr(res, "text", None)
+            if raw_text and raw_text.strip():
+                return raw_text.strip(), custo_gemini
+
+            cands = getattr(res, "candidates", None) or []
+            fr = getattr(cands[0], "finish_reason", "UNKNOWN") if cands else "NO_CANDIDATES"
+            if "RECITATION" in str(fr).upper():
+                recitation_hit = True
+            raise RuntimeError(f"Resposta vazia do modelo {PRIMARY_MODEL} (finish_reason={fr})")
         except BudgetCapReachedException:
             raise
         except RPDLimitExceededError as rpe:
             raise GeminiKeyExhaustedException(f"RPD esgotado em {key_id}: {rpe}")
         except Exception as e:
-            err_str = str(e)
-            print(f"    [Aviso Gemini {PRIMARY_MODEL} ({key_id}) Tentativa {attempt}/3]: {err_str[:90]}", flush=True)
-            if "429" in err_str or "RESOURCE_EXHAUSTED" in err_str or "quota" in err_str.lower():
+            last_err = str(e)
+            print(f"    [Aviso Gemini {PRIMARY_MODEL} ({key_id}) Tentativa {attempt}/{max_attempts}]: {last_err[:100]}", flush=True)
+            if "429" in last_err or "RESOURCE_EXHAUSTED" in last_err or "quota" in last_err.lower():
                 if attempt >= 2:
-                    raise GeminiKeyExhaustedException(f"Cota/429 persistente em {key_id}: {err_str[:120]}")
+                    raise GeminiKeyExhaustedException(f"Cota/429 persistente em {key_id}: {last_err[:120]}")
                 time.sleep(5.0)
             else:
-                time.sleep(2.0 * attempt)
+                time.sleep(min(15.0, 2.5 * attempt))
 
-    return res_text, custo_gemini
+    raise RuntimeError(f"Gemini {PRIMARY_MODEL} ({key_id}) falhou após {max_attempts} tentativas: {last_err}")
 
 
 # -----------------------------------------------------------------------------

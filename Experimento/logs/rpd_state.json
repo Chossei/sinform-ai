@@ -1,7 +1,7 @@
 {
-  "date": "2026-10-30",
+  "date": "2026-11-14",
   "counts": {
-    "OPEN_ROUTER_API_KEY_1::typesafe/jev-1.14": 30,
-    "OPEN_ROUTER_API_KEY_2::typesafe/jev-1.14": 30
+    "GEMINI_PAGO_RICARDO::gemini-embedding-2": 14,
+    "GEMINI_PAGO_RICARDO::gemini-3.5-flash-lite": 26
   }
 }

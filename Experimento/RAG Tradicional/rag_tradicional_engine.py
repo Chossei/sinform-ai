@@ -527,21 +527,21 @@ class RAGTradicional:
             return store.name
 
     def _build_system_instruction(self, curso: str = CURSO_ALVO) -> str:
-        return f"""Você é o Sinform AI, o assistente consultor especializado nas normas, resoluções e regulamentos acadêmicos da UFBA (Universidade Federal da Bahia).
+        return """Você é o SinformUFBA, o assistente consultor de normas e regulamentos acadêmicos da UFBA.
 
-SEU PAPEL E CONTEXTO:
-- Você está prestando atendimento oficial a um(a) discente da UFBA vinculado ao(s) curso(s): {curso}.
-- Perguntas sobre normas do curso, resoluções de colegiado, departamentos, núcleos acadêmicos, institutos/unidades universitárias ou regulamentos gerais da UFBA fazem parte do seu escopo. Consulte SEMPRE os documentos da FileSearchStore antes de responder.
-
-BUSCA E USO OBRIGATÓRIO DO FILESEARCH:
-- Utilize sempre a ferramenta FileSearch para recuperar os top chunks mais relevantes dos documentos indexados na FileSearchStore antes de formular sua resposta.
-- Nunca recuse uma pergunta com "Desculpe, não posso te ajudar com isso" alegando incompatibilidade de curso sem antes consultar e verificar os documentos da FileSearchStore.
-
-RESTRIÇÕES DE RESPOSTA (GROUNDEDNESS):
-- Responda UNICAMENTE com base nos fragmentos normativos recuperados do banco vetorial (FileSearchStore).
-- Sempre cite expressamente o documento/resolução de origem e os artigos/parágrafos que respondem à pergunta (exemplo: "De acordo com o Art. 4º da Resolução nº 03/2025...").
-- Caso a informação solicitada realmente não conste nos fragmentos recuperados após a busca, declare explicitamente: "Esta informação não consta nos documentos consultados."
+DIRETRIZES DE RESPOSTA:
+1. Seja estritamente objetivo, claro e breve. Vá direto ao ponto sem saudações prolixas ou rodeios.
+2. Fundamente sua resposta EXCLUSIVAMENTE nos documentos normativos fornecidos no contexto.
+3. Se a informação não estiver presente nos documentos fornecidos, responda com honestidade e brevidade: "Esta informação não consta nos documentos consultados."
+4. Sempre que cabível, cite expressamente o nome do documento, resolução ou artigo de onde a informação foi extraída.
+5. Mantenha um tom institucional, formal e didático.
 """
+
+    def _build_user_prompt(self, query: str) -> str:
+        return f"""Pergunta do estudante:
+{query}
+
+Responda com base estrita nos documentos normativos anexados."""
 
     def _extract_grounding_chunks(self, response: Any) -> List[Dict[str, Any]]:
         """Extrai os chunks recuperados do grounding_metadata da resposta do FileSearch."""
@@ -739,7 +739,7 @@ RESTRIÇÕES DE RESPOSTA (GROUNDEDNESS):
                         self.emb_limiter.acquire()
                         rate_1 = self.llm_limiter.acquire()
                         sys_inst_cur = system_instruction
-                        temp_cur = 0.15
+                        temp_cur = 0.2
                         if recitation_hit:
                             sys_inst_cur = (
                                 f"{system_instruction}\n\n"
@@ -757,7 +757,7 @@ RESTRIÇÕES DE RESPOSTA (GROUNDEDNESS):
                             cfg_direct["service_tier"] = "flex"
                         resp = self.client.models.generate_content(
                             model=m_tag,
-                            contents=query,
+                            contents=self._build_user_prompt(query),
                             config=types.GenerateContentConfig(**cfg_direct)
                         )
                         total_in_tokens += getattr(resp.usage_metadata, "prompt_token_count", 0) or 0
