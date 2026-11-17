@@ -203,6 +203,13 @@ DASHBOARD_CSS = """
         font-size: 1.08rem;
         letter-spacing: -0.01em;
     }
+    .column-question-title {
+        margin: 0.25rem 0 0.55rem 0;
+        color: #0f172a;
+        font-weight: 700;
+        font-size: 1.02rem;
+        letter-spacing: -0.01em;
+    }
 
     .interactive-weight-row {
         display: flex;
@@ -260,32 +267,34 @@ ORDEM_CONFIGS = [
 ]
 
 CORES_DECISAO = {
-    "Correta": "#10b981",
-    "Parcialmente correta": "#86efac",
-    "Parcialmente incorreta": "#fca5a5",
     "Incorreta": "#ef4444",
+    "Parcialmente incorreta": "#fca5a5",
+    "Parcialmente correta": "#86efac",
+    "Correta": "#10b981",
 }
 
 TEXT_CORES_DECISAO = {
-    "Correta": "#ffffff",
-    "Parcialmente correta": "#064e3b",
-    "Parcialmente incorreta": "#7f1d1d",
     "Incorreta": "#ffffff",
+    "Parcialmente incorreta": "#7f1d1d",
+    "Parcialmente correta": "#064e3b",
+    "Correta": "#ffffff",
 }
 
+# Sequência da legenda de Incorreta para Correta
 ORDEM_DECISAO = [
-    "Correta",
-    "Parcialmente correta",
-    "Parcialmente incorreta",
     "Incorreta",
+    "Parcialmente incorreta",
+    "Parcialmente correta",
+    "Correta",
 ]
 
 ORDEM_FAIXAS_DOCS = ["1", "2", "3", "4+"]
 
+LIGHT_BLUE_BOX = "#38bdf8"
+LIGHT_BLUE_BORDER = "#0284c7"
 COR_COBALTO = "#2563eb"
 COR_COBALTO_CLARO = "#93c5fd"
 COR_AMBAR = "#f59e0b"
-COR_VERMELHO = "#ef4444"
 COR_GRID = "#f1f5f9"
 
 FAMILIA_NOMES = {
@@ -296,10 +305,10 @@ FAMILIA_NOMES = {
 }
 
 FAMILIA_CORES = {
-    "RAG Tradicional": "#2563eb",
-    "Fichamento + Embedding": "#0ea5e9",
-    "Fichamento + JEV Top-K": "#10b981",
-    "Fichamento + JEV Livre": "#f59e0b",
+    "RAG Tradicional": "#7c3aed",
+    "Fichamento + Embedding": "#2563eb",
+    "Fichamento + JEV Top-K": "#eab308",
+    "Fichamento + JEV Livre": "#10b981",
 }
 
 
@@ -431,8 +440,8 @@ def load_results_data(file_path: str) -> pd.DataFrame:
     return df
 
 
-def compute_config_summary(df: pd.DataFrame) -> pd.DataFrame:
-    """Agrega todas as métricas-chave por configuração de RAG para cards, tabelas e gráficos."""
+def compute_config_summary(df: pd.DataFrame, sort_by_score: bool = True) -> pd.DataFrame:
+    """Agrega todas as métricas-chave por configuração de RAG para cards e gráficos."""
     rows = []
     for cfg in ORDEM_CONFIGS:
         sub = df[df["config_label"] == cfg]
@@ -472,7 +481,7 @@ def compute_config_summary(df: pd.DataFrame) -> pd.DataFrame:
             }
         )
     summary = pd.DataFrame(rows)
-    if not summary.empty:
+    if not summary.empty and sort_by_score:
         summary = summary.sort_values(
             by=["score_mean", "positiva_pct"], ascending=[False, False]
         ).reset_index(drop=True)
@@ -482,13 +491,18 @@ def compute_config_summary(df: pd.DataFrame) -> pd.DataFrame:
 # ==============================================================================
 # FUNÇÕES DE PLOTAGEM PLOTLY
 # ==============================================================================
-def build_diverging_accuracy_bar(df_sub: pd.DataFrame, title: str, height: int = 470) -> go.Figure:
+def build_diverging_accuracy_bar(
+    df_sub: pd.DataFrame,
+    title: str = "Distribuição do acerto (%) por método de RAG empregado",
+    height: int = 470,
+) -> go.Figure:
     """
     Barras empilhadas horizontais DIVERGENTES centradas em 0%, ordenadas pelo Score Esperado:
     - Esquerda (negativo): Parcialmente incorreta + Incorreta
     - Direita (positivo): Parcialmente correta + Correta
+    - Legenda ordenada de Incorreta para Correta.
     """
-    summary = compute_config_summary(df_sub)
+    summary = compute_config_summary(df_sub, sort_by_score=True)
     if summary.empty:
         fig = go.Figure()
         fig.update_layout(title=title, height=height)
@@ -498,6 +512,13 @@ def build_diverging_accuracy_bar(df_sub: pd.DataFrame, title: str, height: int =
     summary_plot = summary.iloc[::-1].reset_index(drop=True)
     configs_y = summary_plot["config_label"].tolist()
 
+    legend_ranks = {
+        "Incorreta": 1,
+        "Parcialmente incorreta": 2,
+        "Parcialmente correta": 3,
+        "Correta": 4,
+    }
+
     fig = go.Figure()
 
     # Lado positivo (direita): Parcialmente correta primeiro (perto de 0), Correta em seguida
@@ -506,6 +527,7 @@ def build_diverging_accuracy_bar(df_sub: pd.DataFrame, title: str, height: int =
         fig.add_trace(
             go.Bar(
                 name=cat,
+                legendrank=legend_ranks[cat],
                 y=configs_y,
                 x=vals,
                 orientation="h",
@@ -532,6 +554,7 @@ def build_diverging_accuracy_bar(df_sub: pd.DataFrame, title: str, height: int =
         fig.add_trace(
             go.Bar(
                 name=cat,
+                legendrank=legend_ranks[cat],
                 y=configs_y,
                 x=-vals,
                 orientation="h",
@@ -587,31 +610,46 @@ def build_diverging_accuracy_bar(df_sub: pd.DataFrame, title: str, height: int =
     return fig
 
 
-def build_k_sensitivity_grid(df: pd.DataFrame, title: str) -> go.Figure:
+def build_k_sensitivity_line(
+    df: pd.DataFrame,
+    title: str = "Percentual de respostas classificadas como incorretas por número de chunkings",
+    height: int = 410,
+) -> go.Figure:
     """
-    4 gráficos separados em uma linha (1x4), compartilhando exatamente a mesma escala Y,
-    mostrando a porcentagem de respostas Incorretas por valor de k.
+    Gráfico único de linha comparando o percentual de respostas Incorretas por número de chunkings (k=1, 5, 10),
+    sem o Fichamento + JEV Livre:
+    - RAG Tradicional: roxo (#7c3aed)
+    - Fichamento + Embedding: azul (#2563eb)
+    - Fichamento + JEV Top-K: amarelo (#eab308)
     """
-    panels = [
-        ("RAG Tradicional", ["k=1", "k=5", "k=10"], ["RAG Tradicional (k=1)", "RAG Tradicional (k=5)", "RAG Tradicional (k=10)"]),
-        ("Fichamento + Embedding", ["k=1", "k=5", "k=10"], ["Fichamento + Embedding (k=1)", "Fichamento + Embedding (k=5)", "Fichamento + Embedding (k=10)"]),
-        ("Fichamento + JEV Top-K", ["k=1", "k=5", "k=10"], ["Fichamento + JEV Top-K (k=1)", "Fichamento + JEV Top-K (k=5)", "Fichamento + JEV Top-K (k=10)"]),
-        ("Fichamento + JEV Livre", ["Livre"], ["Fichamento + JEV Livre"]),
+    summary = compute_config_summary(df, sort_by_score=False).set_index("config_label")
+    x_labels = ["k = 1", "k = 5", "k = 10"]
+
+    series_specs = [
+        (
+            "RAG Tradicional",
+            ["RAG Tradicional (k=1)", "RAG Tradicional (k=5)", "RAG Tradicional (k=10)"],
+            "#7c3aed",
+            ["bottom center", "bottom center", "bottom right"],
+        ),
+        (
+            "Fichamento + Embedding",
+            ["Fichamento + Embedding (k=1)", "Fichamento + Embedding (k=5)", "Fichamento + Embedding (k=10)"],
+            "#2563eb",
+            ["top center", "top center", "top center"],
+        ),
+        (
+            "Fichamento + JEV Top-K",
+            ["Fichamento + JEV Top-K (k=1)", "Fichamento + JEV Top-K (k=5)", "Fichamento + JEV Top-K (k=10)"],
+            "#eab308",
+            ["top center", "top right", "bottom left"],
+        ),
     ]
 
-    summary = compute_config_summary(df).set_index("config_label")
-    max_inc = float(summary["incorreta_pct"].max()) if not summary.empty else 50.0
-    y_upper = max(50.0, float(np.ceil((max_inc + 8.0) / 10.0) * 10.0))
+    fig = go.Figure()
+    max_inc = 0.0
 
-    fig = make_subplots(
-        rows=1,
-        cols=4,
-        subplot_titles=[f"<b>{p[0]}</b>" for p in panels],
-        shared_yaxes=True,
-        horizontal_spacing=0.055,
-    )
-
-    for col_idx, (fam_name, x_labels, cfg_keys) in enumerate(panels, start=1):
+    for fam_name, cfg_keys, color_hex, text_positions in series_specs:
         y_vals = [
             float(summary.loc[k, "incorreta_pct"]) if k in summary.index else 0.0
             for k in cfg_keys
@@ -620,79 +658,74 @@ def build_k_sensitivity_grid(df: pd.DataFrame, title: str) -> go.Figure:
             float(summary.loc[k, "score_mean"]) if k in summary.index else 0.0
             for k in cfg_keys
         ]
-        cor_vals = [
-            float(summary.loc[k, "correta_pct"]) if k in summary.index else 0.0
-            for k in cfg_keys
-        ]
-        bar_colors = ["#fca5a5" if i == 0 and len(y_vals) > 1 else ("#ef4444" if v >= 20 else "#2563eb") for i, v in enumerate(y_vals)]
-        # Mantém paleta coerente: tons mais escuros para maior erro ou azul/coral limpo por nível
-        bar_colors = [
-            "#ef4444" if v >= 25.0 else ("#f87171" if v >= 10.0 else "#2563eb")
-            for v in y_vals
-        ]
+        if y_vals:
+            max_inc = max(max_inc, max(y_vals))
 
         fig.add_trace(
-            go.Bar(
+            go.Scatter(
+                name=fam_name,
                 x=x_labels,
                 y=y_vals,
-                marker_color=bar_colors,
-                width=0.52 if len(x_labels) == 3 else 0.34,
-                text=[f"{v:.1f}%" for v in y_vals],
-                textposition="outside",
-                textangle=0,
+                mode="lines+markers+text",
+                line=dict(color=color_hex, width=3),
+                marker=dict(size=10, color=color_hex, line=dict(color="#ffffff", width=1.8)),
+                text=[f"<b>{v:.1f}%</b>" for v in y_vals],
+                textposition=text_positions,
                 textfont=dict(size=11, color="#0f172a", family="Inter"),
-                customdata=np.stack([scores, cor_vals], axis=-1),
-                showlegend=False,
+                customdata=scores,
                 hovertemplate=(
-                    f"<b>{fam_name} (%{{x}})</b><br>"
-                    "Taxa de Incorretas: <b>%{y:.1f}%</b><br>"
-                    "Taxa de Corretas: <b>%{customdata[1]:.1f}%</b><br>"
-                    "Score Esperado: <b>%{customdata[0]:.3f}</b>"
-                    "<extra></extra>"
+                    f"<b>{fam_name}</b> (%{{x}})<br>"
+                    "Respostas Incorretas: <b>%{y:.1f}%</b><br>"
+                    "Score Esperado Médio: <b>%{customdata:.3f}</b><extra></extra>"
                 ),
-            ),
-            row=1,
-            col=col_idx,
+            )
         )
 
-    for ann in fig["layout"]["annotations"]:
-        ann["font"] = dict(size=12.5, color="#0f172a", family="Inter")
-
-    fig.update_yaxes(
-        range=[0, y_upper],
-        ticksuffix="%",
-        gridcolor=COR_GRID,
-        zerolinecolor="#e2e8f0",
-        tickfont=dict(size=10.5, color="#475569"),
-    )
-    fig.update_yaxes(title_text="% de Respostas Incorretas", col=1, row=1)
-    fig.update_xaxes(tickfont=dict(size=11, color="#1e293b"))
-
+    y_upper = max(50.0, float(np.ceil((max_inc + 7.0) / 10.0) * 10.0))
     fig.update_layout(
         title=dict(text=f"<b>{title}</b>", font=dict(size=16, color="#0f172a")),
+        xaxis=dict(
+            title="Número de Chunkings (Top-k)",
+            tickfont=dict(size=11.5, color="#1e293b"),
+            gridcolor=COR_GRID,
+        ),
+        yaxis=dict(
+            title="Respostas Incorretas (%)",
+            range=[0, y_upper],
+            ticksuffix="%",
+            gridcolor=COR_GRID,
+            zerolinecolor="#e2e8f0",
+        ),
+        legend=dict(
+            orientation="h",
+            yanchor="bottom",
+            y=1.02,
+            xanchor="right",
+            x=1.0,
+            title=dict(text="Método de RAG: "),
+        ),
         plot_bgcolor="#ffffff",
         paper_bgcolor="#ffffff",
-        height=370,
-        margin=dict(l=55, r=20, t=75, b=45),
+        height=height,
+        margin=dict(l=55, r=30, t=75, b=55),
     )
     return fig
 
 
-def build_positive_sum_bar(df_sub: pd.DataFrame, title: str, height: int = 440) -> go.Figure:
+def build_positive_sum_bar(
+    df_sub: pd.DataFrame,
+    title: str = "Soma de respostas Parcialmente corretas e Corretas (%)",
+    height: int = 440,
+) -> go.Figure:
     """
     Barras empilhadas somando Correta + Parcialmente correta (%) por configuração,
-    com o percentual total (soma) exibido no topo de cada barra.
+    ordenadas por ORDEM_CONFIGS (RAG Tradicional -> Fichamento + Embedding -> Fichamento + JEV Top-K -> JEV Livre).
     """
-    summary = compute_config_summary(df_sub)
+    summary = compute_config_summary(df_sub, sort_by_score=False)
     if summary.empty:
         fig = go.Figure()
         fig.update_layout(title=title, height=height)
         return fig
-
-    # Ordenar pela soma (Parcial + Correta) decrescente para leitura imediata
-    summary = summary.sort_values(
-        by=["positiva_pct", "correta_pct", "score_mean"], ascending=[False, False, False]
-    ).reset_index(drop=True)
 
     configs_x = summary["config_label"].tolist()
     cor_vals = summary["correta_pct"].to_numpy()
@@ -702,27 +735,8 @@ def build_positive_sum_bar(df_sub: pd.DataFrame, title: str, height: int = 440) 
     fig = go.Figure()
     fig.add_trace(
         go.Bar(
-            name="Correta",
-            x=configs_x,
-            y=cor_vals,
-            marker_color=CORES_DECISAO["Correta"],
-            text=[f"{v:.0f}%" if v >= 10.0 else "" for v in cor_vals],
-            textposition="inside",
-            insidetextanchor="middle",
-            textangle=0,
-            textfont=dict(color=TEXT_CORES_DECISAO["Correta"], size=10, family="Inter"),
-            customdata=np.stack([soma_vals, summary["score_mean"]], axis=-1),
-            hovertemplate=(
-                "<b>%{x}</b><br>"
-                "Correta: <b>%{y:.1f}%</b><br>"
-                "Soma (Parcial + Correta): <b>%{customdata[0]:.1f}%</b><br>"
-                "Score Esperado: <b>%{customdata[1]:.3f}</b><extra></extra>"
-            ),
-        )
-    )
-    fig.add_trace(
-        go.Bar(
             name="Parcialmente correta",
+            legendrank=1,
             x=configs_x,
             y=pcor_vals,
             marker_color=CORES_DECISAO["Parcialmente correta"],
@@ -740,12 +754,33 @@ def build_positive_sum_bar(df_sub: pd.DataFrame, title: str, height: int = 440) 
             ),
         )
     )
+    fig.add_trace(
+        go.Bar(
+            name="Correta",
+            legendrank=2,
+            x=configs_x,
+            y=cor_vals,
+            marker_color=CORES_DECISAO["Correta"],
+            text=[f"{v:.0f}%" if v >= 10.0 else "" for v in cor_vals],
+            textposition="inside",
+            insidetextanchor="middle",
+            textangle=0,
+            textfont=dict(color=TEXT_CORES_DECISAO["Correta"], size=10, family="Inter"),
+            customdata=np.stack([soma_vals, summary["score_mean"]], axis=-1),
+            hovertemplate=(
+                "<b>%{x}</b><br>"
+                "Correta: <b>%{y:.1f}%</b><br>"
+                "Soma (Parcial + Correta): <b>%{customdata[0]:.1f}%</b><br>"
+                "Score Esperado: <b>%{customdata[1]:.3f}</b><extra></extra>"
+            ),
+        )
+    )
 
     # Rótulo com a SOMA total no topo de cada barra
     fig.add_trace(
         go.Scatter(
             x=configs_x,
-            y=soma_vals + 2.8,
+            y=soma_vals + 3.0,
             mode="text",
             text=[f"<b>{v:.1f}%</b>" for v in soma_vals],
             textfont=dict(size=10.5, color="#0f172a", family="Inter"),
@@ -755,10 +790,10 @@ def build_positive_sum_bar(df_sub: pd.DataFrame, title: str, height: int = 440) 
     )
 
     fig.update_layout(
-        title=dict(text=f"<b>{title}</b>", font=dict(size=15, color="#0f172a")),
+        title=dict(text=f"<b>{title}</b>", font=dict(size=14.5, color="#0f172a")),
         barmode="stack",
         xaxis=dict(
-            tickangle=-32,
+            tickangle=-30,
             tickfont=dict(size=10.5, color="#1e293b"),
             categoryorder="array",
             categoryarray=configs_x,
@@ -779,101 +814,102 @@ def build_positive_sum_bar(df_sub: pd.DataFrame, title: str, height: int = 440) 
         ),
         plot_bgcolor="#ffffff",
         paper_bgcolor="#ffffff",
-        margin=dict(l=48, r=15, t=72, b=115),
+        margin=dict(l=48, r=15, t=68, b=115),
         height=height,
     )
     return fig
 
 
-def build_mean_std_bar(df_sub: pd.DataFrame, title: str, height: int = 470) -> go.Figure:
+def build_general_score_boxplot(
+    df_sub: pd.DataFrame,
+    title: str = "Distribuição e média do Score Esperado por método de RAG",
+    height: int = 490,
+) -> go.Figure:
     """
-    Gráfico de barras clássico da estatística tradicional:
-    Score Esperado Médio ± Desvio Padrão (DP), ordenado do melhor para o pior.
+    Boxplot geral do Score Esperado ordenado pelas médias (decrescente),
+    exibindo o valor do Score Médio dentro de uma caixinha em cada método.
     """
-    summary = compute_config_summary(df_sub)
+    summary = compute_config_summary(df_sub, sort_by_score=True)
     if summary.empty:
         fig = go.Figure()
         fig.update_layout(title=title, height=height)
         return fig
 
-    configs_x = summary["config_label"].tolist()
-    means = summary["score_mean"].to_numpy()
-    stds = summary["score_std"].to_numpy()
-    top_y = np.maximum(means + stds, means)
-
+    ordered_configs = summary["config_label"].tolist()
     fig = go.Figure()
-    fig.add_trace(
-        go.Bar(
-            x=configs_x,
-            y=means,
-            error_y=dict(
-                type="data",
-                array=stds,
-                visible=True,
-                color="#475569",
-                thickness=1.6,
-                width=5,
-            ),
-            marker_color=COR_COBALTO,
-            marker_line=dict(color="#1d4ed8", width=1),
-            opacity=0.92,
-            customdata=np.stack([stds, summary["correta_pct"]], axis=-1),
-            hovertemplate=(
-                "<b>%{x}</b><br>"
-                "Score Médio: <b>%{y:.3f}</b><br>"
-                "Desvio Padrão (DP): <b>± %{customdata[0]:.3f}</b><br>"
-                "Taxa Correta: <b>%{customdata[1]:.1f}%</b><extra></extra>"
-            ),
-            showlegend=False,
-        )
-    )
 
-    # Exibe Média ± DP acima da haste de erro sem sobreposição
-    fig.add_trace(
-        go.Scatter(
-            x=configs_x,
-            y=top_y + 0.045,
-            mode="text",
-            text=[f"<b>{m:.3f}</b><br><span style='font-size:10px;color:#64748b'>±{s:.2f}</span>" for m, s in zip(means, stds)],
-            textfont=dict(size=11, color="#0f172a", family="Inter"),
-            showlegend=False,
-            hoverinfo="skip",
-        )
-    )
+    for _, row_s in summary.iterrows():
+        cfg = row_s["config_label"]
+        mean_val = float(row_s["score_mean"])
+        d_cfg = df_sub[df_sub["config_label"] == cfg]["score_esperado"]
 
-    y_max = max(1.18, float((top_y + 0.14).max()))
+        fig.add_trace(
+            go.Box(
+                y=d_cfg,
+                name=cfg,
+                boxmean=True,
+                marker_color=LIGHT_BLUE_BOX,
+                line=dict(color=LIGHT_BLUE_BORDER, width=1.8),
+                fillcolor=LIGHT_BLUE_BOX,
+                opacity=0.80,
+                boxpoints="outliers",
+                hovertemplate=(
+                    f"<b>{cfg}</b><br>"
+                    f"Score Médio: <b>{mean_val:.3f}</b><br>"
+                    "Score: <b>%{y:.3f}</b><extra></extra>"
+                ),
+            )
+        )
+
+        # Caixinha destacando o Score Médio diretamente sobre o boxplot
+        fig.add_annotation(
+            x=cfg,
+            y=mean_val,
+            text=f"<b>Média: {mean_val:.3f}</b>",
+            showarrow=False,
+            font=dict(size=10, color="#0f172a", family="Inter"),
+            bgcolor="#ffffff",
+            bordercolor=LIGHT_BLUE_BORDER,
+            borderwidth=1.3,
+            borderpad=3,
+        )
+
     fig.update_layout(
         title=dict(text=f"<b>{title}</b>", font=dict(size=16, color="#0f172a")),
         xaxis=dict(
-            title="Método e Configuração de RAG",
-            tickangle=-26,
+            title="Método e Configuração de RAG (ordenado pelo Score Médio)",
+            tickangle=-25,
             tickfont=dict(size=11, color="#1e293b"),
             categoryorder="array",
-            categoryarray=configs_x,
+            categoryarray=ordered_configs,
         ),
         yaxis=dict(
-            title="Score Esperado Médio (± DP)",
-            range=[0, y_max],
-            tickvals=[0.0, 0.2, 0.4, 0.6, 0.8, 1.0],
+            title="Score Esperado (0 a 1)",
+            range=[-0.04, 1.06],
             gridcolor=COR_GRID,
-            zerolinecolor="#e2e8f0",
+            zeroline=False,
         ),
+        showlegend=False,
         plot_bgcolor="#ffffff",
         paper_bgcolor="#ffffff",
-        margin=dict(l=55, r=20, t=65, b=115),
+        margin=dict(l=55, r=25, t=65, b=115),
         height=height,
     )
     return fig
 
 
-def build_grouped_type_mean_std(df_sub: pd.DataFrame, title: str, height: int = 470) -> go.Figure:
+def build_grouped_type_mean_std(
+    df_sub: pd.DataFrame,
+    title: str = "Score Esperado médio (± DP) em perguntas únicas e híbridas",
+    height: int = 470,
+) -> go.Figure:
     """
-    Barras agrupadas (Única vs Híbrida) mostrando Score Esperado Médio ± Desvio Padrão
-    para cada configuração, mantendo estatística descritiva tradicional.
+    Barras agrupadas (Única vs Híbrida) mostrando Score Esperado Médio ± Desvio Padrão,
+    ordenadas por ORDEM_CONFIGS (RAG Tradicional -> Fichamento + Embedding -> Fichamento + JEV Top-K -> JEV Livre).
     """
-    overall_order = compute_config_summary(df_sub)["config_label"].tolist()
-    if not overall_order:
-        overall_order = ORDEM_CONFIGS
+    present_order = [c for c in ORDEM_CONFIGS if c in df_sub["config_label"].unique()]
+    if not present_order:
+        present_order = ORDEM_CONFIGS
 
     fig = go.Figure()
     configs_meta = [
@@ -884,7 +920,7 @@ def build_grouped_type_mean_std(df_sub: pd.DataFrame, title: str, height: int = 
     for t_key, t_label, color_hex in configs_meta:
         sub_t = df_sub[df_sub["tipo_pergunta"] == t_key]
         means, stds = [], []
-        for cfg in overall_order:
+        for cfg in present_order:
             vals = sub_t[sub_t["config_label"] == cfg]["score_esperado"]
             means.append(float(vals.mean()) if len(vals) > 0 else 0.0)
             stds.append(float(vals.std(ddof=1)) if len(vals) > 1 else 0.0)
@@ -892,7 +928,7 @@ def build_grouped_type_mean_std(df_sub: pd.DataFrame, title: str, height: int = 
         fig.add_trace(
             go.Bar(
                 name=t_label,
-                x=overall_order,
+                x=present_order,
                 y=means,
                 error_y=dict(
                     type="data",
@@ -903,11 +939,6 @@ def build_grouped_type_mean_std(df_sub: pd.DataFrame, title: str, height: int = 
                     width=4,
                 ),
                 marker_color=color_hex,
-                text=[f"{m:.2f}" for m in means],
-                textposition="inside",
-                insidetextanchor="start",
-                textangle=0,
-                textfont=dict(color="#ffffff", size=10, family="Inter"),
                 customdata=stds,
                 hovertemplate=(
                     "<b>%{x}</b><br>"
@@ -921,15 +952,15 @@ def build_grouped_type_mean_std(df_sub: pd.DataFrame, title: str, height: int = 
         title=dict(text=f"<b>{title}</b>", font=dict(size=16, color="#0f172a")),
         barmode="group",
         xaxis=dict(
-            title="Método e Configuração (ordenado pelo Score Geral)",
+            title="Método e Configuração de RAG",
             tickangle=-26,
             tickfont=dict(size=11, color="#1e293b"),
             categoryorder="array",
-            categoryarray=overall_order,
+            categoryarray=present_order,
         ),
         yaxis=dict(
             title="Score Esperado Médio (± DP)",
-            range=[0, 1.22],
+            range=[0, 1.18],
             tickvals=[0.0, 0.2, 0.4, 0.6, 0.8, 1.0],
             gridcolor=COR_GRID,
             zerolinecolor="#e2e8f0",
@@ -962,12 +993,15 @@ def _short_cost_label(cfg: str) -> str:
     return cfg
 
 
-def build_score_vs_cost_scatter(df_sub: pd.DataFrame, title: str, height: int = 440) -> go.Figure:
+def build_score_vs_cost_scatter(
+    df_sub: pd.DataFrame,
+    title: str = "Cruzamento entre Score Esperado Médio e Custo Total em USD",
+    height: int = 440,
+) -> go.Figure:
     """
-    Dispersão cruzando Custo Operacional do RAG (Gemini + Consultas JEV em USD)
-    com o Score Esperado Médio para visualizar a fronteira de custo-benefício.
+    Dispersão cruzando Custo Operacional do RAG em USD com o Score Esperado Médio.
     """
-    summary = compute_config_summary(df_sub)
+    summary = compute_config_summary(df_sub, sort_by_score=True)
     if summary.empty:
         fig = go.Figure()
         fig.update_layout(title=title, height=height)
@@ -1032,7 +1066,7 @@ def build_score_vs_cost_scatter(df_sub: pd.DataFrame, title: str, height: int = 
     fig.update_layout(
         title=dict(text=f"<b>{title}</b>", font=dict(size=16, color="#0f172a")),
         xaxis=dict(
-            title="Custo Operacional Total para 200 Perguntas (USD — Gemini + Consultas JEV)",
+            title="Custo Operacional Total para 200 Perguntas (USD)",
             range=[-0.04, max_cost * 1.13],
             tickprefix="$",
             gridcolor=COR_GRID,
@@ -1059,18 +1093,23 @@ def build_score_vs_cost_scatter(df_sub: pd.DataFrame, title: str, height: int = 
     return fig
 
 
-def build_docs_freq_and_score_chart(df_jev_livre: pd.DataFrame, title: str, height: int = 410) -> go.Figure:
+def build_docs_freq_and_score_chart(
+    df_jev_livre: pd.DataFrame,
+    title: str = "Quantidade de consultas e Score Esperado médio por faixa de fatias",
+    height: int = 410,
+) -> go.Figure:
     """
     Gráfico combinado (Barras de Frequência n + Linha de Score Esperado Médio)
-    por faixa categorizada de documentos selecionados ('1', '2', '3', '4+').
+    por faixa categorizada de fatias selecionadas ('1', '2', '3', '4+'),
+    com rótulos sempre na horizontal (textangle=0).
     """
     counts, means, stds, cors = [], [], [], []
     x_labels = []
     for faixa in ORDEM_FAIXAS_DOCS:
         sub = df_jev_livre[df_jev_livre["faixa_documentos"] == faixa]
         n_obs = len(sub)
-        doc_unit = "doc" if faixa == "1" else "docs"
-        x_labels.append(f"{faixa} {doc_unit}<br>(n={n_obs})")
+        unit_label = "fatia" if faixa == "1" else "fatias"
+        x_labels.append(f"{faixa} {unit_label}<br>(n={n_obs})")
         counts.append(n_obs)
         if n_obs > 0:
             means.append(float(sub["score_esperado"].mean()))
@@ -1092,8 +1131,10 @@ def build_docs_freq_and_score_chart(df_jev_livre: pd.DataFrame, title: str, heig
             marker_line=dict(color="#60a5fa", width=1),
             opacity=0.65,
             text=[str(c) for c in counts],
-            textposition="inside",
-            insidetextanchor="start",
+            textposition="outside",
+            textangle=0,
+            constraintext="none",
+            cliponaxis=False,
             textfont=dict(size=11, color="#1e3a8a", family="Inter"),
             hovertemplate="<b>%{x}</b><br>Perguntas nessa faixa: <b>%{y}</b><extra></extra>",
         ),
@@ -1125,14 +1166,14 @@ def build_docs_freq_and_score_chart(df_jev_livre: pd.DataFrame, title: str, heig
     max_n = max(counts) if counts else 10
     fig.update_yaxes(
         title_text="Número de Perguntas (n)",
-        range=[0, max(10, max_n * 1.18)],
+        range=[0, max(12, max_n * 1.24)],
         gridcolor=COR_GRID,
         secondary_y=False,
         tickfont=dict(size=10.5, color="#64748b"),
     )
     fig.update_yaxes(
         title_text="Score Esperado Médio (0 a 1)",
-        range=[0, 1.08],
+        range=[0, 1.12],
         showgrid=False,
         secondary_y=True,
         tickfont=dict(size=10.5, color="#1d4ed8"),
@@ -1140,7 +1181,7 @@ def build_docs_freq_and_score_chart(df_jev_livre: pd.DataFrame, title: str, heig
     fig.update_xaxes(tickfont=dict(size=11.5, color="#1e293b"))
 
     fig.update_layout(
-        title=dict(text=f"<b>{title}</b>", font=dict(size=15.5, color="#0f172a")),
+        title=dict(text=f"<b>{title}</b>", font=dict(size=15, color="#0f172a")),
         legend=dict(
             orientation="h",
             yanchor="bottom",
@@ -1160,7 +1201,7 @@ def build_docs_freq_and_score_chart(df_jev_livre: pd.DataFrame, title: str, heig
 # VISÃO EXECUTIVA (TOPO DO DASHBOARD)
 # ==============================================================================
 def _render_executive_summary(df: pd.DataFrame):
-    summary = compute_config_summary(df)
+    summary = compute_config_summary(df, sort_by_score=True)
     if summary.empty:
         return
 
@@ -1168,13 +1209,13 @@ def _render_executive_summary(df: pd.DataFrame):
 
     # Melhor em híbridas
     df_hib = df[df["tipo_pergunta"] == "híbrida"]
-    sum_hib = compute_config_summary(df_hib)
+    sum_hib = compute_config_summary(df_hib, sort_by_score=True)
     best_hib = sum_hib.iloc[0] if not sum_hib.empty else best_overall
 
     # Menor taxa de incorretas
     best_low_err = summary.sort_values(by=["incorreta_pct", "score_mean"], ascending=[True, False]).iloc[0]
 
-    # Melhor custo-benefício (menor custo mantendo score >= 0.70, ou maior razão score/custo)
+    # Melhor custo-benefício (menor custo mantendo score >= 0.70)
     cand_roi = summary[summary["score_mean"] >= 0.70]
     if cand_roi.empty:
         cand_roi = summary
@@ -1217,28 +1258,9 @@ def _render_executive_summary(df: pd.DataFrame):
         </div>
         """), unsafe_allow_html=True)
 
-    with st.expander("📋 Ver Tabela Leaderboard Completa (Ranking das 10 Configurações)", expanded=False):
-        tbl = summary.copy()
-        tbl.insert(0, "Pos.", [f"#{i}" for i in range(1, len(tbl) + 1)])
-        tbl_display = pd.DataFrame(
-            {
-                "Pos.": tbl["Pos."],
-                "Método e Configuração": tbl["config_label"],
-                "Score Médio": tbl["score_mean"].map(lambda v: f"{v:.3f}"),
-                "Desvio Padrão": tbl["score_std"].map(lambda v: f"± {v:.3f}"),
-                "Correta (%)": tbl["correta_pct"].map(lambda v: f"{v:.1f}%"),
-                "Parcial + Correta (%)": tbl["positiva_pct"].map(lambda v: f"{v:.1f}%"),
-                "Incorreta (%)": tbl["incorreta_pct"].map(lambda v: f"{v:.1f}%"),
-                "Média Docs": tbl["docs_mean"].map(lambda v: f"{v:.2f}"),
-                "Custo 200p (USD)": tbl["custo_200"].map(lambda v: f"${v:.4f}"),
-                "Custo / 1k (USD)": tbl["custo_1k"].map(lambda v: f"${v:.4f}"),
-            }
-        )
-        st.dataframe(tbl_display, hide_index=True, width="stretch")
-
 
 # ==============================================================================
-# SEÇÕES DO DASHBOARD (PRESERVANDO OS TEXTOS ORIGINAIS)
+# SEÇÕES DO DASHBOARD
 # ==============================================================================
 def _render_section_acuracia(df: pd.DataFrame):
     st.markdown('<div class="section-header">Acurácia</div>', unsafe_allow_html=True)
@@ -1250,7 +1272,7 @@ def _render_section_acuracia(df: pd.DataFrame):
         <div class="intro-card">
             <h3>📚 Comparação entre RAG Tradicional e RAG Fichamentos</h3>
             <p>
-                Para avaliar a acurácia dos métodos, elaboramos <strong>100 questões</strong> para os <strong>133 cursos de graduação</strong>
+                Para avaliar a acurácia dos métodos, elaborou-se <strong>100 questões</strong> para os <strong>133 cursos de graduação</strong>
                 (bacharelado e licenciatura) existentes atualmente na <strong>Universidade Federal da Bahia</strong>.
                 As questões foram criadas a partir dos documentos encontrados nos websites dos colegiados e departamento de cada curso.
             </p>
@@ -1278,30 +1300,32 @@ def _render_section_acuracia(df: pd.DataFrame):
                 <li><strong>RAG tradicional com chunking simples</strong> — FileSearchStore da API Gemini (<code>k = 1, 5, 10</code>);</li>
                 <li><strong>RAG com pré-LLM para definir os chunkings (fatias de PDFs)</strong> e <strong>embeddings sobre os fichamentos</strong> dessas fatias (<code>k = 1, 5, 10</code>).</li>
                 <li><strong>RAG com pré-LLM para definir os chunkings (fatias de PDFs)</strong>, mas com o modelo <strong>TypeSafe JEV 1.14</strong> determinando as fatias a serem inseridas na janela de contexto, sob uma limitação das <em>top-k</em> (<code>k = 1, 5 ou 10</code>) fatias mais relevantes.</li>
-                <li><strong>RAG com o mesmo pipeline anterior</strong>, diferenciando-se quanto à <strong>liberdade do modelo TypeSafe</strong>: sem restrições de <em>k</em> fatias mais relevantes, o modelo seleciona a quantidade de fatias que devem entrar no contexto.</li>
+                <li><strong>RAG com o mesmo método anterior</strong>, diferenciando-se quanto à liberdade do modelo JEV em determinar as <em>k</em> fatias mais relevantes que devem entrar na janela de contexto.</li>
             </ul>
         </div>
         """), unsafe_allow_html=True)
 
-    st.markdown("<div style='height: 0.9rem;'></div>", unsafe_allow_html=True)
-
-    # 1. Qual o melhor RAG? (Divergente centrado em 0% e ranqueado)
+    # 1. Qual o método que mais acerta?
+    st.markdown(
+        '<div class="subsection-header">Qual o método que mais acerta?</div>',
+        unsafe_allow_html=True,
+    )
     fig_div = build_diverging_accuracy_bar(
-        df, title="Qual o método que mais acerta? (Distribuição Divergente Ranqueada)"
+        df, title="Distribuição do acerto (%) por método de RAG empregado"
     )
     st.plotly_chart(fig_div, width="stretch")
 
-    # 2. Qual o melhor k? (4 gráficos em uma linha com mesma escala de % Incorreta)
+    # 2. Qual o melhor k?
     st.markdown(
-        '<div class="subsection-header">Qual o melhor k? (Taxa de Respostas Incorretas por Arquitetura — Mesma Escala)</div>',
+        '<div class="subsection-header">Qual o melhor k?</div>',
         unsafe_allow_html=True,
     )
-    fig_k = build_k_sensitivity_grid(
-        df, title="Redução da Taxa de Incorretas conforme aumenta o Top-k (menor barra = melhor)"
+    fig_k = build_k_sensitivity_line(
+        df, title="Percentual de respostas classificadas como incorretas por número de chunkings"
     )
     st.plotly_chart(fig_k, width="stretch")
 
-    # 3. Melhor em Híbrido vs Único (Soma Parcial + Correta + 2 Indicadores acima de cada gráfico)
+    # 3. O desempenho é afetado por perguntas multi-documento?
     st.markdown(
         '<div class="subsection-header">O desempenho é afetado por perguntas multi-documento?</div>',
         unsafe_allow_html=True,
@@ -1315,8 +1339,13 @@ def _render_section_acuracia(df: pd.DataFrame):
     ]:
         with col_target:
             df_t = df[df["tipo_pergunta"] == tipo_key]
-            sum_t = compute_config_summary(df_t)
+            sum_t = compute_config_summary(df_t, sort_by_score=False)
             n_q = int(df_t["Pergunta"].nunique()) if not df_t.empty else 0
+
+            st.markdown(
+                f'<div class="column-question-title">{titulo_col} (n={n_q} perguntas)</div>',
+                unsafe_allow_html=True,
+            )
 
             if not sum_t.empty:
                 best_score_row = sum_t.sort_values(by=["score_mean", "positiva_pct"], ascending=False).iloc[0]
@@ -1342,8 +1371,8 @@ def _render_section_acuracia(df: pd.DataFrame):
 
             fig_sum = build_positive_sum_bar(
                 df_t,
-                title=f"{titulo_col} (n={n_q} perguntas)",
-                height=450,
+                title="Percentual de respostas Parcialmente corretas + Corretas (%)",
+                height=440,
             )
             st.plotly_chart(fig_sum, width="stretch")
 
@@ -1359,7 +1388,7 @@ def _render_section_qualidade(df: pd.DataFrame):
             <h4>📐 Fórmula do Score Esperado</h4>
             <p style="font-size: 0.91rem; color: #334155; line-height: 1.55; margin-bottom: 0.5rem;">
                 O Score é calculado a partir do <strong>exponencial das log probabilidades</strong> emitidas pelo modelo
-                <strong>TypeSafe JEV 1.14</strong> para cada categoria de classificação, combinadas linearmente em [0, 1]:
+                <strong>TypeSafe JEV 1.14</strong> para cada categoria de classificação:
             </p>
             <div class="formula-box">
                 Score Esperado = Peso<sub>inc</sub> × 0 + Peso<sub>pinc</sub> × 0,15 + Peso<sub>pcor</sub> × 0,55 + Peso<sub>cor</sub> × 1
@@ -1378,7 +1407,7 @@ def _render_section_qualidade(df: pd.DataFrame):
             <h3>💡 Interpretação Interativa do Score Esperado</h3>
             <p style="font-size: 0.9rem; margin-bottom: 0.7rem;">
                 O <strong>Score Esperado</strong> capta a <strong>qualidade média da resposta</strong> dos métodos levando em consideração a
-                <strong>incerteza do LLM julgador</strong> e <strong>penalizando severamente os erros dos métodos</strong>:
+                <strong>incerteza do LLM julgador</strong> ao <strong>penalizar os erros</strong>:
             </p>
             <div class="interactive-weight-row" title="Peso 0,00: erro completo zera a pontuação esperada da categoria.">
                 <span style="min-width: 162px; font-weight: 700; color: #ef4444; font-size: 0.86rem;">Incorreto (× 0,00)</span>
@@ -1411,24 +1440,30 @@ def _render_section_qualidade(df: pd.DataFrame):
         </div>
         """), unsafe_allow_html=True)
 
-    st.markdown("<div style='height: 0.9rem;'></div>", unsafe_allow_html=True)
-
-    fig_mean_std = build_mean_std_bar(
-        df, title="Qual a qualidade média das respostas? (Média ± Desvio Padrão)"
+    st.markdown(
+        '<div class="subsection-header">Qual a qualidade média das respostas?</div>',
+        unsafe_allow_html=True,
     )
-    st.plotly_chart(fig_mean_std, width="stretch")
+    fig_box_geral = build_general_score_boxplot(
+        df, title="Distribuição e média do Score Esperado por método de RAG"
+    )
+    st.plotly_chart(fig_box_geral, width="stretch")
 
+    st.markdown(
+        '<div class="subsection-header">A qualidade média é afetada por perguntas multi-documento?</div>',
+        unsafe_allow_html=True,
+    )
     fig_type_mean = build_grouped_type_mean_std(
-        df, title="A qualidade média é afetada por perguntas multi-documento? (Única vs Híbrida, Média ± DP)"
+        df, title="Score Esperado médio (± DP) em perguntas únicas e híbridas"
     )
     st.plotly_chart(fig_type_mean, width="stretch")
 
     st.markdown(
-        '<div class="subsection-header">Qualidade vs Custo Operacional (Fronteira de Eficiência)</div>',
+        '<div class="subsection-header">Qualidade vs Custo Operacional</div>',
         unsafe_allow_html=True,
     )
     st.caption(
-        "Considera o custo operacional do RAG nas 200 perguntas (geração Gemini + seleção JEV nas consultas), "
+        "Considera o custo operacional do RAG nas 200 perguntas, "
         "excluindo o custo experimental do LLM julgador."
     )
     fig_cost = build_score_vs_cost_scatter(
@@ -1465,7 +1500,7 @@ def _render_section_documentos(df: pd.DataFrame):
     h_mean, h_med, h_std, h_min, h_max = _stats(df_hib)
 
     st.markdown(
-        '<div class="subsection-header" style="margin-top:0.2rem;">Quantidade de Documentos Utilizados pelo JEV Livre (Seleção Autônoma Prob &gt; 0,50)</div>',
+        '<div class="subsection-header" style="margin-top:0.2rem;">Quantidade de Fatias Utilizadas pelo JEV Livre (Seleção Autônoma Prob &gt; 0,50)</div>',
         unsafe_allow_html=True,
     )
 
@@ -1473,16 +1508,16 @@ def _render_section_documentos(df: pd.DataFrame):
     with c1:
         st.markdown(_clean_html(f"""
         <div class="kpi-card">
-            <div class="kpi-label">Média de Documentos (Geral)</div>
-            <div class="kpi-value">{g_mean:.2f} docs</div>
+            <div class="kpi-label">Média de Fatias (Geral)</div>
+            <div class="kpi-value">{g_mean:.2f} fatias</div>
             <div class="kpi-split-grid">
                 <div>
                     <div class="kpi-split-label">Únicas</div>
-                    <div class="kpi-split-val">{u_mean:.2f} docs</div>
+                    <div class="kpi-split-val">{u_mean:.2f} fatias</div>
                 </div>
                 <div>
                     <div class="kpi-split-label">Híbridas</div>
-                    <div class="kpi-split-val">{h_mean:.2f} docs</div>
+                    <div class="kpi-split-val">{h_mean:.2f} fatias</div>
                 </div>
             </div>
         </div>
@@ -1491,16 +1526,16 @@ def _render_section_documentos(df: pd.DataFrame):
     with c2:
         st.markdown(_clean_html(f"""
         <div class="kpi-card">
-            <div class="kpi-label">Mediana de Documentos (Geral)</div>
-            <div class="kpi-value">{g_med:.1f} doc</div>
+            <div class="kpi-label">Mediana de Fatias (Geral)</div>
+            <div class="kpi-value">{g_med:.1f} fatia</div>
             <div class="kpi-split-grid">
                 <div>
                     <div class="kpi-split-label">Únicas</div>
-                    <div class="kpi-split-val">{u_med:.1f} doc</div>
+                    <div class="kpi-split-val">{u_med:.1f} fatia</div>
                 </div>
                 <div>
                     <div class="kpi-split-label">Híbridas</div>
-                    <div class="kpi-split-val">{h_med:.1f} doc</div>
+                    <div class="kpi-split-val">{h_med:.1f} fatia</div>
                 </div>
             </div>
         </div>
@@ -1542,12 +1577,53 @@ def _render_section_documentos(df: pd.DataFrame):
         </div>
         """), unsafe_allow_html=True)
 
-    st.markdown("<div style='height: 0.9rem;'></div>", unsafe_allow_html=True)
+    # Figura da distribuição proporcional logo abaixo dos indicadores (sem os cards inferiores)
+    dist_faixas = (
+        df_livre["faixa_documentos"]
+        .value_counts()
+        .reindex(ORDEM_FAIXAS_DOCS, fill_value=0)
+    )
+    total_livre = max(1, len(df_livre))
+    pcts = {f: dist_faixas[f] / total_livre * 100.0 for f in ORDEM_FAIXAS_DOCS}
+
+    st.markdown(
+        '<div class="subsection-header">Frequência (%) de documentos usados como contexto</div>',
+        unsafe_allow_html=True,
+    )
+    freq_bar_html = _clean_html(f"""
+    <div class="intro-card" style="padding: 1.05rem 1.35rem;">
+        <div style="display:flex; height:28px; border-radius:999px; overflow:hidden; background:#f1f5f9; border:1px solid #e2e8f0; margin-bottom:0.65rem;">
+            <div title="1 fatia: {int(dist_faixas['1'])} ({pcts['1']:.1f}%)" style="width:{max(pcts['1'], 0.5):.2f}%; background:#bfdbfe; display:flex; align-items:center; justify-content:center; font-size:0.78rem; font-weight:700; color:#1e3a8a;">
+                {f"{pcts['1']:.1f}%" if pcts['1'] >= 7 else ""}
+            </div>
+            <div title="2 fatias: {int(dist_faixas['2'])} ({pcts['2']:.1f}%)" style="width:{max(pcts['2'], 0.5):.2f}%; background:#60a5fa; display:flex; align-items:center; justify-content:center; font-size:0.78rem; font-weight:700; color:#ffffff;">
+                {f"{pcts['2']:.1f}%" if pcts['2'] >= 6 else ""}
+            </div>
+            <div title="3 fatias: {int(dist_faixas['3'])} ({pcts['3']:.1f}%)" style="width:{max(pcts['3'], 0.5):.2f}%; background:#2563eb; display:flex; align-items:center; justify-content:center; font-size:0.78rem; font-weight:700; color:#ffffff;">
+                {f"{pcts['3']:.1f}%" if pcts['3'] >= 4 else ""}
+            </div>
+            <div title="4+ fatias: {int(dist_faixas['4+'])} ({pcts['4+']:.1f}%)" style="width:{max(pcts['4+'], 0.5):.2f}%; background:#1e3a8a; display:flex; align-items:center; justify-content:center; font-size:0.78rem; font-weight:700; color:#ffffff;">
+                {f"{pcts['4+']:.1f}%" if pcts['4+'] >= 4 else ""}
+            </div>
+        </div>
+        <div style="display:flex; flex-wrap:wrap; gap:1.35rem; font-size:0.82rem; color:#475569;">
+            <span><span style="display:inline-block;width:10px;height:10px;border-radius:3px;background:#bfdbfe;margin-right:5px;"></span><strong>1 fatia:</strong> {pcts['1']:.1f}% ({int(dist_faixas['1'])})</span>
+            <span><span style="display:inline-block;width:10px;height:10px;border-radius:3px;background:#60a5fa;margin-right:5px;"></span><strong>2 fatias:</strong> {pcts['2']:.1f}% ({int(dist_faixas['2'])})</span>
+            <span><span style="display:inline-block;width:10px;height:10px;border-radius:3px;background:#2563eb;margin-right:5px;"></span><strong>3 fatias:</strong> {pcts['3']:.1f}% ({int(dist_faixas['3'])})</span>
+            <span><span style="display:inline-block;width:10px;height:10px;border-radius:3px;background:#1e3a8a;margin-right:5px;"></span><strong>4+ fatias:</strong> {pcts['4+']:.1f}% ({int(dist_faixas['4+'])})</span>
+        </div>
+    </div>
+    """)
+    st.markdown(freq_bar_html, unsafe_allow_html=True)
 
     # Linha 1: Frequência + Score Médio Geral
+    st.markdown(
+        '<div class="subsection-header">A quantidade de documentos está relacionada com a qualidade da resposta?</div>',
+        unsafe_allow_html=True,
+    )
     fig_doc_geral = build_docs_freq_and_score_chart(
         df_livre,
-        title="A quantidade de documentos está relacionada com a qualidade da resposta?",
+        title="Quantidade de consultas e Score Esperado médio por faixa de fatias",
         height=420,
     )
     st.plotly_chart(fig_doc_geral, width="stretch")
@@ -1560,78 +1636,28 @@ def _render_section_documentos(df: pd.DataFrame):
     col_d1, col_d2 = st.columns(2, gap="medium")
 
     with col_d1:
+        st.markdown(
+            f'<div class="column-question-title">Perguntas Híbridas (n={len(df_hib)})</div>',
+            unsafe_allow_html=True,
+        )
         fig_doc_hib = build_docs_freq_and_score_chart(
             df_hib,
-            title=f"Perguntas Híbridas (n={len(df_hib)})",
+            title="Quantidade de consultas e Score Esperado médio por faixa",
             height=390,
         )
         st.plotly_chart(fig_doc_hib, width="stretch")
 
     with col_d2:
+        st.markdown(
+            f'<div class="column-question-title">Perguntas Únicas (n={len(df_uni)})</div>',
+            unsafe_allow_html=True,
+        )
         fig_doc_uni = build_docs_freq_and_score_chart(
             df_uni,
-            title=f"Perguntas Únicas (n={len(df_uni)})",
+            title="Quantidade de consultas e Score Esperado médio por faixa",
             height=390,
         )
         st.plotly_chart(fig_doc_uni, width="stretch")
-
-    # Linha 3: Distribuição Proporcional por Faixa em Card Minimalista
-    dist_faixas = (
-        df_livre["faixa_documentos"]
-        .value_counts()
-        .reindex(ORDEM_FAIXAS_DOCS, fill_value=0)
-    )
-    total_livre = max(1, len(df_livre))
-    pcts = {f: dist_faixas[f] / total_livre * 100.0 for f in ORDEM_FAIXAS_DOCS}
-    score_by_bin = {
-        f: (float(df_livre[df_livre["faixa_documentos"] == f]["score_esperado"].mean()) if dist_faixas[f] > 0 else 0.0)
-        for f in ORDEM_FAIXAS_DOCS
-    }
-
-    st.markdown(
-        '<div class="subsection-header">Métricas adicionais</div>',
-        unsafe_allow_html=True,
-    )
-    metrics_html = _clean_html(f"""
-    <div class="intro-card" style="padding: 1.25rem 1.4rem;">
-        <div style="font-size:0.86rem; color:#475569; margin-bottom:0.55rem; font-weight:600;">
-            Distribuição Proporcional de Consultas e Score Médio por Faixa de Documentos (JEV Livre):
-        </div>
-        <div style="display:flex; height:24px; border-radius:999px; overflow:hidden; background:#f1f5f9; border:1px solid #e2e8f0; margin-bottom:0.9rem;">
-            <div title="1 doc: {int(dist_faixas['1'])} ({pcts['1']:.1f}%) | Score médio: {score_by_bin['1']:.3f}" style="width:{max(pcts['1'], 0.5):.2f}%; background:#bfdbfe; display:flex; align-items:center; justify-content:center; font-size:0.75rem; font-weight:700; color:#1e3a8a;">
-                {f"{pcts['1']:.0f}%" if pcts['1'] >= 8 else ""}
-            </div>
-            <div title="2 docs: {int(dist_faixas['2'])} ({pcts['2']:.1f}%) | Score médio: {score_by_bin['2']:.3f}" style="width:{max(pcts['2'], 0.5):.2f}%; background:#60a5fa; display:flex; align-items:center; justify-content:center; font-size:0.75rem; font-weight:700; color:#ffffff;">
-                {f"{pcts['2']:.0f}%" if pcts['2'] >= 6 else ""}
-            </div>
-            <div title="3 docs: {int(dist_faixas['3'])} ({pcts['3']:.1f}%) | Score médio: {score_by_bin['3']:.3f}" style="width:{max(pcts['3'], 0.5):.2f}%; background:#2563eb; display:flex; align-items:center; justify-content:center; font-size:0.75rem; font-weight:700; color:#ffffff;">
-                {f"{pcts['3']:.0f}%" if pcts['3'] >= 6 else ""}
-            </div>
-            <div title="4+ docs: {int(dist_faixas['4+'])} ({pcts['4+']:.1f}%) | Score médio: {score_by_bin['4+']:.3f}" style="width:{max(pcts['4+'], 0.5):.2f}%; background:#1e3a8a; display:flex; align-items:center; justify-content:center; font-size:0.75rem; font-weight:700; color:#ffffff;">
-                {f"{pcts['4+']:.0f}%" if pcts['4+'] >= 6 else ""}
-            </div>
-        </div>
-        <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(165px, 1fr)); gap:0.65rem; font-size:0.82rem; color:#475569;">
-            <div class="mini-stat-card" style="border-top:3px solid #bfdbfe;">
-                <strong style="color:#0f172a;">1 doc:</strong> {int(dist_faixas['1'])} ({pcts['1']:.1f}%)<br>
-                <span>Score médio: <strong style="color:#0f172a;">{score_by_bin['1']:.3f}</strong></span>
-            </div>
-            <div class="mini-stat-card" style="border-top:3px solid #60a5fa;">
-                <strong style="color:#0f172a;">2 docs:</strong> {int(dist_faixas['2'])} ({pcts['2']:.1f}%)<br>
-                <span>Score médio: <strong style="color:#0f172a;">{score_by_bin['2']:.3f}</strong></span>
-            </div>
-            <div class="mini-stat-card" style="border-top:3px solid #2563eb;">
-                <strong style="color:#0f172a;">3 docs:</strong> {int(dist_faixas['3'])} ({pcts['3']:.1f}%)<br>
-                <span>Score médio: <strong style="color:#0f172a;">{score_by_bin['3']:.3f}</strong></span>
-            </div>
-            <div class="mini-stat-card" style="border-top:3px solid #1e3a8a;">
-                <strong style="color:#0f172a;">4+ docs:</strong> {int(dist_faixas['4+'])} ({pcts['4+']:.1f}%)<br>
-                <span>Score médio: <strong style="color:#0f172a;">{score_by_bin['4+']:.3f}</strong></span>
-            </div>
-        </div>
-    </div>
-    """)
-    st.markdown(metrics_html, unsafe_allow_html=True)
 
 
 def render_experiment_dashboard(embedded: bool = True):
@@ -1661,7 +1687,7 @@ def render_experiment_dashboard(embedded: bool = True):
     st.markdown(_clean_html("""
     <div class="page-header">
         <h1>📊 Comparação entre RAG Tradicional e RAG Fichamentos</h1>
-        <p>Avaliação comparativa em 200 perguntas regulamentares da UFBA (100 únicas e 100 híbridas multi-documento), com julgamento probabilístico via TypeSafe JEV 1.14.</p>
+        <p>Avaliação comparativa através de 200 perguntas elaboradas com documentos de cursos ativos da UFBA, utilizando o modelo de classificação TypeSafe Jev 1.14 como LLM julgador</p>
     </div>
     """), unsafe_allow_html=True)
 
