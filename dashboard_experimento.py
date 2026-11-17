@@ -1287,7 +1287,7 @@ def _render_section_acuracia(df: pd.DataFrame):
         <div class="intro-card">
             <h3>📚 Comparação entre RAG Tradicional e RAG Fichamentos</h3>
             <p>
-                Para avaliar a acurácia dos métodos, elaborou-se <strong>100 questões</strong> para os <strong>133 cursos de graduação</strong>
+                Para avaliar a acurácia dos métodos, elaborou-se <strong>100 questões</strong> para os <strong>124 cursos de graduação</strong>
                 (bacharelado e licenciatura) existentes atualmente na <strong>Universidade Federal da Bahia</strong>.
                 As questões foram criadas a partir dos documentos encontrados nos websites dos colegiados e departamento de cada curso.
             </p>
@@ -1300,8 +1300,8 @@ def _render_section_acuracia(df: pd.DataFrame):
                 Em seguida, foi utilizado o modelo <strong>TypeSafe Jev 1.14</strong> para classificar a resposta gerada pelos RAGs
                 (<strong>gemini 3.5 flash lite</strong>) em
                 <span style="color:#ef4444;font-weight:700;">"Incorreta"</span>,
-                <span style="color:#f87171;font-weight:700;">"Parcialmente incorreta"</span>,
-                <span style="color:#16a34a;font-weight:700;">"Parcialmente correta"</span> e
+                <span style="color:#fca5a5;font-weight:700;">"Parcialmente incorreta"</span>,
+                <span style="color:#86efac;font-weight:700;">"Parcialmente correta"</span> e
                 <span style="color:#10b981;font-weight:700;">"Correta"</span>.
             </p>
         </div>
@@ -1419,10 +1419,10 @@ def _render_section_qualidade(df: pd.DataFrame):
     with col_q2:
         st.markdown(_clean_html("""
         <div class="intro-card">
-            <h3>💡 Interpretação Interativa do Score Esperado</h3>
+            <h3>💡 Interpretação do Score Esperado</h3>
             <p style="font-size: 0.9rem; margin-bottom: 0.7rem;">
-                O <strong>Score Esperado</strong> capta a <strong>qualidade média da resposta</strong> dos métodos levando em consideração a
-                <strong>incerteza do LLM julgador</strong> ao <strong>penalizar os erros</strong>:
+                O <strong>Score Esperado</strong> captura a <strong>qualidade média das respostas</strong> dos métodos ao
+                <strong>penalizar fortemente os erros</strong>:
             </p>
             <div class="interactive-weight-row" title="Peso 0,00: erro completo zera a pontuação esperada da categoria.">
                 <span style="min-width: 162px; font-weight: 700; color: #ef4444; font-size: 0.86rem;">Incorreto (× 0,00)</span>
@@ -1432,14 +1432,14 @@ def _render_section_qualidade(df: pd.DataFrame):
                 <span style="font-size:0.82rem; color:#64748b; min-width:130px; text-align:right;">Penalização total (100%)</span>
             </div>
             <div class="interactive-weight-row" title="Peso 0,15: penalização severa de 85% para respostas predominantemente incorretas.">
-                <span style="min-width: 162px; font-weight: 700; color: #f87171; font-size: 0.86rem;">Parc. Incorreto (× 0,15)</span>
+                <span style="min-width: 162px; font-weight: 700; color: #fca5a5; font-size: 0.86rem;">Parc. Incorreto (× 0,15)</span>
                 <div style="flex:1; background:#fee2e2; height:11px; border-radius:999px; overflow:hidden;">
                     <div style="width:15%; background:#fca5a5; height:100%;"></div>
                 </div>
                 <span style="font-size:0.82rem; color:#64748b; min-width:130px; text-align:right;">Penalização de 85%</span>
             </div>
             <div class="interactive-weight-row" title="Peso 0,55: penalização moderada de 45% quando faltam elementos complementares.">
-                <span style="min-width: 162px; font-weight: 700; color: #16a34a; font-size: 0.86rem;">Parc. Correto (× 0,55)</span>
+                <span style="min-width: 162px; font-weight: 700; color: #86efac; font-size: 0.86rem;">Parc. Correto (× 0,55)</span>
                 <div style="flex:1; background:#dcfce7; height:11px; border-radius:999px; overflow:hidden;">
                     <div style="width:55%; background:#86efac; height:100%;"></div>
                 </div>
@@ -1486,7 +1486,7 @@ def _render_section_qualidade(df: pd.DataFrame):
             fig_box_t = build_general_score_boxplot(
                 df_t,
                 title="Distribuição do Score Esperado por método de RAG",
-                sort_by_mean=False,
+                sort_by_mean=True,
                 compact_badge=True,
                 height=460,
             )
@@ -1507,8 +1507,6 @@ def _render_section_qualidade(df: pd.DataFrame):
 
 
 def _render_section_documentos(df: pd.DataFrame):
-    st.markdown('<div class="section-header">Documentos e Qualidade</div>', unsafe_allow_html=True)
-
     df_livre = df[df["metodo_rag"] == "rag_fichamento_jev_livre"].copy()
     if df_livre.empty:
         st.info("Ainda não há registros para o método `rag_fichamento_jev_livre` na base carregada.")
@@ -1534,7 +1532,7 @@ def _render_section_documentos(df: pd.DataFrame):
     h_mean, h_med, h_std, h_min, h_max = _stats(df_hib)
 
     st.markdown(
-        '<div class="subsection-header" style="margin-top:0.2rem;">Quantidade de Fatias Utilizadas pelo JEV Livre (Seleção Autônoma Prob &gt; 0,50)</div>',
+        '<div class="subsection-header" style="margin-top:0.2rem;">Quantidade de Fatias Utilizadas pelo JEV Livre (Seleção sob Prob &gt; 0,50)</div>',
         unsafe_allow_html=True,
     )
 
@@ -1739,7 +1737,7 @@ def render_experiment_dashboard(embedded: bool = True):
     tab_acc, tab_qual, tab_docs = st.tabs([
         "Acurácia",
         "Qualidade da resposta",
-        "Documentos e Qualidade",
+        "A influência dos documentos",
     ])
 
     with tab_acc:
