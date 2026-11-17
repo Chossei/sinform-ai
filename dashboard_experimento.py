@@ -290,8 +290,9 @@ ORDEM_DECISAO = [
 
 ORDEM_FAIXAS_DOCS = ["1", "2", "3", "4+"]
 
-LIGHT_BLUE_BOX = "#38bdf8"
-LIGHT_BLUE_BORDER = "#0284c7"
+# Padrão de cor azul da fórmula do Score Esperado (.callout-card / .formula-box)
+LIGHT_BLUE_BOX = "#bfdbfe"
+LIGHT_BLUE_BORDER = "#1d4ed8"
 COR_COBALTO = "#2563eb"
 COR_COBALTO_CLARO = "#93c5fd"
 COR_AMBAR = "#f59e0b"
@@ -497,18 +498,23 @@ def build_diverging_accuracy_bar(
     height: int = 470,
 ) -> go.Figure:
     """
-    Barras empilhadas horizontais DIVERGENTES centradas em 0%, ordenadas pelo Score Esperado:
+    Barras empilhadas horizontais DIVERGENTES centradas em 0%, em ordem crescente
+    da soma (Incorreta + Parcialmente incorreta) de cima para baixo:
     - Esquerda (negativo): Parcialmente incorreta + Incorreta
     - Direita (positivo): Parcialmente correta + Correta
     - Legenda ordenada de Incorreta para Correta.
     """
-    summary = compute_config_summary(df_sub, sort_by_score=True)
+    summary = compute_config_summary(df_sub, sort_by_score=False)
     if summary.empty:
         fig = go.Figure()
         fig.update_layout(title=title, height=height)
         return fig
 
-    # Inverter ordem para que o melhor (#1) apareça no topo do eixo Y horizontal
+    # Ordem crescente da soma (Incorreta + Parcialmente incorreta) de cima para baixo
+    summary = summary.sort_values(
+        by=["erro_grave_pct", "incorreta_pct", "correta_pct"],
+        ascending=[True, True, False],
+    ).reset_index(drop=True)
     summary_plot = summary.iloc[::-1].reset_index(drop=True)
     configs_y = summary_plot["config_label"].tolist()
 
@@ -719,13 +725,18 @@ def build_positive_sum_bar(
 ) -> go.Figure:
     """
     Barras empilhadas somando Correta + Parcialmente correta (%) por configuração,
-    ordenadas por ORDEM_CONFIGS (RAG Tradicional -> Fichamento + Embedding -> Fichamento + JEV Top-K -> JEV Livre).
+    em ordem decrescente da esquerda para a direita.
     """
     summary = compute_config_summary(df_sub, sort_by_score=False)
     if summary.empty:
         fig = go.Figure()
         fig.update_layout(title=title, height=height)
         return fig
+
+    summary = summary.sort_values(
+        by=["positiva_pct", "correta_pct", "score_mean"],
+        ascending=[False, False, False],
+    ).reset_index(drop=True)
 
     configs_x = summary["config_label"].tolist()
     cor_vals = summary["correta_pct"].to_numpy()
@@ -822,14 +833,16 @@ def build_positive_sum_bar(
 
 def build_general_score_boxplot(
     df_sub: pd.DataFrame,
-    title: str = "Distribuição e média do Score Esperado por método de RAG",
+    title: str = "Distribuição do Score Esperado por método de RAG",
+    sort_by_mean: bool = True,
+    compact_badge: bool = False,
     height: int = 490,
 ) -> go.Figure:
     """
-    Boxplot geral do Score Esperado ordenado pelas médias (decrescente),
-    exibindo o valor do Score Médio dentro de uma caixinha em cada método.
+    Boxplot do Score Esperado seguindo o padrão de cor azul da fórmula do Score,
+    com o indicador do Score Médio posicionado no topo, acima de cada boxplot.
     """
-    summary = compute_config_summary(df_sub, sort_by_score=True)
+    summary = compute_config_summary(df_sub, sort_by_score=sort_by_mean)
     if summary.empty:
         fig = go.Figure()
         fig.update_layout(title=title, height=height)
@@ -848,10 +861,10 @@ def build_general_score_boxplot(
                 y=d_cfg,
                 name=cfg,
                 boxmean=True,
-                marker_color=LIGHT_BLUE_BOX,
+                marker_color=LIGHT_BLUE_BORDER,
                 line=dict(color=LIGHT_BLUE_BORDER, width=1.8),
                 fillcolor=LIGHT_BLUE_BOX,
-                opacity=0.80,
+                opacity=0.88,
                 boxpoints="outliers",
                 hovertemplate=(
                     f"<b>{cfg}</b><br>"
@@ -861,38 +874,40 @@ def build_general_score_boxplot(
             )
         )
 
-        # Caixinha destacando o Score Médio diretamente sobre o boxplot
+        badge_text = f"<b>{mean_val:.3f}</b>" if compact_badge else f"<b>Média: {mean_val:.3f}</b>"
+        # Caixinha do Score Médio posicionada no topo, acima de cada boxplot
         fig.add_annotation(
             x=cfg,
-            y=mean_val,
-            text=f"<b>Média: {mean_val:.3f}</b>",
+            y=1.085,
+            text=badge_text,
             showarrow=False,
-            font=dict(size=10, color="#0f172a", family="Inter"),
-            bgcolor="#ffffff",
-            bordercolor=LIGHT_BLUE_BORDER,
-            borderwidth=1.3,
-            borderpad=3,
+            font=dict(size=9.5 if compact_badge else 10, color="#1d4ed8", family="Inter"),
+            bgcolor="#f0f7ff",
+            bordercolor="#bfdbfe",
+            borderwidth=1.2,
+            borderpad=2 if compact_badge else 3,
         )
 
     fig.update_layout(
-        title=dict(text=f"<b>{title}</b>", font=dict(size=16, color="#0f172a")),
+        title=dict(text=f"<b>{title}</b>", font=dict(size=15 if compact_badge else 16, color="#0f172a")),
         xaxis=dict(
-            title="Método e Configuração de RAG (ordenado pelo Score Médio)",
-            tickangle=-25,
-            tickfont=dict(size=11, color="#1e293b"),
+            title="Método e Configuração de RAG",
+            tickangle=-30 if compact_badge else -25,
+            tickfont=dict(size=10.5 if compact_badge else 11, color="#1e293b"),
             categoryorder="array",
             categoryarray=ordered_configs,
         ),
         yaxis=dict(
             title="Score Esperado (0 a 1)",
-            range=[-0.04, 1.06],
+            range=[-0.04, 1.17],
+            tickvals=[0.0, 0.2, 0.4, 0.6, 0.8, 1.0],
             gridcolor=COR_GRID,
             zeroline=False,
         ),
         showlegend=False,
         plot_bgcolor="#ffffff",
         paper_bgcolor="#ffffff",
-        margin=dict(l=55, r=25, t=65, b=115),
+        margin=dict(l=52, r=18, t=65, b=115),
         height=height,
     )
     return fig
@@ -1445,7 +1460,10 @@ def _render_section_qualidade(df: pd.DataFrame):
         unsafe_allow_html=True,
     )
     fig_box_geral = build_general_score_boxplot(
-        df, title="Distribuição e média do Score Esperado por método de RAG"
+        df,
+        title="Distribuição do Score Esperado por método de RAG",
+        sort_by_mean=True,
+        compact_badge=False,
     )
     st.plotly_chart(fig_box_geral, width="stretch")
 
@@ -1453,10 +1471,26 @@ def _render_section_qualidade(df: pd.DataFrame):
         '<div class="subsection-header">A qualidade média é afetada por perguntas multi-documento?</div>',
         unsafe_allow_html=True,
     )
-    fig_type_mean = build_grouped_type_mean_std(
-        df, title="Score Esperado médio (± DP) em perguntas únicas e híbridas"
-    )
-    st.plotly_chart(fig_type_mean, width="stretch")
+    col_qh, col_qu = st.columns(2, gap="medium")
+    for col_target, tipo_key, titulo_col in [
+        (col_qh, "híbrida", "Perguntas Híbridas / Multi-Documento"),
+        (col_qu, "única", "Perguntas Únicas / 1 Documento"),
+    ]:
+        with col_target:
+            df_t = df[df["tipo_pergunta"] == tipo_key]
+            n_q = int(df_t["Pergunta"].nunique()) if not df_t.empty else 0
+            st.markdown(
+                f'<div class="column-question-title">{titulo_col} (n={n_q} perguntas)</div>',
+                unsafe_allow_html=True,
+            )
+            fig_box_t = build_general_score_boxplot(
+                df_t,
+                title="Distribuição do Score Esperado por método de RAG",
+                sort_by_mean=False,
+                compact_badge=True,
+                height=460,
+            )
+            st.plotly_chart(fig_box_t, width="stretch")
 
     st.markdown(
         '<div class="subsection-header">Qualidade vs Custo Operacional</div>',
